@@ -10,11 +10,11 @@ import googleIconImageSrc from "images/google-icon.png";
 import twitterIconImageSrc from "images/twitter-icon.png";
 import { ReactComponent as LoginIcon } from "feather-icons/dist/icons/log-in.svg";
 import Footer from "components/footers/Home-Footer";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { backendUrl } from "backendUrl";
 const Container = tw(
   ContainerBase
-)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
+)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -mx-8 -mt-8 sm:-my-8`;
 const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;
 const MainContainer = tw.div`lg:w-1/2 xl:w-5/12 p-6 sm:p-12`;
 const LogoLink = tw.a``;
@@ -57,37 +57,6 @@ const IllustrationImage = styled.div`
   ${tw`m-12 xl:m-16 w-full max-w-sm bg-contain bg-center bg-no-repeat`}
 `;
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  const data = {
-    email: e.target.email.value,
-    password: e.target.password.value,
-  };
-  const requestOptions = {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data),
-  };
-  fetch(`${backendUrl}/api/login_participant/`, requestOptions)
-    .then((response) =>{
-      if(response.status==200){
-        return response.json();
-      }
-      return {};
-    })
-    .then((data) => {
-      if (data.token) {
-        localStorage.setItem("token", data.token);
-        //console.log(localStorage.getItem("token"));
-        window.location.href = "/dashboard";
-      } else {
-        alert("Invalid Credentials");
-      }
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-};
 
 export default ({
   illustrationImageSrc = illustration,
@@ -96,16 +65,53 @@ export default ({
   SubmitButtonIcon = LoginIcon,
   forgotPasswordUrl = "#",
   signupUrl = "/signup",
-}) => (
+}) => {
+  const history = useHistory();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = {
+      email: e.target.email.value,
+      password: e.target.password.value,
+    };
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    };
+    fetch(`${backendUrl}/api/login_participant/`, requestOptions)
+      .then((response) =>{
+        if(response.status==200){
+          return response.json();
+        }
+        return {};
+      })
+      .then((data) => {
+        if (data.token) {
+          localStorage.setItem("token", data.token);
+          //console.log(localStorage.getItem("token"));
+          window.location.href = "/dashboard";
+          // history.push("/dashboard")
+          // history.go(0)
+        } else {
+          alert("Invalid Credentials");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  return (
   <AnimationRevealPage>
     <Container>
       <Content>
         <MainContainer>
-          <Link to="/">
-            <LogoLink>
+          {/* <Link to="/"> */}
+            <LogoLink onClick={history.goBack}>
               <LogoImage src={logo} />
             </LogoLink>
-          </Link>
+          {/* </Link> */}
           <MainContent>
             <Heading>{headingText}</Heading>
             <FormContainer>
@@ -139,4 +145,4 @@ export default ({
     </Container>
     <Footer />
   </AnimationRevealPage>
-);
+)};

@@ -111,7 +111,7 @@ export default ({
                 </Statistic>
               ))}
             </Statistics> */}
-            {registrableEvent &&  
+            {/* {registrableEvent &&  
               <Link to={{
                 pathname: "/eventRegistration",
                 search: `?name=${card.title}`,
@@ -121,7 +121,7 @@ export default ({
                   {primaryButtonText}
                 </PrimaryButton>
               </Link>
-            }
+            } */}
           </TextContent>
         </TextColumn>
       </TwoColumn>
