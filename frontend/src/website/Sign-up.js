@@ -9,7 +9,7 @@ import logo from "images/old-logo-symbol.png";
 import googleIconImageSrc from "images/google-icon.png";
 import twitterIconImageSrc from "images/twitter-icon.png";
 import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus.svg";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Footer from "components/footers/Home-Footer";
 import { backendUrl } from "backendUrl";
 var Loader = require("react-loader");
@@ -71,7 +71,7 @@ export default ({
   signInUrl = "/login",
 }
 ) => {
-
+  const history = useHistory();
   const [loading, setLoading] = useState(true);
   
   const handleSubmit = (e) => {
@@ -98,6 +98,9 @@ export default ({
           if (response.status === 201) {
             //sendSuccessMail(data.email);
             window.location.href = "/login";
+            // history.push("/login")
+            // history.go(0)
+            // history.goBack();
           } else if (response.status == 409) {
             alert("user already exists");
           } else {
@@ -135,11 +138,11 @@ export default ({
     <Container id="signUpContainer">
       <Content>
         <MainContainer>
-          <Link to="/">
-            <LogoLink>
+          {/* <Link to="/"> */}
+            <LogoLink onClick={history.goBack}>
               <LogoImage src={logo} />
             </LogoLink>
-          </Link>
+          {/* </Link> */}
           <MainContent>
             <Heading>{headingText}</Heading>
             <FormContainer>

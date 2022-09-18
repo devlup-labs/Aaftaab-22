@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_@b!)kza1b06-b!3cghs3rg5ewh$_g@ab&wv+6n!!si3idmt8v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["aaftaab.in", "backend.aaftaab.in"]
 
 
 # Application definition
@@ -53,11 +53,12 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000'
-]
+CORS_ORIGIN_ALLOW_ALL = False
 
-
+CORS_ORIGIN_WHITELIST = (
+    "aaftaab.in",
+    "backend.aaftab.in"
+)
 
 ROOT_URLCONF = 'backend.urls'
 
