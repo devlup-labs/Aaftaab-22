@@ -30,6 +30,7 @@ import Vishal from '../images/team/Vishal Yadav.jpg'
 import Jahnab from '../images/team/Jahnab Dutta.jpeg'
 import YashB from '../images/team/Yash Bhargava.jpeg'
 import DefaultUser from '../images/team/User.jpg'
+import Carousel from '../components/cards/Teampage-Slider'
 
 
 function Team() {
@@ -57,7 +58,6 @@ function Team() {
       },
       {
         imageSrc: DefaultUser,
-        position: "Head",
         name: "Stuti Aswani",
         links: [
           {
@@ -74,7 +74,6 @@ function Team() {
       },
       {
         imageSrc: SayanSanyal,
-        position: "Head",
         name: "Sayan Sanyal",
         links: [
           {
@@ -105,7 +104,7 @@ function Team() {
           },
 
           {
-            mail: "yadav.49@iitj.ac.in",
+            mail: "yadav.40@iitj.ac.in",
             icon: EmailIcon
           },
           {
@@ -546,8 +545,10 @@ function Team() {
     
   
   return (
+    <>
     <AnimationRevealPage>
       <Header />
+      
       <TeamCard heading={team0.heading}
         subheading={team0.subheading}
         description={team0.description}
@@ -594,10 +595,11 @@ function Team() {
         cards={team7.cards} />
 
 
-
-
-      <Footer />
+      <Carousel />
+    <Footer />
     </AnimationRevealPage>
+
+     </>
   );
   }
 

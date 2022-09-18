@@ -29,7 +29,9 @@ const SocialLink = styled.a`
 `;
 
 const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-600`
+
 export default () => {
+
   return (
     <Container>
       <Content>
@@ -39,7 +41,7 @@ export default () => {
             <LogoText>Aaftaab</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link to="/" ><Linktw>Home</Linktw></Link>
+            <Link to="/" onClick={window.scrollTo(0, 0)}><Linktw>Home</Linktw></Link>
             <Link to="/about"><Linktw>About</Linktw></Link>
             <a href="mailto:aaftaab@iitj.ac.in" ><Linktw>Contact Us</Linktw></a>
             <Link to="/team"><Linktw>Team</Linktw></Link>
