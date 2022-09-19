@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState, useContext } from "react";
-import { useHistory } from "react-router-dom";
+import { Router } from "react-router-dom";
 import tw from "twin.macro";
 import { backendUrl } from "backendUrl";
 import AnimationRevealPage from "helpers/AnimationRevealPage";
@@ -21,8 +21,6 @@ const HeadingText = tw(SectionHeading)``;
 const ContentWithPaddingXl = tw(ContentWithPaddingXlBase)`py-6 lg:py-10`
 
 function Dashboard() {
-  const history = useHistory();
-
   const [userName, setUserName] = useState("");
   const [events, setEvents] = useState([]);
   const [passId, setPassId] = useState("");
@@ -44,8 +42,6 @@ function Dashboard() {
           else{
             alert("please login properly");
             window.location.href = "/";
-            // history.push("/")
-            // history.go(0)
             return {};
           }
         })
@@ -58,15 +54,18 @@ function Dashboard() {
         .catch((error)=>{
           console.log(error);
         })
-    }, []);
+  }, []);
 
 
-    const logoutButtonPressed=()=>{
-      localStorage.removeItem("token");
-      window.location.href = "/";
-      // history.push("/")
-      // history.go(0)
-    }
+  const logoutButtonPressed=()=>{
+    localStorage.removeItem("token");
+    window.location.href = "/";
+  }
+  
+  const loggedIn = useContext(userContext).loggedIn;
+  if (!loggedIn) {
+    return <Redirect to="/" />
+  }
 
   return (
     <AnimationRevealPage>
