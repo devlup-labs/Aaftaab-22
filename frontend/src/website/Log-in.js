@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import { backendUrl } from "backendUrl";
 const Container = tw(
   ContainerBase
-)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
+)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -mx-8 -mt-8 sm:-my-8`;
 const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;
 const MainContainer = tw.div`lg:w-1/2 xl:w-5/12 p-6 sm:p-12`;
 const LogoLink = tw.a``;
@@ -69,9 +69,13 @@ const handleSubmit = (e) => {
     body: JSON.stringify(data),
   };
   fetch(`${backendUrl}/api/login_participant/`, requestOptions)
-    .then((response) => response.json())
+    .then((response) =>{
+      if(response.status==200){
+        return response.json();
+      }
+      return {};
+    })
     .then((data) => {
-
       if (data.token) {
         localStorage.setItem("token", data.token);
         //console.log(localStorage.getItem("token"));

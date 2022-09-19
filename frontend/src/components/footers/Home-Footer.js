@@ -3,9 +3,13 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import {Container as ContainerBase } from "components/misc/Layouts.js"
 import logo from "../../images/old-logo-symbol.png";
+
 import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as InstagramIcon } from "../../images/instagram-icon.svg";
+import { ReactComponent as LinkedinIcon } from "images/linkedin-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
+import { ReactComponent as DiscordIcon } from "../../images/discord-icon.svg";
+
 import { Link } from "react-router-dom";
 
 const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`
@@ -48,18 +52,18 @@ export default () => {
             <a href="https://www.iitj.ac.in/"><Linktw>IIT Jodhpur</Linktw></a>
           </LinksContainer>
           <SocialLinksContainer>
-            <SocialLink href="https://www.instagram.com/aaftaab_iitj/">
+            <SocialLink href="https://www.instagram.com/aaftaab_iitj/" target="_blank">
               <InstagramIcon />
             </SocialLink>
-            <SocialLink href="https://facebook.com">
-              <FacebookIcon />
+            <SocialLink href="https://www.linkedin.com/in/aaftaab2022/" target="_blank">
+              <LinkedinIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
+            <SocialLink href="https://discord.gg/SFXusBrXkq" target="_blank">
+              <DiscordIcon />
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2022, Devlup Labs, IITJ. All Rights Reserved.
+            &copy; Copyright 2022, IITJ. All Rights Reserved.
           </CopyrightText>
         </Row>
       </Content>

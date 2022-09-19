@@ -6,7 +6,7 @@ import tw from "twin.macro";
 import { motion } from "framer-motion";
 import useInView from "@owaiswiz/use-in-view";
 
-const StyledDiv = tw.div`font-display min-h-screen text-secondary-500 p-8 bg-img1 overflow-hidden`;
+const StyledDiv = tw.div`font-display min-h-screen text-secondary-500 px-1 py-8 sm:px-4 lg:px-8 bg-img1 overflow-hidden`;
 function AnimationReveal({ disabled, children }) {
   if (disabled) {
     return <>{children}</>;
@@ -16,8 +16,13 @@ function AnimationReveal({ disabled, children }) {
 
   const directions = ["left", "right"];
   const childrenWithAnimation = children.map((child, i) => {
+    if ((i == 0) || (i == children.length - 1)) {
+      return (
+        <>{child}</>
+      );
+    }
     return (
-      <AnimatedSlideInComponent key={i} direction={directions[i % directions.length]}>
+      <AnimatedSlideInComponent key={i} direction={directions[(i+1) % directions.length]}>
         {child}
       </AnimatedSlideInComponent>
     );

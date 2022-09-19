@@ -86,11 +86,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': BASE_DIR / 'Aaftaab-22_database',
-        'User': 'postgres',
-        'PASSWORD': 1234, 
+        'NAME': 'aaftaab_database',
+        'USER': 'postgres',
+        'PASSWORD': 1234,
         'HOST': 'localhost',
-        'PORT': 5433
+        'PORT': '5433',
     }
 }
 
