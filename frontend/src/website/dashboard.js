@@ -41,7 +41,7 @@ function Dashboard() {
           }
           else{
             alert("please login properly");
-            window.location.href = "/";
+            // window.location.href = "/";
             return {};
           }
         })
@@ -59,7 +59,7 @@ function Dashboard() {
 
   const logoutButtonPressed=()=>{
     localStorage.removeItem("token");
-    window.location.href = "/";
+    window.location.replace("/");
   }
 
   const loggedIn = useContext(userContext).loggedIn;
