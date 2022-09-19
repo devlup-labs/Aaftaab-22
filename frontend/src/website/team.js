@@ -30,15 +30,10 @@ import Vishal from '../images/team/Vishal Yadav.jpg'
 import Jahnab from '../images/team/Jahnab Dutta.jpeg'
 import YashB from '../images/team/Yash Bhargava.jpg'
 import DefaultUser from '../images/team/User.jpg'
-<<<<<<< HEAD
-import Carousel from '../components/cards/Teampage-Slider.js'
-
-=======
 import Stuti from '../images/team/Stuti Pradeep Aswani.jpg'
 import Shreya from '../images/team/Shreya Pagaria.jpg'
 import Akshat from '../images/team/Akshat Jain.jpeg'
 import UdayBhanu from '../images/team/Uday Bhanu.jpg'
->>>>>>> 9ac0178cdd9b197699b31f837c79d910f4174aef
 
 function Team() {
   const team0 = {
@@ -63,11 +58,7 @@ function Team() {
         ],
       },
       {
-<<<<<<< HEAD
-        imageSrc: DefaultUser,
-=======
         imageSrc: Stuti,
->>>>>>> 9ac0178cdd9b197699b31f837c79d910f4174aef
         name: "Stuti Aswani",
         links: [
           {
@@ -603,7 +594,6 @@ function Team() {
         cards={team7.cards} />
 
 
-      <Carousel />
     <Footer />
     </AnimationRevealPage>
 
