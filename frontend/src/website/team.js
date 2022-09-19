@@ -30,7 +30,7 @@ import Vishal from '../images/team/Vishal Yadav.jpg'
 import Jahnab from '../images/team/Jahnab Dutta.jpeg'
 import YashB from '../images/team/Yash Bhargava.jpeg'
 import DefaultUser from '../images/team/User.jpg'
-import Carousel from '../components/cards/Teampage-Slider'
+import Carousel from '../components/cards/Teampage-Slider.js'
 
 
 function Team() {
