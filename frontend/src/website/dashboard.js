@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState, useContext } from "react";
-import { Router } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import tw from "twin.macro";
 import { backendUrl } from "backendUrl";
 import AnimationRevealPage from "helpers/AnimationRevealPage";
@@ -61,7 +61,7 @@ function Dashboard() {
     localStorage.removeItem("token");
     window.location.href = "/";
   }
-  
+
   const loggedIn = useContext(userContext).loggedIn;
   if (!loggedIn) {
     return <Redirect to="/" />
