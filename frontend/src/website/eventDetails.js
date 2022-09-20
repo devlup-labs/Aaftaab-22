@@ -32,7 +32,7 @@ function Events() {
                 heading={card.title}
                 description={card.description ? card.description : null}
                 imageSrc={card.imageSrc}
-                primaryButtonText="Register Now!"
+                primaryButtonText="Pre-Register Now!"
                 registrableEvent={card.registrableEvent ? card.registrableEvent : false}
                 minTeamSize={card.minTeamSize ? card.minTeamSize : 1}
                 maxTeamSize={card.maxTeamSize ? card.maxTeamSize : 1}
