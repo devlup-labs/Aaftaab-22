@@ -1,11 +1,10 @@
 import AnimationRevealPage from 'helpers/AnimationRevealPage';
-import React, { Component } from 'react';
-import { useLocation, useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import tw from "twin.macro";
 
 import Feature from "components/features/TwoColSingleFeatureWithStats2-button.js";
-import Header from 'components/headers/light.js'
 import Footer from "components/footers/Home-Footer";
+import Header from 'components/headers/light.js';
 
 // import { createBrowserHistory } from 'history'
 

@@ -1,9 +1,7 @@
-import AnimationRevealPage from 'helpers/AnimationRevealPage';
-import React, { Component } from 'react';
-import Hero from "components/hero/Hero-Section-Homepage";
 import Slider from "components/cards/Homepage-Slider";
-import Features from "components/features/Homepage-Sponsors-Preview";
 import Footer from "components/footers/Home-Footer";
+import Hero from "components/hero/Hero-Section-Homepage";
+import AnimationRevealPage from 'helpers/AnimationRevealPage';
 import tw from "twin.macro";
 import imgLogo from "../images/old-logo.png";
 function Home() {

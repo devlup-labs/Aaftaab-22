@@ -1,18 +1,15 @@
-import React, { useContext } from "react";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import { userContext } from "App.js";
+import { backendUrl } from "backendUrl";
+import Footer from "components/footers/Home-Footer";
 import { Container as ContainerBase } from "components/misc/Layouts";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
+import { ReactComponent as LoginIcon } from "feather-icons/dist/icons/log-in.svg";
+import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import illustration from "images/login-illustration.svg";
 import logo from "images/old-logo-symbol.png";
-import googleIconImageSrc from "images/google-icon.png";
-import twitterIconImageSrc from "images/twitter-icon.png";
-import { ReactComponent as LoginIcon } from "feather-icons/dist/icons/log-in.svg";
-import Footer from "components/footers/Home-Footer";
-import { Link, useHistory, Redirect } from "react-router-dom";
-import { backendUrl } from "backendUrl";
-import { userContext } from "App.js";
+import { useContext } from "react";
+import { Link, Redirect } from "react-router-dom";
+import styled from "styled-components";
+import tw from "twin.macro";
 
 const Container = tw(
   ContainerBase

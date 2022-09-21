@@ -1,8 +1,7 @@
-import "tailwindcss/dist/base.css";
-import "styles/globalStyles.css";
-import React, {useEffect,createContext,useState} from "react";
-import { css } from "styled-components/macro"; //eslint-disable-line
 import { backendUrl } from "backendUrl";
+import { createContext, useEffect, useState } from "react";
+import "styles/globalStyles.css";
+import "tailwindcss/dist/base.css";
 
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
@@ -102,20 +101,15 @@ import { backendUrl } from "backendUrl";
 
 import LoginPage from "website/Log-in.js";
 import SignupPage from "website/Sign-up";
-import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
-import ThankYouPage from "ThankYouPage.js";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "website/homepage";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "website/about";
-import Events from "website/events";
-import Sponsors from "website/sponsors";
-import Team from "website/team";
-import EventDetails from "website/eventDetails";
-import Register from "website/register"
-import EventRegistration from "website/eventRegistration";
 import Dashboard from "website/dashboard";
+import EventDetails from "website/eventDetails";
+import EventRegistration from "website/eventRegistration";
+import Events from "website/events";
+import Home from "website/homepage";
+import Team from "website/team";
 
 import ScrollToTop from "website/scrollToTop";
 

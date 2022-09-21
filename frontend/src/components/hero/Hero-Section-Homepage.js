@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
-import "./Hero-Section-Homepage.css"
-import { css } from "styled-components/macro";
-import { Link } from 'react-router-dom';
+import "./Hero-Section-Homepage.css";
 
 import Header from "../headers/light.js";
 
@@ -13,15 +11,15 @@ import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
 import { ReactComponent as PlayIcon } from "feather-icons/dist/icons/play-circle.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
-import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
-import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
 import DesignIllustration from "../../images/design-illustration.svg";
+import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
+import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 
-import heroImgTitle from '../../images/old-logo-text.png'
-import heroImgTL from '../../images/logo-top-left.png'
-import heroImgTR from '../../images/logo-top-right.png'
-import heroImgBL from '../../images/logo-bottom-left.png'
-import heroImgBR from '../../images/logo-bottom-right.png'
+import heroImgBL from '../../images/logo-bottom-left.png';
+import heroImgBR from '../../images/logo-bottom-right.png';
+import heroImgTL from '../../images/logo-top-left.png';
+import heroImgTR from '../../images/logo-top-right.png';
+import heroImgTitle from '../../images/old-logo-text.png';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col-reverse lg:flex-row md:items-center max-w-screen-xl mx-auto py-5 lg:py-10 md:py-8`;

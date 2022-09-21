@@ -1,15 +1,14 @@
-import React, {useContext} from "react";
 import { motion } from "framer-motion";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+import tw from "twin.macro";
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import logo from "../../images/old-logo-symbol.png";
+import { userContext } from "App.js";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
-import { userContext } from "App.js";
+import logo from "../../images/old-logo-symbol.png";
 const Header = tw.header`
   flex justify-between items-center
   max-w-screen-xl mx-auto

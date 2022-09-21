@@ -1,19 +1,17 @@
-import React from "react";
-import tw from "twin.macro";
-import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import tw from "twin.macro";
 
 
-import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
+import Blog from "components/blogs/GridWithFeaturedPost.js";
+import GetStarted from "components/cta/GetStartedLight.js";
+import FAQ from "components/faqs/SingleCol.js";
+import FeatureStats from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
 import Features from "components/features/ThreeColWithSideImage.js";
 import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
-import FeatureStats from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
-import Pricing from "components/pricing/TwoPlansWithDurationSwitcher.js";
-import Blog from "components/blogs/GridWithFeaturedPost.js";
-import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
-import FAQ from "components/faqs/SingleCol.js";
-import GetStarted from "components/cta/GetStartedLight.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
+import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
+import Pricing from "components/pricing/TwoPlansWithDurationSwitcher.js";
+import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
 
 const HighlightedText = tw.span`text-primary-500`
 

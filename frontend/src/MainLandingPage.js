@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from "react";
+import { components } from "ComponentRenderer.js";
+import { LogoLink } from "components/headers/light.js";
+import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import { SectionHeading as HeadingBase } from "components/misc/Headings";
+import { Container, Content2Xl, ContentWithVerticalPadding } from "components/misc/Layouts";
+import { SectionDescription as DescriptionBase } from "components/misc/Typography";
+import { motion } from "framer-motion";
+import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import { useEffect, useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Rnd } from "react-rnd";
-import { motion } from "framer-motion";
-import { components } from "ComponentRenderer.js";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import { Container, Content2Xl, ContentWithVerticalPadding } from "components/misc/Layouts";
-import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
-import { LogoLink } from "components/headers/light.js";
-import { SectionHeading as HeadingBase } from "components/misc/Headings";
-import { SectionDescription as DescriptionBase } from "components/misc/Typography";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import tw from "twin.macro";
 
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import { ReactComponent as RadioIcon } from "feather-icons/dist/icons/radio.svg";
-import { ReactComponent as HandleIcon } from "images/handle-icon.svg";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg";
+import { ReactComponent as HandleIcon } from "images/handle-icon.svg";
 
+import useInView from "@owaiswiz/use-in-view";
 import heroScreenshotImageSrc from "images/demo/MainLandingPageHero.png";
 import logo from "images/logo.svg";
-import useInView from "@owaiswiz/use-in-view";
 
 /* Hero */
 const Row = tw.div`flex`;

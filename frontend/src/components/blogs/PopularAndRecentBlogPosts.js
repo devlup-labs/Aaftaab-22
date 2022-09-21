@@ -1,10 +1,8 @@
-import React from "react";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading } from "components/misc/Headings.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
+import { motion } from "framer-motion";
+import styled from "styled-components";
+import tw from "twin.macro";
 
 const Row = tw.div`flex flex-col lg:flex-row -mb-10`;
 const Heading = tw(SectionHeading)`text-left lg:text-4xl xl:text-5xl`;

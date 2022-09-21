@@ -1,39 +1,37 @@
-import AnimationRevealPage from "helpers/AnimationRevealPage";
-import React, { Component } from "react";
-import Header from "components/headers/light.js";
 import TeamCard from "components/cards/Team-Teams-Card";
 import Footer from "components/footers/Home-Footer";
+import Header from "components/headers/light.js";
+import AnimationRevealPage from "helpers/AnimationRevealPage";
 
 import { ReactComponent as EmailIcon } from "images/email-envelope.svg";
-import { ReactComponent as LinkedinIcon } from "images/linkedin-icon.svg";
-import { ReactComponent as GithubIcon } from "images/github-icon.svg";
 import { ReactComponent as InstagramIcon } from "images/icons8-instagram.svg";
-import Ayush from "../images/team/Ayush - Ayush Didel (B20ME019).jpg"
-import ShyanPal from '../images/team/1CFD3BE5-A542-4501-BC09-E710A524AAF8 - Shyan Pal (M22SL009).jpeg'
-import Yawer from '../images/team/yxwerabbas-13092022-0001 - Yawer Abbas (B20CI050).webp'
-import SayanSanyal from '../images/team/1662833916599-01 - Sayan Sanyal (M21DH014).jpeg'
-import MahendraJakhar from '../images/team/IMG_6632-4 - Mahendra Jakhar (B20CI021).jpg'
-import VandanMoonat from '../images/team/IMG_20220130_211252_339 - Vandan Moonat (B20CI046).jpg'
-import Prabodh from '../images/team/WhatsApp Image 2022-09-11 at 15.45.33 - Prabodh Sharma (M22DH009).jpeg' 
+import { ReactComponent as LinkedinIcon } from "images/linkedin-icon.svg";
+import SayanSanyal from '../images/team/1662833916599-01 - Sayan Sanyal (M21DH014).jpeg';
+import ShyanPal from '../images/team/1CFD3BE5-A542-4501-BC09-E710A524AAF8 - Shyan Pal (M22SL009).jpeg';
+import Ayush from "../images/team/Ayush - Ayush Didel (B20ME019).jpg";
+import VandanMoonat from '../images/team/IMG_20220130_211252_339 - Vandan Moonat (B20CI046).jpg';
+import MahendraJakhar from '../images/team/IMG_6632-4 - Mahendra Jakhar (B20CI021).jpg';
+import Prabodh from '../images/team/WhatsApp Image 2022-09-11 at 15.45.33 - Prabodh Sharma (M22DH009).jpeg';
+import Yawer from '../images/team/yxwerabbas-13092022-0001 - Yawer Abbas (B20CI050).webp';
  
-import Tanay from '../images/team/WhatsApp Image 2022-08-22 at 10.40.45 PM - Tanay Anand (B20AI046).jpeg'
-import Yash from '../images/team/profile_pic (2) - Yash Anand (B20ES010).jpg'
-import Ishita from '../images/team/PICTURE - Ishita (M21MS034).jpg'
-import ArunSahu from '../images/team/Arun sahu.jpg'
-import KaranThakur from '../images/team/IMG_1285 - Karan Thakur (B20CH021).JPG'
+import ArunSahu from '../images/team/Arun sahu.jpg';
+import KaranThakur from '../images/team/IMG_1285 - Karan Thakur (B20CH021).JPG';
+import Ishita from '../images/team/PICTURE - Ishita (M21MS034).jpg';
+import Yash from '../images/team/profile_pic (2) - Yash Anand (B20ES010).jpg';
+import Tanay from '../images/team/WhatsApp Image 2022-08-22 at 10.40.45 PM - Tanay Anand (B20AI046).jpeg';
 
-import Gaurav from '../images/team/B20AI062(SG) - Gaurav Sangwan (B20AI062).jpg'
-import Suyash from '../images/team/Suyash Surana.jpg'
-import AnkushGupta from '../images/team/IMG_20220520_204750 - Ankush Gupta (B20CH006).jpg'
-import Vikash from '../images/team/Vikas Yadav.jpeg'
-import Vishal from '../images/team/Vishal Yadav.jpg'
-import Jahnab from '../images/team/Jahnab Dutta.jpeg'
-import YashB from '../images/team/Yash Bhargava.jpg'
-import DefaultUser from '../images/team/User.jpg'
-import Stuti from '../images/team/Stuti Pradeep Aswani.jpg'
-import Shreya from '../images/team/Shreya Pagaria.jpg'
-import Akshat from '../images/team/Akshat Jain.jpeg'
-import UdayBhanu from '../images/team/Uday Bhanu.jpg'
+import Akshat from '../images/team/Akshat Jain.jpeg';
+import Gaurav from '../images/team/B20AI062(SG) - Gaurav Sangwan (B20AI062).jpg';
+import AnkushGupta from '../images/team/IMG_20220520_204750 - Ankush Gupta (B20CH006).jpg';
+import Jahnab from '../images/team/Jahnab Dutta.jpeg';
+import Shreya from '../images/team/Shreya Pagaria.jpg';
+import Stuti from '../images/team/Stuti Pradeep Aswani.jpg';
+import Suyash from '../images/team/Suyash Surana.jpg';
+import UdayBhanu from '../images/team/Uday Bhanu.jpg';
+import DefaultUser from '../images/team/User.jpg';
+import Vikash from '../images/team/Vikas Yadav.jpeg';
+import Vishal from '../images/team/Vishal Yadav.jpg';
+import YashB from '../images/team/Yash Bhargava.jpg';
 
 function Team() {
   const team0 = {

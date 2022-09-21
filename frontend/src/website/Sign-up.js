@@ -1,18 +1,15 @@
-import React,{useEffect, useState, useContext} from "react";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import { Container as ContainerBase } from "components/misc/Layouts";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
-import illustration from "images/signup-illustration.svg";
-import logo from "images/old-logo-symbol.png";
-import googleIconImageSrc from "images/google-icon.png";
-import twitterIconImageSrc from "images/twitter-icon.png";
-import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus.svg";
-import { Link, useHistory, Redirect } from "react-router-dom";
-import Footer from "components/footers/Home-Footer";
-import { backendUrl } from "backendUrl";
 import { userContext } from "App";
+import { backendUrl } from "backendUrl";
+import Footer from "components/footers/Home-Footer";
+import { Container as ContainerBase } from "components/misc/Layouts";
+import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus.svg";
+import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import logo from "images/old-logo-symbol.png";
+import illustration from "images/signup-illustration.svg";
+import { useContext, useEffect, useState } from "react";
+import { Link, Redirect } from "react-router-dom";
+import styled from "styled-components";
+import tw from "twin.macro";
 import "./Sign-up.css";
 
 var Loader = require("react-loader");

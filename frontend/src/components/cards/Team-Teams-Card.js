@@ -1,14 +1,10 @@
-import React from "react";
-import tw from "twin.macro";
+import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
+import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
+import { SectionDescription } from "components/misc/Typography";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
-import {SectionDescription} from "components/misc/Typography";
-import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
-import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
-import { ReactComponent as GithubIcon } from "images/github-icon.svg";
-import './Team-Teams-Card.css'
+import tw from "twin.macro";
+import './Team-Teams-Card.css';
 
 const HeadingContainer = tw.div``
 const Heading = tw(SectionHeading)``
