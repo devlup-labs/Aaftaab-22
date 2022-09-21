@@ -1,9 +1,7 @@
-import React from "react";
-import tw from "twin.macro";
 import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
+import tw from "twin.macro";
 
-import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import Header, { DesktopNavLinks, LogoLink, NavLink, NavLinks, NavToggle, PrimaryLink as PrimaryLinkBase } from "../headers/light.js";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none w-full`}

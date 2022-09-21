@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import tw from "twin.macro";
-import styled, { css } from "styled-components/macro"; //eslint-disable-line
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chevron-down.svg";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import styled from "styled-components/macro"; //eslint-disable-line
+import tw from "twin.macro";
 
 const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8 bg-primary-900 text-gray-100`;
 

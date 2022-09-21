@@ -1,16 +1,13 @@
-import React, { useContext } from "react";
-import { Link,useHistory } from "react-router-dom";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import StatsIllustrationSrc from "images/stats-illustration.svg";
-import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 import { userContext } from "App";
+import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
+import StatsIllustrationSrc from "images/stats-illustration.svg";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import tw from "twin.macro";
 import "./TwoColSingleFeatureWithStats2-button.css";
-import { eventMap } from "eventMap";
-import { backendUrl } from "backendUrl";
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;

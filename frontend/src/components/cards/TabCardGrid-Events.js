@@ -1,19 +1,18 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import tw from "twin.macro";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import tw from "twin.macro";
 
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
-import { SectionHeading } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import { ReactComponent as StarIcon } from "images/star-icon.svg";
+import { SectionHeading } from "components/misc/Headings.js";
+import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-5.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7.svg";
 
-import Maaz from '../../images/flagship_events/Maaz-Bin-Bilal.jpg'
 import musicshowImg from "../../images/flagship_events/folk_music.jfif";
+import Maaz from '../../images/flagship_events/Maaz-Bin-Bilal.jpg';
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;

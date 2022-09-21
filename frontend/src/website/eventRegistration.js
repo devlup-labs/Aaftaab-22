@@ -1,26 +1,20 @@
 import AnimationRevealPage from "helpers/AnimationRevealPage";
-import React, { Component,useEffect } from "react";
-import { useLocation, useHistory } from "react-router-dom";
+import { useEffect } from "react";
+import { useHistory, useLocation } from "react-router-dom";
 import tw from "twin.macro";
 
-import Feature from "components/features/TwoColSingleFeatureWithStats2-button.js";
-import Header from "components/headers/light.js";
 import Footer from "components/footers/Home-Footer";
+import Header from "components/headers/light.js";
 import { eventMap } from "../eventMap";
 // import { createBrowserHistory } from 'history'
 
 // export const history = createBrowserHistory({forceRefresh: true})
 
+import { backendUrl } from "backendUrl";
 import { Container as ContainerBase } from "components/misc/Layouts";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
-import illustration from "images/signup-illustration.svg";
-import logo from "images/old-logo-symbol.png";
-import googleIconImageSrc from "images/google-icon.png";
-import twitterIconImageSrc from "images/twitter-icon.png";
 import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus.svg";
 import { Link } from "react-router-dom";
-import { backendUrl } from "backendUrl";
+import styled from "styled-components";
 //import {backendUrl} from "backendUrl.js";
 
 const Container = tw(

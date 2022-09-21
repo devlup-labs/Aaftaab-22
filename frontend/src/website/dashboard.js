@@ -1,18 +1,17 @@
-import React, { Component, useEffect, useState,useContext } from "react";
-import { Redirect } from "react-router-dom";
-import tw from "twin.macro";
 import { backendUrl } from "backendUrl";
 import AnimationRevealPage from "helpers/AnimationRevealPage";
+import { useContext, useEffect, useState } from "react";
+import tw from "twin.macro";
 
+import EventDetailSection from "components/blogs/PopularAndRecentBlogPosts-Dashboard.js";
+import Footer from "components/footers/Home-Footer.js";
 import Header from "components/headers/light.js";
-import Footer from "components/footers/Home-Footer.js"
-import EventDetailSection from "components/blogs/PopularAndRecentBlogPosts-Dashboard.js"
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { SectionHeading } from "components/misc/Headings.js";
 import { Container, ContentWithPaddingXl as ContentWithPaddingXlBase } from "components/misc/Layouts.js";
 
 import { userContext } from "App";
-import "./dashboard.css"
+import "./dashboard.css";
 
 const HeaderRow = tw.div`flex justify-between items-start flex-col`;
 const PrimaryButton = tw(PrimaryButtonBase)`bg-secondary-500 hocus:bg-secondary-700 mt-8 md:mt-10 text-sm ml-auto`;

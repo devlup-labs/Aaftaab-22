@@ -1,14 +1,11 @@
-import React from "react";
-import tw from "twin.macro";
+import { Container as ContainerBase } from "components/misc/Layouts.js";
 import styled from "styled-components";
-import {Container as ContainerBase } from "components/misc/Layouts.js"
+import tw from "twin.macro";
 import logo from "../../images/old-logo-symbol.png";
 
-import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
-import { ReactComponent as InstagramIcon } from "../../images/instagram-icon.svg";
 import { ReactComponent as LinkedinIcon } from "images/linkedin-icon.svg";
-import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
 import { ReactComponent as DiscordIcon } from "../../images/discord-icon.svg";
+import { ReactComponent as InstagramIcon } from "../../images/instagram-icon.svg";
 
 import { Link } from "react-router-dom";
 

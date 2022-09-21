@@ -1,14 +1,12 @@
-import React from "react";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import { Container as ContainerBase } from "components/misc/Layouts";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
-import illustration from "images/signup-illustration.svg";
-import logo from "images/logo.svg";
-import googleIconImageSrc from "images/google-icon.png";
-import twitterIconImageSrc from "images/twitter-icon.png";
 import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus.svg";
+import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import googleIconImageSrc from "images/google-icon.png";
+import logo from "images/logo.svg";
+import illustration from "images/signup-illustration.svg";
+import twitterIconImageSrc from "images/twitter-icon.png";
+import styled from "styled-components";
+import tw from "twin.macro";
 
 const Container = tw(ContainerBase)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
 const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;

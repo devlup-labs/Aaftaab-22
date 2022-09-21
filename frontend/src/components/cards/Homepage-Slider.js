@@ -1,27 +1,24 @@
-import React, { useState } from "react";
-import { Link } from 'react-router-dom';
-import Slider from "react-slick";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons";
-import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
-import { ReactComponent as LocationIcon } from "feather-icons/dist/icons/map-pin.svg";
-import { ReactComponent as DateIcon} from "feather-icons/dist/icons/calendar.svg";
-import { ReactComponent as StarIcon } from "feather-icons/dist/icons/star.svg";
+import { SectionHeading } from "components/misc/Headings";
+import { ReactComponent as DateIcon } from "feather-icons/dist/icons/calendar.svg";
 import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chevron-left.svg";
 import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
-import kaviSammelanImg from "../../images/flagship_events/Kavi samelan.png";
+import { ReactComponent as LocationIcon } from "feather-icons/dist/icons/map-pin.svg";
+import { useState } from "react";
+import { Link } from 'react-router-dom';
+import Slider from "react-slick";
+import styled from "styled-components";
+import tw from "twin.macro";
+import BookImg from "../../images/flagship_events/Book Signings.jpg";
 import djImg from "../../images/flagship_events/DJ Night.jpg";
 import musicshowImg from "../../images/flagship_events/folk_music.jfif";
-import BookImg from "../../images/flagship_events/Book Signings.jpg";
 import InterviewImg from "../../images/flagship_events/Interview with Director.jpg";
+import kaviSammelanImg from "../../images/flagship_events/Kavi samelan.png";
+import Maaz from '../../images/flagship_events/Maaz-Bin-Bilal.jpg';
 import StandupIMG from "../../images/flagship_events/Standup.jpg";
 import TreasurehuntImg from "../../images/flagship_events/Treasure Hunt.jpg";
-import WorkshopIMG from "../../images/flagship_events/Workshops.jpg";
-import Maaz from '../../images/flagship_events/Maaz-Bin-Bilal.jpg'
 
-import "./Homepage-Slider.css"
+import "./Homepage-Slider.css";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
