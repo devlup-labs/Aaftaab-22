@@ -165,9 +165,9 @@ export default function App() {
           <Route path="/events">
             <Events></Events>
           </Route>
-          <Route path="/sponsors">
+          {/* <Route path="/sponsors">
             <Sponsors />
-          </Route>
+          </Route> */}
           <Route path="/login">
             <LoginPage />
           </Route>
@@ -180,9 +180,9 @@ export default function App() {
           <Route path="/signup">
             <SignupPage />
           </Route>
-          <Route path="/register">
+          {/* <Route path="/register">
             <Register />
-          </Route>
+          </Route> */}
           <Route path="/eventRegistration">
             <EventRegistration />
           </Route>
