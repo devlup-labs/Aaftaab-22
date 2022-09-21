@@ -120,14 +120,14 @@ export default () => {
     },
     {
       imageSrc: StandupIMG,
-      title: "Comedy Central (Standup/Satirical Comedy)",
+      title: "Standup Comedy",
       description: `Come and join us for an evening glimmered with sarcasm and humour, brought to you by one of the finest comics in the country and fill the evening with giggles and hootings.A comedic performance to a live audience, saturated with jokes and sarcasm with one of the best standup comics out there to entertain you.`,
       date: "01/10/22",
       timing: "09:00 PM - 10:30 PM",
       // price: "₹50",
       isFlagship: true,
       prize: "",
-      ruleBookLink: "",git 
+      ruleBookLink: "",
     },
     {
       imageSrc: musicshowImg,
@@ -205,7 +205,7 @@ export default () => {
     {
       imageSrc:
         "https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      title: "Unplug Night",
+      title: "Unplugged Night",
       description: `Tune in to watch Sangam, the music club of IIT Jodhpur, fill the air with magical, melodious music.`,
       date: "30/09/22",
       timing: "10:00 PM - 11:00 PM",
@@ -236,7 +236,8 @@ export default () => {
         "https://images.unsplash.com/photo-1583318432730-a19c89692612?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
       title: "Prom Night",
       description: `The perfect opportunity for you and your significant other, to spend some time together, and live the ultimate teenage romance dream.`,
-      // timing: "XX:XX AM - XX:XX PM ",
+      date: "03/10/22",
+      timing: "10:30 PM - 11:30 PM",
       // price: "₹50",
       isFlagship: true,
       prize: "",
