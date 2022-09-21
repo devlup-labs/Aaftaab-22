@@ -107,7 +107,7 @@ export default ({
           if (response.status === 201) {
             //sendSuccessMail(data.email);
             window.location.href = "/login";
-          } else if (response.status == 409) {
+          } else if (response.status === 409) {
             alert("user already exists");
             window.location.href="/login";
           } else {
@@ -128,7 +128,7 @@ export default ({
   };
 
   useEffect(() => {
-    if (loading == false) {
+    if (loading === false) {
       document.getElementById("signUpContainer").style.opacity = 0.5;
       document.getElementById("signUpContainer").style.pointerEvents = "none";
       document.getElementById("signUpContainer").style.keyPress = "none";
@@ -164,8 +164,8 @@ export default ({
                   onKeyUp={() => {
                     let passEle = document.getElementById('passwd');
                     let confPassEle = document.getElementById('confirmPasswd');
-                    if (confPassEle.value != "") {
-                      if (passEle.value == confPassEle.value) {
+                    if (confPassEle.value !== "") {
+                      if (passEle.value === confPassEle.value) {
                         confPassEle.style.borderColor = 'green';
                       } else {
                         confPassEle.style.borderColor = 'red';
@@ -182,8 +182,8 @@ export default ({
                   onKeyUp={() => {
                     let passEle = document.getElementById('passwd');
                     let confPassEle = document.getElementById('confirmPasswd');
-                    if (passEle.value != "") {
-                      if (passEle.value == confPassEle.value) {
+                    if (passEle.value !== "") {
+                      if (passEle.value === confPassEle.value) {
                         confPassEle.style.borderColor = 'green';
                       } else {
                         confPassEle.style.borderColor = 'red';
