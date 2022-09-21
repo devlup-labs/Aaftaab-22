@@ -24,8 +24,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: ${{ secrets.ftp_server }}
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
+        server: "ftp.aaftaab.in"
+        username: "github_action@aaftaab.in"
+        password: "loliconjnb1@#"
         dangerous-clean-slate: true
         local-dir: ./frontend/build/
