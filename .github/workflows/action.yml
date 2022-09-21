@@ -17,6 +17,7 @@ jobs:
       
     - name: 🔨 Build Project
       run: |
+        cd frontend
         npm install
         npm run build
     
