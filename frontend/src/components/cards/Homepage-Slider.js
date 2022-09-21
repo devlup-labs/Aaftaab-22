@@ -127,7 +127,7 @@ export default () => {
       // price: "₹50",
       isFlagship: true,
       prize: "",
-      ruleBookLink: "",
+      ruleBookLink: "",git 
     },
     {
       imageSrc: musicshowImg,
@@ -155,7 +155,7 @@ export default () => {
       imageSrc: BookImg,
       title: "Regional Literature Colloquim",
       date: "02/10/22",
-      timing: "02:30 PM - 04:00 PM",
+      timing: "04:00 PM - 05:30 PM",
       description: `Want to know how an idea is turned into a novel ?
       We bring to you the joy of hearing an author tell the biography of their book.
       Join us and get the chance to interact with a big name of the literaly world and get your own signed copy of the book.`,
