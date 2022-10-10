@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -7,6 +8,7 @@ import { SectionDescription } from "components/misc/Typography.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { ReactComponent as SvgDecoratorBlob } from "images/svg-decorator-blob-6.svg";
+import { userContext } from "App";
 
 const HeaderContainer = tw.div`mt-10 w-full flex flex-col items-center`;
 const Subheading = tw(SubheadingBase)`mb-4`;
@@ -90,6 +92,8 @@ export default ({
   plans = null,
   primaryButtonText = "Buy Now"
 }) => {
+  const loggedIn = useContext(userContext).loggedIn;
+
   const defaultPlans = [
     {
       name: "Events Only",
@@ -97,6 +101,7 @@ export default ({
       // duration: "Monthly",
       mainFeature: "Access to all daytime events",
       features: ["Award-winning Writers Seminars", "All workshops", "All competitions"],
+      buyNowLink: "https://docs.google.com/forms/d/e/1FAIpQLScZjVMy6Jlgq5VusVpy7tirzFKXJ27BfUE3CZNY6vO7QoNo0A/viewform?usp=sf_link",
     },
     {
       name: "Events + Flagship",
@@ -105,6 +110,7 @@ export default ({
       mainFeature: "Access to all events",
       features: ["All daytime events", "All informal events"],
       featured: true,
+      buyNowLink: "https://docs.google.com/forms/d/e/1FAIpQLSeRZSeLJfspz-0Nxb9BrPNi0BGdZVeH3stVbjipBrn1hBF46w/viewform?usp=sf_link",
     },
     {
       name: "Flagship Only",
@@ -112,6 +118,7 @@ export default ({
       // duration: "Monthly",
       mainFeature: "Access to all informal events",
       features: ["Standup comedy", "Kavi sammelan", "Hip-hop Night", "and many more..."],
+      buyNowLink: "https://docs.google.com/forms/d/e/1FAIpQLSePNka_Ye5JIi5-JWx9d_M9wADFf4lMCNWLlkQHBVGwmMne-A/viewform?usp=sf_link",
     },
   ];
 
@@ -159,7 +166,24 @@ export default ({
                 ))}
               </PlanFeatures>
               <PlanAction>
-                <BuyNowButton css={!plan.featured && highlightGradientsCss[index]} onClick={() => {window.location.href = "https://unstop.com/o/sB5KQyZ?lb=HkDM9ZX"}}>{primaryButtonText}</BuyNowButton>
+                { loggedIn ?
+                  <BuyNowButton 
+                    css={!plan.featured && highlightGradientsCss[index]} 
+                    onClick={() => {
+                      window.location.href = plan.buyNowLink
+                    }}
+                  >
+                    { primaryButtonText }
+                  </BuyNowButton>
+                  :
+                  <Link to="/login">
+                    <BuyNowButton
+                      css={!plan.featured && highlightGradientsCss[index]}
+                    >
+                      {"Login to buy"}
+                    </BuyNowButton>
+                  </Link>
+                }
               </PlanAction>
             </Plan>
           ))}

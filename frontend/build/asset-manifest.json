@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9284a28.css",
-    "main.js": "/static/js/main.f4e84e67.js",
+    "main.css": "/static/css/main.5fb9100f.css",
+    "main.js": "/static/js/main.e227029e.js",
     "static/media/Suyash Surana.jpg": "/static/media/Suyash Surana.697cca925d70cb744fdf.jpg",
     "static/media/IMG_20220520_204750 - Ankush Gupta (B20CH006).jpg": "/static/media/IMG_20220520_204750 - Ankush Gupta (B20CH006).f808bb4794469fc60108.jpg",
+    "static/media/Uday Bhanu.jpg": "/static/media/Uday Bhanu.5955cd0d2ba03d623cd9.jpg",
     "static/media/Yash Bhargava.jpg": "/static/media/Yash Bhargava.ddb8108ace1e61ac74c4.jpg",
     "static/media/IMG_20220130_211252_339 - Vandan Moonat (B20CI046).jpg": "/static/media/IMG_20220130_211252_339 - Vandan Moonat (B20CI046).435c90a79c54b3c2f885.jpg",
     "static/media/IMG_1285 - Karan Thakur (B20CH021).JPG": "/static/media/IMG_1285 - Karan Thakur (B20CH021).562740fc1de8d1c66a33.JPG",
@@ -31,6 +32,7 @@
     "static/media/WhatsApp Image 2022-09-11 at 15.45.33 - Prabodh Sharma (M22DH009).jpeg": "/static/media/WhatsApp Image 2022-09-11 at 15.45.33 - Prabodh Sharma (M22DH009).ff66f5838266e114e5ca.jpeg",
     "static/media/HostingCloudLandingPage.jpeg": "/static/media/HostingCloudLandingPage.6b09b2aa8f447502dfc8.jpeg",
     "static/media/Vishal Yadav.jpg": "/static/media/Vishal Yadav.d55824ecd92a0bf0bf4b.jpg",
+    "static/media/folk_music.jfif": "/static/media/folk_music.4ab05671599f7911f51d.jfif",
     "static/media/hero-screenshot-1.png": "/static/media/hero-screenshot-1.40a097b525c2f8c9808e.png",
     "static/media/Treasure Hunt.jpg": "/static/media/Treasure Hunt.fe0d74467732e98a910f.jpg",
     "static/media/old-logo-text.png": "/static/media/old-logo-text.cec9c0b8eebb38575fbb.png",
@@ -39,7 +41,6 @@
     "static/media/BlogIndexPage.jpeg": "/static/media/BlogIndexPage.0f03fbdc27582d9a442b.jpeg",
     "static/media/DJ Night.jpg": "/static/media/DJ Night.8fc9e5cb68076557ff6f.jpg",
     "static/media/B20AI062(SG) - Gaurav Sangwan (B20AI062).jpg": "/static/media/B20AI062(SG) - Gaurav Sangwan (B20AI062).cf7ac428fa198e862296.jpg",
-    "static/media/Folk Music + Puppet show.jpg": "/static/media/Folk Music + Puppet show.6740a518c7c6157f5bb3.jpg",
     "static/media/WhatsApp Image 2022-08-22 at 10.40.45 PM - Tanay Anand (B20AI046).jpeg": "/static/media/WhatsApp Image 2022-08-22 at 10.40.45 PM - Tanay Anand (B20AI046).fdcdfecf9ff8202d65ca.jpeg",
     "static/media/PricingPage.jpeg": "/static/media/PricingPage.c6e93374a0c9c5f10c44.jpeg",
     "static/media/hero-screenshot-2.png": "/static/media/hero-screenshot-2.241aac1fbc66db29d873.png",
@@ -81,6 +82,7 @@
     "static/media/email-newsletter-icon.svg": "/static/media/email-newsletter-icon.aa78e407f4cc628898d03fbb84eab054.svg",
     "static/media/email-envelope.svg": "/static/media/email-envelope.09f59b228b67847fa9c917396a218b25.svg",
     "static/media/github-icon.svg": "/static/media/github-icon.df4cf2e9b3cfe3a731af5f4b2e455a02.svg",
+    "static/media/discord-icon.svg": "/static/media/discord-icon.44e5d307327e2a24231c666a016030a3.svg",
     "static/media/icons8-instagram.svg": "/static/media/icons8-instagram.8be0a6cb3caf268b95486860e6511503.svg",
     "static/media/instagram-icon.svg": "/static/media/instagram-icon.8be0a6cb3caf268b95486860e6511503.svg",
     "static/media/svg-decorator-blob-3.svg": "/static/media/svg-decorator-blob-3.5c5693940b53e4c42dd5315bbcc013ac.svg",
@@ -134,11 +136,11 @@
     "static/media/arrow-left-3-icon.svg": "/static/media/arrow-left-3-icon.087294c1fe78c7fd2f37c3a92b1f1dff.svg",
     "static/media/arrow-right-3-icon.svg": "/static/media/arrow-right-3-icon.5bf133930c89abdc6760c3a5dacf085b.svg",
     "static/media/handle-icon.svg": "/static/media/handle-icon.058b1c45d9adf0d47ce03b947bc6ac15.svg",
-    "main.e9284a28.css.map": "/static/css/main.e9284a28.css.map",
-    "main.f4e84e67.js.map": "/static/js/main.f4e84e67.js.map"
+    "main.5fb9100f.css.map": "/static/css/main.5fb9100f.css.map",
+    "main.e227029e.js.map": "/static/js/main.e227029e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9284a28.css",
-    "static/js/main.f4e84e67.js"
+    "static/css/main.5fb9100f.css",
+    "static/js/main.e227029e.js"
   ]
 }

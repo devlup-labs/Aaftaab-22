@@ -84,9 +84,9 @@ export default ({
       <Link to="/events">
         <NavLink>Events</NavLink>
       </Link>
-      <Link to="/sponsors">
+      {/* <Link to="/sponsors">
         <NavLink>Sponsors</NavLink>
-      </Link>
+      </Link> */}
       <Link to="/team">
         <NavLink>Team</NavLink>
       </Link>
