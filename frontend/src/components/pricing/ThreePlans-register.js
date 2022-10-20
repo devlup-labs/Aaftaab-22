@@ -15,7 +15,7 @@ const Subheading = tw(SubheadingBase)`mb-4`;
 const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center`;
 
-const PlansContainer = tw.div`flex justify-between flex-col lg:flex-row items-center lg:items-stretch relative`;
+const PlansContainer = tw.div`flex justify-between pb-10 px-2 flex-col lg:px-0 lg:flex-row items-center lg:items-stretch relative`;
 const Plan = styled.div`
   ${tw`w-full max-w-sm mt-16 lg:mr-8 lg:last:mr-0 text-center px-8 rounded-lg shadow relative pt-2 text-gray-900 bg-white flex flex-col`}
   .planHighlight {
@@ -167,14 +167,15 @@ export default ({
               </PlanFeatures>
               <PlanAction>
                 { loggedIn ?
-                  <BuyNowButton 
-                    css={!plan.featured && highlightGradientsCss[index]} 
-                    onClick={() => {
-                      window.location.href = plan.buyNowLink
-                    }}
-                  >
-                    { primaryButtonText }
-                  </BuyNowButton>
+                  // <BuyNowButton 
+                  //   css={!plan.featured && highlightGradientsCss[index]} 
+                  //   onClick={() => {
+                  //     window.location.href = plan.buyNowLink
+                  //   }}
+                  // >
+                  //   { primaryButtonText }
+                  // </BuyNowButton>
+                  null
                   :
                   <Link to="/login">
                     <BuyNowButton
@@ -184,11 +185,29 @@ export default ({
                     </BuyNowButton>
                   </Link>
                 }
+                
+                {/* <BuyNowButton
+                  css={!plan.featured && highlightGradientsCss[index]}
+                >
+                  {"Coming soon"}
+                </BuyNowButton> */}                
               </PlanAction>
             </Plan>
           ))}
           <DecoratorBlob/>
         </PlansContainer>
+        {
+          <iframe 
+            className="meraEventIframe"
+            src="https://www.meraevents.com/ticketWidget?eventId=253330&ucode=organizer&wcode=9063CD-9063CD-333333-9063CD-&theme=1" 
+            width="100%" 
+            height="700px" 
+            frameborder="0px" 
+            style={{
+              padding: "0px 8px",
+            }}
+          ></iframe>
+        }
       </ContentWithPaddingXl>
     </Container>
   );
