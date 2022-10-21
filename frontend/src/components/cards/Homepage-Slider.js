@@ -12,6 +12,7 @@ import { ReactComponent as StarIcon } from "feather-icons/dist/icons/star.svg";
 import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chevron-left.svg";
 import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
 import kaviSammelanImg from "../../images/flagship_events/Kavi samelan.png";
+import englishauthorbooksigning from "../../images/flagship_events/English Author Book Signing.jpg";
 import djImg from "../../images/flagship_events/DJ Night.jpg";
 import musicshowImg from "../../images/flagship_events/folk_music.jfif";
 import BookImg from "../../images/flagship_events/Book Signings.jpg";
@@ -108,107 +109,94 @@ export default () => {
   /* Change this according to your needs */
   const cards = [
     {
-      imageSrc: kaviSammelanImg,
+      imageSrc:
+        "https://kavisammelanlive.com/wp-content/uploads/2020/05/new-logo.png",
       title: "Kavi Sammelan",
-      description: `‘Kavyamaye ho uthega dil, jab sajegi kaviyon ki mehfil’. A poetic event (Kavi Sammelan) is being organized on this Aaftaab. The event will be presenting young and talented poets who will recite their poems and mushairas in front of the audience. Here the participants will get a topic on which they have to present their poetry. Also, participants could get a chance to interact with upcoming faces of poetry.`,
-      date: "TBD",
-      timing: "08:00 PM - 10:00 PM",
+      description: `काव्यमय हो उठेगा हर दिल, जब सजेगी कविओ की महफ़िल|  Get accompanied by Mr. Naveen Chourey, Mr. Shubham Pandey, Dr. Vivek Vijay and 
+      Mr. Akshat Chourasiya and their eminent work in an evening full of poems and mishairas.`,
+      date: "28 Oct. 2022",
+      timing: "9:30 PM - 11:30 PM",
       // price: "₹50",
       isFlagship: true,
       prize: "",
       ruleBookLink: "",
+      url: "#"
     },
     {
-      imageSrc: StandupIMG,
-      title: "Standup Comedy",
-      description: `Come and join us for an evening glimmered with sarcasm and humour, brought to you by one of the finest comics in the country and fill the evening with giggles and hootings.A comedic performance to a live audience, saturated with jokes and sarcasm with one of the best standup comics out there to entertain you.`,
-      date: "TBD",
-      timing: "09:00 PM - 10:30 PM",
+      imageSrc:
+        "https://media.istockphoto.com/vectors/stand-up-comedy-show-is-a-neon-sign-neon-symbol-symbol-bright-banner-vector-id910152132?k=20&m=910152132&s=612x612&w=0&h=fOngvbE0ar3mStiaosLhPut-qqSfqdRj4LNP4Atk8Ac=",
+      title: "Comedy Central",
+      description: `Come and join us for an evening filled with jokes, laughter and a touch of sarcasm, brought to you by one of the finest comics in the country!.`,
+      date: "29 Oct. 2022",
+      timing: "09:00 PM onwards",
       // price: "₹50",
       isFlagship: true,
       prize: "",
       ruleBookLink: "",
+      url: "#",
     },
     {
-      imageSrc: musicshowImg,
-      title: "Folk Music + Puppet Show",
-      description: `The term folk music and its equivalents in other languages denote many different kinds of music; the meaning of the term varies according to the part of the world, social class, and period of history. Doing justice to this year’s theme, Kaleidoscopes, Aaftaab will organise a Folk Music and Puppet Show, that will host regional folk musicians to celebrate the beauty and soulfulness of Rajasthani Folk Music. Join us as we immerse ourselves in resonating sounds of traditional instruments and the stories told by these musical storytellers.`,
-      date: "TBD",
-      timing: "06:00 PM - 07:00 PM",
-      // price: "₹50",
-      isFlagship: true,
-      prize: "",
-      ruleBookLink: "",
-    },
-    {
-      imageSrc: djImg,
-      title: "DJ Night",
+      imageSrc:
+        "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRqJTIwbmlnaHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      title: "Social Floor DJ",
       description: `As we reach the end of the festivities, join us, for one last celebration , as we embrace EDM and Hip Hop music, and dance to our hearts content!`,
-      date: "TBD",
-      timing: "08:30 PM - 11:00 PM",
+      date: "30 Oct. 2022",
+      timing: "08:30 PM onwards",
       // price: "₹50",
       isFlagship: true,
       prize: "",
       ruleBookLink: "",
+      url: "#"
     },
     {
-      imageSrc: BookImg,
+      imageSrc:
+        "https://images.unsplash.com/photo-1491309055486-24ae511c15c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGJvb2slMjBzaWduaW5nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       title: "Regional Literature Colloquim",
-      date: "TBD",
-      timing: "04:00 PM - 05:30 PM",
-      description: `Want to know how an idea is turned into a novel ?
-      We bring to you the joy of hearing an author tell the biography of their book.
-      Join us and get the chance to interact with a big name of the literaly world and get your own signed copy of the book.`,
+      date: "30 Oct. 2022",
+      timing: "02:00 PM - 03:00 PM",
+      description: `Immerse yourself in the beauty of regional literature and get the oppurtunity to interact with Mr. Madhav Hada, author of "Meera vs Meera" and Mr. Shiv Bodhi as they discuss their works, stories, struggles, and much more!.`,
       // price: "₹50",
       isFlagship: true,
       prize: "",
       ruleBookLink: "",
+      url: "#"
     },
     {
-      imageSrc: InterviewImg,
-      title: "Interview with Director",
-      description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
-      date: "TBD",
-      timing: "04:30 PM - 05:30 PM",
+      //imageSrc: Maaz,
+       imageSrc: englishauthorbooksigning,
+      title: "Eminent Author Book Signing",
+      date: "29 Oct. 2022",
+      timing: "02:30 AM - 04:00 PM",
+      description: `The biography of a book, as told by its author! Attend and interact with some of the biggest names in the literary world, and learn how a book is turned from a novel idea to a physical novel.`,
       // price: "₹50",
-      isFlagship: true,
+      isFlagship: false,
       prize: "",
       ruleBookLink: "",
+      url: "#"
     },
     {
-      imageSrc: Maaz,
-      title: "Book Signing by Maaz Bin Bilal",
-      date: "TBD",
-      timing: "02:30 PM - 04:00 PM",
-      // price: "₹50",
-      description: `
-      Aaftaab is here with the book signing event of the book “Temple Lamp- Verses of Banaras”, a Persian to English translation of Mirza Galib's "Chirag-e-Diar" by Mr. Maaz Bin Bilal.
-      Join us and get the chance to envision the colours of Kahi as described by Mirza Galib from the author Mr. Bilal himself.`,
-      isFlagship: true,
-      prize: "",
-      ruleBookLink: "",
-    },
-    {
-      imageSrc: TreasurehuntImg,
-      title: "Treasure Hunt",
-      description: `Life is a treasure hunt game. You have to solve the clues from incidents that happened and move further to find the ultimate fortune. So are you into solving the clues and making your way through the wilderness in the pursuit of long lost treasure/ fortune ? We offer you all this thrilling experience in Aaftaab 2022’s very own “ClueMinati”. In “ClueMinati”  you will be given clues which will lead you to the ultimate treasure. Players with the aid of clues will  compete in trying to find the hidden treasure.`,
-      date: "TBD",
-      timing: "06:00 PM - 08:00 PM",
+      imageSrc:
+        "https://thumbs.dreamstime.com/b/old-map-vintage-travel-equipment-expedition-concept-treasure-hunt-holiday-gifts-old-map-vintage-travel-equipment-133932740.jpg",
+      title: "Clueminati",
+      description: `Are you into solving the clues and making your way through wilderness in pursuit of long lost treaure? We offer you all this thrilling experience in Aaftaab 2022's very own treasure hunt, "Clueminati"!`,
+      date: "29 Oct. 2022",
+      timing: "07:00 PM onwards",
       // price: "₹50",
       registrableEvent: true,
-      minTeamSize: 1,
-      maxTeamSize: 3,
+      minTeamSize: 3,
+      maxTeamSize: 5,
       isFlagship: true,
       prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
       ruleBookLink: "",
+      url: "#"
     },
     {
       imageSrc:
         "https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Unplugged Night",
-      description: `Tune in to watch Sangam, the music club of IIT Jodhpur, fill the air with magical, melodious music.`,
-      date: "TBD",
-      timing: "10:00 PM - 11:00 PM",
+      description: `Tune in to watch Sangam, the music society of IIT Jodhpur, fill the air with magical, melodious music.`,
+      date: "29 Oct. 2022",
+      timing: "11:00 PM onwards",
       // price: "₹50",
       isFlagship: true,
       prize: "",
@@ -220,25 +208,12 @@ export default () => {
         "https://images.unsplash.com/photo-1485814837398-ed2048f57499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Open Mic",
       description: `This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...`,
-      date: "TBD",
+      date: "30 Oct. 2022",
       timing: "05:30 PM - 07:30 PM",
       // price: "₹50",
       registrableEvent: true,
       minTeamSize: 1,
       maxTeamSize: 1,
-      isFlagship: true,
-      prize: "",
-      ruleBookLink: "",
-      url: "#"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1583318432730-a19c89692612?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
-      title: "Prom Night",
-      description: `The perfect opportunity for you and your significant other, to spend some time together, and live the ultimate teenage romance dream.`,
-      date: "TBD",
-      timing: "10:30 PM - 11:30 PM",
-      // price: "₹50",
       isFlagship: true,
       prize: "",
       ruleBookLink: "",

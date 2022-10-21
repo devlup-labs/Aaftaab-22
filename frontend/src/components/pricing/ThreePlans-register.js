@@ -196,7 +196,7 @@ export default ({
           ))}
           <DecoratorBlob/>
         </PlansContainer>
-        {
+        { !loggedIn ? null :
           <iframe 
             className="meraEventIframe"
             src="https://www.meraevents.com/ticketWidget?eventId=253330&ucode=organizer&wcode=9063CD-9063CD-333333-9063CD-&theme=1" 
