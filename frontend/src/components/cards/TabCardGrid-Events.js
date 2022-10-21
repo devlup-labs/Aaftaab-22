@@ -96,6 +96,19 @@ export default ({
       },
       {
         imageSrc:
+          "https://images.unsplash.com/photo-1538449327350-43b4fcfd35ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGludGVydmlldyUyMHdpdGglMjBkaXJlY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        title: "Youth Authors Conference",
+        description: `Presenting to you a conference where you can listen our young authors discuss their ideas, thoughts and personal experiences through literature. Come and get a chance to interact with Mr. Maaz Bin Bilal, author of "Ghazalnāma: Poems from Delhi, Belfast, and Urdu" and Mr. Mihir Vatsa, author of "Tales Of Hazaribagh: An Intimate Exploration Of Chhotanagpur Plateau".`,
+        date: "29 Oct. 2022",
+        timing: "04:00 PM - 05:30 PM",
+        // price: "₹50",
+        isFlagship: true,
+        prize: "",
+        ruleBookLink: "",
+        url: "#"
+      },
+      {
+        imageSrc:
           "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRqJTIwbmlnaHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         title: "Social Floor DJ",
         description: `As we reach the end of the festivities, join us, for one last celebration , as we embrace EDM and Hip Hop music, and dance to our hearts content!`,
