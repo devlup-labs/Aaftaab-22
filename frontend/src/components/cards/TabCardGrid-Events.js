@@ -13,6 +13,7 @@ import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-5
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7.svg";
 import englishauthorbooksigning from "../../images/flagship_events/English Author Book Signing.jpg";
 import nishant_suri from "../../images/flagship_events/final_suri-01.png";
+import InterviewImg from "../../images/flagship_events/Interview with Director.jpg";
 import Maaz from '../../images/flagship_events/Maaz-Bin-Bilal.jpg'
 import musicshowImg from "../../images/flagship_events/folk_music.jfif";
 
@@ -108,18 +109,41 @@ export default ({
         url: "#"
       },
       {
-        //imageSrc: Maaz,
-         imageSrc: englishauthorbooksigning,
-        title: "Eminent Author Book Signing",
-        date: "29 Oct. 2022",
-        timing: "02:30 AM - 04:00 PM",
-        description: `The biography of a book, as told by its author! Attend and interact with some of the biggest names in the literary world, and learn how a book is turned from a novel idea to a physical novel.`,
+        imageSrc: InterviewImg,
+        title: "Interview with Director",
+        description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
+        date: "29th Oct. 2022",
+        timing: "",
         // price: "₹50",
-        isFlagship: false,
+        isFlagship: true,
+        prize: "",
+        ruleBookLink: "",
+      },
+      {
+        imageSrc:  englishauthorbooksigning,
+        title: "Eminent Young Authors Conference",
+        description: `Presenting to you a conference where you can listen our young authors discuss their ideas, thoughts and personal experiences through literature. Come and get a chance to interact with Mr. Maaz Bin Bilal, author of "Ghazalnāma: Poems from Delhi, Belfast, and Urdu" and Mr. Mihir Vatsa, author of "Tales Of Hazaribagh: An Intimate Exploration Of Chhotanagpur Plateau".`,
+        date: "29 Oct. 2022",
+        timing: "04:30 PM - 06:00 PM",
+        // price: "₹50",
+        isFlagship: true,
         prize: "",
         ruleBookLink: "",
         url: "#"
       },
+      // {
+      //   //imageSrc: Maaz,
+      //    imageSrc: englishauthorbooksigning,
+      //   title: "Eminent Author Book Signing",
+      //   date: "29 Oct. 2022",
+      //   timing: "02:30 AM - 04:00 PM",
+      //   description: `The biography of a book, as told by its author! Attend and interact with some of the biggest names in the literary world, and learn how a book is turned from a novel idea to a physical novel.`,
+      //   // price: "₹50",
+      //   isFlagship: false,
+      //   prize: "",
+      //   ruleBookLink: "",
+      //   url: "#"
+      // },
       {
         imageSrc:
           "https://images.unsplash.com/photo-1491309055486-24ae511c15c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGJvb2slMjBzaWduaW5nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
@@ -390,12 +414,22 @@ const getDay2Cards = () => {
       url: "#"
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1538449327350-43b4fcfd35ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGludGVydmlldyUyMHdpdGglMjBkaXJlY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-      title: "Youth Authors Conference",
+      imageSrc: InterviewImg,
+      title: "Interview with Director",
+      description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
+      date: "29th Oct. 2022",
+      timing: "",
+      // price: "₹50",
+      isFlagship: true,
+      prize: "",
+      ruleBookLink: "",
+    },
+    {
+      imageSrc:  englishauthorbooksigning,
+      title: "Eminent Young Authors Conference",
       description: `Presenting to you a conference where you can listen our young authors discuss their ideas, thoughts and personal experiences through literature. Come and get a chance to interact with Mr. Maaz Bin Bilal, author of "Ghazalnāma: Poems from Delhi, Belfast, and Urdu" and Mr. Mihir Vatsa, author of "Tales Of Hazaribagh: An Intimate Exploration Of Chhotanagpur Plateau".`,
       date: "29 Oct. 2022",
-      timing: "04:00 PM - 05:30 PM",
+      timing: "04:30 PM - 06:00 PM",
       // price: "₹50",
       isFlagship: true,
       prize: "",
@@ -483,19 +517,19 @@ const getDay2Cards = () => {
       ruleBookLink: "https://docs.google.com/document/d/1F4s_w9P9_8VPVF9tI9iqDj-kezyIHWO0CorzNuG3FdU/edit?usp=sharing",
       url: "#"
     },
-    {
-      //imageSrc: Maaz,
-       imageSrc: englishauthorbooksigning,
-      title: "Eminent Author Book Signing",
-      date: "29 Oct. 2022",
-      timing: "02:30 AM - 04:00 PM",
-      description: `The biography of a book, as told by its author! Attend and interact with some of the biggest names in the literary world, and learn how a book is turned from a novel idea to a physical novel.`,
-      // price: "₹50",
-      isFlagship: false,
-      prize: "",
-      ruleBookLink: "",
-      url: "#"
-    },
+    // {
+    //   //imageSrc: Maaz,
+    //    imageSrc: englishauthorbooksigning,
+    //   title: "Eminent Author Book Signing",
+    //   date: "29 Oct. 2022",
+    //   timing: "02:30 AM - 04:00 PM",
+    //   description: `The biography of a book, as told by its author! Attend and interact with some of the biggest names in the literary world, and learn how a book is turned from a novel idea to a physical novel.`,
+    //   // price: "₹50",
+    //   isFlagship: false,
+    //   prize: "",
+    //   ruleBookLink: "",
+    //   url: "#"
+    // },
     {
       imageSrc:
         "https://thumbs.dreamstime.com/b/old-map-vintage-travel-equipment-expedition-concept-treasure-hunt-holiday-gifts-old-map-vintage-travel-equipment-133932740.jpg",

@@ -161,18 +161,41 @@ export default () => {
       ruleBookLink: "",
       url: "#"
     },
+    // {
+    //   //imageSrc: Maaz,
+    //    imageSrc: englishauthorbooksigning,
+    //   title: "Eminent Author Book Signing",
+    //   date: "29 Oct. 2022",
+    //   timing: "02:30 AM - 04:00 PM",
+    //   description: `The biography of a book, as told by its author! Attend and interact with some of the biggest names in the literary world, and learn how a book is turned from a novel idea to a physical novel.`,
+    //   // price: "₹50",
+    //   isFlagship: false,
+    //   prize: "",
+    //   ruleBookLink: "",
+    //   url: "#"
+    // },
     {
-      //imageSrc: Maaz,
-       imageSrc: englishauthorbooksigning,
-      title: "Eminent Author Book Signing",
+      imageSrc:  englishauthorbooksigning,
+      title: "Eminent Young Authors Conference",
+      description: `Presenting to you a conference where you can listen our young authors discuss their ideas, thoughts and personal experiences through literature. Come and get a chance to interact with Mr. Maaz Bin Bilal, author of "Ghazalnāma: Poems from Delhi, Belfast, and Urdu" and Mr. Mihir Vatsa, author of "Tales Of Hazaribagh: An Intimate Exploration Of Chhotanagpur Plateau".`,
       date: "29 Oct. 2022",
-      timing: "02:30 AM - 04:00 PM",
-      description: `The biography of a book, as told by its author! Attend and interact with some of the biggest names in the literary world, and learn how a book is turned from a novel idea to a physical novel.`,
+      timing: "04:30 PM - 06:00 PM",
       // price: "₹50",
-      isFlagship: false,
+      isFlagship: true,
       prize: "",
       ruleBookLink: "",
       url: "#"
+    },
+    {
+      imageSrc: InterviewImg,
+      title: "Interview with Director",
+      description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
+      date: "29th Oct. 2022",
+      timing: "",
+      // price: "₹50",
+      isFlagship: true,
+      prize: "",
+      ruleBookLink: "",
     },
     {
       imageSrc:
