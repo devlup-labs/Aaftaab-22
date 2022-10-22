@@ -13,6 +13,7 @@ import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chev
 import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
 import kaviSammelanImg from "../../images/flagship_events/Kavi samelan.png";
 import englishauthorbooksigning from "../../images/flagship_events/English Author Book Signing.jpg";
+import nishant_suri from "../../images/flagship_events/final_suri-01.png";
 import djImg from "../../images/flagship_events/DJ Night.jpg";
 import musicshowImg from "../../images/flagship_events/folk_music.jfif";
 import BookImg from "../../images/flagship_events/Book Signings.jpg";
@@ -123,8 +124,7 @@ export default () => {
       url: "#"
     },
     {
-      imageSrc:
-        "https://media.istockphoto.com/vectors/stand-up-comedy-show-is-a-neon-sign-neon-symbol-symbol-bright-banner-vector-id910152132?k=20&m=910152132&s=612x612&w=0&h=fOngvbE0ar3mStiaosLhPut-qqSfqdRj4LNP4Atk8Ac=",
+      imageSrc: nishant_suri,
       title: "Comedy Central",
       description: `Come and join us for an evening filled with jokes, laughter and a touch of sarcasm, brought to you by one of the finest comics in the country!.`,
       date: "29 Oct. 2022",

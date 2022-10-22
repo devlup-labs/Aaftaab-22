@@ -12,6 +12,7 @@ import { ReactComponent as StarIcon } from "images/star-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-5.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7.svg";
 import englishauthorbooksigning from "../../images/flagship_events/English Author Book Signing.jpg";
+import nishant_suri from "../../images/flagship_events/final_suri-01.png";
 import Maaz from '../../images/flagship_events/Maaz-Bin-Bilal.jpg'
 import musicshowImg from "../../images/flagship_events/folk_music.jfif";
 
@@ -82,8 +83,7 @@ export default ({
         url: "#"
       },
       {
-        imageSrc:
-          "https://media.istockphoto.com/vectors/stand-up-comedy-show-is-a-neon-sign-neon-symbol-symbol-bright-banner-vector-id910152132?k=20&m=910152132&s=612x612&w=0&h=fOngvbE0ar3mStiaosLhPut-qqSfqdRj4LNP4Atk8Ac=",
+        imageSrc: nishant_suri,
         title: "Comedy Central",
         description: `Come and join us for an evening filled with jokes, laughter and a touch of sarcasm, brought to you by one of the finest comics in the country!.`,
         date: "29 Oct. 2022",
@@ -513,8 +513,7 @@ const getDay2Cards = () => {
       url: "#"
     },
     {
-      imageSrc:
-        "https://media.istockphoto.com/vectors/stand-up-comedy-show-is-a-neon-sign-neon-symbol-symbol-bright-banner-vector-id910152132?k=20&m=910152132&s=612x612&w=0&h=fOngvbE0ar3mStiaosLhPut-qqSfqdRj4LNP4Atk8Ac=",
+      imageSrc: nishant_suri,
       title: "Comedy Central",
       description: `Come and join us for an evening filled with jokes, laughter and a touch of sarcasm, brought to you by one of the finest comics in the country!.`,
       date: "29 Oct. 2022",
