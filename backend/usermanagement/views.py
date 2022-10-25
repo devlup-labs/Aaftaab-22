@@ -129,13 +129,14 @@ def get_all_events_for_an_user(request):
         if Participant.objects.filter(email=email).exists():
             user_name = Participant.objects.filter(email=email).first().name
             pass_type = Participant.objects.filter(email=email).first().pass_type
+            accommodation = Participant.objects.filter(email=email).first().accommodation
             event_list = []
             emailIds = EmailIds.objects.filter(emailid=email)
             for emailId in emailIds:
                 teams = Team.objects.filter(teamid=emailId.teamid)
                 for team in teams:
                     event_list.append(team.event_registered)
-            return Response({"event_list": event_list, "user_name": user_name,"pass_type":pass_type}, status=status.HTTP_200_OK)
+            return Response({"event_list": event_list, "user_name": user_name,"pass_type":pass_type,"accommodation":accommodation}, status=status.HTTP_200_OK)
         else:
             return Response(status=status.HTTP_404_NOT_FOUND)
     return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)

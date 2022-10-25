@@ -49,6 +49,7 @@ const PostTextContainer = tw.div``
 export default ({
   eventsRegistered_Name = [],
   passType = "none",
+  accommodation=false,
 }) => {
   // This setting is for animating the event background image on hover
   const postBackgroundSizeAnimation = {
@@ -145,8 +146,16 @@ export default ({
     else return "Events and Flagship"
   }
 
+  function getAccommodationTitle(accommodation) {
+    if (accommodation) {
+      return "+ Accommodation"
+    }
+    return ""
+  }
+
   const passDetails = {
     title: getPassTitle(passType),
+    description: getAccommodationTitle(accommodation),
   }
 
   return (
@@ -165,7 +174,7 @@ export default ({
                     imageSrc={passDetails.postImageSrc}
                   />}
                   {passDetails.title && <Title>{passDetails.title}</Title>}
-                  {passDetails.description && <Description>{passDetails.description}</Description>}
+                  {(passDetails.description != "") && <Description>{passDetails.description}</Description>}
                 </Post> :
                 <Post>
                   <Title>You have not purchased any fest pass</Title>

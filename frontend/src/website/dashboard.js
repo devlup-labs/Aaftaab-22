@@ -24,6 +24,7 @@ function Dashboard() {
   const [userName, setUserName] = useState("");
   const [events, setEvents] = useState([]);
   const [passType, setPassType] = useState("none");
+  const [accommodation,setAccommodation] = useState(false);
 
   useEffect(async () => {
     const token = localStorage.getItem("token");
@@ -51,6 +52,7 @@ function Dashboard() {
           setUserName(data.user_name);
           setEvents(data.event_list);
           setPassType(data.pass_type);
+          setAccommodation(data.accommodation);
         })
 
         .catch((error)=>{
@@ -83,7 +85,7 @@ function Dashboard() {
         </ContentWithPaddingXl>
       </Container>
 
-      <EventDetailSection eventsRegistered_Name={events} passType={passType}/>
+      <EventDetailSection eventsRegistered_Name={events} passType={passType} accommodation={accommodation}/>
       
       <Footer />
     </AnimationRevealPage>
