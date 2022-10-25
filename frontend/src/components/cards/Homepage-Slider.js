@@ -13,6 +13,7 @@ import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chev
 import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
 import kaviSammelanImg from "../../images/flagship_events/Kavi samelan.png";
 import englishauthorbooksigning from "../../images/flagship_events/English Author Book Signing.jpg";
+import nishant_suri from "../../images/flagship_events/final_suri-01.png";
 import djImg from "../../images/flagship_events/DJ Night.jpg";
 import musicshowImg from "../../images/flagship_events/folk_music.jfif";
 import BookImg from "../../images/flagship_events/Book Signings.jpg";
@@ -123,8 +124,7 @@ export default () => {
       url: "#"
     },
     {
-      imageSrc:
-        "https://media.istockphoto.com/vectors/stand-up-comedy-show-is-a-neon-sign-neon-symbol-symbol-bright-banner-vector-id910152132?k=20&m=910152132&s=612x612&w=0&h=fOngvbE0ar3mStiaosLhPut-qqSfqdRj4LNP4Atk8Ac=",
+      imageSrc: nishant_suri,
       title: "Comedy Central",
       description: `Come and join us for an evening filled with jokes, laughter and a touch of sarcasm, brought to you by one of the finest comics in the country!.`,
       date: "29 Oct. 2022",
@@ -174,18 +174,41 @@ export default () => {
       ruleBookLink: "",
       url: "#"
     },
+    // {
+    //   //imageSrc: Maaz,
+    //    imageSrc: englishauthorbooksigning,
+    //   title: "Eminent Author Book Signing",
+    //   date: "29 Oct. 2022",
+    //   timing: "02:30 AM - 04:00 PM",
+    //   description: `The biography of a book, as told by its author! Attend and interact with some of the biggest names in the literary world, and learn how a book is turned from a novel idea to a physical novel.`,
+    //   // price: "₹50",
+    //   isFlagship: false,
+    //   prize: "",
+    //   ruleBookLink: "",
+    //   url: "#"
+    // },
     {
-      //imageSrc: Maaz,
-       imageSrc: englishauthorbooksigning,
-      title: "Eminent Author Book Signing",
+      imageSrc:  englishauthorbooksigning,
+      title: "Eminent Young Authors Conference",
+      description: `Presenting to you a conference where you can listen our young authors discuss their ideas, thoughts and personal experiences through literature. Come and get a chance to interact with Mr. Maaz Bin Bilal, author of "Ghazalnāma: Poems from Delhi, Belfast, and Urdu" and Mr. Mihir Vatsa, author of "Tales Of Hazaribagh: An Intimate Exploration Of Chhotanagpur Plateau".`,
       date: "29 Oct. 2022",
-      timing: "02:30 AM - 04:00 PM",
-      description: `The biography of a book, as told by its author! Attend and interact with some of the biggest names in the literary world, and learn how a book is turned from a novel idea to a physical novel.`,
+      timing: "04:30 PM - 06:00 PM",
       // price: "₹50",
-      isFlagship: false,
+      isFlagship: true,
       prize: "",
       ruleBookLink: "",
       url: "#"
+    },
+    {
+      imageSrc: InterviewImg,
+      title: "Interview with Director",
+      description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
+      date: "29th Oct. 2022",
+      timing: "",
+      // price: "₹50",
+      isFlagship: true,
+      prize: "",
+      ruleBookLink: "",
     },
     {
       imageSrc:
