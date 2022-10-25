@@ -126,7 +126,7 @@ export default ({
         title: "Interview with Director",
         description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
         date: "29th Oct. 2022",
-        timing: "",
+        timing: "4:30 PM - 5:30 PM",
         // price: "₹50",
         isFlagship: true,
         prize: "",
@@ -137,7 +137,7 @@ export default ({
         title: "Eminent Young Authors Conference",
         description: `Presenting to you a conference where you can listen our young authors discuss their ideas, thoughts and personal experiences through literature. Come and get a chance to interact with Mr. Maaz Bin Bilal, author of "Ghazalnāma: Poems from Delhi, Belfast, and Urdu" and Mr. Mihir Vatsa, author of "Tales Of Hazaribagh: An Intimate Exploration Of Chhotanagpur Plateau".`,
         date: "29 Oct. 2022",
-        timing: "04:30 PM - 06:00 PM",
+        timing: "02:30 PM - 04:00 PM",
         // price: "₹50",
         isFlagship: true,
         prize: "",
@@ -157,19 +157,19 @@ export default ({
       //   ruleBookLink: "",
       //   url: "#"
       // },
-      {
-        imageSrc:
-          "https://images.unsplash.com/photo-1491309055486-24ae511c15c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGJvb2slMjBzaWduaW5nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        title: "Regional Literature Colloquim",
-        date: "30 Oct. 2022",
-        timing: "02:00 PM - 03:00 PM",
-        description: `Immerse yourself in the beauty of regional literature and get the oppurtunity to interact with Mr. Madhav Hada, author of "Meera vs Meera" and Mr. Shiv Bodhi as they discuss their works, stories, struggles, and much more!.`,
-        // price: "₹50",
-        isFlagship: true,
-        prize: "",
-        ruleBookLink: "",
-        url: "#"
-      },
+      // {
+      //   imageSrc:
+      //     "https://images.unsplash.com/photo-1491309055486-24ae511c15c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGJvb2slMjBzaWduaW5nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      //   title: "Regional Literature Colloquim",
+      //   date: "30 Oct. 2022",
+      //   timing: "02:00 PM - 03:00 PM",
+      //   description: `Immerse yourself in the beauty of regional literature and get the oppurtunity to interact with Mr. Madhav Hada, author of "Meera vs Meera" and Mr. Shiv Bodhi as they discuss their works, stories, struggles, and much more!.`,
+      //   // price: "₹50",
+      //   isFlagship: true,
+      //   prize: "",
+      //   ruleBookLink: "",
+      //   url: "#"
+      // },
       {
         imageSrc:
           "https://thumbs.dreamstime.com/b/old-map-vintage-travel-equipment-expedition-concept-treasure-hunt-holiday-gifts-old-map-vintage-travel-equipment-133932740.jpg",
@@ -218,7 +218,7 @@ export default ({
         title: "Open Mic",
         description: `This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...`,
         date: "30 Oct. 2022",
-        timing: "05:30 PM - 07:30 PM",
+        timing: "06:30 PM - 08:30 PM",
         // price: "₹50",
         registrableEvent: true,
         minTeamSize: 1,
@@ -410,39 +410,28 @@ const getDay2Cards = () => {
       ruleBookLink: "",
       url: "#"
     },
-    {
-      imageSrc:
-        "https://lettering-daily.b-cdn.net/wp-content/uploads/2018/09/me-doing-calligraphy-2.jpg",
-      title: "Comic Writing Workshop",
-      date: "29 Oct. 2022",
-      timing: "10:00 AM - 11:30 AM",
-      description: `Have you always had a “Creative Knack” but felt like you were unable to express yourself? This is your chance! Join us in the Comic Writing Workshop organized by Tinkle Studios and learn how to pen down your thoughts in a lucrative way so as to do justice to your imagination. `,
-      // price: "₹50",
-      registrableEvent: true,
-      minTeamSize: 1,
-      maxTeamSize: 1,
-      isFlagship: false,
-      prize: "",
-      ruleBookLink: "",
-      url: "#"
-    },
-    {
-      imageSrc: InterviewImg,
-      title: "Interview with Director",
-      description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
-      date: "29th Oct. 2022",
-      timing: "",
-      // price: "₹50",
-      isFlagship: true,
-      prize: "",
-      ruleBookLink: "",
-    },
+    // {
+    //   imageSrc:
+    //     "https://lettering-daily.b-cdn.net/wp-content/uploads/2018/09/me-doing-calligraphy-2.jpg",
+    //   title: "Comic Writing Workshop",
+    //   date: "29 Oct. 2022",
+    //   timing: "10:00 AM - 11:30 AM",
+    //   description: `Have you always had a “Creative Knack” but felt like you were unable to express yourself? This is your chance! Join us in the Comic Writing Workshop organized by Tinkle Studios and learn how to pen down your thoughts in a lucrative way so as to do justice to your imagination. `,
+    //   // price: "₹50",
+    //   registrableEvent: true,
+    //   minTeamSize: 1,
+    //   maxTeamSize: 1,
+    //   isFlagship: false,
+    //   prize: "",
+    //   ruleBookLink: "",
+    //   url: "#"
+    // },
     {
       imageSrc:  englishauthorbooksigning,
       title: "Eminent Young Authors Conference",
       description: `Presenting to you a conference where you can listen our young authors discuss their ideas, thoughts and personal experiences through literature. Come and get a chance to interact with Mr. Maaz Bin Bilal, author of "Ghazalnāma: Poems from Delhi, Belfast, and Urdu" and Mr. Mihir Vatsa, author of "Tales Of Hazaribagh: An Intimate Exploration Of Chhotanagpur Plateau".`,
       date: "29 Oct. 2022",
-      timing: "04:30 PM - 06:00 PM",
+      timing: "02:30 PM - 04:00 PM",
       // price: "₹50",
       isFlagship: true,
       prize: "",
@@ -544,6 +533,17 @@ const getDay2Cards = () => {
     //   url: "#"
     // },
     {
+      imageSrc: InterviewImg,
+      title: "Interview with Director",
+      description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
+      date: "29th Oct. 2022",
+      timing: "4:30 PM - 5:30 PM",
+      // price: "₹50",
+      isFlagship: true,
+      prize: "",
+      ruleBookLink: "",
+    },
+    {
       imageSrc:
         "https://thumbs.dreamstime.com/b/old-map-vintage-travel-equipment-expedition-concept-treasure-hunt-holiday-gifts-old-map-vintage-travel-equipment-133932740.jpg",
       title: "Clueminati",
@@ -628,7 +628,7 @@ const getDay3Cards = () => {
         "https://images.unsplash.com/photo-1486693128850-a77436e7ba3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWN0aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       title: "Nautanki Saala",
       date: "30 Oct. 2022",
-      timing: "01:00 PM - 02:30 PM",
+      timing: "01:00 PM - 02:00 PM",
       description: `Theatre brings out a whole new level of creativity and skill, but do you know how a theater play is written? We bring to you a theater play writing workshop featuring renowned artists from Actor Theatre Rajasthan.`,
       // price: "₹50",
       registrableEvent: true,
@@ -671,19 +671,19 @@ const getDay3Cards = () => {
       ruleBookLink: "https://docs.google.com/document/d/1WA69HY5pfC7zgEOx8XGTLX7slZOB2dTJcMZLfzdpDMY/edit?usp=sharing",
       url: "#"
     },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1491309055486-24ae511c15c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGJvb2slMjBzaWduaW5nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-      title: "Regional Literature Colloquim",
-      date: "30 Oct. 2022",
-      timing: "02:00 PM - 03:00 PM",
-      description: `Immerse yourself in the beauty of regional literature and get the oppurtunity to interact with Mr. Madhav Hada, author of "Meera vs Meera" and Mr. Shiv Bodhi as they discuss their works, stories, struggles, and much more!.`,
-      // price: "₹50",
-      isFlagship: true,
-      prize: "",
-      ruleBookLink: "",
-      url: "#"
-    },
+    // {
+    //   imageSrc:
+    //     "https://images.unsplash.com/photo-1491309055486-24ae511c15c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGJvb2slMjBzaWduaW5nc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    //   title: "Regional Literature Colloquim",
+    //   date: "30 Oct. 2022",
+    //   timing: "02:00 PM - 03:00 PM",
+    //   description: `Immerse yourself in the beauty of regional literature and get the oppurtunity to interact with Mr. Madhav Hada, author of "Meera vs Meera" and Mr. Shiv Bodhi as they discuss their works, stories, struggles, and much more!.`,
+    //   // price: "₹50",
+    //   isFlagship: true,
+    //   prize: "",
+    //   ruleBookLink: "",
+    //   url: "#"
+    // },
     {
       imageSrc:
         "https://cf.bstatic.com/data/xphoto/1182x887/440/44045903.jpg?size=S",
@@ -702,7 +702,7 @@ const getDay3Cards = () => {
         "https://theeventsgroup.co.nz/wp-content/uploads/2017/09/Lets-Get-Quizical-Logo-Square-3-1024x1024.jpg",
       title: "Let's Get Quizzical",
       date: "30 Oct. 2022",
-      timing: "10:00 AM - 11:30 AM",
+      timing: "6:00 PM - 8:00 PM",
       description: `Quiz can be fun, but themed quiz is definitely fun! Bringing to you the Music, Entertainment, Literature and Arts "MELA QUIZ!".`,
       // price: "₹50",
       registrableEvent: true,
@@ -719,7 +719,7 @@ const getDay3Cards = () => {
       title: "Open Mic",
       description: `This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...`,
       date: "30 Oct. 2022",
-      timing: "05:30 PM - 07:30 PM",
+      timing: "06:30 PM - 08:30 PM",
       // price: "₹50",
       registrableEvent: true,
       minTeamSize: 1,
