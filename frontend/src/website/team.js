@@ -41,7 +41,7 @@ function Team() {
     subheading: "Our Team",
     cards: [
       {
-        imageSrc: Yawer,     
+        imageSrc: "https://i.postimg.cc/Dw3BYVrt/yxwerabbas-13092022-0001-Yawer-Abbas-B20-CI050-1.jpg",     
         name: "Yawer Abbas",
         links: [
           {
@@ -58,7 +58,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: Stuti,
+        imageSrc: "https://i.postimg.cc/0QXVtbnf/Stuti-Pradeep-Aswani.jpg",
         name: "Stuti Aswani",
         links: [
           {
@@ -74,7 +74,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: SayanSanyal,
+        imageSrc: "https://i.postimg.cc/rpCb9V7n/1662833916599-01-Sayan-Sanyal-M21-DH014-1.jpg",
         name: "Sayan Sanyal",
         links: [
           {
@@ -95,7 +95,7 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: Vishal,
+        imageSrc: "https://i.postimg.cc/yxJv2srz/Vishal-Yadav-1.jpg",
         position: "Head",
         name: "Vishal Kumar Yadav",
         links: [
@@ -116,7 +116,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: Jahnab,
+        imageSrc: "https://i.postimg.cc/28sKRLD9/Jahnab-Dutta-1.jpg",
         position: "Head",
         name: "Jahnab Dutta",
         links: [
@@ -137,7 +137,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: YashB,
+        imageSrc: "https://i.postimg.cc/R0MG4cbd/Yash-Bhargava.jpg",
         position: "Mentor",
         name: "Yash Bhargava",
         links: [
@@ -158,7 +158,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: Vikash,
+        imageSrc: "https://i.postimg.cc/y65fc3k6/Vikas-Yadav.jpg",
         position: "Mentor",
         name: "Vikash Yadav",
         links: [
@@ -185,7 +185,7 @@ function Team() {
     // subheading: "lorem ipsum",
     cards: [
       {
-        imageSrc: MahendraJakhar,
+        imageSrc: "https://i.postimg.cc/t4FmXRRq/IMG-6632-4-Mahendra-Jakhar-B20-CI021.jpg",
         position: "Head",
         name: "Mahendra Jakhar",
         links: [
@@ -203,7 +203,7 @@ function Team() {
       },
     
       {
-        imageSrc: Tanay,
+        imageSrc: "https://i.postimg.cc/gjfNWQfL/Whats-App-Image-2022-08-22-at-10-40-45-PM-Tanay-Anand-B20-AI046.jpg",
         position: "Head",
         name: "Tanay Anand",
         links: [
@@ -220,7 +220,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: KaranThakur,
+        imageSrc: "https://i.postimg.cc/D0mMFq0H/IMG-1285-Karan-Thakur-B20-CH021.jpg",
         position: "Head",
         name: "Karan Thakur",
         links: [
@@ -243,7 +243,7 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: VandanMoonat,
+        imageSrc: "https://i.postimg.cc/YqGssfJm/IMG-20220130-211252-339-Vandan-Moonat-B20-CI046.jpg",
         position: "Head",
         name: "Vandan Moonat",
         links: [
@@ -259,7 +259,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: Prabodh,
+        imageSrc: "https://i.postimg.cc/15qvHRqG/Whats-App-Image-2022-09-11-at-15-45-33-Prabodh-Sharma-M22-DH009.jpg",
         position: "Head",
         name: "Prabodh Sharma",
         links: [
@@ -297,7 +297,7 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: Shreya,
+        imageSrc: "https://i.postimg.cc/MGx3XkXy/Shreya-Pagaria.jpg",
         position: "Head",
         name: "Shreya Pagaria",
         links: [
@@ -313,7 +313,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: Akshat,
+        imageSrc: "https://i.postimg.cc/fRd1JjCh/Akshat-Jain.jpg",
         position: "Head",
         name: "Akshat Jain",
         links: [
@@ -353,7 +353,7 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: ArunSahu,
+        imageSrc:"https://i.postimg.cc/5NTZ4kw3/Arun-sahu-2.jpg",
         position: "Head",
         name: "Arun Sahu",
         links: [
@@ -369,7 +369,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: UdayBhanu,
+        imageSrc: "https://i.postimg.cc/26SHF4Qy/IMG-20220511-203838-Uday-Bhanu-B20-EE075.jpg",
         position: "Head",
         name: "Uday Bhanu",
         links: [
@@ -395,7 +395,7 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: Ayush,
+        imageSrc: "https://i.postimg.cc/4yMF3mhd/Ayush-Ayush-Didel-B20-ME019.jpg",
         position: "Head",
         name: "Ayush Didel",
         links: [
@@ -411,7 +411,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: Ishita,
+        imageSrc: "https://i.postimg.cc/vB0NpPY5/pic-Ishita-M21-MS034.jpg",
         position: "Head",
         name: "Ishita",
         links: [
@@ -436,7 +436,7 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: ShyanPal,
+        imageSrc: "https://i.postimg.cc/bJy5VXhz/1-CFD3-BE5-A542-4501-BC09-E710-A524-AAF8-Shyan-Pal-M22-SL009-2.jpg",
         position: "Head",
         name: "Shyan Pal",
         links: [
@@ -451,7 +451,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: Suyash,
+        imageSrc: "https://i.postimg.cc/kgNw0jwD/Suyash-Surana.jpg",
         position: "Head",
         name: "Suyash Surana",
         links: [
@@ -466,7 +466,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: AnkushGupta,
+        imageSrc: "https://i.postimg.cc/MGDPQsjg/IMG-20220520-204750-Ankush-Gupta-B20-CH006.jpg",
         position: "Head",
         name: "Ankush Gupta",
         links: [
@@ -488,7 +488,7 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: Gaurav,
+        imageSrc: "https://i.postimg.cc/Xv0mFG1B/B20-AI062-SG-Gaurav-Sangwan-B20-AI062-1.jpg",
         position: "Head",
         name: "Gaurav Sangwan",
         links: [
@@ -521,7 +521,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: Yash,
+        imageSrc: "https://i.postimg.cc/xjFZ5FF2/profile-pic-2-Yash-Anand-B20-ES010-1.jpg",
         position: "Head",
         name: "Yash Anand",
         links: [
