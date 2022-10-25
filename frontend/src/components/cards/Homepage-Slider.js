@@ -111,7 +111,7 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://kavisammelanlive.com/wp-content/uploads/2020/05/new-logo.png",
+        "https://i.postimg.cc/c4v4rwwx/Kavi-samelan.png",
       title: "Kavi Sammelan",
       description: `काव्यमय हो उठेगा हर दिल, जब सजेगी कविओ की महफ़िल|  Get accompanied by Mr. Naveen Chourey, Mr. Shubham Pandey, Dr. Vivek Vijay and 
       Mr. Akshat Chourasiya and their eminent work in an evening full of poems and mishairas.`,
@@ -124,7 +124,7 @@ export default () => {
       url: "#"
     },
     {
-      imageSrc: nishant_suri,
+      imageSrc: "https://i.postimg.cc/XJ24vYvB/final-suri-01-1.png",
       title: "Comedy Central",
       description: `Come and join us for an evening filled with jokes, laughter and a touch of sarcasm, brought to you by one of the finest comics in the country!.`,
       date: "29 Oct. 2022",
@@ -137,7 +137,7 @@ export default () => {
     },
     {
       imageSrc:
-        "https://i.postimg.cc/G354S8t8/Shiv-Bodhi.jpg",
+        "https://i.postimg.cc/HsNn2Bd8/Illustrious-Regional-Author-Interview-Shiv-Bodhi.jpg",
       title: "Illustrious Regional Author Interview",
       description: `We are here to interview a prominent artist and teacher of Yoga and Buddhism, Mr. Shiv Bodhi. Join us and get a chance to learn about him and his spiritual writings and lifestyle.`,
       date: "30 Oct. 2022",
@@ -150,7 +150,7 @@ export default () => {
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRqJTIwbmlnaHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "https://i.postimg.cc/JzBndZz6/DJ-Night.jpg",
       title: "Social Floor DJ",
       description: `As we reach the end of the festivities, join us, for one last celebration , as we embrace EDM and Hip Hop music, and dance to our hearts content!`,
       date: "30 Oct. 2022",
@@ -188,7 +188,7 @@ export default () => {
     //   url: "#"
     // },
     {
-      imageSrc:  englishauthorbooksigning,
+      imageSrc:  "https://i.postimg.cc/Gt23Psfj/English-Author-Book-Signing.jpg",
       title: "Eminent Young Authors Conference",
       description: `Presenting to you a conference where you can listen our young authors discuss their ideas, thoughts and personal experiences through literature. Come and get a chance to interact with Mr. Maaz Bin Bilal, author of "Ghazalnāma: Poems from Delhi, Belfast, and Urdu" and Mr. Mihir Vatsa, author of "Tales Of Hazaribagh: An Intimate Exploration Of Chhotanagpur Plateau".`,
       date: "29 Oct. 2022",
@@ -200,7 +200,7 @@ export default () => {
       url: "#"
     },
     {
-      imageSrc: InterviewImg,
+      imageSrc: "https://i.postimg.cc/DzkZV0W2/Interview-with-Director.jpg",
       title: "Interview with Director",
       description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
       date: "29th Oct. 2022",
@@ -212,7 +212,7 @@ export default () => {
     },
     {
       imageSrc:
-        "https://thumbs.dreamstime.com/b/old-map-vintage-travel-equipment-expedition-concept-treasure-hunt-holiday-gifts-old-map-vintage-travel-equipment-133932740.jpg",
+        "https://i.postimg.cc/rF7yWsNS/Treasure-Hunt.jpg",
       title: "Clueminati",
       description: `Are you into solving the clues and making your way through wilderness in pursuit of long lost treaure? We offer you all this thrilling experience in Aaftaab 2022's very own treasure hunt, "Clueminati"!`,
       date: "29 Oct. 2022",
@@ -228,7 +228,7 @@ export default () => {
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "https://i.postimg.cc/wxfjq0t4/Unplugged-Night.jpg",
       title: "Unplugged Night",
       description: `Tune in to watch Sangam, the music society of IIT Jodhpur, fill the air with magical, melodious music.`,
       date: "29 Oct. 2022",
@@ -241,7 +241,7 @@ export default () => {
     },
     {
       imageSrc:
-        "https://static.wixstatic.com/media/ceed95_d8bb5308b4024b9781aa508cc6825f82~mv2.jpg/v1/fill/w_568,h_756,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_8316_JPG.jpg",
+        "https://i.postimg.cc/Ght9GZw1/Distinguisghed-autor-interview.webp",
       title: "Distinguished Author Interview ",
       description: `Come and dive into an interesting and insightful interview of Mr. Madhav Hada, a famous and prominent cultural and historical writer whose books are a great reflection of India's ancient culture and history.`,
       date: "30 Oct. 2022",
@@ -254,7 +254,7 @@ export default () => {
     },
     {
       imageSrc:
-        "https://cf.bstatic.com/data/xphoto/1182x887/440/44045903.jpg?size=S",
+        "https://i.postimg.cc/g2RzKpg1/Theatre-performances.jpg",
       title: "Theatre Performance",
       date: "30 Oct. 2022",
       timing: "03:30 PM - 05:00 PM",
@@ -267,7 +267,7 @@ export default () => {
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1485814837398-ed2048f57499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "https://i.postimg.cc/63z5GhM3/Open-mic.jpg",
       title: "Open Mic",
       description: `This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...`,
       date: "30 Oct. 2022",
