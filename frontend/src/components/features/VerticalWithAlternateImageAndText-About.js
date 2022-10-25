@@ -45,7 +45,7 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
-      imageSrc: "https://www.neh.gov/sites/default/files/styles/medium/public/2020-06/Open-Book.jpg?itok=wMg1EBM-",
+      imageSrc: "https://i.postimg.cc/bwJD6xHt/Open-book.jpg",
       // subtitle: "Basic Intro",
       // title: "Brief Introduction",
       description:
@@ -54,7 +54,7 @@ export default () => {
     },
 
     {
-      imageSrc: "https://i.pinimg.com/originals/ea/59/2c/ea592c610178fde4900757153581fe2e.jpg",
+      imageSrc: "https://i.postimg.cc/vBdmdf9X/ea592c610178fde4900757153581fe2e-2.jpg",
       // subtitle: "what it's all about?",
       // title: "Theme",
       description:
@@ -64,7 +64,7 @@ export default () => {
     },
 
     {
-      imageSrc: "https://us.123rf.com/450wm/tomertu/tomertu2010/tomertu201000252/157378249-old-feather-quill-ink-pen-with-inkwell-and-old-books-over-wooden-desk-in-front-of-black-wall-backgro.jpg?ver=6",
+      imageSrc: "https://i.postimg.cc/YCs4Tvby/157378249-old-feather-quill-ink-pen-with-inkwell-and-old-books-over-wooden-desk-in-front-of-black-wa.jpg",
       // subtitle: "Lit is Hit",
       // title: "Why Lit?",
       description:
