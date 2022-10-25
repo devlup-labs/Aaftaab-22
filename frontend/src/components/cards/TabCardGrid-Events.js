@@ -97,11 +97,11 @@ export default ({
       },
       {
         imageSrc:
-          "https://images.unsplash.com/photo-1538449327350-43b4fcfd35ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGludGVydmlldyUyMHdpdGglMjBkaXJlY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        title: "Youth Authors Conference",
-        description: `Presenting to you a conference where you can listen our young authors discuss their ideas, thoughts and personal experiences through literature. Come and get a chance to interact with Mr. Maaz Bin Bilal, author of "Ghazalnāma: Poems from Delhi, Belfast, and Urdu" and Mr. Mihir Vatsa, author of "Tales Of Hazaribagh: An Intimate Exploration Of Chhotanagpur Plateau".`,
-        date: "29 Oct. 2022",
-        timing: "04:00 PM - 05:30 PM",
+          "https://i.postimg.cc/G354S8t8/Shiv-Bodhi.jpg",
+        title: "Illustrious Regional Author Interview",
+        description: `We are here to interview a prominent artist and teacher of Yoga and Buddhism, Mr. Shiv Bodhi. Join us and get a chance to learn about him and his spiritual writings and lifestyle.`,
+        date: "30 Oct. 2022",
+        timing: "11:30 AM - 12:30 PM",
         // price: "₹50",
         isFlagship: true,
         prize: "",
@@ -201,13 +201,26 @@ export default ({
       },
       {
         imageSrc:
+          "https://static.wixstatic.com/media/ceed95_d8bb5308b4024b9781aa508cc6825f82~mv2.jpg/v1/fill/w_568,h_756,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_8316_JPG.jpg",
+        title: "Distinguished Author Interview ",
+        description: `Come and dive into an interesting and insightful interview of Mr. Madhav Hada, a famous and prominent cultural and historical writer whose books are a great reflection of India's ancient culture and history.`,
+        date: "30 Oct. 2022",
+        timing: "02:00 PM - 03:00 PM",
+        // price: "₹50",
+        isFlagship: true,
+        prize: "",
+        ruleBookLink: "",
+        url: "#"
+      },
+      {
+        imageSrc:
           "https://cf.bstatic.com/data/xphoto/1182x887/440/44045903.jpg?size=S",
         title: "Theatre Performance",
         date: "30 Oct. 2022",
         timing: "03:30 PM - 05:00 PM",
         description: `Theatre is an expression of literature. Moving forward with the theme of Kaleidoscope, we will be hosting a Theatre Performance to enrich our audience with acting and music.`,
         // price: "₹50",
-        isFlagship: false,
+        isFlagship: true,
         prize: "",
         ruleBookLink: "",
         url: "#"
@@ -609,6 +622,32 @@ const getDay3Cards = () => {
     },
     {
       imageSrc:
+        "https://i.postimg.cc/G354S8t8/Shiv-Bodhi.jpg",
+      title: "Illustrious Regional Author Interview",
+      description: `We are here to interview a prominent artist and teacher of Yoga and Buddhism, Mr. Shiv Bodhi. Join us and get a chance to learn about him and his spiritual writings and lifestyle.`,
+      date: "30 Oct. 2022",
+      timing: "11:30 AM - 12:30 PM",
+      // price: "₹50",
+      isFlagship: true,
+      prize: "",
+      ruleBookLink: "",
+      url: "#"
+    },
+    {
+      imageSrc:
+        "https://static.wixstatic.com/media/ceed95_d8bb5308b4024b9781aa508cc6825f82~mv2.jpg/v1/fill/w_568,h_756,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_8316_JPG.jpg",
+      title: "Distinguished Author Interview ",
+      description: `Come and dive into an interesting and insightful interview of Mr. Madhav Hada, a famous and prominent cultural and historical writer whose books are a great reflection of India's ancient culture and history.`,
+      date: "30 Oct. 2022",
+      timing: "02:00 PM - 03:00 PM",
+      // price: "₹50",
+      isFlagship: true,
+      prize: "",
+      ruleBookLink: "",
+      url: "#"
+    },
+    {
+      imageSrc:
         "https://media.istockphoto.com/photos/man-in-virtual-reality-headset-or-vr-eyeglasses-future-technology-picture-id1366007490?b=1&k=20&m=1366007490&s=170667a&w=0&h=TWviqjGU4RVKZLoVCkvwhLa-pGa0DWvBYbIe17fkRCE=",
       title: "Science Fiction Workshop",
       date: "29 Oct. 2022",
@@ -692,7 +731,7 @@ const getDay3Cards = () => {
       timing: "03:30 PM - 05:00 PM",
       description: `Theatre is an expression of literature. Moving forward with the theme of Kaleidoscope, we will be hosting a Theatre Performance to enrich our audience with acting and music.`,
       // price: "₹50",
-      isFlagship: false,
+      isFlagship: true,
       prize: "",
       ruleBookLink: "",
       url: "#"
