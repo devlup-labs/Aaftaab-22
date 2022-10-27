@@ -6,7 +6,7 @@ module.exports = {
     extend:{
       backgroundImage:{
         'img2': "url('https://i.postimg.cc/8c1CgGwX/bg-img2.jpg')",
-        'img1': "url('https://i.postimg.cc/DwSy8wVV/output-onlinepngtools-1.png')",
+        'img1': "url('https://i.postimg.cc/htyT2dZ2/output-onlinepngtools-1-2.png')",
       },
     },
     screens: {

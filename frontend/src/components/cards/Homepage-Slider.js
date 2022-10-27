@@ -206,7 +206,7 @@ export default () => {
       title: "Interview with Director",
       description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
       date: "29th Oct. 2022",
-      timing: "4:30 PM - 5:30 PM",
+      timing: "5:30 PM - 6:30 PM",
       // price: "₹50",
       isFlagship: true,
       prize: "",
