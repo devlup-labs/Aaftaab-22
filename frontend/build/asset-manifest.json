@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5fb9100f.css",
-    "main.js": "/static/js/main.80c8205d.js",
+    "main.js": "/static/js/main.73067d51.js",
     "static/media/Uday Bhanu.jpg": "/static/media/Uday Bhanu.5955cd0d2ba03d623cd9.jpg",
     "static/media/final_suri-01.png": "/static/media/final_suri-01.2cc0cf718b2f8fd72e7e.png",
     "static/media/Suyash Surana.jpg": "/static/media/Suyash Surana.f82c30daba5a76f6e7f5.jpg",
@@ -32,6 +32,7 @@
     "static/media/AboutUsPage.jpeg": "/static/media/AboutUsPage.c9232ae2548e9f49c26b.jpeg",
     "static/media/Kavi samelan.png": "/static/media/Kavi samelan.0e3ec03434aaba3b20a4.png",
     "static/media/Kaledioscope.jpg": "/static/media/Kaledioscope.182c57518492512bfbb2.jpg",
+    "static/media/Divyanshi.jpeg": "/static/media/Divyanshi.179a3310de7a100e7851.jpeg",
     "static/media/Theatre_performances.jpg": "/static/media/Theatre_performances.6ae2ed371fa902059857.jpg",
     "static/media/BlogIndexPage.jpeg": "/static/media/BlogIndexPage.0f03fbdc27582d9a442b.jpeg",
     "static/media/Vikas Yadav.jpeg": "/static/media/Vikas Yadav.19725bef9ac9017bed03.jpeg",
@@ -159,10 +160,10 @@
     "static/media/arrow-right-3-icon.svg": "/static/media/arrow-right-3-icon.5bf133930c89abdc6760c3a5dacf085b.svg",
     "static/media/handle-icon.svg": "/static/media/handle-icon.058b1c45d9adf0d47ce03b947bc6ac15.svg",
     "main.5fb9100f.css.map": "/static/css/main.5fb9100f.css.map",
-    "main.80c8205d.js.map": "/static/js/main.80c8205d.js.map"
+    "main.73067d51.js.map": "/static/js/main.73067d51.js.map"
   },
   "entrypoints": [
     "static/css/main.5fb9100f.css",
-    "static/js/main.80c8205d.js"
+    "static/js/main.73067d51.js"
   ]
 }

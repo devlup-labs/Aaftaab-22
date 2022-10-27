@@ -34,6 +34,7 @@ import Stuti from '../images/team/Stuti Pradeep Aswani.jpg'
 import Shreya from '../images/team/Shreya Pagaria.jpg'
 import Akshat from '../images/team/Akshat Jain.jpeg'
 import UdayBhanu from '../images/team/Uday Bhanu.jpg'
+import Divyanshi from '../images/team/Divyanshi.jpeg'
 
 function Team() {
   const team0 = {
@@ -505,7 +506,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: DefaultUser,
+        imageSrc: Divyanshi,
         position: "Head",
         name: "Divyanshi Singh Bora",
         links: [

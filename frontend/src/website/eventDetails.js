@@ -53,6 +53,10 @@ function Events() {
                         {
                             key: "Prize",
                             value: `${card.prize}`
+                        },
+                        {
+                            key:"Rulebook",
+                            value: `${card.ruleBookLink}`
                         }
                     ] : 
                     (
@@ -69,6 +73,10 @@ function Events() {
                             {
                                 key: "Prize",
                                 value: `${card.prize}`
+                            },
+                            {
+                                key:"Rulebook",
+                                value: `${card.ruleBookLink}`
                             }
                         ] :
                         (
@@ -81,6 +89,10 @@ function Events() {
                                 {
                                     key: "Prize",
                                     value: `${card.prize}`
+                                },
+                                {
+                                    key:"Rulebook",
+                                    value: `${card.ruleBookLink}`
                                 }
                             ] :
                             null

@@ -93,8 +93,7 @@ export default ({
       {
         imageSrc: kaviSammelanImg,
         title: "Kavi Sammelan",
-        description: `काव्यमय हो उठेगा हर दिल, जब सजेगी कविओ की महफ़िल|  Get accompanied by Mr. Naveen Chourey, Mr. Shubham Pandey, Dr. Vivek Vijay and 
-        Mr. Akshat Chourasiya and their eminent work in an evening full of poems and mishairas.`,
+        description: `काव्यमय हो उठेगा हर दिल, जब सजेगी कविओ की महफ़िल|  Get accompanied by Mr. Naveen Chourey, Mr. Shubham Pandey, Dr. Vivek Vijay, Mr. Akash Naurangi, Mr. Abhijeet Sharma and Mr. Vaibhav Vaishanav and their eminent work in an evening full of poems and mishairas.`,
         date: "28 Oct. 2022",
         timing: "9:30 PM - 11:30 PM",
         // price: "₹50",
@@ -400,8 +399,7 @@ const getDay1Cards = () => {
     {
       imageSrc: kaviSammelanImg,
       title: "Kavi Sammelan",
-      description: `काव्यमय हो उठेगा हर दिल, जब सजेगी कविओ की महफ़िल|  Get accompanied by Mr. Naveen Chourey, Mr. Shubham Pandey, Dr. Vivek Vijay and 
-      Mr. Akshat Chourasiya and their eminent work in an evening full of poems and mishairas.`,
+      description: `काव्यमय हो उठेगा हर दिल, जब सजेगी कविओ की महफ़िल|  Get accompanied by Mr. Naveen Chourey, Mr. Shubham Pandey, Dr. Vivek Vijay, Mr. Akash Naurangi, Mr. Abhijeet Sharma and Mr. Vaibhav Vaishanav and their eminent work in an evening full of poems and mishairas.`,
       date: "28 Oct. 2022",
       timing: "9:30 PM - 11:30 PM",
       // price: "₹50",
@@ -473,7 +471,7 @@ const getDay2Cards = () => {
       maxTeamSize: 3,
       isFlagship: false,
       prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-      ruleBookLink: "https://docs.google.com/document/d/17sDLAXgd6rGfqWAnvotCnOOIwbqsh6xXGyg3l4OufWI/edit?usp=sharing",
+      ruleBookLink: "https://drive.google.com/file/d/1lFZeY2w-rIPlqUjytmduxt1xpyz1qoKA/view?usp=sharing",
       url: "#"
     },
     {
@@ -489,7 +487,7 @@ const getDay2Cards = () => {
       maxTeamSize: 3,
       isFlagship: false,
       prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-      ruleBookLink: "https://docs.google.com/document/d/1WLY2lJkYvNRFKc1BsoLyLEiLj8-n8SnoqUDeInVr3KA/edit?usp=sharing",
+      ruleBookLink: "https://drive.google.com/file/d/1nXf4pA_Sg8Gwr-vJOpOCDRXe5BMCuw2C/view?usp=sharing",
       url: "#"
     },
     {
@@ -504,7 +502,7 @@ const getDay2Cards = () => {
       maxTeamSize: 1,
       isFlagship: false,
       prize: "1st: ₹3000, 2nd: ₹2000, 3rd: ₹1000",
-      ruleBookLink: "https://docs.google.com/document/d/1f9WbPTuBP9imQrxAJ1uLR4zPse5JQvSZCCajldAuJC4/edit?usp=drivesdk",
+      ruleBookLink: "https://drive.google.com/file/d/1Pguwnf6B57pps06uyGjGKltQUfnFVORT/view?usp=sharing",
       url: "#"
     },
     {
@@ -519,7 +517,7 @@ const getDay2Cards = () => {
       maxTeamSize: 5,
       isFlagship: false,
       prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-      ruleBookLink: "https://docs.google.com/document/d/1JDWIPBhzvkEHS_VfBQ6XHT8sYmuuycfgdeYijoVpPP8/edit",
+      ruleBookLink: "https://drive.google.com/file/d/131dZFc8mu0VNQXNv3pNd5ilr0JSvduQh/view?usp=sharing",
       url: "#"
     },
     {
@@ -534,7 +532,7 @@ const getDay2Cards = () => {
       maxTeamSize: 5,
       isFlagship: false,
       prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-      ruleBookLink: "https://docs.google.com/document/d/1F4s_w9P9_8VPVF9tI9iqDj-kezyIHWO0CorzNuG3FdU/edit?usp=sharing",
+      ruleBookLink: "https://drive.google.com/file/d/1JMe84uW3Ie9kTBWKZ4c53VJNlB7DrC54/view?usp=sharing",
       url: "#"
     },
     // {
@@ -615,11 +613,11 @@ const getDay3Cards = () => {
       // price: "₹50",
       description: `Everyone can give a speech. But who can give a speech under a minute? Let's check this out in "Just A Minute Speech" where people will scrabble for their words when the clock is ticking.`,
       registrableEvent: true,
-      minTeamSize: 3,
-      maxTeamSize: 5,
+      minTeamSize: 1,
+      maxTeamSize: 1,
       isFlagship: false,
       prize: "1st: ₹3000, 2nd: ₹2000, 3rd: ₹1000",
-      ruleBookLink: "https://docs.google.com/document/d/1ueVJdmJSABE0L5v9tD3ej51n6AnRjtOhyaqwhS6KTBQ/edit",
+      ruleBookLink: "https://drive.google.com/file/d/1GcU2XaZuYk4p6iD-u-p7GhZOH040hhPb/view?usp=sharing",
       url: "#"
     },
     {
@@ -688,7 +686,7 @@ const getDay3Cards = () => {
       maxTeamSize: 5,
       isFlagship: false,
       prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-      ruleBookLink: "https://docs.google.com/document/d/19IQhQGfQjWhjV6KFS-PxbtYASSSUGfDzLDfrszVRnJc/edit",
+      ruleBookLink: "https://drive.google.com/file/d/1p-hKGctCWlA4Vr8ymYB0nAaX_Q5aBfz8/view?usp=sharing",
       url: "#"
     },
     {
@@ -703,7 +701,7 @@ const getDay3Cards = () => {
       maxTeamSize: 5,
       isFlagship: false,
       prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-      ruleBookLink: "https://docs.google.com/document/d/1WA69HY5pfC7zgEOx8XGTLX7slZOB2dTJcMZLfzdpDMY/edit?usp=sharing",
+      ruleBookLink: "https://drive.google.com/file/d/1zKKYxkLlUhzN4ihTsVwBbGPh6lkQ0hPe/view?usp=sharing",
       url: "#"
     },
     // {
@@ -743,7 +741,7 @@ const getDay3Cards = () => {
       maxTeamSize: 5,
       isFlagship: false,
       prize: "",
-      ruleBookLink: "https://docs.google.com/document/d/14F3vtdIii99zCn5dOiy1pMn731ARBWEu5ZuWvmcdCfY/edit",
+      ruleBookLink: "https://drive.google.com/file/d/15CuQ0nXVTNhJ7kHCMcwjleuGCAjz809q/view?usp=sharing",
       url: "#"
     },
     {

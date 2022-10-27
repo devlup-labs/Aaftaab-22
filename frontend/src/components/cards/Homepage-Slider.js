@@ -117,8 +117,7 @@ export default () => {
     {
       imageSrc: kaviSammelanImg,
       title: "Kavi Sammelan",
-      description: `काव्यमय हो उठेगा हर दिल, जब सजेगी कविओ की महफ़िल|  Get accompanied by Mr. Naveen Chourey, Mr. Shubham Pandey, Dr. Vivek Vijay and 
-      Mr. Akshat Chourasiya and their eminent work in an evening full of poems and mishairas.`,
+      description: `काव्यमय हो उठेगा हर दिल, जब सजेगी कविओ की महफ़िल|  Get accompanied by Mr. Naveen Chourey, Mr. Shubham Pandey, Dr. Vivek Vijay, Mr. Akash Naurangi, Mr. Abhijeet Sharma and Mr. Vaibhav Vaishanav and their eminent work in an evening full of poems and mishairas.`,
       date: "28 Oct. 2022",
       timing: "9:30 PM - 11:30 PM",
       // price: "₹50",

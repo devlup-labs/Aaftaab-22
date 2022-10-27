@@ -170,7 +170,14 @@ export default ({
                     console.log(statistic.key);
                     return (
                       <Statistic key={index}>
-                        <Value>{statistic.value}</Value>
+                        {
+                          statistic.key=="Rulebook" ?
+                          <a href={statistic.value} target="_blank">
+                            <Value>Link</Value>
+                          </a>
+                          :
+                          <Value>{statistic.value}</Value>
+                        }
                         <Key>{statistic.key}</Key>
                       </Statistic>
                     );

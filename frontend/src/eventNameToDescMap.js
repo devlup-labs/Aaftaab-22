@@ -71,7 +71,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 1,
     isFlagship: false,
     prize: "1st: ₹3000, 2nd: ₹2000, 3rd: ₹1000",
-    ruleBookLink: "https://docs.google.com/document/d/1f9WbPTuBP9imQrxAJ1uLR4zPse5JQvSZCCajldAuJC4/edit?usp=drivesdk",
+    ruleBookLink: "https://drive.google.com/file/d/1Ce8ODluUNb11MMOsiGteja6mVl6irRZQ/view?usp=sharing",
     url: "#"
   },
   noob_quiz: {
@@ -86,7 +86,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 5,
     isFlagship: false,
     prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-    ruleBookLink: "https://docs.google.com/document/d/1JDWIPBhzvkEHS_VfBQ6XHT8sYmuuycfgdeYijoVpPP8/edit",
+    ruleBookLink: "https://drive.google.com/file/d/1Ce8ODluUNb11MMOsiGteja6mVl6irRZQ/view?usp=sharing",
     url: "#"
   },
   word_games: {
@@ -101,7 +101,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 5,
     isFlagship: false,
     prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-    ruleBookLink: "https://docs.google.com/document/d/1F4s_w9P9_8VPVF9tI9iqDj-kezyIHWO0CorzNuG3FdU/edit?usp=sharing",
+    ruleBookLink: "https://drive.google.com/file/d/1ZY2CZZ0kWlxZwnXswoIg6Vbv0D2N7zr2/view?usp=sharing",
     url: "#"
   },
   treasure_hunt: {
@@ -127,11 +127,11 @@ export const eventNameToDescMap = {
     // price: "₹50",
     description: `Everyone can give a speech. But who can give a speech under a minute? Let's check this out in "Just A Minute Speech" where people will scrabble for their words when the clock is ticking.`,
     registrableEvent: true,
-    minTeamSize: 3,
-    maxTeamSize: 5,
+    minTeamSize: 1,
+    maxTeamSize: 1,
     isFlagship: false,
     prize: "1st: ₹3000, 2nd: ₹2000, 3rd: ₹1000",
-    ruleBookLink: "https://docs.google.com/document/d/1ueVJdmJSABE0L5v9tD3ej51n6AnRjtOhyaqwhS6KTBQ/edit",
+    ruleBookLink: "https://drive.google.com/file/d/1Ce8ODluUNb11MMOsiGteja6mVl6irRZQ/view?usp=sharing",
     url: "#"
   },
   hindi_debate: {
@@ -146,7 +146,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 3,
     isFlagship: false,
     prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-    ruleBookLink: "https://docs.google.com/document/d/17sDLAXgd6rGfqWAnvotCnOOIwbqsh6xXGyg3l4OufWI/edit?usp=sharing",
+    ruleBookLink: "https://drive.google.com/file/d/1kL8V5iKDBoxeVPxehDfWhzfVypo-DMht/view?usp=sharing",
     url: "#"
   },
   english_debate: {
@@ -162,7 +162,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 3,
     isFlagship: false,
     prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-    ruleBookLink: "https://docs.google.com/document/d/1WLY2lJkYvNRFKc1BsoLyLEiLj8-n8SnoqUDeInVr3KA/edit?usp=sharing",
+    ruleBookLink: "https://drive.google.com/file/d/1IcXo5yLxvRVKb36-Kl_ohc7Ag5Hb4DlY/view?usp=sharing",
     url: "#"
   },
   character_reenactment:{
@@ -177,7 +177,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 5,
     isFlagship: false,
     prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-    ruleBookLink: "https://docs.google.com/document/d/19IQhQGfQjWhjV6KFS-PxbtYASSSUGfDzLDfrszVRnJc/edit",
+    ruleBookLink: "https://drive.google.com/file/d/14lI1zAYuLYdkFIrEHnF_6oAgtJQHA4UN/view?usp=sharing",
     url: "#"
   },
   mythology_quiz: {
@@ -207,7 +207,7 @@ export const eventNameToDescMap = {
       maxTeamSize: 5,
       isFlagship: false,
       prize: "",
-      ruleBookLink: "https://docs.google.com/document/d/14F3vtdIii99zCn5dOiy1pMn731ARBWEu5ZuWvmcdCfY/edit",
+      ruleBookLink: "https://drive.google.com/file/d/1jOjRC5oyzrf0ZY4glSZ1TzunkcsKAK27/view?usp=sharing",
       url: "#"
     },
   open_mic: {
