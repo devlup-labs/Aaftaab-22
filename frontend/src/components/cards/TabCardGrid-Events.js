@@ -118,7 +118,7 @@ export default ({
       {
         imageSrc: Shiv,
         title: "Illustrious Regional Author Interview",
-        description: `We are here to interview a prominent artist and teacher of Yoga and Buddhism, Mr. Shiv Bodhi. Join us and get a chance to learn about him and his spiritual writings and lifestyle.`,
+        description: `We are here to interview a prominent writer, critic, poet and teacher, leading weaker sections in education and having a leading role in Rajasthani Dalit literature, Mr. Shiv Bodhi. Join us and get a chance to learn about him and his spiritual writings and lifestyle.`,
         date: "30 Oct. 2022",
         timing: "11:30 AM - 12:30 PM",
         // price: "₹50",
@@ -625,7 +625,7 @@ const getDay3Cards = () => {
     {
       imageSrc: Shiv,
       title: "Illustrious Regional Author Interview",
-      description: `We are here to interview a prominent artist and teacher of Yoga and Buddhism, Mr. Shiv Bodhi. Join us and get a chance to learn about him and his spiritual writings and lifestyle.`,
+      description: `We are here to interview a prominent writer, critic, poet and teacher, leading weaker sections in education and having a leading role in Rajasthani Dalit literature, Mr. Shiv Bodhi. Join us and get a chance to learn about him and his spiritual writings and lifestyle.`,
       date: "30 Oct. 2022",
       timing: "11:30 AM - 12:30 PM",
       // price: "₹50",
