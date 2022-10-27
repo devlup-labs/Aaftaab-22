@@ -5,6 +5,9 @@ import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 import imgLogo from "../../images/old-logo.png"
+import kaledioscopelogo from "../../images/About us/Kaledioscope.jpg"
+import oldfeatherquill from "../../images/About us/old-feather-quill-ink-pen-with-inkwell-and-old-books-over-wooden-desk-in-front-of-black-wa.jpg"
+import openbook from "../../images/About us/Open-book.jpg"
 
 const Container = tw.div`relative`;
 
@@ -45,7 +48,7 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
-      imageSrc: "https://i.postimg.cc/bwJD6xHt/Open-book.jpg",
+      imageSrc: openbook,
       // subtitle: "Basic Intro",
       // title: "Brief Introduction",
       description:
@@ -54,7 +57,7 @@ export default () => {
     },
 
     {
-      imageSrc: "https://i.postimg.cc/vBdmdf9X/ea592c610178fde4900757153581fe2e-2.jpg",
+      imageSrc: kaledioscopelogo,
       // subtitle: "what it's all about?",
       // title: "Theme",
       description:
@@ -64,7 +67,7 @@ export default () => {
     },
 
     {
-      imageSrc: "https://i.postimg.cc/YCs4Tvby/157378249-old-feather-quill-ink-pen-with-inkwell-and-old-books-over-wooden-desk-in-front-of-black-wa.jpg",
+      imageSrc: oldfeatherquill,
       // subtitle: "Lit is Hit",
       // title: "Why Lit?",
       description:
