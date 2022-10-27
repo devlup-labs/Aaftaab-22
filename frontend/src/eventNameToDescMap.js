@@ -1,6 +1,20 @@
+import openmic from './images/flagship_events/Open_mic.jpg';
+import areyourwordsworth from "./images/Day 2/Are_your_words_worth.jpg";
+import englishdebate from "./images/Day 2/English_Debate.jpg";
+import hindidebate from "./images/Day 2/HIndi_Debate.jpg";
+import noobquiz from "./images/Day 2/Noob_Quiz.jpg";
+import scriptwriting from "./images/Day 2/Script_Writing_Workshop.jpg";
+import versecomeverseserve from "./images/Day 2/Verse_come_verse_serve.jpg";
+import justaminutespeech from "./images/Day 3/Just_a_minute_speech.jpg";
+import letsgetquizzical from "./images/Day 3/Let's_get_quizical.jpg";
+import mythologyquiz from "./images/Day 3/Mythology_Quiz.jpg";
+import nautankisaala from "./images/Day 3/Nautanki_Saala.jpg";
+import whatiftheymet from "./images/Day 3/What_if_they_met.jpg";
+import TreasurehuntImg from "./images/flagship_events/Treasure Hunt.jpg";
+
 export const eventNameToDescMap = {
   video_making_workshop: {
-    imageSrc: "https://i.postimg.cc/brnPC1Q0/Script-Writing-Workshop.jpg",
+    imageSrc: scriptwriting,
     title: "Script Writing Workshop",
     date: "29 Oct. 2022",
     timing: "10:00 AM - 12:30 PM",
@@ -31,7 +45,7 @@ export const eventNameToDescMap = {
     url: "#"
   },
   acting_workshop: {
-    imageSrc: "https://i.postimg.cc/tC21hj4X/Nautanki-Saala.jpg",
+    imageSrc: nautankisaala,
     title: "Nautanki Saala",
     date: "30 Oct. 2022",
     timing: "01:00 PM - 02:00 PM",
@@ -46,7 +60,7 @@ export const eventNameToDescMap = {
     url: "#"
   },
   prompt_poetry: {
-    imageSrc: "https://i.postimg.cc/FR8mVTJs/Verse-come-verse-serve.jpg",
+    imageSrc: versecomeverseserve,
     title: "Verse Come Verse Serve",
     date: "29 Oct. 2022",
     timing: "11:30 AM - 01:00 PM",
@@ -61,7 +75,7 @@ export const eventNameToDescMap = {
     url: "#"
   },
   noob_quiz: {
-    imageSrc: "https://i.postimg.cc/Y9hMF50s/Noob-Quiz.jpg",
+    imageSrc: noobquiz,
     title: "Noob Quiz",
     date: "29 Oct. 2022",
     timing: "11:30 AM - 01:00 PM",
@@ -76,7 +90,7 @@ export const eventNameToDescMap = {
     url: "#"
   },
   word_games: {
-    imageSrc: "https://i.postimg.cc/xds9cffm/Are-your-words-worth.jpg",
+    imageSrc: areyourwordsworth,
     title: "Are Your Words-Worth?",
     date: "29 Oct. 2022",
     timing: "02:30 AM - 04:00 PM",
@@ -91,7 +105,7 @@ export const eventNameToDescMap = {
     url: "#"
   },
   treasure_hunt: {
-    imageSrc: "https://i.postimg.cc/rF7yWsNS/Treasure-Hunt.jpg",
+    imageSrc: TreasurehuntImg,
     title: "Clueminati",
     description: `Are you into solving the clues and making your way through wilderness in pursuit of long lost treaure? We offer you all this thrilling experience in Aaftaab 2022's very own treasure hunt, "Clueminati"!`,
     date: "29 Oct. 2022",
@@ -106,7 +120,7 @@ export const eventNameToDescMap = {
     url: "#"
   },
   just_a_minute_speech: {
-    imageSrc: "https://i.postimg.cc/CLFBB1YP/Just-a-minute-speech.jpg",
+    imageSrc: justaminutespeech,
     title: "Just A Minute Speech",
     date: "30 Oct. 2022",
     timing: "09:30 AM - 11:30 AM",
@@ -121,7 +135,7 @@ export const eventNameToDescMap = {
     url: "#"
   },
   hindi_debate: {
-    imageSrc: "https://i.postimg.cc/jqnRSYGW/HIndi-Debate.jpg",
+    imageSrc: hindidebate,
     title: "Hindi Debate",
     date: "29 Oct. 2022",
     timing: "09:00 AM - 11:30 AM",
@@ -136,7 +150,7 @@ export const eventNameToDescMap = {
     url: "#"
   },
   english_debate: {
-    imageSrc: "https://i.postimg.cc/qMf4tZT1/English-Debate.jpg",
+    imageSrc: englishdebate,
     title: "English Debate",
     description: `It is better to debate a question without settling it than to settle a question without debating it. This aaftaab, unveil the debater inside you by pitching your matter, method and manner in the “English Debate” competition! Do participate and win exciting prizes!!`,
     date: "29 Oct. 2022",
@@ -152,7 +166,7 @@ export const eventNameToDescMap = {
     url: "#"
   },
   character_reenactment:{
-    imageSrc: "https://i.postimg.cc/43hmkHbd/What-if-they-met.jpg",
+    imageSrc: whatiftheymet,
     title: "What If They Met",
     date: "30 Oct. 2022",
     timing: "11:30 AM - 01:00 PM",
@@ -167,7 +181,7 @@ export const eventNameToDescMap = {
     url: "#"
   },
   mythology_quiz: {
-    imageSrc: "https://i.postimg.cc/j50CsqZh/Mythology-Quiz.jpg",
+    imageSrc: mythologyquiz,
     title: "Mythology quiz",
     date: "30 Oct. 2022",
     timing: "11:30 AM - 01:00 PM",
@@ -182,7 +196,7 @@ export const eventNameToDescMap = {
     url: "#"
   },
   mela_quiz: {
-      imageSrc: "https://i.postimg.cc/FH67BVS8/Let-s-get-quizical.jpg",
+      imageSrc: letsgetquizzical,
       title: "Let's Get Quizzical",
       date: "30 Oct. 2022",
       timing: "6:00 PM - 8:00 PM",
@@ -197,7 +211,7 @@ export const eventNameToDescMap = {
       url: "#"
     },
   open_mic: {
-    imageSrc:  "https://i.postimg.cc/63z5GhM3/Open-mic.jpg",
+    imageSrc: openmic,
     title: "Open Mic",
     description: `This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...`,
     date: "30 Oct. 2022",
