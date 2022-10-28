@@ -524,7 +524,7 @@ const getDay2Cards = () => {
       imageSrc: areyourwordsworth,
       title: "Are Your Words-Worth?",
       date: "29 Oct. 2022",
-      timing: "02:30 AM - 04:00 PM",
+      timing: "02:30 PM - 04:00 PM",
       description: `An event to test your wit and skills at wordplay. So do join in to "turn the tables" or "flip the words".`,
       // price: "₹50",
       registrableEvent: true,

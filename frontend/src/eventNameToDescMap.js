@@ -71,7 +71,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 1,
     isFlagship: false,
     prize: "1st: ₹3000, 2nd: ₹2000, 3rd: ₹1000",
-    ruleBookLink: "https://drive.google.com/file/d/1Ce8ODluUNb11MMOsiGteja6mVl6irRZQ/view?usp=sharing",
+    ruleBookLink: "https://drive.google.com/file/d/1Pguwnf6B57pps06uyGjGKltQUfnFVORT/view?usp=sharing",
     url: "#"
   },
   noob_quiz: {
@@ -86,14 +86,13 @@ export const eventNameToDescMap = {
     maxTeamSize: 5,
     isFlagship: false,
     prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-    ruleBookLink: "https://drive.google.com/file/d/1Ce8ODluUNb11MMOsiGteja6mVl6irRZQ/view?usp=sharing",
-    url: "#"
+    ruleBookLink: "https://drive.google.com/file/d/131dZFc8mu0VNQXNv3pNd5ilr0JSvduQh/view?usp=sharing",
   },
   word_games: {
     imageSrc: areyourwordsworth,
     title: "Are Your Words-Worth?",
     date: "29 Oct. 2022",
-    timing: "02:30 AM - 04:00 PM",
+    timing: "02:30 PM - 04:00 PM",
     description: `An event to test your wit and skills at wordplay. So do join in to "turn the tables" or "flip the words".`,
     // price: "₹50",
     registrableEvent: true,
@@ -101,7 +100,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 5,
     isFlagship: false,
     prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-    ruleBookLink: "https://drive.google.com/file/d/1ZY2CZZ0kWlxZwnXswoIg6Vbv0D2N7zr2/view?usp=sharing",
+    ruleBookLink: "https://drive.google.com/file/d/1JMe84uW3Ie9kTBWKZ4c53VJNlB7DrC54/view?usp=sharing",
     url: "#"
   },
   treasure_hunt: {
@@ -131,7 +130,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 1,
     isFlagship: false,
     prize: "1st: ₹3000, 2nd: ₹2000, 3rd: ₹1000",
-    ruleBookLink: "https://drive.google.com/file/d/1Ce8ODluUNb11MMOsiGteja6mVl6irRZQ/view?usp=sharing",
+    ruleBookLink: "https://drive.google.com/file/d/1GcU2XaZuYk4p6iD-u-p7GhZOH040hhPb/view?usp=sharing",
     url: "#"
   },
   hindi_debate: {
@@ -146,7 +145,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 3,
     isFlagship: false,
     prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-    ruleBookLink: "https://drive.google.com/file/d/1kL8V5iKDBoxeVPxehDfWhzfVypo-DMht/view?usp=sharing",
+    ruleBookLink: "https://drive.google.com/file/d/1lFZeY2w-rIPlqUjytmduxt1xpyz1qoKA/view?usp=sharing",
     url: "#"
   },
   english_debate: {
@@ -162,7 +161,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 3,
     isFlagship: false,
     prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-    ruleBookLink: "https://drive.google.com/file/d/1IcXo5yLxvRVKb36-Kl_ohc7Ag5Hb4DlY/view?usp=sharing",
+    ruleBookLink: "https://drive.google.com/file/d/1nXf4pA_Sg8Gwr-vJOpOCDRXe5BMCuw2C/view?usp=sharing",
     url: "#"
   },
   character_reenactment:{
@@ -177,7 +176,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 5,
     isFlagship: false,
     prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-    ruleBookLink: "https://drive.google.com/file/d/14lI1zAYuLYdkFIrEHnF_6oAgtJQHA4UN/view?usp=sharing",
+    ruleBookLink: "https://drive.google.com/file/d/1p-hKGctCWlA4Vr8ymYB0nAaX_Q5aBfz8/view?usp=sharing",
     url: "#"
   },
   mythology_quiz: {
@@ -192,7 +191,7 @@ export const eventNameToDescMap = {
     maxTeamSize: 5,
     isFlagship: false,
     prize: "1st: ₹6000, 2nd: ₹3000, 3rd: ₹1500",
-    ruleBookLink: "https://docs.google.com/document/d/1WA69HY5pfC7zgEOx8XGTLX7slZOB2dTJcMZLfzdpDMY/edit?usp=sharing",
+    ruleBookLink: "https://drive.google.com/file/d/1zKKYxkLlUhzN4ihTsVwBbGPh6lkQ0hPe/view?usp=sharing",
     url: "#"
   },
   mela_quiz: {
@@ -207,7 +206,7 @@ export const eventNameToDescMap = {
       maxTeamSize: 5,
       isFlagship: false,
       prize: "",
-      ruleBookLink: "https://drive.google.com/file/d/1jOjRC5oyzrf0ZY4glSZ1TzunkcsKAK27/view?usp=sharing",
+      ruleBookLink: "https://drive.google.com/file/d/15CuQ0nXVTNhJ7kHCMcwjleuGCAjz809q/view?usp=sharing",
       url: "#"
     },
   open_mic: {
