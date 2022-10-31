@@ -51,7 +51,7 @@ function Events() {
                             value: `${card.minTeamSize}-${card.maxTeamSize}`
                         },
                         {
-                            key: "Prize",
+                            key: "Prizes Worth",
                             value: `${card.prize}`
                         },
                         {
@@ -71,7 +71,7 @@ function Events() {
                                 value: "Individual"
                             },
                             {
-                                key: "Prize",
+                                key: "Prizes Worth",
                                 value: `${card.prize}`
                             },
                             {
@@ -87,7 +87,7 @@ function Events() {
                                     value: `${card.timing}`
                                 },
                                 {
-                                    key: "Prize",
+                                    key: "Prizes Worth",
                                     value: `${card.prize}`
                                 },
                                 {
