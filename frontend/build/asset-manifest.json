@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5fb9100f.css",
-    "main.js": "/static/js/main.b67edb98.js",
+    "main.js": "/static/js/main.6fdc25bf.js",
     "static/media/Uday Bhanu.jpg": "/static/media/Uday Bhanu.5955cd0d2ba03d623cd9.jpg",
     "static/media/final_suri-01.png": "/static/media/final_suri-01.2cc0cf718b2f8fd72e7e.png",
     "static/media/Suyash Surana.jpg": "/static/media/Suyash Surana.f82c30daba5a76f6e7f5.jpg",
@@ -160,10 +160,10 @@
     "static/media/arrow-right-3-icon.svg": "/static/media/arrow-right-3-icon.5bf133930c89abdc6760c3a5dacf085b.svg",
     "static/media/handle-icon.svg": "/static/media/handle-icon.058b1c45d9adf0d47ce03b947bc6ac15.svg",
     "main.5fb9100f.css.map": "/static/css/main.5fb9100f.css.map",
-    "main.b67edb98.js.map": "/static/js/main.b67edb98.js.map"
+    "main.6fdc25bf.js.map": "/static/js/main.6fdc25bf.js.map"
   },
   "entrypoints": [
     "static/css/main.5fb9100f.css",
-    "static/js/main.b67edb98.js"
+    "static/js/main.6fdc25bf.js"
   ]
 }
