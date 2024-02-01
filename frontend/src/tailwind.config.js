@@ -203,7 +203,7 @@ module.exports = {
     },
     borderColor: theme => ({
       ...theme('colors'),
-      DEFAULT: theme('colors.gray.300', 'currentColor'),
+      DEFAULT: theme('colors.black', 'currentColor'),
     }),
     borderRadius: {
       none: '0',
@@ -269,6 +269,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      'poppins': ['Poppins', 'sans-serif'],
       display: ['Inter', 'system-ui'],
       sans: [
         'system-ui',
@@ -287,7 +288,7 @@ module.exports = {
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
-    },
+    },
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',

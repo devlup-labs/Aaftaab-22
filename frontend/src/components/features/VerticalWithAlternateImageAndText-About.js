@@ -11,7 +11,7 @@ const Container = tw.div`relative`;
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
-const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm`;
+const HeadingDescription = tw.p`mt-4 font-medium text-gray-900 text-center max-w-sm`;
 
 const Content = tw.div`mt-16`;
 
@@ -21,13 +21,20 @@ const Card = styled.div(props => [
 ]);
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
-  tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 bg-no-repeat md:bg-contain bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`
+  tw`md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-[calc(20rem/1.2)] bg-no-repeat bg-cover bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`, // Add bg-cover
+  // Set a fixed border-radius for all images
+  {
+    borderRadius: props.aspectRatio ? `calc(${props.aspectRatio} * 20px)` : "20px",
+    overflow: "hidden",
+    border: "3px solid black", 
+  },
 ]);
+
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
 const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
-const Title = tw.h4`text-3xl font-bold text-gray-900`;
-const Description = tw.p`mt-2 text-sm leading-loose`;
-const LinkAbout = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
+const Title = tw.h4`text-xl font-bold text-gray-900`;
+const Description = tw.p`mt-2 text-lg leading-loose text-black font-poppins`;
+const LinkAbout = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-black text-black`;
 
 const SvgDotPattern1 = tw(
   SvgDotPatternIcon
@@ -45,26 +52,26 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
-      imageSrc: "https://www.neh.gov/sites/default/files/styles/medium/public/2020-06/Open-Book.jpg?itok=wMg1EBM-",
+      imageSrc: "https://www.pixelstalk.net/wp-content/uploads/2016/06/Book-HD-Wallpapers-download.jpeg",
       // subtitle: "Basic Intro",
       // title: "Brief Introduction",
       description:
-      "Aaftaab, the annual literary festival conducted by IIT Jodhpur, is back, after two long years. It is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerising poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, book launches, quizzes, and live music performances.",
+      "Aaftaab, IIT Jodhpur's annual literary festival, epitomizes the richness and inclusivity of literature. Bringing together students from diverse colleges and backgrounds, it promises an enchanting experience with captivating poets, motivational authors, engaging literary discussions, and lively events such as open mics, quizzes, and vibrant music performances.",
       // url: "https://timerse.com"
     },
 
     {
-      imageSrc: "https://i.pinimg.com/originals/ea/59/2c/ea592c610178fde4900757153581fe2e.jpg",
-      // subtitle: "what it's all about?",
+      imageSrc: "https://i.pinimg.com/originals/01/b9/a2/01b9a2bc3b729a8ff95c8918270c18b8.jpg",
+      // subtitle: "what it's all about?"
       // title: "Theme",
       description:
-      "The theme of this year’s Aaftaab is Kaleidoscopes: Limitless Iridescence Telestic. It is a marvellous representation of the limitless reach of the festival, which brings together brilliant minds from all around the country and allows them to express themselves, explore the diverse genres and partake in the magnificent celebration of literature.", 
+      "This year's Aaftaab theme, Mosaic, underscores the literary festival's dynamic nature. It depicts literature as a vibrant tapestry, evolving with each participant's contribution, fostering diversity, and creating a living space for literary transformation.",
       
       // url: "https://timerse.com"
     },
 
     {
-      imageSrc: "https://us.123rf.com/450wm/tomertu/tomertu2010/tomertu201000252/157378249-old-feather-quill-ink-pen-with-inkwell-and-old-books-over-wooden-desk-in-front-of-black-wall-backgro.jpg?ver=6",
+      imageSrc: "https://img.freepik.com/premium-photo/pen-book-desk-with-city-background_865967-64109.jpg ",
       // subtitle: "Lit is Hit",
       // title: "Why Lit?",
       description:
@@ -79,7 +86,7 @@ export default () => {
         <HeadingInfoContainer>
           <HeadingTitle>About Aaftaab</HeadingTitle>
           <HeadingDescription>
-            Let's dive into the details of aaftaab 2022.
+            Let's dive into the details of aaftaab 2024.
           </HeadingDescription>
         </HeadingInfoContainer>
 
@@ -92,7 +99,7 @@ export default () => {
                 <Title>{card.title}</Title>
                 <Description>{card.description}</Description>
                 {(i === 2) && <Link to="/events">
-                  <LinkAbout>See Event Details</LinkAbout>
+                  <LinkAbout>See Event Details --&gt; </LinkAbout>
                 </Link>}
               </Details>
             </Card>
