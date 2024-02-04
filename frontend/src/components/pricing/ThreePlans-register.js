@@ -11,8 +11,8 @@ import { ReactComponent as SvgDecoratorBlob } from "images/svg-decorator-blob-6.
 const HeaderContainer = tw.div`mt-10 w-full flex flex-col items-center`;
 const Subheading = tw(SubheadingBase)`mb-4`;
 const Heading = tw(SectionHeading)`w-full`;
-const Description = tw(SectionDescription)`w-full text-center font-philosopher`;
-const Subdescription = tw(SectionDescription)`w-full text-center font-philosopher`; // Change this line
+const Description = tw(SectionDescription)`w-full text-center font-Philosopher`;
+const Subdescription = tw(SectionDescription)`w-full text-center font-Philosopher`; // Change this line
 
 const PlansContainer = tw.div`flex justify-between flex-col lg:flex-row items-center lg:items-stretch relative`;
 const Plan = styled.div`
