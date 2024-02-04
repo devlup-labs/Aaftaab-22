@@ -13,6 +13,8 @@ import { userContext } from "App.js";
 const Header = tw.header`
   flex justify-between items-center
   max-w-screen-xl mx-auto
+  font-Philosopher
+  text-black
 `;
 export const NavLinks = tw.div`inline-block`;
 
@@ -22,14 +24,47 @@ export const NavLinks = tw.div`inline-block`;
 export const NavLink = tw.a`
   text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
   font-semibold tracking-wide transition duration-300
-  pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
+  pb-1 border-b-2 border-transparent hover:border-black hocus:text-black
 `;
 
-export const PrimaryLink = tw(NavLink)`
-  lg:mx-0 lg:px-8 lg:py-3
-  px-4 py-1 rounded bg-primary-500 text-gray-100
-  hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline
-  border-b-0
+export const PrimaryLink = styled(NavLink)`
+  ${tw`
+    lg:mx-0 lg:px-8 lg:py-3
+    px-4 py-1 rounded text-black
+    hocus:bg-black hocus:text-black
+    focus:shadow-outline
+    border-b-0
+    relative
+  `}
+
+  background: ${({ loggedIn }) => (loggedIn ? 'linear-gradient(180deg, #000, #000)' : 'linear-gradient(180deg, #000, #000)')};
+  color: ${({ loggedIn }) => (loggedIn ? '#fff' : '#fff')};
+  border: 3px solid transparent; /* Initial border */
+  transition: background 0.3s, color 0.3s;
+
+  &:hover {
+    background: linear-gradient(180deg, #fff, #fff);
+    color: #000;
+    border-color: #000;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, transparent, #fff);
+      animation: waveAnimation 1s infinite alternate;
+      z-index: -1;
+    }
+  }
+
+  @keyframes waveAnimation {
+    to {
+      transform: scaleY(1.2);
+    }
+  }
 `;
 
 export const LogoLink = styled(NavLink)`
@@ -79,19 +114,19 @@ export default ({
   const defaultLinks = [
     <NavLinks key={1}>
       <Link to="/about">
-        <NavLink>About</NavLink>
+        <NavLink style = {{ color: 'black', fontFamily: 'Philosopher'}}>About</NavLink>
       </Link>
       <Link to="/events">
-        <NavLink>Events</NavLink>
+        <NavLink style = {{ color: 'black', fontFamily: 'Philosopher'}}>Events</NavLink>
       </Link>
       <Link to="/sponsors">
-        <NavLink>Sponsors</NavLink>
+        <NavLink style = {{ color: 'black', fontFamily: 'Philosopher'}}>Sponsors</NavLink>
       </Link>
       <Link to="/team">
-        <NavLink>Team</NavLink>
+        <NavLink style = {{ color: 'black', fontFamily: 'Philosopher'}}>Team</NavLink>
       </Link>
       <Link to="/register">
-        <NavLink>Register</NavLink>
+        <NavLink style = {{ color: 'black', fontFamily: 'Philosopher'}}>Register</NavLink>
       </Link>
 
      {!loggedIn?<Link to="/login">

@@ -30,7 +30,7 @@ const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm
 const Heading = tw(SectionHeading)``;
 const Controls = tw.div`flex items-center`;
 const ControlButton = styled(PrimaryButtonBase)`
-  ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2`}
+  ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2 bg-black `}
   svg {
     ${tw`w-6 h-6`}
   }
@@ -54,7 +54,7 @@ const CardImage = styled.div(props => [
 ]);
 
 const TextInfo = tw.div`py-6 flex-1 flex flex-col justify-between sm:px-10 sm:py-6`;
-const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center`;
+const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center text-black font-Philosopher`;
 const Title = tw.h5`text-2xl font-bold`;
 
 const RatingsInfo = styled.div`
@@ -72,14 +72,14 @@ const Rating = tw.span`ml-2 font-bold`;
 const SecondaryInfoContainer = tw.div`flex flex-col sm:flex-row mt-2 sm:mt-4`;
 const IconWithText = tw.div`flex items-center mr-6 my-2 sm:my-0`;
 const IconContainer = styled.div`
-  ${tw`inline-block rounded-full p-2 bg-gray-700 text-gray-100`}
+  ${tw`inline-block rounded-full p-2 bg-black text-gray-100`}
   svg {
     ${tw`w-3 h-3`}
   }
 `;
-const Text = tw.div`ml-2 text-sm font-semibold text-gray-800`;
+const Text = tw.div`ml-2 text-sm font-semibold text-black font-Philosopher `;
 
-const PrimaryButton = tw(PrimaryButtonBase)`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-br-4xl py-3 sm:py-6`;
+const PrimaryButton = tw(PrimaryButtonBase)`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-br-4xl py-3 sm:py-6 bg-black font-Philosopher hocus:bg-white`;
 export default () => {
   // useState is used instead of useRef below because we want to re-render when sliderRef becomes available (not null)
   const [sliderRef, setSliderRef] = useState(null);

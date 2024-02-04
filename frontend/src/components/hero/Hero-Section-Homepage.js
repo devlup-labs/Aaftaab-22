@@ -28,18 +28,18 @@ const TwoColumn = tw.div`flex flex-col-reverse lg:flex-row md:items-center max-w
 const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left`;
 const RightColumn = tw.div`relative mt-0 mb-12 lg:mt-0 lg:mb-0 flex flex-col justify-center`;
 
-const Heading = tw.h1`font-black text-3xl md:text-5xl leading-snug max-w-3xl`;
-const Paragraph = tw.p`my-5 lg:my-8 text-sm lg:text-base font-semibold text-secondary-600 max-w-lg mx-auto lg:mx-0`;
+const Heading = tw.h1`font-Philosopher text-black md:text-5xl leading-snug max-w-3xl font-medium `;
+const Paragraph = tw.p`my-5 lg:my-8 text-sm lg:text-base font-Philosopher text-black max-w-lg mx-auto lg:mx-0`;
 
 const Actions = tw.div`flex flex-col items-center sm:flex-row justify-center lg:justify-start mt-8`;
-const PrimaryButton = tw.button`font-bold px-8 lg:px-10 py-3 rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 focus:shadow-outline focus:outline-none transition duration-300`;
+const PrimaryButton = tw.button`font-bold px-8 lg:px-10 py-3 rounded bg-black text-gray-100 hocus:bg-gray-700 focus:shadow-outline focus:outline-none transition duration-300`;
 const WatchVideoButton = styled.button`
-  ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-secondary-300 transition duration-300 hocus:text-primary-400 focus:outline-none`}
+  ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-black transition duration-300 hocus:text-gray-700 focus:outline-none`}
   .playIcon {
-    ${tw`stroke-1 w-12 h-12`}
+    ${tw`stroke-1 w-16 h-16`}
   }
   .playText {
-    ${tw`ml-2 font-medium`}
+    ${tw`ml-2 font-medium font-Philosopher text-black text-xl`}
   }
 `;
 
