@@ -7,12 +7,16 @@ import Footer from "components/footers/Home-Footer";
 import tw from "twin.macro";
 import imgLogo from "../images/old-logo.png";
 function Home() {
-    const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block font-Philosopher`;
+
+    const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block font-philosopher`;
+    const DescriptionText = tw.p`text-lg text-gray-700 font-philosopher`; 
+
     return (
         <AnimationRevealPage>
             <Hero
                 heading={<>The <HighlightedText>literary festival</HighlightedText> of IIT Jodhpur</>}
-                description="Aaftaab is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerizing poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, book launches, quizzes, and live music performances."
+                //description="Aaftaab is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerizing poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, book launches, quizzes, and live music performances."
+                description={<DescriptionText>Aaftaab is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerizing poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, book launches, quizzes, and live music performances.</DescriptionText>}
                 imageSrc={imgLogo}/>
             <Slider />
             <Features />

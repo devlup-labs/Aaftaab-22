@@ -48,10 +48,12 @@ const CardButton = tw(PrimaryButtonBase)`text-sm`;
 
 const CardReview = tw.div`font-medium text-xs text-gray-600`;
 
-const CardText = tw.div`p-4 text-gray-900 font-Philosopher`;
-const CardTitle = tw.h5`text-lg font-semibold group-hover:text-black font-Philosopher`;
-const CardContent = tw.p`mt-1 text-sm font-medium text-black font-Philosopher`;
-const CardPrice = tw.p`mt-4 text-xl font-bold`;
+
+const CardText = tw.div`p-4 text-gray-900 font-philosopher`;
+const CardTitle = tw.h5`text-lg font-semibold group-hover:text-primary-500 font-philosopher`;
+const CardContent = tw.p`mt-1 text-sm font-medium text-gray-600 font-philosopher`;
+const CardPrice = tw.p`mt-4 text-xl font-bold font-philosopher`;
+
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
   ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-64 w-64 opacity-15 transform translate-x-2/3 -translate-y-12 text-black`}

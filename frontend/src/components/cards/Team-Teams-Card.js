@@ -33,13 +33,14 @@ const CardContent = styled.div`
   }
   .name {
     ${tw`mt-1 text-xl font-medium text-black font-Philosopher`}
+
   9
 `
 
 const CardLinks = styled.div`
   ${tw`mt-6 flex`}
   .link {
-    ${tw`mr-8 last:mr-0 text-gray-400 hocus:text-primary-500 transition duration-300`}
+    ${tw`mr-8 last:mr-0 text-black hocus:text-black transition duration-300 font-philosopher`}
     .icon {
       ${tw`fill-current w-6 h-6`}
     }
