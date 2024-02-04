@@ -7,7 +7,9 @@ import Header from 'components/headers/light.js'
 import Footer from "components/footers/Home-Footer";
 
 function Events() {
-    const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block font-philosopher`;
+
+    const HighlightedText = tw.span`bg-black text-gray-100 px-4 transform -skew-x-12 inline-block`;
+
     return (
         <AnimationRevealPage>
             <Header />

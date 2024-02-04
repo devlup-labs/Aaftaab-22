@@ -21,19 +21,16 @@ export const NavLinks = tw.div`inline-block`;
  * hocus:bg-primary-700 will apply the bg-primary-700 class on hover or focus
  */
 export const NavLink = tw.a`
-text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
-font-semibold tracking-wide transition duration-300
-pb-1 border-b-2 border-transparent hover:border-black hocus:text-black
-`;
+
+  text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+  font-semibold tracking-wide transition duration-300
+  pb-1 border-b-2 border-transparent hover:border-black hocus:text-black font-Philosopher`;
 
 export const PrimaryLink = tw(NavLink)`
   lg:mx-0 lg:px-8 lg:py-3
-  px-4 py-1 rounded text-gray-100
-  border-b-0
-  bg-black
-  hocus:bg-white hocus:text-black
-  focus:shadow-outline
-  
+  px-4 py-1 rounded bg-primary-500 text-gray-100
+  hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline
+  border-b-0 font-Philosopher
 
 `;
 

@@ -269,8 +269,10 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
-      'philosopher': ['Philosopher', 'sans-serif'],
-       display: ['Inter', 'system-ui'],
+
+      'Philosopher': ['Philosopher', 'sans-serif'],
+      display: ['Inter', 'system-ui'],
+
       sans: [
         'system-ui',
         '-apple-system',

@@ -10,24 +10,30 @@ import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
 import { ReactComponent as GithubIcon } from "images/github-icon.svg";
 import './Team-Teams-Card.css'
 
-const HeadingContainer = tw.div`font-philosopher`
-const Heading = tw(SectionHeading) `font-philosopher`
-const Subheading = tw(SubheadingBase)`text-center text-black mb-3 font-philosopher`
-const Description = tw(SectionDescription)`mx-auto text-center font-philosopher`
+const HeadingContainer = tw.div`font-Philosopher`
+const Heading = tw(SectionHeading)`font-Philosopher`
+const Subheading = tw(SubheadingBase)`text-center mb-3 text-black font-Philosopher`
+const Description = tw(SectionDescription)`mx-auto text-center text-black font-Philosopher`
 
-const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`
-const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`
-const CardImage = styled.div`
-  ${props => css`background-image: url("${props.imageSrc}");`}
-  ${tw`bg-no-repeat w-64 h-64 bg-contain bg-center rounded `}
-`
+const Cards = tw.div`flex flex-wrap flex-row  sm:max-w-2xl lg:max-w-5xl mx-auto font-Philosopher`
+  const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center font-Philosopher`
+  const CardImage = styled.div`
+    ${props => css`background-image: url("${props.imageSrc}");
+    border-radius-50px
+    corner-radius-25px`}
+    ${tw`bg-no-repeat w-64 h-64 bg-contain bg-center rounded rounded-full `}
+`;
+
+
+
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
   .position {
-    ${tw`uppercase font-bold tracking-widest text-xs text-black font-philosopher`}
+    ${tw`uppercase font-bold tracking-widest text-xs text-black font-Philosopher`}
   }
   .name {
-    ${tw`mt-1 text-xl font-medium text-black font-philosopher`}
+    ${tw`mt-1 text-xl font-medium text-black font-Philosopher`}
+
   9
 `
 

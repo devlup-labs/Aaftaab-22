@@ -15,26 +15,23 @@ import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7
 import Maaz from '../../images/flagship_events/Maaz-Bin-Bilal.jpg'
 import musicshowImg from "../../images/flagship_events/folk_music.jfif";
 
-const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
-const Header = tw(SectionHeading)``;
-const TabsControl = tw.div`flex flex-wrap bg-gray-200 px-2 py-2 rounded leading-none mt-12 xl:mt-0`;
+const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row font-Philosopher`;
+const Header = tw(SectionHeading)`font-Philosopher`;
+const TabsControl = tw.div`flex flex-wrap bg-black px-2 py-2 rounded leading-none mt-12 xl:mt-0`;
 
 const TabControl = styled.div`
-  ${tw`cursor-pointer px-6 py-3 mt-2 sm:mt-0 sm:mr-2 last:mr-0 text-gray-600 font-medium rounded-sm transition duration-300 text-sm sm:text-base w-1/2 sm:w-auto text-center`}
+  ${tw`cursor-pointer px-6 py-3 mt-2 sm:mt-0 sm:mr-2 last:mr-0 text-gray-600 font-medium rounded-sm transition duration-300 text-sm sm:text-base w-1/2 sm:w-auto text-center font-Philosopher`}
   &:hover {
     ${tw`bg-gray-300 text-gray-700`}
   }
-  ${props => props.active && tw`bg-primary-500! text-gray-100!`}
+  ${props => props.active && tw`bg-black! text-gray-100!`}
   }
 `;
 
-const TabContent = tw(motion.div)`mt-6 flex flex-wrap sm:-mr-10 md:-mr-6 lg:-mr-12`;
-const CardContainer = tw.div`mt-10 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 sm:pr-10 md:pr-6 lg:pr-12`;
-const Card = tw(motion.a)`bg-gray-200 rounded-b block max-w-xs mx-auto sm:max-w-none sm:mx-0`;
-const CardImageContainer = styled.div`
-  ${props => css`background-image: url("${props.imageSrc}");`}
-  ${tw`h-56 xl:h-64 bg-center bg-cover relative rounded-t`}
-`;
+const TabContent = tw(motion.div)`mt-6 flex flex-wrap sm:-mr-10 md:-mr-6 lg:-mr-12 font-Philosopher`;
+const CardContainer = tw.div`mt-10 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 sm:pr-10 md:pr-6 lg:pr-12 font-Philosopher`;
+const Card = tw(motion.a)`bg-gray-200 rounded-b block max-w-xs mx-auto sm:max-w-none sm:mx-0 `;
+
 const CardRatingContainer = tw.div`leading-none absolute inline-flex bg-gray-100 bottom-0 left-0 ml-4 mb-4 rounded-full px-5 py-2 items-end`;
 const CardRating = styled.div`
   ${tw`mr-1 text-sm font-bold flex items-end`}
@@ -44,24 +41,35 @@ const CardRating = styled.div`
 `;
 
 const CardHoverOverlay = styled(motion.div)`
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 1);
   ${tw`absolute inset-0 flex justify-center items-center`}
 `;
 const CardButton = tw(PrimaryButtonBase)`text-sm`;
 
 const CardReview = tw.div`font-medium text-xs text-gray-600`;
 
+
 const CardText = tw.div`p-4 text-gray-900 font-philosopher`;
 const CardTitle = tw.h5`text-lg font-semibold group-hover:text-primary-500 font-philosopher`;
 const CardContent = tw.p`mt-1 text-sm font-medium text-gray-600 font-philosopher`;
 const CardPrice = tw.p`mt-4 text-xl font-bold font-philosopher`;
 
+
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
-  ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-64 w-64 opacity-15 transform translate-x-2/3 -translate-y-12 text-pink-400`}
+  ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-64 w-64 opacity-15 transform translate-x-2/3 -translate-y-12 text-black`}
 `;
 const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
   ${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-80 w-80 opacity-15 transform -translate-x-2/3 text-primary-500`}
 `;
+const CardImageContainer = styled.div`
+  ${props => css`
+    background-image: url("${props.imageSrc}");
+    border-radius: 5px;
+    border: 2px solid black;
+  `}
+  ${tw`h-56 xl:h-64 bg-center bg-cover relative rounded-t`}
+`;
+
 
 export default ({
   heading = "Event Schedule",
@@ -71,7 +79,7 @@ export default ({
         imageSrc:
           "https://kavisammelanlive.com/wp-content/uploads/2020/05/new-logo.png",
         title: "Kavi Sammelan",
-        description: `‘Kavyamaye ho uthega dil, jab sajegi kaviyon ki mehfil’. A poetic event (Kavi Sammelan) is being organized on this Aaftaab. The event will be presenting young and talented poets who will recite their poems and mushairas in front of the audience. Here the participants will get a topic on which they have to present their poetry. Also, participants could get a chance to interact with upcoming faces of poetry.`,
+        description: "‘Kavyamaye ho uthega dil, jab sajegi kaviyon ki mehfil’. A poetic event (Kavi Sammelan) is being organized on this Aaftaab. The event will be presenting young and talented poets who will recite their poems and mushairas in front of the audience. Here the participants will get a topic on which they have to present their poetry. Also, participants could get a chance to interact with upcoming faces of poetry.",
         date: "TBD",
         timing: "08:00 PM - 10:00 PM",
         // price: "₹50",
@@ -84,7 +92,7 @@ export default ({
         imageSrc:
           "https://media.istockphoto.com/vectors/stand-up-comedy-show-is-a-neon-sign-neon-symbol-symbol-bright-banner-vector-id910152132?k=20&m=910152132&s=612x612&w=0&h=fOngvbE0ar3mStiaosLhPut-qqSfqdRj4LNP4Atk8Ac=",
         title: "Standup Comedy",
-        description: `Come and join us for an evening glimmered with sarcasm and humour, brought to you by one of the finest comics in the country and fill the evening with giggles and hootings.A comedic performance to a live audience, saturated with jokes and sarcasm with one of the best standup comics out there to entertain you.`,
+        description: "Come and join us for an evening glimmered with sarcasm and humour, brought to you by one of the finest comics in the country and fill the evening with giggles and hootings.A comedic performance to a live audience, saturated with jokes and sarcasm with one of the best standup comics out there to entertain you.",
         date: "TBD",
         timing: "09:00 PM - 10:30 PM",
         // price: "₹50",
@@ -98,7 +106,7 @@ export default ({
         // imageSrc:
         //   "https://images.unsplash.com/photo-1610659606489-77967e40fa35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
         title: "Folk Music + Puppet Show",
-        description: `The term folk music and its equivalents in other languages denote many different kinds of music; the meaning of the term varies according to the part of the world, social class, and period of history. Doing justice to this year’s theme, Kaleidoscopes, Aaftaab will organise a Folk Music and Puppet Show, that will host regional folk musicians to celebrate the beauty and soulfulness of Rajasthani Folk Music. Join us as we immerse ourselves in resonating sounds of traditional instruments and the stories told by these musical storytellers.`,
+        description: "The term folk music and its equivalents in other languages denote many different kinds of music; the meaning of the term varies according to the part of the world, social class, and period of history. Doing justice to this year’s theme, Kaleidoscopes, Aaftaab will organise a Folk Music and Puppet Show, that will host regional folk musicians to celebrate the beauty and soulfulness of Rajasthani Folk Music. Join us as we immerse ourselves in resonating sounds of traditional instruments and the stories told by these musical storytellers.",
         date: "TBD",
         timing: "06:00 PM - 07:00 PM",
         // price: "₹50",
@@ -111,7 +119,7 @@ export default ({
         imageSrc:
           "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRqJTIwbmlnaHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         title: "DJ Night",
-        description: `As we reach the end of the festivities, join us, for one last celebration , as we embrace EDM and Hip Hop music, and dance to our hearts content!`,
+        description: "As we reach the end of the festivities, join us, for one last celebration , as we embrace EDM and Hip Hop music, and dance to our hearts content!",
         date: "TBD",
         timing: "08:30 PM - 11:00 PM",
         // price: "₹50",
@@ -140,7 +148,7 @@ export default ({
         imageSrc:
           "https://images.unsplash.com/photo-1538449327350-43b4fcfd35ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGludGVydmlldyUyMHdpdGglMjBkaXJlY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
         title: "Interview with Director",
-        description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
+        description: "Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.",
         date: "TBD",
         timing: "04:30 PM - 05:30 PM",
         // price: "₹50",
@@ -168,7 +176,7 @@ export default ({
         imageSrc:
           "https://thumbs.dreamstime.com/b/old-map-vintage-travel-equipment-expedition-concept-treasure-hunt-holiday-gifts-old-map-vintage-travel-equipment-133932740.jpg",
         title: "Clueminati (Treasure Hunt)",
-        description: `Life is a treasure hunt game. You have to solve the clues from incidents that happened and move further to find the ultimate fortune. So are you into solving the clues and making your way through the wilderness in the pursuit of long lost treasure/ fortune ? We offer you all this thrilling experience in Aaftaab 2022’s very own “ClueMinati”. In “ClueMinati”  you will be given clues which will lead you to the ultimate treasure. Players with the aid of clues will  compete in trying to find the hidden treasure.`,
+        description: "Life is a treasure hunt game. You have to solve the clues from incidents that happened and move further to find the ultimate fortune. So are you into solving the clues and making your way through the wilderness in the pursuit of long lost treasure/ fortune ? We offer you all this thrilling experience in Aaftaab 2022’s very own “ClueMinati”. In “ClueMinati”  you will be given clues which will lead you to the ultimate treasure. Players with the aid of clues will  compete in trying to find the hidden treasure.",
         date: "TBD",
         timing: "06:00 PM - 08:00 PM",
         // price: "₹50",
@@ -184,7 +192,7 @@ export default ({
         imageSrc:
           "https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         title: "Unplugged Night",
-        description: `Tune in to watch Sangam, the music club of IIT Jodhpur, fill the air with magical, melodious music.`,
+        description: "Tune in to watch Sangam, the music club of IIT Jodhpur, fill the air with magical, melodious music.",
         date: "TBD",
         timing: "10:00 PM - 11:00 PM",
         // price: "₹50",
@@ -199,7 +207,7 @@ export default ({
         title: "Theatre Performance",
         date: "TBD",
         timing: "02:30 PM - 04:00 PM",
-        description: `Movies will make you famous; Television will make you rich;  but Theater will make you expressive! Theater is akin to a kaleidoscope of patterns filled with characters, voices, emotions, movements, languages, metaphors and much more!!! Aaftaab'22 will therefore be hosting a theater performance to enrich the audience. We will have a performance that entails acting, singing, dance and music, dialogues, narration, recitation with a touch of puppetry or pantomime, and we are certain that it will leave you absolutely spellbound! So what are you waiting for? Grab a seat, because the show is about to begin...`,
+        description: "Movies will make you famous; Television will make you rich;  but Theater will make you expressive! Theater is akin to a kaleidoscope of patterns filled with characters, voices, emotions, movements, languages, metaphors and much more!!! Aaftaab'22 will therefore be hosting a theater performance to enrich the audience. We will have a performance that entails acting, singing, dance and music, dialogues, narration, recitation with a touch of puppetry or pantomime, and we are certain that it will leave you absolutely spellbound! So what are you waiting for? Grab a seat, because the show is about to begin...",
         // price: "₹50",
         isFlagship: false,
         prize: "",
@@ -210,7 +218,7 @@ export default ({
         imageSrc:
           "https://images.unsplash.com/photo-1485814837398-ed2048f57499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         title: "Open Mic",
-        description: `This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...`,
+        description: "This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...",
         date: "TBD",
         timing: "05:30 PM - 07:30 PM",
         // price: "₹50",
@@ -226,7 +234,7 @@ export default ({
         imageSrc:
           "https://images.unsplash.com/photo-1583318432730-a19c89692612?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
         title: "Prom Night",
-        description: `The perfect opportunity for you and your significant other, to spend some time together, and live the ultimate teenage romance dream.`,
+        description: "The perfect opportunity for you and your significant other, to spend some time together, and live the ultimate teenage romance dream.",
         date: "TBD",
         timing: "10:30 PM - 11:30 PM",
         // price: "₹50",
@@ -247,13 +255,13 @@ export default ({
       //   url: "#"
       // }
     ],
-    Day1: getDay1Cards(),
-    Day2: getDay2Cards(),
-    Day3: getDay3Cards()
+    // Day1: getDay1Cards(),
+    // Day2: getDay2Cards(),
+    // Day3: getDay3Cards()
   }
 }) => {
   /*
-   * To customize the tabs, pass in data using the `tabs` prop. It should be an object which contains the name of the tab
+   * To customize the tabs, pass in data using the tabs prop. It should be an object which contains the name of the tab
    * as the key and value of the key will be its timing (as an array of objects).
    * To see what attributes are configurable of each object inside this array see the example above for "Starters".
    */
@@ -359,7 +367,7 @@ const getDay1Cards = () => {
       date: "TBD",
       timing: "05:00 PM - 06:00 PM",
       // price: "₹50",
-      description: `With each passing minute we are getting closer to the magical world of literature. Join us and witness the grand fire start. Ready to roll?? Lets go...."Aagaz!" As the wick of the lamp catches a spark and unflurs it into a luminous flame that's when we mark the onset of Aaftaab 2022 and its Fame.   -- A formal start of the fest "Aaftaab" with a lamp lighting ceremony.`,
+      description: "With each passing minute we are getting closer to the magical world of literature. Join us and witness the grand fire start. Ready to roll?? Lets go....'Aagaz!' As the wick of the lamp catches a spark and unflurs it into a luminous flame that's when we mark the onset of Aaftaab 2022 and its Fame.   -- A formal start of the fest 'Aaftaab' with a lamp lighting ceremony.",
       isFlagship: false,
       prize: "",
       ruleBookLink: "",
@@ -370,7 +378,7 @@ const getDay1Cards = () => {
       // imageSrc:
       //   "https://images.unsplash.com/photo-1610659606489-77967e40fa35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Folk Music + Puppet Show",
-      description: `The term folk music and its equivalents in other languages denote many different kinds of music; the meaning of the term varies according to the part of the world, social class, and period of history. Doing justice to this year’s theme, Kaleidoscopes, Aaftaab will organise a Folk Music and Puppet Show, that will host regional folk musicians to celebrate the beauty and soulfulness of Rajasthani Folk Music. Join us as we immerse ourselves in resonating sounds of traditional instruments and the stories told by these musical storytellers.`,
+      description: "The term folk music and its equivalents in other languages denote many different kinds of music; the meaning of the term varies according to the part of the world, social class, and period of history. Doing justice to this year’s theme, Kaleidoscopes, Aaftaab will organise a Folk Music and Puppet Show, that will host regional folk musicians to celebrate the beauty and soulfulness of Rajasthani Folk Music. Join us as we immerse ourselves in resonating sounds of traditional instruments and the stories told by these musical storytellers.",
       date: "TBD",
       timing: "06:00 PM - 07:00 PM",
       // price: "₹50",
@@ -383,7 +391,7 @@ const getDay1Cards = () => {
       imageSrc:
         "https://kavisammelanlive.com/wp-content/uploads/2020/05/new-logo.png",
       title: "Kavi Sammelan",
-      description: `‘Kavyamaye ho uthega dil, jab sajegi kaviyon ki mehfil’. A poetic event (Kavi Sammelan) is being organized on this Aaftaab. The event will be presenting young and talented poets who will recite their poems and mushairas in front of the audience. Here the participants will get a topic on which they have to present their poetry. Also, participants could get a chance to interact with upcoming faces of poetry.`,
+      description: "‘Kavyamaye ho uthega dil, jab sajegi kaviyon ki mehfil’. A poetic event (Kavi Sammelan) is being organized on this Aaftaab. The event will be presenting young and talented poets who will recite their poems and mushairas in front of the audience. Here the participants will get a topic on which they have to present their poetry. Also, participants could get a chance to interact with upcoming faces of poetry.",
       date: "TBD",
       timing: "08:00 PM - 10:00 PM",
       // price: "₹50",
@@ -396,7 +404,7 @@ const getDay1Cards = () => {
     //   imageSrc:
     //     "https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     //   title: "Unplugged Night",
-    //   description: `Tune in to watch Sangam, the music club of IIT Jodhpur, fill the air with magical, melodious music.`,
+    //   description: Tune in to watch Sangam, the music club of IIT Jodhpur, fill the air with magical, melodious music.,
     //   date: "30/09/22",
     //   timing: "10:00 PM - 11:00 PM",
     //   // price: "₹50",
@@ -436,7 +444,7 @@ const getDay2Cards = () => {
       date: "TBD",
       timing: "10:00 AM - 11:30 AM",
       // price: "₹50",
-      description:`Christian Bale – or Batman once said: “I only sound intelligent when there’s a good script writer around." Always wanted to visualize your words? This is your chance. IIT Jodhpur will be organizing a video-making workshop this Aaftaab. Here we will be hosting a ‘Script to Video’ event where you will be guided by highly experienced mentors on how to convert your own script to videos. Join us to learn the nuances of video production and gain exclusive, behind the scenes information from some of the biggest names in the film and video industry.`,
+      description:'Christian Bale – or Batman once said: “I only sound intelligent when there’s a good script writer around." Always wanted to visualize your words? This is your chance. IIT Jodhpur will be organizing a video-making workshop this Aaftaab. Here we will be hosting a ‘Script to Video’ event where you will be guided by highly experienced mentors on how to convert your own script to videos. Join us to learn the nuances of video production and gain exclusive, behind the scenes information from some of the biggest names in the film and video industry.',
       registrableEvent: true,
       minTeamSize: 1,
       maxTeamSize: 1,
@@ -468,7 +476,7 @@ const getDay2Cards = () => {
     //   date: "01/10/22",
     //   timing: "10:00 AM - 11:00 AM",
     //   // price: "₹50",
-    //   description: `Are you someone who prepares the entire night for hosting the next day, and then BAM!: You forget everything when you perform? Well fear not, for we will be hosting a “Public Speaking” workshop where you will be carefully instructed on the subtle art of speaking in front of an audience. Just like how the mirrors of kaleidoscopes mimic the spectrum, we will help you carve all aspects from body language, to speech articulation to persuasive speaking.So, let’s not waste this opportunity because "Good fortune is what happens when opportunity meets planning!!"`,
+    //   description: Are you someone who prepares the entire night for hosting the next day, and then BAM!: You forget everything when you perform? Well fear not, for we will be hosting a “Public Speaking” workshop where you will be carefully instructed on the subtle art of speaking in front of an audience. Just like how the mirrors of kaleidoscopes mimic the spectrum, we will help you carve all aspects from body language, to speech articulation to persuasive speaking.So, let’s not waste this opportunity because "Good fortune is what happens when opportunity meets planning!!",
     //   isFlagship: false,
     //   prize: "",
     //   ruleBookLink: "",
@@ -546,7 +554,7 @@ const getDay2Cards = () => {
       imageSrc:
         "https://images.unsplash.com/photo-1538449327350-43b4fcfd35ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGludGVydmlldyUyMHdpdGglMjBkaXJlY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       title: "Interview with Director",
-      description: `Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.`,
+      description: "Ever wondered whether the Director of such a prestigious institute eats like us, lives like us or enjoys like us? Well, we present a one-on-one interview with the director complete with a set of unique and out-of-the-box questions. Come and see what he has to say! An interview with the director in front of the entire college that help us get to know him from a different perspective.",
       date: "TBD",
       timing: "04:30 PM - 05:30 PM",
       // price: "₹50",
@@ -559,7 +567,7 @@ const getDay2Cards = () => {
       imageSrc:
         "https://thumbs.dreamstime.com/b/old-map-vintage-travel-equipment-expedition-concept-treasure-hunt-holiday-gifts-old-map-vintage-travel-equipment-133932740.jpg",
       title: "Clueminati (Treasure Hunt)",
-      description: `Life is a treasure hunt game. You have to solve the clues from incidents that happened and move further to find the ultimate fortune. So are you into solving the clues and making your way through the wilderness in the pursuit of long lost treasure/ fortune ? We offer you all this thrilling experience in Aaftaab 2022’s very own “ClueMinati”. In “ClueMinati”  you will be given clues which will lead you to the ultimate treasure. Players with the aid of clues will  compete in trying to find the hidden treasure.`,
+      description:" Life is a treasure hunt game. You have to solve the clues from incidents that happened and move further to find the ultimate fortune. So are you into solving the clues and making your way through the wilderness in the pursuit of long lost treasure/ fortune ? We offer you all this thrilling experience in Aaftaab 2022’s very own “ClueMinati”. In “ClueMinati”  you will be given clues which will lead you to the ultimate treasure. Players with the aid of clues will  compete in trying to find the hidden treasure.",
       date: "TBD",
       timing: "06:00 PM - 08:00 PM",
       // price: "₹50",
@@ -575,7 +583,7 @@ const getDay2Cards = () => {
       imageSrc:
         "https://media.istockphoto.com/vectors/stand-up-comedy-show-is-a-neon-sign-neon-symbol-symbol-bright-banner-vector-id910152132?k=20&m=910152132&s=612x612&w=0&h=fOngvbE0ar3mStiaosLhPut-qqSfqdRj4LNP4Atk8Ac=",
       title: "Standup Comedy",
-      description: `Come and join us for an evening glimmered with sarcasm and humour, brought to you by one of the finest comics in the country and fill the evening with giggles and hootings.A comedic performance to a live audience, saturated with jokes and sarcasm with one of the best standup comics out there to entertain you.`,
+      description: "Come and join us for an evening glimmered with sarcasm and humour, brought to you by one of the finest comics in the country and fill the evening with giggles and hootings.A comedic performance to a live audience, saturated with jokes and sarcasm with one of the best standup comics out there to entertain you.",
       date: "TBD",
       timing: "09:00 PM - 10:30 PM",
       // price: "₹50",
@@ -588,7 +596,7 @@ const getDay2Cards = () => {
       imageSrc:
         "https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Unplugged Night",
-      description: `Tune in to watch Sangam, the music society of IIT Jodhpur, fill the air with magical, melodious music.`,
+      description: "Tune in to watch Sangam, the music society of IIT Jodhpur, fill the air with magical, melodious music.",
       date: "TBD",
       timing: "10:00 PM - 11:00 PM",
       // price: "₹50",
@@ -611,7 +619,7 @@ const getDay3Cards = () => {
       date: "TBD",
       timing: "09:30 AM - 11:30 AM",
       // price: "₹50",
-      description: `Imagine "One minute" deciding your fate. Appalling, isnt it? Everyone can give a speech, but who can give a speech under a minute? Let's find out in "Just A Minute Speech" where people will scrabble for their words when the clock is ticking. Here the topic is not your opponent, time is. Come beat the time and prove your worth!!  -- A one minute time limiting speech in which one has to begin, prove the point and conclude the speech.`,
+      description: "Imagine `One minute` deciding your fate. Appalling, isnt it? Everyone can give a speech, but who can give a speech under a minute? Let's find out in `Just A Minute Speech` where people will scrabble for their words when the clock is ticking. Here the topic is not your opponent, time is. Come beat the time and prove your worth!!  -- A one minute time limiting speech in which one has to begin, prove the point and conclude the speech.",
       registrableEvent: true,
       minTeamSize: 3,
       maxTeamSize: 5,
@@ -624,7 +632,7 @@ const getDay3Cards = () => {
       imageSrc:
         "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlzY3Vzc2lvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       title: "In Pursuit Of Dispute (English Debate)",
-      description: `It is better to debate a question without settling it than to settle a question without debating it. This aaftaab, unveil the debater inside you by pitching your matter, method and manner in the “English Debate” competition! Do participate and win exciting prizes!!`,
+      description: "It is better to debate a question without settling it than to settle a question without debating it. This aaftaab, unveil the debater inside you by pitching your matter, method and manner in the “English Debate” competition! Do participate and win exciting prizes!!",
       date: "TBD",
       timing: "09:30 AM - 11:30 AM",
       // price: "₹50",
@@ -676,7 +684,7 @@ const getDay3Cards = () => {
       title: "Mythology quiz",
       date: "TBD",
       timing: "11:30 AM - 01:00 PM",
-      description: `How much do you know when it comes to mythology? There are myths which are believed to tend to become true, defining mythology as the sacred history of humanity… Let’s come together to participate in the mythology quiz and explore a world full of myths.`,
+      description: "How much do you know when it comes to mythology? There are myths which are believed to tend to become true, defining mythology as the sacred history of humanity… Let’s come together to participate in the mythology quiz and explore a world full of myths.",
       // price: "₹50",
       registrableEvent: true,
       minTeamSize: 3,
@@ -707,7 +715,7 @@ const getDay3Cards = () => {
       title: "Theatre Performance",
       date: "TBD",
       timing: "02:30 PM - 04:00 PM",
-      description: `Movies will make you famous; Television will make you rich;  but Theater will make you expressive! Theater is akin to a kaleidoscope of patterns filled with characters, voices, emotions, movements, languages, metaphors and much more!!! Aaftaab'22 will therefore be hosting a theater performance to enrich the audience. We will have a performance that entails acting, singing, dance and music, dialogues, narration, recitation with a touch of puppetry or pantomime, and we are certain that it will leave you absolutely spellbound! So what are you waiting for? Grab a seat, because the show is about to begin...`,
+      description: "Movies will make you famous; Television will make you rich;  but Theater will make you expressive! Theater is akin to a kaleidoscope of patterns filled with characters, voices, emotions, movements, languages, metaphors and much more!!! Aaftaab'22 will therefore be hosting a theater performance to enrich the audience. We will have a performance that entails acting, singing, dance and music, dialogues, narration, recitation with a touch of puppetry or pantomime, and we are certain that it will leave you absolutely spellbound! So what are you waiting for? Grab a seat, because the show is about to begin...",
       // price: "₹50",
       isFlagship: false,
       prize: "",
@@ -734,7 +742,7 @@ const getDay3Cards = () => {
       imageSrc:
         "https://images.unsplash.com/photo-1485814837398-ed2048f57499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Open Mic",
-      description: `This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...`,
+      description: "This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...",
       date: "TBD",
       timing: "05:30 PM - 07:30 PM",
       // price: "₹50",
@@ -750,7 +758,7 @@ const getDay3Cards = () => {
       imageSrc:
         "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRqJTIwbmlnaHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       title: "DJ Night",
-      description: `As we reach the end of the festivities, join us, for one last celebration , as we embrace EDM and Hip Hop music, and dance to our hearts content!`,
+      description: "As we reach the end of the festivities, join us, for one last celebration , as we embrace EDM and Hip Hop music, and dance to our hearts content!",
       date: "TBD",
       timing: "08:30 PM - 11:00 PM",
       // price: "₹50",
@@ -763,7 +771,7 @@ const getDay3Cards = () => {
       imageSrc:
         "https://images.unsplash.com/photo-1583318432730-a19c89692612?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
       title: "Prom Night",
-      description: `The perfect opportunity for you and your significant other, to spend some time together, and live the ultimate teenage romance dream.`,
+      description: "The perfect opportunity for you anTd your significant other, to spend some time together, and live the ultimate teenage romance dream.",
       date: "TBD",
       timing: "10:30 PM - 11:30 PM",
       // price: "₹50",
