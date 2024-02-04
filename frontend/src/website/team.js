@@ -1,6 +1,7 @@
 import AnimationRevealPage from "helpers/AnimationRevealPage";
 import React, { Component } from "react";
 import Header from "components/headers/light.js";
+
 import TeamCard from "components/cards/Team-Teams-Card";
 import Footer from "components/footers/Home-Footer";
 

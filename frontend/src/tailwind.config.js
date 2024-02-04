@@ -269,7 +269,8 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
-      display: ['Inter', 'system-ui'],
+      'philosopher': ['Philosopher', 'sans-serif'],
+       display: ['Inter', 'system-ui'],
       sans: [
         'system-ui',
         '-apple-system',
@@ -287,7 +288,7 @@ module.exports = {
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
-    },
+    },
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',

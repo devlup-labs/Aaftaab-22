@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
+
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { Link } from "react-router-dom";
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
@@ -20,16 +21,20 @@ export const NavLinks = tw.div`inline-block`;
  * hocus:bg-primary-700 will apply the bg-primary-700 class on hover or focus
  */
 export const NavLink = tw.a`
-  text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
-  font-semibold tracking-wide transition duration-300
-  pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
+text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+font-semibold tracking-wide transition duration-300
+pb-1 border-b-2 border-transparent hover:border-black hocus:text-black
 `;
 
 export const PrimaryLink = tw(NavLink)`
   lg:mx-0 lg:px-8 lg:py-3
-  px-4 py-1 rounded bg-primary-500 text-gray-100
-  hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline
+  px-4 py-1 rounded text-gray-100
   border-b-0
+  bg-black
+  hocus:bg-white hocus:text-black
+  focus:shadow-outline
+  
+
 `;
 
 export const LogoLink = styled(NavLink)`
@@ -75,32 +80,38 @@ export default ({
    * changing the defaultLinks variable below below.
    * If you manipulate links here, all the styling on the links is already done for you. If you pass links yourself though, you are responsible for styling the links or use the helper styled components that are defined here (NavLink)
    */
+ 
+
   const loggedIn = useContext(userContext).loggedIn;
   const defaultLinks = [
     <NavLinks key={1}>
       <Link to="/about">
-        <NavLink>About</NavLink>
+         <NavLink style={{ color: 'black' , fontFamily: 'Philosopher'}}>About</NavLink>
       </Link>
       <Link to="/events">
-        <NavLink>Events</NavLink>
+        <NavLink style={{ color: 'black', fontFamily: 'Philosopher' }}>Events</NavLink>
       </Link>
       <Link to="/sponsors">
-        <NavLink>Sponsors</NavLink>
+        <NavLink style={{ color: 'black', fontFamily: 'Philosopher' }}>Sponsors</NavLink>
       </Link>
       <Link to="/team">
-        <NavLink>Team</NavLink>
+         <NavLink style={{ color: 'black', fontFamily: 'Philosopher' }}>Team</NavLink>
       </Link>
       <Link to="/register">
-        <NavLink>Register</NavLink>
+        <NavLink style={{ color: 'black', fontFamily: 'Philosopher' }}>Register</NavLink>
       </Link>
 
-     {!loggedIn?<Link to="/login">
-        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}>
-          Login
+      {!loggedIn?<Link to="/login">
+        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}
+        style={{ backgroundColor: 'black', color: 'white',fontFamily: 'Philosopher' }}
+      >
+      Login
         </PrimaryLink>
       </Link>:
       <Link to="/dashboard">
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}
+      style={{ backgroundColor: 'black', color: 'white',fontFamily: 'Philosopher' }}
+      >
         Profile
       </PrimaryLink>
     </Link>
@@ -113,7 +124,8 @@ export default ({
 
   const defaultLogoLink = (
     <Link to="/">
-      <LogoLink>
+      <LogoLink style={{ color: 'black',fontFamily: 'Philosopher' }} >
+        
         <img src={logo} alt="logo" />
         Aaftaab
       </LogoLink>
