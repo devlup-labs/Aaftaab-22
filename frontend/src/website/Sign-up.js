@@ -20,12 +20,12 @@ var Loader = require("react-loader");
 const Container = tw(
   ContainerBase
 )`min-h-screen bg-primary-900 text-white font-medium flex justify-center -mx-8 -mt-8 sm:-my-8`;
-const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;
+const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1 font-Philosopher`;
 const MainContainer = tw.div`lg:w-1/2 xl:w-5/12 p-6 sm:p-12`;
 const LogoLink = tw.a``;
 const LogoImage = tw.img`h-32 mx-auto`;
 const MainContent = tw.div`mt-12 flex flex-col items-center`;
-const Heading = tw.h1`text-2xl xl:text-3xl font-extrabold`;
+const Heading = tw.h1`text-2xl xl:text-3xl font-extrabold font-Philosopher`;
 const FormContainer = tw.div`w-full flex-1 mt-8`;
 
 const SocialButtonsContainer = tw.div`flex flex-col items-center`;

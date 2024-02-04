@@ -24,10 +24,10 @@ import Maaz from '../../images/flagship_events/Maaz-Bin-Bilal.jpg'
 import "./Homepage-Slider.css"
 
 const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
+const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20 font-Philosopher`;
 
 const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm:flex-row justify-between`;
-const Heading = tw(SectionHeading)``;
+const Heading = tw(SectionHeading)`font-Philosopher`;
 const Controls = tw.div`flex items-center`;
 const ControlButton = styled(PrimaryButtonBase)`
   ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2`}
@@ -55,7 +55,7 @@ const CardImage = styled.div(props => [
 
 const TextInfo = tw.div`py-6 flex-1 flex flex-col justify-between sm:px-10 sm:py-6`;
 const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center`;
-const Title = tw.h5`text-2xl font-bold`;
+const Title = tw.h5`text-2xl font-bold font-Philosopher`;
 
 const RatingsInfo = styled.div`
   ${tw`flex items-center sm:ml-4 mt-2 sm:mt-0`}
@@ -65,7 +65,7 @@ const RatingsInfo = styled.div`
 `;
 
 
-const Description = tw.p`text-sm leading-loose mt-2 sm:mt-4`;
+const Description = tw.p`text-sm leading-loose mt-2 sm:mt-4 font-Philosopher`;
 
 const Rating = tw.span`ml-2 font-bold`;
 //const Description = tw.p`text-sm leading-loose mt-2 sm:mt-4`;
@@ -77,7 +77,7 @@ const IconContainer = styled.div`
     ${tw`w-3 h-3`}
   }
 `;
-const Text = tw.div`ml-2 text-sm font-semibold text-gray-800`;
+const Text = tw.div`ml-2 text-sm font-semibold text-gray-800 font-Philosopher`;
 
 const PrimaryButton = tw(PrimaryButtonBase)`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-br-4xl py-3 sm:py-6`;
 export default () => {
