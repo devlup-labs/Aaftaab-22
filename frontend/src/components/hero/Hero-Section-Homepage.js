@@ -18,10 +18,10 @@ import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.sv
 import DesignIllustration from "../../images/design-illustration.svg";
 
 import heroImgTitle from '../../images/old-logo-text.png'
-import heroImgTL from '../../images/logo-top-left.png'
-import heroImgTR from '../../images/logo-top-right.png'
-import heroImgBL from '../../images/logo-bottom-left.png'
-import heroImgBR from '../../images/logo-bottom-right.png'
+import heroImgTL from '../../images/Logo2024-top-left.png'
+import heroImgTR from '../../images/Logo2024-top-right.png'
+import heroImgBL from '../../images/Logo2024-bottom-left.png'
+import heroImgBR from '../../images/Logo2024-bottom-right.png'
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col-reverse lg:flex-row md:items-center max-w-screen-xl mx-auto py-5 lg:py-10 md:py-8`;

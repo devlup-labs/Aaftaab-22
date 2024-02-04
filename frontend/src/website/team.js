@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Header from "components/headers/light.js";
 import TeamCard from "components/cards/Team-Teams-Card";
 import Footer from "components/footers/Home-Footer";
-
+ 
 import { ReactComponent as EmailIcon } from "images/email-envelope.svg";
 import { ReactComponent as LinkedinIcon } from "images/linkedin-icon.svg";
 import { ReactComponent as GithubIcon } from "images/github-icon.svg";
@@ -21,7 +21,7 @@ import Yash from '../images/team/profile_pic (2) - Yash Anand (B20ES010).jpg'
 import Ishita from '../images/team/PICTURE - Ishita (M21MS034).jpg'
 import ArunSahu from '../images/team/Arun sahu.jpg'
 import KaranThakur from '../images/team/IMG_1285 - Karan Thakur (B20CH021).JPG'
-
+ 
 import Gaurav from '../images/team/B20AI062(SG) - Gaurav Sangwan (B20AI062).jpg'
 import Suyash from '../images/team/Suyash Surana.jpg'
 import AnkushGupta from '../images/team/IMG_20220520_204750 - Ankush Gupta (B20CH006).jpg'
@@ -34,87 +34,14 @@ import Stuti from '../images/team/Stuti Pradeep Aswani.jpg'
 import Shreya from '../images/team/Shreya Pagaria.jpg'
 import Akshat from '../images/team/Akshat Jain.jpeg'
 import UdayBhanu from '../images/team/Uday Bhanu.jpg'
-
+ 
+ 
 function Team() {
-  const team0 = {
-    heading: "Festival Chiefs",
-    subheading: "Our Team",
+  const team4 = {
+    heading: "Web Development Team",
+    description: "Meet our passionate team dedicated to web development.",
     cards: [
-      {
-        imageSrc: Yawer,     
-        name: "Yawer Abbas",
-        links: [
-          {
-            url: "https://instagram.com/Yxwerabbas",
-            icon: InstagramIcon,
-          },
-
-          {
-            mail: "abbas.1@iitj.ac.in",
-            icon: EmailIcon
-          }
-        
-          
-        ],
-      },
-      {
-        imageSrc: Stuti,
-        name: "Stuti Aswani",
-        links: [
-          {
-            url: "https://instagram.com",
-            icon: InstagramIcon,
-          },
-          {
-            mail: "aswani.1@iitj.ac.in",
-            icon: EmailIcon
-          }
-          
-         
-        ],
-      },
-      {
-        imageSrc: SayanSanyal,
-        name: "Sayan Sanyal",
-        links: [
-          {
-            url: "https://instagram.com/_Xcavist_",
-            icon: InstagramIcon,
-          },
-          {
-            mail: "sanyal.3@iitj.ac.in",
-            icon: EmailIcon
-          }
-          
-        ],
-      },
-    ],
-  };
-  const team8 = {
-    heading: "Web Development",
-    // subheading: "Our Team",
-    cards: [
-      {
-        imageSrc: Vishal,
-        position: "Head",
-        name: "Vishal Kumar Yadav",
-        links: [
-          {
-            url: "https://instagram.com/vishal_yadav._._",
-            icon: InstagramIcon,
-          },
-
-          {
-            mail: "yadav.40@iitj.ac.in",
-            icon: EmailIcon
-          },
-          {
-            url: "https://linkedin.com/in/vishal-yadav-9871451b0",
-            icon: LinkedinIcon,
-          },
-          
-        ],
-      },
+      // Head Members
       {
         imageSrc: Jahnab,
         position: "Head",
@@ -124,7 +51,7 @@ function Team() {
             url: "https://instagram.com/jahnab.dutta",
             icon: InstagramIcon,
           },
-
+ 
           {
             mail: "dutta.4@iitj.ac.in",
             icon: EmailIcon
@@ -138,14 +65,14 @@ function Team() {
       },
       {
         imageSrc: YashB,
-        position: "Mentor",
+        position: "Head",
         name: "Yash Bhargava",
         links: [
           {
             url: "https://instagram.com/cyan_tarantula",
             icon: InstagramIcon,
           },
-
+ 
           {
             mail: "bhargava.3@iitj.ac.in",
             icon: EmailIcon
@@ -158,30 +85,87 @@ function Team() {
         ],
       },
       {
-        imageSrc: Vikash,
-        position: "Mentor",
-        name: "Vikash Yadav",
+        imageSrc: MahendraJakhar,
+        position: "Assistant Head",
+        name: "Mahendra Jakhar",
         links: [
           {
-            url: "https://www.instagram.com/__vcos__",
+            url: "https://instagram.com/mahendra8p",
             icon: InstagramIcon,
           },
-
+ 
           {
-            mail: "yadav.41@iitj.ac.in",
+            mail: "jakhar.4@iitj.ac.in",
+            icon: EmailIcon
+          }
+        ]
+            
+      },      
+      {
+        imageSrc: Tanay,
+        position: "Assistant Head",
+        name: "Tanay Anand",
+        links: [
+          {
+            url: "https://instagram.com/tanay.anand12",
+            icon: InstagramIcon,
+          },
+ 
+          {
+            mail: "anand.6@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+ 
+      {
+        imageSrc: Vishal,
+        position: "Assistant Head",
+        name: "Vishal Kumar Yadav",
+        links: [
+          {
+            url: "https://instagram.com/vishal_yadav._._",
+            icon: InstagramIcon,
+          },
+ 
+          {
+            mail: "yadav.40@iitj.ac.in",
             icon: EmailIcon
           },
           {
-            url: "https://linkedin.com/in/vikash-rs-yadav",
+            url: "https://linkedin.com/in/vishal-yadav-9871451b0",
+            icon: LinkedinIcon,
+          },
+          
+        ],
+      },
+      {
+        imageSrc: Vishal,
+        position: "Assistant Head",
+        name: "Vishal Kumar Yadav",
+        links: [
+          {
+            url: "https://instagram.com/vishal_yadav._._",
+            icon: InstagramIcon,
+          },
+ 
+          {
+            mail: "yadav.40@iitj.ac.in",
+            icon: EmailIcon
+          },
+          {
+            url: "https://linkedin.com/in/vishal-yadav-9871451b0",
             icon: LinkedinIcon,
           },
           
         ],
       },      
+      // Add more team members here following the same structure
     ],
   };
   const team1 = {
-    heading: "Accomodation, Travel and Security",
+    heading: "Accomodation and Transport",
     // subheading: "lorem ipsum",
     cards: [
       {
@@ -193,7 +177,7 @@ function Team() {
             url: "https://instagram.com/mahendra8p",
             icon: InstagramIcon,
           },
-
+ 
           {
             mail: "jakhar.4@iitj.ac.in",
             icon: EmailIcon
@@ -211,7 +195,7 @@ function Team() {
             url: "https://instagram.com/tanay.anand12",
             icon: InstagramIcon,
           },
-
+ 
           {
             mail: "anand.6@iitj.ac.in",
             icon: EmailIcon
@@ -221,14 +205,82 @@ function Team() {
       },
       {
         imageSrc: KaranThakur,
-        position: "Head",
+        position: "Assistant Head",
         name: "Karan Thakur",
         links: [
           {
             url: "https://instagram.com/karan._thakur_",
             icon: InstagramIcon,
           },
-
+ 
+          {
+            mail: "thakur.11@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: KaranThakur,
+        position: "Assistant Head",
+        name: "Karan Thakur",
+        links: [
+          {
+            url: "https://instagram.com/karan._thakur_",
+            icon: InstagramIcon,
+          },
+ 
+          {
+            mail: "thakur.11@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: KaranThakur,
+        position: "Assistant Head",
+        name: "Karan Thakur",
+        links: [
+          {
+            url: "https://instagram.com/karan._thakur_",
+            icon: InstagramIcon,
+          },
+ 
+          {
+            mail: "thakur.11@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: KaranThakur,
+        position: "Assistant Head",
+        name: "Karan Thakur",
+        links: [
+          {
+            url: "https://instagram.com/karan._thakur_",
+            icon: InstagramIcon,
+          },
+ 
+          {
+            mail: "thakur.11@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: KaranThakur,
+        position: "Assistant Head",
+        name: "Karan Thakur",
+        links: [
+          {
+            url: "https://instagram.com/karan._thakur_",
+            icon: InstagramIcon,
+          },
+ 
           {
             mail: "thakur.11@iitj.ac.in",
             icon: EmailIcon
@@ -239,7 +291,7 @@ function Team() {
     ],
   };
   const team2 = {
-    heading: "Creativity, Design and Media",
+    heading: "Design and Creativity",
     // subheading: "Our Team",
     cards: [
       {
@@ -260,7 +312,7 @@ function Team() {
       },
       {
         imageSrc: Prabodh,
-        position: "Head",
+        position: "Assistant Head",
         name: "Prabodh Sharma",
         links: [
           {
@@ -275,25 +327,57 @@ function Team() {
         ],
       },
       {
-        imageSrc: DefaultUser,
-        position: "Head",
-        name: "Aaryan Dahiya",
+        imageSrc: Prabodh,
+        position: "Assistant Head",
+        name: "Prabodh Sharma",
         links: [
           {
-            url: "https://instagram.com",
+            url: "https://instagram.com/",
             icon: InstagramIcon,
           },
           {
-            mail: "dahiya.1@iitj.ac.in",
+            mail: "m22dh009@iitj.ac.in",
             icon: EmailIcon
           }
-          
+         
+        ],
+      },
+      {
+        imageSrc: Prabodh,
+        position: "Assistant Head",
+        name: "Prabodh Sharma",
+        links: [
+          {
+            url: "https://instagram.com/",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "m22dh009@iitj.ac.in",
+            icon: EmailIcon
+          }
+         
+        ],
+      },
+      {
+        imageSrc: Prabodh,
+        position: "Assistant Head",
+        name: "Prabodh Sharma",
+        links: [
+          {
+            url: "https://instagram.com/",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "m22dh009@iitj.ac.in",
+            icon: EmailIcon
+          }
+         
         ],
       },
     ],
   };
   const team3 = {
-    heading: "Events and Coordination",
+    heading: "Events and Curation",
     // subheading: "Our Team",
     cards: [
       {
@@ -343,60 +427,171 @@ function Team() {
           }
         ],
       },
+      {
+        imageSrc: Shreya,
+        position: "Head",
+        name: "Shreya Pagaria",
+        links: [
+          {
+            url: "https://instagram.com/shreyapagaria_",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "pagaria.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: Shreya,
+        position: "Assistant Head",
+        name: "Shreya Pagaria",
+        links: [
+          {
+            url: "https://instagram.com/shreyapagaria_",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "pagaria.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: Shreya,
+        position: "Assistant Head",
+        name: "Shreya Pagaria",
+        links: [
+          {
+            url: "https://instagram.com/shreyapagaria_",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "pagaria.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: Shreya,
+        position: "Assistant Head",
+        name: "Shreya Pagaria",
+        links: [
+          {
+            url: "https://instagram.com/shreyapagaria_",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "pagaria.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: Shreya,
+        position: "Assistant Head",
+        name: "Shreya Pagaria",
+        links: [
+          {
+            url: "https://instagram.com/shreyapagaria_",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "pagaria.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: Shreya,
+        position: "Assistant Head",
+        name: "Shreya Pagaria",
+        links: [
+          {
+            url: "https://instagram.com/shreyapagaria_",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "pagaria.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
       
     ],
     
   };
-
-  const team4 = {
-    heading: "Informals",
-    // subheading: "Our Team",
+  
+  const team0 = {
+    heading: "Festival Chiefs",
+    subheading: "Our Team",
     cards: [
       {
-        imageSrc: ArunSahu,
+        imageSrc: Yawer,     
+        name: "Yawer Abbas",
         position: "Head",
-        name: "Arun Sahu",
         links: [
           {
-            url: "https://instagram.com/sahu_arun_1612",
+            url: "https://instagram.com/Yxwerabbas",
             icon: InstagramIcon,
           },
+ 
           {
-            mail: "sahu.19@iitj.ac.in",
+            mail: "abbas.1@iitj.ac.in",
             icon: EmailIcon
           }
+        
           
         ],
       },
       {
-        imageSrc: UdayBhanu,
+        imageSrc: Stuti,
+        name: "Stuti Aswani",
         position: "Head",
-        name: "Uday Bhanu",
         links: [
           {
-            url: "https://https://www.instagram.com/_uday_bhanu_",
+            url: "https://instagram.com",
             icon: InstagramIcon,
           },
           {
-            mail: "bhanu.2@iitj.ac.in",
+            mail: "aswani.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+         
+        ],
+      },
+      {
+        imageSrc: SayanSanyal,
+        name: "Sayan Sanyal",
+        position: "Head",
+        links: [
+          {
+            url: "https://instagram.com/_Xcavist_",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "sanyal.3@iitj.ac.in",
             icon: EmailIcon
           }
           
         ],
       },
-      
-      
     ],
-    
   };
-
   const team5 = {
-    heading: "Public Relations",
+    heading: "PR & Marketing",
     // subheading: "Our Team",
     cards: [
       {
         imageSrc: Ayush,
-        position: "Head",
+        position: "Assistant Head",
         name: "Ayush Didel",
         links: [
           {
@@ -425,66 +620,93 @@ function Team() {
           }
         ],
       },
+      {
+        imageSrc: Ayush,
+        position: "Assistant Head",
+        name: "Ayush Didel",
+        links: [
+          {
+            url: "https://instagram.com/didelayush2003",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "didel.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: Ayush,
+        position: "Assistant Head",
+        name: "Ayush Didel",
+        links: [
+          {
+            url: "https://instagram.com/didelayush2003",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "didel.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: Ayush,
+        position: "Assistant Head",
+        name: "Ayush Didel",
+        links: [
+          {
+            url: "https://instagram.com/didelayush2003",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "didel.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: Ayush,
+        position: "Assistant Head",
+        name: "Ayush Didel",
+        links: [
+          {
+            url: "https://instagram.com/didelayush2003",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "didel.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: Ayush,
+        position: "Assistant Head",
+        name: "Ayush Didel",
+        links: [
+          {
+            url: "https://instagram.com/didelayush2003",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "didel.1@iitj.ac.in",
+            icon: EmailIcon
+          }
+          
+        ],
+      },
       
       
     ],
     
   };
-
   const team6 = {
-    heading: "Publicity and Marketing",
-    // subheading: "Our Team",
-    cards: [
-      {
-        imageSrc: ShyanPal,
-        position: "Head",
-        name: "Shyan Pal",
-        links: [
-          {
-            url: "https://instagram.com/shyan.pal",
-            icon: InstagramIcon,
-          },
-          {
-            mail: "m22sl009@iitj.ac.in",
-            icon: EmailIcon
-          }
-        ],
-      },
-      {
-        imageSrc: Suyash,
-        position: "Head",
-        name: "Suyash Surana",
-        links: [
-          {
-            url: "https://instagram.com/_suyash35",
-            icon: InstagramIcon,
-          },
-          {
-            mail: "surana.4@iitj.ac.in",
-            icon: EmailIcon
-          }
-        ],
-      },
-      {
-        imageSrc: AnkushGupta,
-        position: "Head",
-        name: "Ankush Gupta",
-        links: [
-          {
-            url: "https://instagram.com/ankush.gupta__",
-            icon: InstagramIcon,
-          },
-          {
-            mail: "gupta.71@iitj.ac.in",
-            icon: EmailIcon
-          }
-        ],
-      },
-      
-    ],
-    
-  };const team7 = {
-    heading: "Resources, Decoration and Management",
+    heading: "Resources",
     // subheading: "Our Team",
     cards: [
       {
@@ -496,7 +718,7 @@ function Team() {
             url: "https://instagram.com/sangs_gaurav",
             icon: InstagramIcon,
           },
-
+ 
           {
             mail: "sangwan.2@iitj.ac.in",
             icon: EmailIcon
@@ -506,14 +728,14 @@ function Team() {
       },
       {
         imageSrc: DefaultUser,
-        position: "Head",
+        position: "Assistant Head",
         name: "Divyanshi Singh Bora",
         links: [
           {
             url: "https://instagram.com/bora_divyanshi_",
             icon: InstagramIcon,
           },
-
+ 
           {
             mail: "bora.1@iitj.ac.in",
             icon: EmailIcon
@@ -522,81 +744,77 @@ function Team() {
       },
       {
         imageSrc: Yash,
-        position: "Head",
+        position: "Assistant Head",
         name: "Yash Anand",
         links: [
           {
             url: "https://instagram.com/yash_09.05",
             icon: InstagramIcon,
           },
-
+ 
           {
             mail: "anand.7@iitj.ac.in",
             icon: EmailIcon
           }
-
+ 
         ],
       },
       
     ],
     
   };
-    
-  
+ 
+ 
   return (
     <AnimationRevealPage>
       <Header />
-      <TeamCard heading={team0.heading}
+      <TeamCard
+        heading={team0.heading}
         subheading={team0.subheading}
-        description={team0.description}
-        cards={team0.cards} />
-
-<TeamCard heading={team8.heading}
-        subheading={team8.subheading}
-        description={team8.description}
-        cards={team8.cards} />
-
-      <TeamCard heading={team1.heading}
-        subheading={team1.subheading}
-        description={team1.description}
-        cards={team1.cards} />
-
-      <TeamCard heading={team2.heading}
-        subheading={team2.subheading}
-        description={team2.description}
-        cards={team2.cards} />
-     
-      <TeamCard heading={team3.heading}
-        subheading={team3.subheading}
-        description={team3.description}
-        cards={team3.cards} />
-
-      <TeamCard heading={team4.heading}
+        // description={team0.description}
+        cards={team0.cards}
+      />
+ 
+      <TeamCard
+        heading={team4.heading}
         subheading={team4.subheading}
-        description={team4.description}
-        cards={team4.cards} />
-
-      <TeamCard heading={team5.heading}
+        // description={team8.description}
+        cards={team4.cards}
+      />
+      
+      <TeamCard
+        heading={team1.heading}
+        subheading={team1.subheading}
+        // description={team1.description}
+        cards={team1.cards}
+      />
+      <TeamCard
+        heading={team2.heading}
+        subheading={team2.subheading}
+        // description={team1.description}
+        cards={team2.cards}
+      />
+      <TeamCard
+        heading={team3.heading}
+        subheading={team3.subheading}
+        // description={team1.description}
+        cards={team3.cards}
+      />
+      <TeamCard
+        heading={team5.heading}
         subheading={team5.subheading}
-        description={team5.description}
-        cards={team5.cards} />
-
-      <TeamCard heading={team6.heading}
+        // description={team1.description}
+        cards={team5.cards}
+      />
+      <TeamCard
+        heading={team6.heading}
         subheading={team6.subheading}
-        description={team6.description}
-        cards={team6.cards} />
-
-<TeamCard heading={team7.heading}
-        subheading={team7.subheading}
-        description={team7.description}
-        cards={team7.cards} />
-
-
-
-
+        // description={team1.description}
+        cards={team6.cards}
+      />
       <Footer />
     </AnimationRevealPage>
   );
-  }
-
+}
+ 
 export default Team;

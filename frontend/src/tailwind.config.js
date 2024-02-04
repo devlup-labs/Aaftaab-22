@@ -269,6 +269,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      poppins: ['Poppins', 'sans-serif'],
       display: ['Inter', 'system-ui'],
       sans: [
         'system-ui',
