@@ -7,7 +7,7 @@ import Footer from "components/footers/Home-Footer";
 import tw from "twin.macro";
 import imgLogo from "../images/old-logo.png";
 function Home() {
-    const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
+    const HighlightedText = tw.span`bg-black text-gray-100 px-4 transform -skew-x-12 inline-block`;
     return (
         <AnimationRevealPage>
             <Hero

@@ -33,7 +33,7 @@ const Image = styled.div(props => [
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
 const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
 const Title = tw.h4`text-xl font-bold text-gray-900`;
-const Description = tw.p`mt-2 text-lg leading-loose text-black font-poppins`;
+const Description = tw.p`mt-2 text-lg leading-loose text-black font-Philosopher`;
 const LinkAbout = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-black text-black`;
 
 const SvgDotPattern1 = tw(
@@ -71,7 +71,7 @@ export default () => {
     },
 
     {
-      imageSrc: "https://img.freepik.com/premium-photo/pen-book-desk-with-city-background_865967-64109.jpg ",
+      imageSrc: "https://tse4.explicit.bing.net/th?id=OIP.0UDoSnkKZpsROcgnUF9v8gHaDt&pid=Api&P=0&h=220 ",
       // subtitle: "Lit is Hit",
       // title: "Why Lit?",
       description:
