@@ -24,9 +24,9 @@ const Image = styled.div(props => [
   tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 bg-no-repeat md:bg-contain bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`
 ]);
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
-const Subtitle = tw.div`font-bold tracking-wide text-secondary-100 font-philosopher `;
-const Title = tw.h4`text-3xl font-bold text-gray-900 font-philosopher`;
-const Description = tw.p`mt-2 text-sm leading-loose font-philosopher`;
+const Subtitle = tw.div`font-bold tracking-wide text-secondary-100 font-Philosopher `;
+const Title = tw.h4`text-3xl font-bold text-gray-900 font-Philosopher`;
+const Description = tw.p`mt-2 text-sm leading-loose font-Philosopher`;
 const LinkAbout = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
 
 const SvgDotPattern1 = tw(

@@ -270,7 +270,8 @@ module.exports = {
     },
     fontFamily: {
 
-      'Philosopher': ['Philosopher', 'sans-serif'],
+      Philosopher: ['Philosopher', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
       display: ['Inter', 'system-ui'],
 
       sans: [
