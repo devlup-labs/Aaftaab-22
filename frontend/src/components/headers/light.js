@@ -2,7 +2,6 @@ import React, {useContext} from "react";
 import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
-
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { Link } from "react-router-dom";
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
@@ -14,6 +13,8 @@ import { userContext } from "App.js";
 const Header = tw.header`
   flex justify-between items-center
   max-w-screen-xl mx-auto
+  font-Philosopher
+  text-black
 `;
 export const NavLinks = tw.div`inline-block`;
 
@@ -21,17 +22,49 @@ export const NavLinks = tw.div`inline-block`;
  * hocus:bg-primary-700 will apply the bg-primary-700 class on hover or focus
  */
 export const NavLink = tw.a`
-
   text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
   font-semibold tracking-wide transition duration-300
-  pb-1 border-b-2 border-transparent hover:border-black hocus:text-black font-Philosopher`;
+  pb-1 border-b-2 border-transparent hover:border-black hocus:text-black
+`;
 
-export const PrimaryLink = tw(NavLink)`
-  lg:mx-0 lg:px-8 lg:py-3
-  px-4 py-1 rounded bg-primary-500 text-gray-100
-  hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline
-  border-b-0 font-Philosopher
+export const PrimaryLink = styled(NavLink)`
+  ${tw`
+    lg:mx-0 lg:px-8 lg:py-3
+    px-4 py-1 rounded text-black
+    hocus:bg-black hocus:text-black
+    focus:shadow-outline
+    border-b-0
+    relative
+  `}
 
+  background: ${({ loggedIn }) => (loggedIn ? 'linear-gradient(180deg, #000, #000)' : 'linear-gradient(180deg, #000, #000)')};
+  color: ${({ loggedIn }) => (loggedIn ? '#fff' : '#fff')};
+  border: 3px solid transparent; /* Initial border */
+  transition: background 0.3s, color 0.3s;
+
+  &:hover {
+    background: linear-gradient(180deg, #fff, #fff);
+    color: #000;
+    border-color: #000;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, transparent, #fff);
+      animation: waveAnimation 1s infinite alternate;
+      z-index: -1;
+    }
+  }
+
+  @keyframes waveAnimation {
+    to {
+      transform: scaleY(1.2);
+    }
+  }
 `;
 
 export const LogoLink = styled(NavLink)`
@@ -77,38 +110,32 @@ export default ({
    * changing the defaultLinks variable below below.
    * If you manipulate links here, all the styling on the links is already done for you. If you pass links yourself though, you are responsible for styling the links or use the helper styled components that are defined here (NavLink)
    */
- 
-
   const loggedIn = useContext(userContext).loggedIn;
   const defaultLinks = [
     <NavLinks key={1}>
       <Link to="/about">
-         <NavLink style={{ color: 'black' , fontFamily: 'Philosopher'}}>About</NavLink>
+        <NavLink style = {{ color: 'black', fontFamily: 'Lato'}}>About</NavLink>
       </Link>
       <Link to="/events">
-        <NavLink style={{ color: 'black', fontFamily: 'Philosopher' }}>Events</NavLink>
+        <NavLink style = {{ color: 'black', fontFamily: 'Lato'}}>Events</NavLink>
       </Link>
       <Link to="/sponsors">
-        <NavLink style={{ color: 'black', fontFamily: 'Philosopher' }}>Sponsors</NavLink>
+        <NavLink style = {{ color: 'black', fontFamily: 'Lato'}}>Sponsors</NavLink>
       </Link>
       <Link to="/team">
-         <NavLink style={{ color: 'black', fontFamily: 'Philosopher' }}>Team</NavLink>
+        <NavLink style = {{ color: 'black', fontFamily: 'Lato'}}>Team</NavLink>
       </Link>
       <Link to="/register">
-        <NavLink style={{ color: 'black', fontFamily: 'Philosopher' }}>Register</NavLink>
+        <NavLink style = {{ color: 'black', fontFamily: 'Lato'}}>Register</NavLink>
       </Link>
 
-      {!loggedIn?<Link to="/login">
-        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}
-        style={{ backgroundColor: 'black', color: 'white',fontFamily: 'Philosopher' }}
-      >
-      Login
+     {!loggedIn?<Link to="/login">
+        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}>
+          Login
         </PrimaryLink>
       </Link>:
       <Link to="/dashboard">
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}
-      style={{ backgroundColor: 'black', color: 'white',fontFamily: 'Philosopher' }}
-      >
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}>
         Profile
       </PrimaryLink>
     </Link>
@@ -121,8 +148,7 @@ export default ({
 
   const defaultLogoLink = (
     <Link to="/">
-      <LogoLink style={{ color: 'black',fontFamily: 'Philosopher' }} >
-        
+      <LogoLink>
         <img src={logo} alt="logo" />
         Aaftaab
       </LogoLink>

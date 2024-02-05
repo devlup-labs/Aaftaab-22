@@ -41,7 +41,7 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`mt-2 font-bold text-xl leading-none text-primary-500`}
+    ${tw`mt-2 font-bold text-xl leading-none text-black`}
   }
 
   .description {
@@ -79,7 +79,7 @@ export default () => {
     <Container>
       <ThreeColumnContainer>
         <Heading>
-          <span tw="text-secondary-500">TITLE SPONSORS</span>
+          <span tw="text-black">TITLE SPONSORS</span>
         </Heading>
         {cards[0].map((card, i) => (
           <Column key={i}>
@@ -95,7 +95,7 @@ export default () => {
         ))}
         
         <Heading tw="mt-10">
-          <span tw="text-secondary-500">ASSOCIATE SPONSORS</span>
+          <span tw="text-black">PAST-ASSOCIATE SPONSORS</span>
         </Heading>
         {cards[1].map((card, i) => (
           <Column key={i}>

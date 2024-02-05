@@ -1,7 +1,6 @@
 import AnimationRevealPage from "helpers/AnimationRevealPage";
 import React, { Component } from "react";
 import Header from "components/headers/light.js";
-
 import TeamCard from "components/cards/Team-Teams-Card";
 import Footer from "components/footers/Home-Footer";
  
@@ -9,34 +8,9 @@ import { ReactComponent as EmailIcon } from "images/email-envelope.svg";
 import { ReactComponent as LinkedinIcon } from "images/linkedin-icon.svg";
 import { ReactComponent as GithubIcon } from "images/github-icon.svg";
 import { ReactComponent as InstagramIcon } from "images/icons8-instagram.svg";
-import Ayush from "../images/team/Ayush - Ayush Didel (B20ME019).jpg"
-import ShyanPal from '../images/team/1CFD3BE5-A542-4501-BC09-E710A524AAF8 - Shyan Pal (M22SL009).jpeg'
-import Yawer from '../images/team/yxwerabbas-13092022-0001 - Yawer Abbas (B20CI050).webp'
-import SayanSanyal from '../images/team/1662833916599-01 - Sayan Sanyal (M21DH014).jpeg'
-import MahendraJakhar from '../images/team/IMG_6632-4 - Mahendra Jakhar (B20CI021).jpg'
-import VandanMoonat from '../images/team/IMG_20220130_211252_339 - Vandan Moonat (B20CI046).jpg'
-import Prabodh from '../images/team/WhatsApp Image 2022-09-11 at 15.45.33 - Prabodh Sharma (M22DH009).jpeg' 
- 
-import Tanay from '../images/team/WhatsApp Image 2022-08-22 at 10.40.45 PM - Tanay Anand (B20AI046).jpeg'
-import Yash from '../images/team/profile_pic (2) - Yash Anand (B20ES010).jpg'
-import Ishita from '../images/team/PICTURE - Ishita (M21MS034).jpg'
-import ArunSahu from '../images/team/Arun sahu.jpg'
-import KaranThakur from '../images/team/IMG_1285 - Karan Thakur (B20CH021).JPG'
- 
-import Gaurav from '../images/team/B20AI062(SG) - Gaurav Sangwan (B20AI062).jpg'
-import Suyash from '../images/team/Suyash Surana.jpg'
-import AnkushGupta from '../images/team/IMG_20220520_204750 - Ankush Gupta (B20CH006).jpg'
-import Vikash from '../images/team/Vikas Yadav.jpeg'
-import Vishal from '../images/team/Vishal Yadav.jpg'
-import Jahnab from '../images/team/Jahnab Dutta.jpeg'
-import YashB from '../images/team/Yash Bhargava.jpg'
-import DefaultUser from '../images/team/User.jpg'
-import Stuti from '../images/team/Stuti Pradeep Aswani.jpg'
-import Shreya from '../images/team/Shreya Pagaria.jpg'
-import Akshat from '../images/team/Akshat Jain.jpeg'
-import UdayBhanu from '../images/team/Uday Bhanu.jpg'
- 
- 
+
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import a from '../images/team/shreyansh.jpg';
 function Team() {
   const team4 = {
     heading: "Web Development Team",
@@ -44,94 +18,81 @@ function Team() {
     cards: [
       // Head Members
       {
-        imageSrc: Jahnab,
-        position: "Head",
-        name: "Jahnab Dutta",
+        imageSrc: a,
+        position:"Head",
+        name: "Shreyansh Lodha",
         links: [
           {
-            url: "https://instagram.com/jahnab.dutta",
+            url: "https://www.instagram.com/shreyanshjain0301?igsh=MTRicmQ4enJjbDQ=",
             icon: InstagramIcon,
           },
  
           {
-            mail: "dutta.4@iitj.ac.in",
+            mail: "lodha.1@iitj.ac.in",
             icon: EmailIcon
           },
           {
-            url: "https://linkedin.com/in/jahnab-dutta",
+            url: "https://www.linkedin.com/in/shreyansh-lodha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             icon: LinkedinIcon,
           },
           
         ],
       },
       {
-        imageSrc: YashB,
+        imageSrc: 
+        "/images/team/nikhil.jpg",
         position: "Head",
-        name: "Yash Bhargava",
+        name: "Nikhil Agrawal",
         links: [
           {
-            url: "https://instagram.com/cyan_tarantula",
+            url: "https://www.instagram.com/ankushkunayak?igsh=YXZjbjZmOW92aHA2",
             icon: InstagramIcon,
           },
  
           {
-            mail: "bhargava.3@iitj.ac.in",
+            mail: "agrawal.25@iitj.ac.in",
             icon: EmailIcon
           },
           {
-            url: "https://linkedin.com/in/yashbhargava02",
+            url: "https://www.linkedin.com/in/nikhil-agrawal-022879228/",
             icon: LinkedinIcon,
           },
           
         ],
       },
       {
-        imageSrc: MahendraJakhar,
+        imageSrc: "/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/gayathiri.jpg",
         position: "Assistant Head",
-        name: "Mahendra Jakhar",
+        name: "Gayathiri B.S",
         links: [
           {
-            url: "https://instagram.com/mahendra8p",
+            url: "https://www.instagram.com/reshsha08?igsh=eHF1ZnAyMzV0ZHVo",
             icon: InstagramIcon,
           },
  
           {
-            mail: "jakhar.4@iitj.ac.in",
+            mail: "b22ee017@iitj.ac.in ",
             icon: EmailIcon
-          }
+          },
+          {
+            url: "https://www.linkedin.com/in/gayathiri-b-s-398470236",
+            icon: LinkedinIcon,
+          },
         ]
             
       },      
       {
-        imageSrc: Tanay,
+        imageSrc: "/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/swaksh.jpg",
         position: "Assistant Head",
-        name: "Tanay Anand",
+        name: "Swaksh Patwari",
         links: [
           {
-            url: "https://instagram.com/tanay.anand12",
+            url: "http://www.instagram.com/swakshpatwari",
             icon: InstagramIcon,
           },
  
           {
-            mail: "anand.6@iitj.ac.in",
-            icon: EmailIcon
-          }
-          
-        ],
-      },
- 
-      {
-        imageSrc: Vishal,
-        position: "Assistant Head",
-        name: "Vishal Kumar Yadav",
-        links: [
-          {
-            url: "https://instagram.com/vishal_yadav._._",
-            icon: InstagramIcon,
-          },
- 
-          {
-            mail: "yadav.40@iitj.ac.in",
+            mail: "b22ai065@iitj.ac.in",
             icon: EmailIcon
           },
           {
@@ -141,22 +102,44 @@ function Team() {
           
         ],
       },
+ 
       {
-        imageSrc: Vishal,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/Indusri (B22AI039).jpg',
         position: "Assistant Head",
-        name: "Vishal Kumar Yadav",
+        name: "Indusri Siramsetty",
         links: [
           {
-            url: "https://instagram.com/vishal_yadav._._",
+            url: "https://www.instagram.com/indusri_siramsetty?igsh=MXIzdDRkN2xtZ2Fs",
             icon: InstagramIcon,
           },
  
           {
-            mail: "yadav.40@iitj.ac.in",
+            mail: "b22ai039@iitj.ac.in",
             icon: EmailIcon
           },
           {
-            url: "https://linkedin.com/in/vishal-yadav-9871451b0",
+            url: "https://www.linkedin.com/in/indusri-siramsetty-ab6597272",
+            icon: LinkedinIcon,
+          },
+          
+        ],
+      },
+      {
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/shirisha.jpg',
+        position: "Assistant Head",
+        name: "Mandari Shirisha",
+        links: [
+          {
+            url: "https://www.instagram.com/hayathi_333?igsh=ZjB1MXIzd2g5bTh6",
+            icon: InstagramIcon,
+          },
+ 
+          {
+            mail: "b22bb025@iitj.ac.in",
+            icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/shirisha-mandari-119bba26a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             icon: LinkedinIcon,
           },
           
@@ -170,121 +153,149 @@ function Team() {
     // subheading: "lorem ipsum",
     cards: [
       {
-        imageSrc: MahendraJakhar,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/vinay.jpg',
         position: "Head",
-        name: "Mahendra Jakhar",
+        name: "Vinay Vaishnav",
         links: [
           {
-            url: "https://instagram.com/mahendra8p",
+            url: "https://instagram.com/vinay_vaishnav360?igshid=MTNiYzNiMzkwZA==",
             icon: InstagramIcon,
           },
  
           {
-            mail: "jakhar.4@iitj.ac.in",
+            mail: "vaishnav.3@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/vinay-vaishnav-996027211",
+            icon: LinkedinIcon
           }
         ]
           
       },
     
       {
-        imageSrc: Tanay,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/adarsh.jpeg',
         position: "Head",
-        name: "Tanay Anand",
+        name: "Adarsh Gupta",
         links: [
           {
-            url: "https://instagram.com/tanay.anand12",
+            url: "",
             icon: InstagramIcon,
           },
  
           {
-            mail: "anand.6@iitj.ac.in",
+            mail: "m23air001@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/adarsh-gupta-b38545213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: KaranThakur,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Assistant Head",
-        name: "Karan Thakur",
+        name: "Yuvraj Saran",
         links: [
           {
-            url: "https://instagram.com/karan._thakur_",
+            url: "",
             icon: InstagramIcon,
           },
  
           {
-            mail: "thakur.11@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: KaranThakur,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/BHARGAVI.jpg',
         position: "Assistant Head",
-        name: "Karan Thakur",
+        name: "Bobba geetha sri manju Bhargavi",
         links: [
           {
-            url: "https://instagram.com/karan._thakur_",
+            url: "https://www.instagram.com/bhargavi.bobba?igsh=MWF0azBsd3I0ejFkYg==",
             icon: InstagramIcon,
           },
  
           {
-            mail: "thakur.11@iitj.ac.in",
+            mail: "b22ch046@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/bhargavi-bobba-39bb26256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: KaranThakur,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Assistant Head",
-        name: "Karan Thakur",
+        name: "Abhishek kumar",
         links: [
           {
-            url: "https://instagram.com/karan._thakur_",
+            url: "",
             icon: InstagramIcon,
           },
  
           {
-            mail: "thakur.11@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: KaranThakur,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Assistant Head",
-        name: "Karan Thakur",
+        name: "Rhythm sharma",
         links: [
           {
-            url: "https://instagram.com/karan._thakur_",
+            url: "",
             icon: InstagramIcon,
           },
  
           {
-            mail: "thakur.11@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: KaranThakur,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/akash.jpg',
         position: "Assistant Head",
-        name: "Karan Thakur",
+        name: "Akash Chatterjee",
         links: [
           {
-            url: "https://instagram.com/karan._thakur_",
+            url: "",
             icon: InstagramIcon,
           },
  
           {
-            mail: "thakur.11@iitj.ac.in",
+            mail: "m23air002@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/akash-chatterjee-239a421b9",
+            icon: LinkedinIcon
           }
           
         ],
@@ -296,81 +307,101 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: VandanMoonat,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/karak.png',
         position: "Head",
-        name: "Vandan Moonat",
+        name: "B. Karak",
         links: [
           {
             url: "https://instagram.com/vandan_moonat",
             icon: InstagramIcon,
           },
           {
-            mail: "moonat.1@iitj.ac.in",
+            mail: "m23ldx002@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/bitihotra/",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: Prabodh,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Assistant Head",
-        name: "Prabodh Sharma",
+        name: "Chahat Baranwal",
         links: [
           {
-            url: "https://instagram.com/",
+            url: "",
             icon: InstagramIcon,
           },
           {
-            mail: "m22dh009@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
          
         ],
       },
       {
-        imageSrc: Prabodh,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Assistant Head",
-        name: "Prabodh Sharma",
+        name: "Harshika Arya",
         links: [
           {
-            url: "https://instagram.com/",
+            url: "",
             icon: InstagramIcon,
           },
           {
-            mail: "m22dh009@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
          
         ],
       },
       {
-        imageSrc: Prabodh,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Assistant Head",
-        name: "Prabodh Sharma",
+        name: "Niharika Pradeep",
         links: [
           {
-            url: "https://instagram.com/",
+            url: "",
             icon: InstagramIcon,
           },
           {
-            mail: "m22dh009@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
          
         ],
       },
       {
-        imageSrc: Prabodh,
+        imageSrc:'/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Assistant Head",
-        name: "Prabodh Sharma",
+        name: "Yogita Mundankar",
         links: [
           {
-            url: "https://instagram.com/",
+            url: "",
             icon: InstagramIcon,
           },
           {
-            mail: "m22dh009@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
          
         ],
@@ -382,144 +413,181 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: Shreya,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/soham niraj.jpg',
         position: "Head",
-        name: "Shreya Pagaria",
+        name: "Soham Deshmukh",
         links: [
           {
-            url: "https://instagram.com/shreyapagaria_",
+            url: "https://www.instagram.com/so_uhhmm",
             icon: InstagramIcon,
           },
           {
-            mail: "pagaria.1@iitj.ac.in",
+            mail: "deshmukh.2@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/soham-deshmukh-iitj",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: Akshat,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/aniruddha.jpg',
         position: "Head",
-        name: "Akshat Jain",
+        name: "Neel Barve",
         links: [
           {
-            url: "https://instagram.com/akshat_jainxyz",
+            url: "https://www.instagram.com/neelb03/",
             icon: InstagramIcon,
           },
           {
-            mail: "jain.53@iitj.ac.in",
+            mail: "barve.1@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/neel-barve/",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: DefaultUser,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/ankush.jpg',
         position: "Head",
-        name: "Navlika Singh",
+        name: "Ankush Kumar Nayak",
         links: [
           {
-            url: "https://instagram.com/navlikasingh",
+            url: "https://www.instagram.com/ankushkunayak?igsh=YXZjbjZmOW92aHA2",
             icon: InstagramIcon,
           },
           {
-            mail: "singh.119@iitj.ac.in",
+            mail: "m23msa012@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/ankush-kumar-nayak",
+            icon: LinkedinIcon
           }
         ],
       },
       {
-        imageSrc: Shreya,
+        imageSrc:'/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Head",
-        name: "Shreya Pagaria",
+        name: "A V Prithvi Kiran Naik",
         links: [
           {
-            url: "https://instagram.com/shreyapagaria_",
+            url: "",
             icon: InstagramIcon,
           },
           {
-            mail: "pagaria.1@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: Shreya,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Assistant Head",
-        name: "Shreya Pagaria",
+        name: "Vidhi jain",
         links: [
           {
-            url: "https://instagram.com/shreyapagaria_",
+            url: "",
             icon: InstagramIcon,
           },
           {
-            mail: "pagaria.1@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: Shreya,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/atharva.jpg',
         position: "Assistant Head",
-        name: "Shreya Pagaria",
+        name: "A.K.R. Deshpande",
         links: [
           {
-            url: "https://instagram.com/shreyapagaria_",
+            url: "https://www.instagram.com/a.k.r.deshpande/",
             icon: InstagramIcon,
           },
           {
-            mail: "pagaria.1@iitj.ac.in",
+            mail: "b22ee013@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://in.linkedin.com/in/a-k-r-deshpande-078bab252",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: Shreya,
+        imageSrc:'/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Assistant Head",
-        name: "Shreya Pagaria",
+        name: "Geetanshi Maheshwari",
         links: [
           {
-            url: "https://instagram.com/shreyapagaria_",
+            url: "",
             icon: InstagramIcon,
           },
           {
-            mail: "pagaria.1@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: Shreya,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/yashraj.jpg',
         position: "Assistant Head",
-        name: "Shreya Pagaria",
+        name: "Yashraj Chaturvedi",
         links: [
           {
-            url: "https://instagram.com/shreyapagaria_",
+            url: "https://www.instagram.com/yashrajthebrahmin?igsh=MWVvb2N0YnhxMzIydQ==",
             icon: InstagramIcon,
           },
           {
-            mail: "pagaria.1@iitj.ac.in",
+            mail: "b22ai059@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/yashraj-chaturvedi-b20b8a256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            icon: LinkedinIcon
+ 
           }
           
         ],
       },
       {
-        imageSrc: Shreya,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/pragathi.jpeg',
         position: "Assistant Head",
-        name: "Shreya Pagaria",
+        name: "Pragati Sinha",
         links: [
           {
-            url: "https://instagram.com/shreyapagaria_",
+            url: "https://www.instagram.com/pragatisinhaaa?igsh=ZDQ1dHBwcGZuZ3ho&utm_source=qr",
             icon: InstagramIcon,
           },
           {
-            mail: "pagaria.1@iitj.ac.in",
+            mail: "b22mt048@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/pragati-sinha17?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            icon: LinkedinIcon
           }
           
         ],
@@ -534,52 +602,64 @@ function Team() {
     subheading: "Our Team",
     cards: [
       {
-        imageSrc: Yawer,     
-        name: "Yawer Abbas",
+        imageSrc:'/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/aditya.jpeg',     
+        name: "Aaditya Baranwal",
         position: "Head",
         links: [
           {
-            url: "https://instagram.com/Yxwerabbas",
+            url: "https://www.instagram.com/__.aeternum.__",
             icon: InstagramIcon,
           },
  
           {
-            mail: "abbas.1@iitj.ac.in",
+            mail: "baranwal.1@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/aadityabaranwal",
+            icon: LinkedinIcon
           }
         
           
         ],
       },
       {
-        imageSrc: Stuti,
-        name: "Stuti Aswani",
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/suroshi.jpg',
+        name: "Suroshri Paul",
         position: "Head",
         links: [
           {
-            url: "https://instagram.com",
+            url: "https://www.instagram.com/suroshri_paul?igsh=aGZ5eHZwMWp2ZWtu",
             icon: InstagramIcon,
           },
           {
-            mail: "aswani.1@iitj.ac.in",
+            mail: "m23msa094@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/suroshri-paul",
+            icon: InstagramIcon
           }
           
          
         ],
       },
       {
-        imageSrc: SayanSanyal,
-        name: "Sayan Sanyal",
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/sukruti.jpg',
+        name: "Sukriti Goyal",
         position: "Head",
         links: [
           {
-            url: "https://instagram.com/_Xcavist_",
+            url: "https://www.instagram.com/_sukriti_1023?igsh=djJnZDdrb212MWpk",
             icon: InstagramIcon,
           },
           {
-            mail: "sanyal.3@iitj.ac.in",
+            mail: "goyal.23@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/sukriti-goyal-1697a71a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            icon: LinkedinIcon
           }
           
         ],
@@ -591,116 +671,159 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: Ayush,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/paramita.jpg',
         position: "Assistant Head",
-        name: "Ayush Didel",
+        name: "Paramita Paul",
         links: [
           {
-            url: "https://instagram.com/didelayush2003",
+            url: "https://www.instagram.com/pyaari_mita?igsh=MW82MnMybGFmaDN5ZA==",
             icon: InstagramIcon,
           },
           {
-            mail: "didel.1@iitj.ac.in",
+            mail: "M23id1008@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/paramita-paul-8495a6229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: Ishita,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg' ,
         position: "Head",
-        name: "Ishita",
+        name: "Shashank Chauhan",
         links: [
           {
-            url: "https://instagram.com/eish_97",
+            url: "https://www.instagram.com/_.shashank._.25._/",
             icon: InstagramIcon,
           },
           {
-            mail: "ishita.1@iitj.ac.in",
+            mail: "chauhan.19@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/shashank-chauhan-b602b9209",
+            icon: LinkedinIcon
           }
         ],
       },
       {
-        imageSrc: Ayush,
-        position: "Assistant Head",
-        name: "Ayush Didel",
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/aradhya.jpg',
+        position: "Head",
+        name: "Aradhya Giri",
         links: [
           {
-            url: "https://instagram.com/didelayush2003",
+            url: "https://www.instagram.com/ara_dhyagiri?igsh=OG94NmwxcGxidnlx",
             icon: InstagramIcon,
           },
           {
-            mail: "didel.1@iitj.ac.in",
+            mail: "m23msa014@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/aradhyagiri?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            icon: LinkedinIcon
+          }
+        ],
+      },
+      {
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/Satakshi.jpg',
+        position: "Assistant Head",
+        name: "Shatakshi Goel",
+        links: [
+          {
+            url: "https://www.instagram.com/shatakshi_1903?igsh=MWRsaWV1NGxlOGptMg==",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "b22me060@iitj.ac.in",
+            icon: EmailIcon
+          },
+          {
+            url: "www.linkedin.com/in/ shatakshi-goel-5a7",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: Ayush,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/kowshika.jpg',
         position: "Assistant Head",
-        name: "Ayush Didel",
+        name: "Banoth.Sri Kowshika raj",
         links: [
           {
-            url: "https://instagram.com/didelayush2003",
+            url: "https://www.instagram.com/kowshika_raj_?igsh=MWYyeXlqcXFuaWk0cQ==",
             icon: InstagramIcon,
           },
           {
-            mail: "didel.1@iitj.ac.in",
+            mail: "b22cs018@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/sri-kowshika-raj-banoth-b49a7b25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: Ayush,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/yogesh.jpg',
         position: "Assistant Head",
-        name: "Ayush Didel",
+        name: "Yogesh Sharma",
         links: [
           {
-            url: "https://instagram.com/didelayush2003",
+            url: "https://www.instagram.com/real.yogesh_?igsh=MWoyNzZtdWV4eWpyeg==",
             icon: InstagramIcon,
           },
           {
-            mail: "didel.1@iitj.ac.in",
+            mail: "b22ch045@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/yogesh-sharma-a4bb59258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: Ayush,
+        imageSrc:'/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/sujay.heic',
         position: "Assistant Head",
-        name: "Ayush Didel",
+        name: "Viswanadhapalli Sujay",
         links: [
           {
-            url: "https://instagram.com/didelayush2003",
+            url: "",
             icon: InstagramIcon,
           },
           {
-            mail: "didel.1@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
           
         ],
       },
-      {
-        imageSrc: Ayush,
-        position: "Assistant Head",
-        name: "Ayush Didel",
-        links: [
-          {
-            url: "https://instagram.com/didelayush2003",
-            icon: InstagramIcon,
-          },
-          {
-            mail: "didel.1@iitj.ac.in",
-            icon: EmailIcon
-          }
+      // {
+      //   imageSrc: Ayush,
+      //   position: "Assistant Head",
+      //   name: "Ayush Didel",
+      //   links: [
+      //     {
+      //       url: "https://instagram.com/didelayush2003",
+      //       icon: InstagramIcon,
+      //     },
+      //     {
+      //       mail: "didel.1@iitj.ac.in",
+      //       icon: EmailIcon
+      //     }
           
-        ],
-      },
+      //   ],
+      // },
       
       
     ],
@@ -711,51 +834,63 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: Gaurav,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/bhanu.jpg',
         position: "Head",
-        name: "Gaurav Sangwan",
+        name: "Bhanu Pratap Mandovra",
         links: [
           {
-            url: "https://instagram.com/sangs_gaurav",
+            url: "https://www.instagram.com/pratap_mandovra?igsh=a3hhaW0yNWw2eHB3&utm_source=qr",
             icon: InstagramIcon,
           },
  
           {
-            mail: "sangwan.2@iitj.ac.in",
+            mail: "mandovra.1@iitj.ac.in",
             icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/bhanu-pratap-mandovra-a46115256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            icon: LinkedinIcon
           }
           
         ],
       },
       {
-        imageSrc: DefaultUser,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Assistant Head",
-        name: "Divyanshi Singh Bora",
+        name: "Abhay kashyap",
         links: [
           {
-            url: "https://instagram.com/bora_divyanshi_",
+            url: "",
             icon: InstagramIcon,
           },
  
           {
-            mail: "bora.1@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
         ],
       },
       {
-        imageSrc: Yash,
+        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
         position: "Assistant Head",
-        name: "Yash Anand",
+        name: "Harsh Agarwal",
         links: [
           {
-            url: "https://instagram.com/yash_09.05",
+            url: "",
             icon: InstagramIcon,
           },
  
           {
-            mail: "anand.7@iitj.ac.in",
+            mail: "",
             icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
           }
  
         ],
@@ -819,3 +954,5 @@ function Team() {
 }
  
 export default Team;
+ 
+ 

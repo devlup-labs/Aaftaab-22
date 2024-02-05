@@ -28,18 +28,62 @@ const TwoColumn = tw.div`flex flex-col-reverse lg:flex-row md:items-center max-w
 const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left`;
 const RightColumn = tw.div`relative mt-0 mb-12 lg:mt-0 lg:mb-0 flex flex-col justify-center`;
 
-const Heading = tw.h1`font-black text-3xl md:text-5xl leading-snug max-w-3xl`;
-const Paragraph = tw.p`my-5 lg:my-8 text-sm lg:text-base font-semibold text-secondary-600 max-w-lg mx-auto lg:mx-0`;
+const Heading = tw.h1`font-black text-black text-2xl md:text-5xl leading-snug max-w-2xl`;
+const Paragraph = tw.p`my-5 lg:my-8 text-sm lg:text-base font-Philosopher text-black max-w-lg mx-auto lg:mx-0`;
 
 const Actions = tw.div`flex flex-col items-center sm:flex-row justify-center lg:justify-start mt-8`;
-const PrimaryButton = tw.button`font-bold px-8 lg:px-10 py-3 rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 focus:shadow-outline focus:outline-none transition duration-300`;
+const PrimaryButton = styled.button`
+
+  ${tw`
+    lg:mx-0 lg:px-8 lg:py-3
+    px-4 py-1 rounded text-black
+    hocus:bg-black hocus:text-black
+    focus:shadow-outline
+    border-b-0
+    relative
+  `}
+
+  background: ${({ loggedIn }) => (loggedIn ? 'linear-gradient(180deg, #000, #000)' : 'linear-gradient(180deg, #000, #000)')};
+  color: ${({ loggedIn }) => (loggedIn ? '#fff' : '#fff')};
+  border: 3px solid transparent; /* Initial border */
+  transition: background 0.3s, color 0.3s;
+
+  &:hover {
+    background: linear-gradient(180deg, #fff, #fff);
+    color: #000;
+    border-color: #000;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, transparent, #fff);
+      animation: waveAnimation 1s infinite alternate;
+      z-index: -1;
+    }
+  }
+
+  @keyframes waveAnimation {
+    to {
+      transform: scaleY(1.2);
+    }
+  }
+`;
+
+// Usage
+const loggedIn = true; // Set to true or false based on your logic
+<PrimaryButton loggedIn={loggedIn}>Click me</PrimaryButton>;
+
 const WatchVideoButton = styled.button`
-  ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-secondary-300 transition duration-300 hocus:text-primary-400 focus:outline-none`}
+  ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-black transition duration-300 hocus:text-gray-600 focus:outline-none`}
   .playIcon {
     ${tw`stroke-1 w-12 h-12`}
   }
   .playText {
-    ${tw`ml-2 font-medium`}
+    ${tw`ml-2 font-medium font-Philosopher text-black`}
   }
 `;
 

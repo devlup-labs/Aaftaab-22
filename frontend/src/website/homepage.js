@@ -8,8 +8,8 @@ import tw from "twin.macro";
 import imgLogo from "../images/old-logo.png";
 function Home() {
 
-    const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block font-Philosopher`;
-    const DescriptionText = tw.p`text-lg text-gray-700 font-Philosopher`; 
+    const HighlightedText = tw.span`bg-black text-white px-4 transform -skew-x-12 inline-block font-Philosopher`;
+    const DescriptionText = tw.p`text-lg text-black font-Philosopher`; 
 
     return (
         <AnimationRevealPage>

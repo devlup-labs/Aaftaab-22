@@ -30,16 +30,48 @@ const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm
 const Heading = tw(SectionHeading)`font-Philosopher`;
 const Controls = tw.div`flex items-center`;
 const ControlButton = styled(PrimaryButtonBase)`
-  ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2`}
-  svg {
-    ${tw`w-6 h-6`}
+${tw`
+  mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2 bg-black
+  hocus:bg-black hocus:text-black
+  focus:shadow-outline
+  border-b-0
+  relative
+`}
+
+background: ${({ loggedIn }) => (loggedIn ? 'linear-gradient(180deg, #000, #000)' : 'linear-gradient(180deg, #000, #000)')};
+color: ${({ loggedIn }) => (loggedIn ? '#fff' : '#fff')};
+border: 3px solid transparent; /* Initial border */
+transition: background 0.3s, color 0.3s;
+
+&:hover {
+  background: linear-gradient(180deg, #fff, #fff);
+  color: #000;
+  border-color: #000;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: waveAnimation 1s infinite alternate;
+    z-index: -1;
   }
+}
+
+@keyframes waveAnimation {
+  to {
+    transform: scaleY(1.2);
+  }
+}
 `;
 const PrevButton = tw(ControlButton)``;
 const NextButton = tw(ControlButton)``;
 
 const CardSlider = styled(Slider)`
-  ${tw`mt-16`}
+  ${tw`mt-16 `}
   .slick-track { 
     ${tw`flex w-full h-full`}
   }
@@ -53,8 +85,8 @@ const CardImage = styled.div(props => [
   tw`w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`
 ]);
 
-const TextInfo = tw.div`py-6 flex-1 flex flex-col justify-between sm:px-10 sm:py-6`;
-const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center`;
+const TextInfo = tw.div`py-6 text-black flex-1 flex flex-col justify-between sm:px-10 sm:py-6`;
+const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center text-black font-Philosopher`;
 const Title = tw.h5`text-2xl font-bold font-Philosopher`;
 
 const RatingsInfo = styled.div`
@@ -72,14 +104,52 @@ const Rating = tw.span`ml-2 font-bold`;
 const SecondaryInfoContainer = tw.div`flex flex-col sm:flex-row mt-2 sm:mt-4`;
 const IconWithText = tw.div`flex items-center mr-6 my-2 sm:my-0`;
 const IconContainer = styled.div`
-  ${tw`inline-block rounded-full p-2 bg-gray-700 text-gray-100`}
+  ${tw`inline-block rounded-full p-2 bg-black text-white`}
   svg {
     ${tw`w-3 h-3`}
   }
 `;
-const Text = tw.div`ml-2 text-sm font-semibold text-gray-800 font-Philosopher`;
+const Text = tw.div`ml-2 text-sm font-semibold text-black font-Philosopher`;
 
-const PrimaryButton = tw(PrimaryButtonBase)`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-br-4xl py-3 sm:py-6`;
+const PrimaryButton = styled(PrimaryButtonBase)`
+  ${tw`
+    mt-auto sm:text-lg lg:mx-0 lg:px-8 lg:py-3
+    px-4 py-1 rounded-none w-full rounded 
+    hocus:bg-black hocus:text-black
+    focus:shadow-outline
+    border-b-0
+    relative
+  `}
+
+  background: ${({ loggedIn }) => (loggedIn ? 'linear-gradient(180deg, #000, #000)' : 'linear-gradient(180deg, #000, #000)')};
+  color: ${({ loggedIn }) => (loggedIn ? '#fff' : '#fff')};
+  border: 3px solid transparent; /* Initial border */
+  transition: background 0.3s, color 0.3s;
+
+  &:hover {
+    background: linear-gradient(180deg, #fff, #fff);
+    color: #000;
+    border-color: #000;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, transparent, #fff);
+      animation: waveAnimation 1s infinite alternate;
+      z-index: -1;
+    }
+  }
+
+  @keyframes waveAnimation {
+    to {
+      transform: scaleY(1.2);
+    }
+  }
+`;
 export default () => {
   // useState is used instead of useRef below because we want to re-render when sliderRef becomes available (not null)
   const [sliderRef, setSliderRef] = useState(null);
@@ -111,7 +181,7 @@ export default () => {
       imageSrc: kaviSammelanImg,
       title: "Kavi Sammelan",
       description: `‘Kavyamaye ho uthega dil, jab sajegi kaviyon ki meil’.`,
-      date: "TVVVVVVVVVV",
+      date: "TBB",
       timing: "08:00 PM - 10:00 PM",
       // price: "₹50",
       isFlagship: true,

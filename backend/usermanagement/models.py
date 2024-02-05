@@ -1,30 +1,39 @@
 from django.db import models
 
 
+# EVENT_CHOICES = (
+#     ('video_making_workshop','Video Making Workshop'),
+#     ('creative_writing_workshop','Creative Writing Workshop'),
+#     ('acting_workshop','Acting Workshop'),
+#     ('prompt_poetry','Prompt Poetry'),
+#     ('noob_quiz','Noob Quiz'),
+#     ('word_games','Word Games'),
+#     ('treasure_hunt','Treasure Hunt'),
+#     ('just_a_minute_speech','Just A Minute Speech'),
+#     ('hindi_debate','Hindi Debate'),
+#     ('english_debate','English Debate'),
+#     ('character_reenactment','Prompt based character re-enactment'),
+#     ('mythology_quiz','Mythology quiz'),
+#     ('mela_quiz','MELA Quiz'),
+#     ('open_mic','Open Mic'),
+
+
+# )
+
 EVENT_CHOICES = (
-    ('video_making_workshop','Video Making Workshop'),
-    ('creative_writing_workshop','Creative Writing Workshop'),
-    ('acting_workshop','Acting Workshop'),
-    ('prompt_poetry','Prompt Poetry'),
-    ('noob_quiz','Noob Quiz'),
-    ('word_games','Word Games'),
-    ('treasure_hunt','Treasure Hunt'),
-    ('just_a_minute_speech','Just A Minute Speech'),
-    ('hindi_debate','Hindi Debate'),
-    ('english_debate','English Debate'),
-    ('character_reenactment','Prompt based character re-enactment'),
-    ('mythology_quiz','Mythology quiz'),
-    ('mela_quiz','MELA Quiz'),
-    ('open_mic','Open Mic'),
-
-
+    ('slam_poetry','Verse Vortex'),
+    ('short_story_writing','Prose Panorama'),
+    ('word_games','Witzkrieg: Wordcraft War'),
+    ('treasure_hunt','Cryptic Chronicles'),
+    ('jam','JAM-inate: Exppressive Minute Mosaic'),
+    ('quiz','General Quiz'),
 )
-REGISTRATION_TYPES=(
-    ('none','None'),
-    ('events','Events Only'),
-    ('flagship','Flagship only'),
-    ('events_and_flagship','Events and Flagship'),
-)
+# REGISTRATION_TYPES=(
+#     ('none','None'),
+#     ('events','Events Only'),
+#     ('flagship','Flagship only'),
+#     ('events_and_flagship','Events and Flagship'),
+# )
 
 class Participant(models.Model):
     email = models.EmailField(max_length=255,unique=True,primary_key=True)
@@ -33,7 +42,7 @@ class Participant(models.Model):
     phone_number = models.CharField(max_length=10,blank=True)
     user_interest = models.CharField(max_length=255,blank = True)
     college_name=models.CharField(max_length=255,blank=True)
-    pass_type = models.CharField(max_length=255,default ='none',choices = REGISTRATION_TYPES,blank=False)
+    # pass_type = models.CharField(max_length=255,default ='none',choices = REGISTRATION_TYPES,blank=False)
     def __str__(self):
         return self.email
 

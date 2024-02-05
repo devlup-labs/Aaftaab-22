@@ -44,7 +44,7 @@ const CardContent = styled.div`
 const CardLinks = styled.div`
   ${tw`mt-6 flex justify-center`}
   .link {
-    ${tw`mr-8 last:mr-0 text-black hocus:text-black transition duration-300 font-philosopher`}
+    ${tw`mr-8 last:mr-0 text-black hocus:text-black transition duration-300 font-Philosopher`}
     .icon {
       ${tw`fill-current w-6 h-6`}
       color: ${props => props.iconColor || '#0000ff60'}; /* Fallback color */
