@@ -81,7 +81,7 @@ module.exports = {
         900: '#7b341e',
       },
       yellow: {
-        100: '#fffff0',
+        100: '#B58900',
         200: '#fefcbf',
         300: '#faf089',
         400: '#f6e05e',
@@ -271,7 +271,7 @@ module.exports = {
     fontFamily: {
 
       Philosopher: ['Philosopher', 'sans-serif'],
-      poppins: ['Poppins', 'sans-serif'],
+      Lato: ['Lato', 'sans-serif'],
       display: ['Inter', 'system-ui'],
 
       sans: [

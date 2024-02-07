@@ -11,6 +11,49 @@ import { ReactComponent as InstagramIcon } from "images/icons8-instagram.svg";
 
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import a from '../images/team/shreyansh.jpg';
+import b from '../images/team/nikhil.jpg';
+import c from '../images/team/gayathiri.jpg';
+import d from '../images/team/swaksh.jpg';
+import e from '../images/team/Indusri (B22AI039).jpg';
+import f from '../images/team/shirisha.jpg';
+import g from '../images/team/vinay.jpg';
+import h from '../images/team/adarsh.jpeg';
+import i from '../images/team/User.jpg';
+import j from '../images/team/BHARGAVI.jpg';
+import k from '../images/team/User.jpg';
+import l from '../images/team/User.jpg';
+import m from '../images/team/akash.jpg';
+import n from '../images/team/karak.png';
+import o from '../images/team/User.jpg';
+import p from '../images/team/User.jpg';
+import q from '../images/team/User.jpg';
+import r from '../images/team/User.jpg';
+import s from '../images/team/soham niraj.jpg';
+import t from '../images/team/User.jpg';
+import u from '../images/team/ankush.jpg';
+import v from '../images/team/User.jpg';
+import w from '../images/team/User.jpg';
+import x from '../images/team/atharva.jpg';
+import y from '../images/team/User.jpg';
+import z from '../images/team/yashraj.jpg';
+import a1 from '../images/team/pragathi.jpeg';
+import a2 from '../images/team/aditya.jpeg';
+import a3 from '../images/team/suroshi.jpg';
+import a4 from '../images/team/sukruti.jpg';
+import a5 from '../images/team/paramita.jpg';
+import a6 from '../images/team/User.jpg';
+import a7 from '../images/team/aradhya.jpg';
+import a8 from '../images/team/Satakshi.jpg';
+import a9 from '../images/team/kowshika.jpg';
+import a10 from '../images/team/yogesh.jpg';
+import dd from '../images/team/User.jpg';
+import aa from '../images/team/bhanu.jpg';
+import bb from '../images/team/User.jpg';
+import cc from '../images/team/User.jpg';
+import xyz from '../images/team/ankush chaudary.jpg'
+
+
+
 function Team() {
   const team4 = {
     heading: "Web Development Team",
@@ -39,8 +82,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: 
-        "/images/team/nikhil.jpg",
+        imageSrc: b,
         position: "Head",
         name: "Nikhil Agrawal",
         links: [
@@ -61,7 +103,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: "/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/gayathiri.jpg",
+        imageSrc: c,
         position: "Assistant Head",
         name: "Gayathiri B.S",
         links: [
@@ -82,7 +124,7 @@ function Team() {
             
       },      
       {
-        imageSrc: "/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/swaksh.jpg",
+        imageSrc: d,
         position: "Assistant Head",
         name: "Swaksh Patwari",
         links: [
@@ -104,7 +146,7 @@ function Team() {
       },
  
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/Indusri (B22AI039).jpg',
+        imageSrc: e,
         position: "Assistant Head",
         name: "Indusri Siramsetty",
         links: [
@@ -125,7 +167,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/shirisha.jpg',
+        imageSrc: f,
         position: "Assistant Head",
         name: "Mandari Shirisha",
         links: [
@@ -153,7 +195,7 @@ function Team() {
     // subheading: "lorem ipsum",
     cards: [
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/vinay.jpg',
+        imageSrc: g,
         position: "Head",
         name: "Vinay Vaishnav",
         links: [
@@ -175,7 +217,7 @@ function Team() {
       },
     
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/adarsh.jpeg',
+        imageSrc: h,
         position: "Head",
         name: "Adarsh Gupta",
         links: [
@@ -196,7 +238,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc: i,
         position: "Assistant Head",
         name: "Yuvraj Saran",
         links: [
@@ -217,7 +259,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/BHARGAVI.jpg',
+        imageSrc: j,
         position: "Assistant Head",
         name: "Bobba geetha sri manju Bhargavi",
         links: [
@@ -238,7 +280,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc: k,
         position: "Assistant Head",
         name: "Abhishek kumar",
         links: [
@@ -259,7 +301,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc: l,
         position: "Assistant Head",
         name: "Rhythm sharma",
         links: [
@@ -280,9 +322,30 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/akash.jpg',
+        imageSrc: m,
         position: "Assistant Head",
         name: "Akash Chatterjee",
+        links: [
+          {
+            url: "",
+            icon: InstagramIcon,
+          },
+ 
+          {
+            mail: "m23air002@iitj.ac.in",
+            icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/akash-chatterjee-239a421b9",
+            icon: LinkedinIcon
+          }
+          
+        ],
+      },
+      {
+        imageSrc: xyz,
+        position: "Assistant Head",
+        name: "Ankush Chaudhary",
         links: [
           {
             url: "",
@@ -307,7 +370,7 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/karak.png',
+        imageSrc: n,
         position: "Head",
         name: "B. Karak",
         links: [
@@ -327,7 +390,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc: o,
         position: "Assistant Head",
         name: "Chahat Baranwal",
         links: [
@@ -347,7 +410,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc: p,
         position: "Assistant Head",
         name: "Harshika Arya",
         links: [
@@ -367,7 +430,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc: q,
         position: "Assistant Head",
         name: "Niharika Pradeep",
         links: [
@@ -387,7 +450,7 @@ function Team() {
         ],
       },
       {
-        imageSrc:'/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc:r,
         position: "Assistant Head",
         name: "Yogita Mundankar",
         links: [
@@ -413,7 +476,7 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/soham niraj.jpg',
+        imageSrc: s,
         position: "Head",
         name: "Soham Deshmukh",
         links: [
@@ -433,7 +496,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/aniruddha.jpg',
+        imageSrc: t,
         position: "Head",
         name: "Neel Barve",
         links: [
@@ -453,7 +516,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/ankush.jpg',
+        imageSrc: u,
         position: "Head",
         name: "Ankush Kumar Nayak",
         links: [
@@ -472,7 +535,7 @@ function Team() {
         ],
       },
       {
-        imageSrc:'/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc:v,
         position: "Head",
         name: "A V Prithvi Kiran Naik",
         links: [
@@ -492,7 +555,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc: w,
         position: "Assistant Head",
         name: "Vidhi jain",
         links: [
@@ -512,7 +575,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/atharva.jpg',
+        imageSrc: x,
         position: "Assistant Head",
         name: "A.K.R. Deshpande",
         links: [
@@ -532,7 +595,7 @@ function Team() {
         ],
       },
       {
-        imageSrc:'/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc:y,
         position: "Assistant Head",
         name: "Geetanshi Maheshwari",
         links: [
@@ -552,7 +615,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/yashraj.jpg',
+        imageSrc: z,
         position: "Assistant Head",
         name: "Yashraj Chaturvedi",
         links: [
@@ -573,7 +636,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/pragathi.jpeg',
+        imageSrc: a1,
         position: "Assistant Head",
         name: "Pragati Sinha",
         links: [
@@ -599,10 +662,10 @@ function Team() {
   
   const team0 = {
     heading: "Festival Chiefs",
-    subheading: "Our Team",
+  
     cards: [
       {
-        imageSrc:'/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/aditya.jpeg',     
+        imageSrc:a2,     
         name: "Aaditya Baranwal",
         position: "Head",
         links: [
@@ -624,7 +687,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/suroshi.jpg',
+        imageSrc: a3,
         name: "Suroshri Paul",
         position: "Head",
         links: [
@@ -638,14 +701,14 @@ function Team() {
           },
           {
             url: "https://www.linkedin.com/in/suroshri-paul",
-            icon: InstagramIcon
+            icon: LinkedinIcon
           }
           
          
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/sukruti.jpg',
+        imageSrc: a4,
         name: "Sukriti Goyal",
         position: "Head",
         links: [
@@ -671,7 +734,7 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/paramita.jpg',
+        imageSrc: a5,
         position: "Assistant Head",
         name: "Paramita Paul",
         links: [
@@ -691,7 +754,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg' ,
+        imageSrc: a6 ,
         position: "Head",
         name: "Shashank Chauhan",
         links: [
@@ -710,7 +773,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/aradhya.jpg',
+        imageSrc: a7,
         position: "Head",
         name: "Aradhya Giri",
         links: [
@@ -729,7 +792,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/Satakshi.jpg',
+        imageSrc: a8,
         position: "Assistant Head",
         name: "Shatakshi Goel",
         links: [
@@ -749,7 +812,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/kowshika.jpg',
+        imageSrc: a9,
         position: "Assistant Head",
         name: "Banoth.Sri Kowshika raj",
         links: [
@@ -769,7 +832,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/yogesh.jpg',
+        imageSrc: a10,
         position: "Assistant Head",
         name: "Yogesh Sharma",
         links: [
@@ -789,7 +852,7 @@ function Team() {
         ],
       },
       {
-        imageSrc:'/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/sujay.heic',
+        imageSrc:dd,
         position: "Assistant Head",
         name: "Viswanadhapalli Sujay",
         links: [
@@ -834,7 +897,7 @@ function Team() {
     // subheading: "Our Team",
     cards: [
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/bhanu.jpg',
+        imageSrc: aa,
         position: "Head",
         name: "Bhanu Pratap Mandovra",
         links: [
@@ -855,7 +918,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc: bb,
         position: "Assistant Head",
         name: "Abhay kashyap",
         links: [
@@ -875,7 +938,7 @@ function Team() {
         ],
       },
       {
-        imageSrc: '/home/shreyansh03/Desktop/Aaftaab-22/frontend/src/images/team/User.jpg',
+        imageSrc: cc,
         position: "Assistant Head",
         name: "Harsh Agarwal",
         links: [

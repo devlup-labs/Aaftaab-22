@@ -8,7 +8,7 @@ import Footer from "components/footers/Home-Footer";
 
 function Events() {
 
-    const HighlightedText = tw.span`bg-black text-gray-100 px-4 transform -skew-x-12 inline-block`;
+    const HighlightedText = tw.span`bg-gradient-to-r from-orange-600 to-yellow-500 text-orange-600 text-gray-100 px-4 transform -skew-x-12 inline-block`;
 
     return (
         <AnimationRevealPage>
@@ -16,7 +16,7 @@ function Events() {
             <TabGrid
                 heading={
                 <>
-                    Event <HighlightedText>schedule.</HighlightedText>
+                    Event <HighlightedText>Schedule.</HighlightedText>
                 </>
                 }
             />

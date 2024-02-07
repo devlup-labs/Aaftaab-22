@@ -163,7 +163,7 @@ def send_participant_creation_confirmation_mail(reciver_email):
                                                         <table class="heading_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                                             <tr>
                                                                 <td class="pad" style="padding-bottom:26px;padding-left:60px;padding-right:60px;padding-top:30px;text-align:center;width:100%;">
-                                                                    <h1 style="margin: 0; color: #020b22; direction: ltr; font-family: Poppins, Arial, Helvetica, sans-serif; font-size: 40px; font-weight: 700; letter-spacing: normal; line-height: 150%; text-align: center; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">You have successfully registered for Aaftaab 2022.</span></h1>
+                                                                    <h1 style="margin: 0; color: #020b22; direction: ltr; font-family: Poppins, Arial, Helvetica, sans-serif; font-size: 40px; font-weight: 700; letter-spacing: normal; line-height: 150%; text-align: center; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">You have successfully registered for Aaftaab 2024!</span></h1>
                                                                 </td>
                                                             </tr>
                                                         </table>

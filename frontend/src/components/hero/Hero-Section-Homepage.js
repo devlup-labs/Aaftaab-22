@@ -28,7 +28,7 @@ const TwoColumn = tw.div`flex flex-col-reverse lg:flex-row md:items-center max-w
 const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left`;
 const RightColumn = tw.div`relative mt-0 mb-12 lg:mt-0 lg:mb-0 flex flex-col justify-center`;
 
-const Heading = tw.h1`font-black text-black text-2xl md:text-5xl leading-snug max-w-2xl`;
+const Heading = tw.h1`font-Philosopher text-teal-600 text-2xl md:text-5xl leading-snug max-w-2xl`;
 const Paragraph = tw.p`my-5 lg:my-8 text-sm lg:text-base font-Philosopher text-black max-w-lg mx-auto lg:mx-0`;
 
 const Actions = tw.div`flex flex-col items-center sm:flex-row justify-center lg:justify-start mt-8`;
@@ -43,15 +43,15 @@ const PrimaryButton = styled.button`
     relative
   `}
 
-  background: ${({ loggedIn }) => (loggedIn ? 'linear-gradient(180deg, #000, #000)' : 'linear-gradient(180deg, #000, #000)')};
+  background: ${({ loggedIn }) => (loggedIn ? 'linear-gradient(180deg, teal, teal)' : 'linear-gradient(180deg, teal, teal)')};
   color: ${({ loggedIn }) => (loggedIn ? '#fff' : '#fff')};
   border: 3px solid transparent; /* Initial border */
   transition: background 0.3s, color 0.3s;
 
   &:hover {
-    background: linear-gradient(180deg, #fff, #fff);
-    color: #000;
-    border-color: #000;
+    background: linear-gradient(180deg, white, #90EE90);
+    color: #006400; 
+    border-color: #90EE90;
 
     &:before {
       content: "";
@@ -78,12 +78,12 @@ const loggedIn = true; // Set to true or false based on your logic
 <PrimaryButton loggedIn={loggedIn}>Click me</PrimaryButton>;
 
 const WatchVideoButton = styled.button`
-  ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-black transition duration-300 hocus:text-gray-600 focus:outline-none`}
+  ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-teal-600 transition duration-300 hocus:text-green-800 focus:outline-none`}
   .playIcon {
     ${tw`stroke-1 w-12 h-12`}
   }
   .playText {
-    ${tw`ml-2 font-medium font-Philosopher text-black`}
+    ${tw`ml-2 font-medium font-Philosopher text-teal-800 hocus:text-green-800`}
   }
 `;
 
@@ -138,7 +138,7 @@ export default ({
                 <PrimaryButton as="a">{primaryButtonText}</PrimaryButton>
               </Link>
               <WatchVideoButton onClick={()=>{
-                //redirect to youtube
+        
                 window.open(watchVideoYoutubeUrl, '_blank');
               }}>
                 <span className="playIconContainer">

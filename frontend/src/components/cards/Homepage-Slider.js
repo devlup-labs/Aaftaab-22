@@ -114,7 +114,7 @@ const Text = tw.div`ml-2 text-sm font-semibold text-black font-Philosopher`;
 const PrimaryButton = styled(PrimaryButtonBase)`
   ${tw`
     mt-auto sm:text-lg lg:mx-0 lg:px-8 lg:py-3
-    px-4 py-1 rounded-none w-full rounded 
+    px-4 py-1 font-Lato rounded-none w-full rounded 
     hocus:bg-black hocus:text-black
     focus:shadow-outline
     border-b-0
@@ -323,7 +323,7 @@ export default () => {
 
   return (
     <Container>
-      <Content>
+      {/* <Content>
         <HeadingWithControl>
           <Heading>Flagship Events</Heading>
           <Controls>
@@ -334,7 +334,7 @@ export default () => {
         <CardSlider ref={setSliderRef} {...sliderSettings}>
           {cards.map((card, index) => (
             <div className="Card" key={index}>
-            {/* <Card key={index}> */}
+
               <CardImage imageSrc={card.imageSrc} />
               <TextInfo>
                 <TitleReviewContainer className="CardTitle">
@@ -360,7 +360,7 @@ export default () => {
                     : null
                   }
                 </SecondaryInfoContainer>
-                {/* <Description>{card.description}</Description> */}
+   
               </TextInfo>
               <Link 
                 to={{
@@ -371,11 +371,11 @@ export default () => {
               >
                 <PrimaryButton>Check out now</PrimaryButton>
               </Link>
-            {/* </Card> */}
+       
             </div>
           ))}
         </CardSlider>
-      </Content>
+      </Content> */}
     </Container>
   );
 };

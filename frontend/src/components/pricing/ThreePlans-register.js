@@ -14,7 +14,7 @@ const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center font-Philosopher`;
 const Subdescription = tw(SectionDescription)`w-full text-center font-Philosopher`; // Change this line
 
-const PlansContainer = tw.div`flex justify-between flex-col lg:flex-row items-center lg:items-stretch relative`;
+const PlansContainer = tw.div`flex justify-center flex-col lg:flex-row items-center lg:items-stretch relative`;
 const Plan = styled.div`
   ${tw`w-full max-w-sm mt-16 lg:mr-8 lg:last:mr-0 text-center px-8 rounded-lg shadow relative pt-2 text-gray-900 bg-white flex flex-col`}
   .planHighlight {
@@ -30,7 +30,7 @@ background: rgb(85,60,154);
 background: linear-gradient(135deg, rgba(85,60,154,1) 0%, rgba(128,90,213,1) 100%);
 background: rgb(76,81,191);
 background: linear-gradient(135deg, rgba(76,81,191,1) 0%, rgba(102,126,234,1) 100%);
-      ${tw`bg-primary-500 text-gray-100`}
+      ${tw`bg-orange-500 text-gray-100`}
       .planHighlight {
         ${tw`hidden`}
       }
@@ -44,7 +44,7 @@ background: linear-gradient(135deg, rgba(76,81,191,1) 0%, rgba(102,126,234,1) 10
         ${tw`text-gray-300!`}
       }
       ${BuyNowButton} {
-        ${tw`bg-gray-100 text-primary-500 hocus:bg-gray-300 hocus:text-primary-800`}
+        ${tw`bg-orange-500 text-primary-500 hocus:bg-orange-500 hocus:text-primary-800`}
     `}
 `;
 
@@ -75,7 +75,7 @@ const PlanFeatures = styled.div`
 
 const PlanAction = tw.div`px-4 sm:px-8 xl:px-16 py-8`;
 const BuyNowButton = styled(PrimaryButtonBase)`
-  ${tw`rounded-full uppercase tracking-wider py-4 w-full text-sm hover:shadow-xl transform hocus:translate-x-px hocus:-translate-y-px focus:shadow-outline`}
+  ${tw`rounded-full uppercase tracking-wider py-4 w-full text-sm hover:shadow-xl transform hocus:translate-x-px hocus:-translate-y-px focus:shadow-outline bg-orange-500`}
 `;
 
 const DecoratorBlob = styled(SvgDecoratorBlob)`
@@ -84,7 +84,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob)`
 
 
 export default ({
-  subheading = "Pricing",
+  subheading = "",
   heading = "Registration Plans.",
   description = "These passes will enable you to access some or all the events planned throughout the fest. It is mandatory to buy a pass to gain entry to the fest.",
   subdescription = "Note: The purchase will be reflected on the website within 24 hours. For any query, reach us at aaftaab@iitj.ac.in",
@@ -92,21 +92,8 @@ export default ({
   primaryButtonText = "Buy Now"
 }) => {
   const defaultPlans = [
-    {
-      name: "Events Only",
-      price: "₹100",
-      // duration: "Monthly",
-      mainFeature: "Access to all daytime events",
-      features: ["Award-winning Writers Seminars", "All workshops", "All competitions"],
-    },
-    {
-      name: "Events + Flagship",
-      price: "₹200",
-      // duration: "Monthly",
-      mainFeature: "Access to all events",
-      features: ["All daytime events", "All informal events"],
-      featured: true,
-    },
+ 
+ 
     {
       name: "Flagship Only",
       price: "₹150",

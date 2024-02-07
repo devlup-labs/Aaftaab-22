@@ -24,7 +24,7 @@ export const NavLinks = tw.div`inline-block`;
 export const NavLink = tw.a`
   text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
   font-semibold tracking-wide transition duration-300
-  pb-1 border-b-2 border-transparent hover:border-black hocus:text-black
+  pb-1 border-b-2 border-transparent hover:border-orange-400 hocus:text-black
 `;
 
 export const PrimaryLink = styled(NavLink)`
@@ -37,15 +37,16 @@ export const PrimaryLink = styled(NavLink)`
     relative
   `}
 
-  background: ${({ loggedIn }) => (loggedIn ? 'linear-gradient(180deg, #000, #000)' : 'linear-gradient(180deg, #000, #000)')};
+  background: ${({ loggedIn }) => (loggedIn ? 'linear-gradient(180deg, orange, orange)' : 'linear-gradient(180deg, orange, orange)')};
   color: ${({ loggedIn }) => (loggedIn ? '#fff' : '#fff')};
   border: 3px solid transparent; /* Initial border */
   transition: background 0.3s, color 0.3s;
+  
 
   &:hover {
-    background: linear-gradient(180deg, #fff, #fff);
-    color: #000;
-    border-color: #000;
+    background: linear-gradient(180deg, #fff, yellow);
+    color: orange;
+    border-color: orange;
 
     &:before {
       content: "";
@@ -68,7 +69,7 @@ export const PrimaryLink = styled(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
+  ${tw`flex items-center text-teal-700 font-black border-b-0 text-2xl! ml-0!`};
 
   img {
     ${tw`w-10 mr-3`}
@@ -114,19 +115,19 @@ export default ({
   const defaultLinks = [
     <NavLinks key={1}>
       <Link to="/about">
-        <NavLink style = {{ color: 'black', fontFamily: 'Lato'}}>About</NavLink>
+        <NavLink style = {{ color: 'orange', fontFamily: 'Lato',fontSize:'16px'}}>About</NavLink>
       </Link>
       <Link to="/events">
-        <NavLink style = {{ color: 'black', fontFamily: 'Lato'}}>Events</NavLink>
+        <NavLink style = {{ color: 'orange', fontFamily: 'Lato',fontSize:'16px'}}>Events</NavLink>
       </Link>
-      <Link to="/sponsors">
-        <NavLink style = {{ color: 'black', fontFamily: 'Lato'}}>Sponsors</NavLink>
-      </Link>
+      {/* <Link to="/sponsors">
+        <NavLink style = {{ color: 'orange', fontFamily: 'Lato',fontSize:'16px'}}>Sponsors</NavLink>
+      </Link> */}
       <Link to="/team">
-        <NavLink style = {{ color: 'black', fontFamily: 'Lato'}}>Team</NavLink>
+        <NavLink style = {{ color: 'orange', fontFamily: 'Lato',fontSize:'16px'}}>Team</NavLink>
       </Link>
       <Link to="/register">
-        <NavLink style = {{ color: 'black', fontFamily: 'Lato'}}>Register</NavLink>
+        <NavLink style = {{ color: 'orange', fontFamily: 'Lato',fontSize:'16px'}}>Register</NavLink>
       </Link>
 
      {!loggedIn?<Link to="/login">

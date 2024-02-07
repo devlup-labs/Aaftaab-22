@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 const Container = tw(ContainerBase)`bg-black text-gray-100 -mx-8 -mb-8 font-Philosopher`
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24 font-Philosopher`;
 
-const Row = tw.div`flex items-center justify-center flex-col px-8 font-Philosopher`
+const Row = tw.div`flex items-center justify-center flex-col px-8 font-Lato`
 
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
@@ -33,7 +33,7 @@ const SocialLink = styled.a`
   }
 `;
 
-const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-600`
+const CopyrightText = tw.p`text-center mt-10 font-medium font-Lato tracking-wide text-sm text-gray-600`
 export default () => {
   return (
     <Container>
@@ -72,7 +72,7 @@ export default () => {
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2022, IITJ. All Rights Reserved.
+            &copy; Copyright 2024, IITJ. All Rights Reserved.
           </CopyrightText>
         </Row>
       </Content>

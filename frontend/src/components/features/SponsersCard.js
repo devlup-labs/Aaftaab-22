@@ -41,7 +41,7 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`mt-2 font-bold text-xl leading-none text-black`}
+    ${tw`mt-2 font-semibold text-xl leading-none text-black font-Lato`}
   }
 
   .description {

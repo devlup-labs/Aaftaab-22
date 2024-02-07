@@ -19,9 +19,9 @@ const TextColumn = styled(Column)(props => [
 
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
-  tw`rounded bg-contain bg-no-repeat bg-center h-full`
+  tw`rounded bg-contain bg-no-repeat bg-center h-full `
 ]);
-const TextContent = tw.div`lg:py-8 text-center md:text-left`;
+const TextContent = tw.div`lg:py-8 text-center md:text-left `;
 
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(

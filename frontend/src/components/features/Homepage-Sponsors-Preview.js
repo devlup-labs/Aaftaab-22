@@ -42,7 +42,7 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`mt-2 font-bold text-xl leading-none text-black`}
+    ${tw`mt-2 font-medium text-xs leading-none text-black font-Lato`}
   }
 
 `;
@@ -76,7 +76,7 @@ export default () => {
 
   return (
     <Container>
-      <ThreeColumnContainer>
+      {/* <ThreeColumnContainer>
         <Heading>Our Prime <span tw="text-black">Sponsors</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
@@ -91,7 +91,7 @@ export default () => {
             </Card>
           </Column>
         ))}
-      </ThreeColumnContainer>
+      </ThreeColumnContainer> */}
       <DecoratorBlob />
     </Container>
   );

@@ -8,15 +8,15 @@ import tw from "twin.macro";
 import imgLogo from "../images/old-logo.png";
 function Home() {
 
-    const HighlightedText = tw.span`bg-black text-white px-4 transform -skew-x-12 inline-block font-Philosopher`;
-    const DescriptionText = tw.p`text-lg text-black font-Philosopher`; 
+    const HighlightedText = tw.span`bg-gradient-to-r from-green-300 via-yellow-300 to-blue-200 px-4 text-teal-700  transform -skew-x-12 inline-block font-Philosopher `;
+    const DescriptionText = tw.p`text-xl text-teal-700 font-Philosopher`; 
 
     return (
         <AnimationRevealPage>
             <Hero
                 heading={<>The <HighlightedText>literary festival</HighlightedText> of IIT Jodhpur</>}
-                //description="Aaftaab is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerizing poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, book launches, quizzes, and live music performances."
-                description={<DescriptionText>Aaftaab is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerizing poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, book launches, quizzes, and live music performances.</DescriptionText>}
+                
+                description={<span style = {{ fontFamily: 'Lato',color:'teal' }}>Aaftaab is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerizing poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, book launches, quizzes, and live music performances.</span>}
                 imageSrc={imgLogo}/>
             <Slider />
             <Features />

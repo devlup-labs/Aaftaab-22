@@ -15,8 +15,8 @@ import { userContext } from "App";
 import "./dashboard.css"
 
 const HeaderRow = tw.div`flex justify-between items-start flex-col`;
-const PrimaryButton = tw(PrimaryButtonBase)`bg-secondary-500 hocus:bg-secondary-700 mt-8 md:mt-10 text-sm ml-auto`;
-const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
+const PrimaryButton = tw(PrimaryButtonBase)`bg-orange-500 hocus:bg-secondary-700 mt-8 md:mt-10 text-sm ml-auto`;
+const HighlightedText = tw.span`bg-orange-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
 const HeadingText = tw(SectionHeading)``;
 const ContentWithPaddingXl = tw(ContentWithPaddingXlBase)`py-6 lg:py-10`
 
@@ -75,7 +75,7 @@ function Dashboard() {
       <Container>
         <ContentWithPaddingXl>          
           <HeaderRow>
-            <HeadingText>Hi <HighlightedText>{`${userName}!`}</HighlightedText></HeadingText>
+            <HeadingText>Hi <HighlightedText>Welcome to Aaftaab 2024!</HighlightedText></HeadingText>
             <PrimaryButton onClick={logoutButtonPressed}>
               Logout
             </PrimaryButton>
