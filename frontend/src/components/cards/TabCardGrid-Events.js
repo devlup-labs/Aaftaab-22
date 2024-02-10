@@ -55,12 +55,12 @@ const CardTitle = tw.h5` text-lg font-semibold group-hover:text-black font-Philo
 const CardContent = tw.p`mt-1 text-sm font-medium text-black font-Lato`;
 const CardPrice = tw.p`mt-4 text-xl font-bold`;
 
-const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
-  ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-64 w-64 opacity-15 transform translate-x-2/3 -translate-y-12 text-black`}
-`;
-const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
-  ${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-80 w-80 opacity-15 transform -translate-x-2/3 text-primary-500`}
-`;
+// const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
+//   ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-64 w-64 opacity-15 transform translate-x-2/3 -translate-y-12 text-black`}
+// `;
+// const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
+//   ${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-80 w-80 opacity-15 transform -translate-x-2/3 text-primary-500`}
+// `;
 const CardImageContainer = styled.div`
   ${props => css`
     background-image: url("${props.imageSrc}");
@@ -88,7 +88,7 @@ export default ({
         imageSrc:
           "https://www.arha.us/sites/default/files/2021-04/RibbonCut.jpg",
         title: "Opening Ceremony",
-        description: "‘Kavyamaye ho uthega dil, jab sajegi kaviyon ki mehfil’. A poetic event (Kavi Sammelan) is being organized on this Aaftaab. The event will be presenting young and talented poets who will recite their poems and mushairas in front of the audience. Here the participants will get a topic on which they have to present their poetry. Also, participants could get a chance to interact with upcoming faces of poetry.",
+        description: "‘The opening ceremony is a grand kickoff event that marks the beginning of a significant occasion or gathering. It sets the tone and spirit for what's to come, often featuring speeches, performances, and symbolic gestures. Attendees gather to witness and celebrate the start of the event, fostering anticipation and excitement. It's a moment of unity, where participants come together to embark on a shared journey or experience.",
         date: "21-02-2024",
         timing: "8:30AM",
         // price: "₹50",
@@ -101,7 +101,7 @@ export default ({
       {
         imageSrc:"https://miro.medium.com/v2/resize:fit:522/1*Z8yUeUqglktyEORtbZD7MA.jpeg",
         title: "Panel Discussion",
-        description: "Come and join us for an evening glimmered with sarcasm and humour, brought to you by one of the finest comics in the country and fill the evening with giggles and hootings.A comedic performance to a live audience, saturated with jokes and sarcasm with one of the best standup comics out there to entertain you.",
+        description: "Panel discussions gather experts to explore topics, led by a moderator, in a collaborative setting. Diverse insights and solutions are shared, enhancing understanding, while audience engagement enriches the conversation. The aim is to inform, educate, and provoke thoughtful discussion, fostering deeper insight into complex issues and driving meaningful change.",
         date: "21-02-2024",
         timing: "9:15AM onwards",
         // price: "₹50",
@@ -189,7 +189,7 @@ export default ({
         title: "JAM-inate : Expressive Minute Mosaic",
         date: "21-02-2024",
         timing: "04:00 PM onwards",
-        description: `Grab the mic, unleash your spontaneity, and embark on a whirlwind of wit and words. Participate in Aaftaab’s JAM: Just a Minute, and challenge your wit with a random topic and a minute to talk!`,
+        dTheatreescription: `Grab the mic, unleash your spontaneity, and embark on a whirlwind of wit and words. Participate in Aaftaab’s JAM: Just a Minute, and challenge your wit with a random topic and a minute to talk!`,
         // price: "₹50",
         isFlagship: true,
         prize: "",
@@ -201,7 +201,7 @@ export default ({
         imageSrc:
           "https://d2tmwrdh9omrnz.cloudfront.net/channels/kavi.jpg",
         title: "Kavi Sammelan",
-        description: "Tune in to watch Sangam, the music club of IIT Jodhpur, fill the air with magical, melodious music.",
+        description: "Kavi Sammelan, a poetic symposium, originated in North India, fostering traditional poetic expression. Poets gather to recite compositions, showcasing creativity and linguistic prowess. Events feature competitive or collaborative formats and various styles and languages. Accompanied by musical performances, they enrich cultural gatherings. Platforms for social commentary, they share thoughts and emotions through the power of spoken word.",
         date: "21-02-2024",
         timing: "04:30PM onwards",
         // price: "₹50",
@@ -313,13 +313,7 @@ export default ({
                  }}>
                   <Card className="group" href={card.url} initial="rest" whileHover={{scale:1.1}} animate="rest">
                     <CardImageContainer imageSrc={card.imageSrc}>
-                      {/* <CardRatingContainer>
-                        <CardRating>
-                          <StarIcon />
-                          {card.rating}
-                        </CardRating>
-                        <CardReview>({card.reviews})</CardReview>
-                      </CardRatingContainer> */}
+          
                       {
                         card.price ?
                         <CardHoverOverlay
@@ -353,8 +347,7 @@ export default ({
           </TabContent>
         ))}
       </ContentWithPaddingXl>
-      <DecoratorBlob1 />
-      <DecoratorBlob2 />
+      
     </Container>
   );
 };

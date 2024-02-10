@@ -10,7 +10,7 @@ import imgLogo from "../images/Logo2024.jpg";
 function About() {
     return (
         <AnimationRevealPage>
-            <Header />
+            <Header color="orange"/>
             <MainFeature />
             <Footer />
         </AnimationRevealPage>

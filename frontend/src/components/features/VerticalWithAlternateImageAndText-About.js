@@ -11,7 +11,9 @@ const Container = tw.div`relative`;
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
-const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm font-Philosopher`;
+const HeadingDescription = tw.p`mt-4 font-medium text-gray-700 text-center max-w-sm font-Philosopher  `;
+
+
 
 const Content = tw.div`mt-16`;
 
@@ -29,14 +31,11 @@ const Image = styled.div(props => [
     height: "269px",
     backgroundSize: "cover", // Example height
     boxShadow: "0 0 10px orange", // Add border shadow
-    
-
-    
-    // width: "100px"
-  }
+    // width: "100px
+   }
 ]);
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
-const Subtitle = tw.div`font-bold text-4xl tracking-wide text-secondary-100 font-Philosopher `;
+const Subtitle = tw.div`font-bold text-3xl tracking-wide text-orange-400 font-Philosopher `;
 const Title = tw.h4`text-3xl font-bold text-gray-900 font-Philosopher`;
 const Description = tw.p`mt-2 text-lg leading-loose  text-black font-Lato`;
 const LinkAbout = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-black text-black`;

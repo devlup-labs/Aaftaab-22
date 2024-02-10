@@ -62,6 +62,7 @@ export default function App() {
 
   return (
     <userContext.Provider value={{loggedIn,toggleLoggedIn}}>
+      
     <Router>
       <ScrollToTop>
         <Switch>
@@ -74,7 +75,7 @@ export default function App() {
           {/* <Route path="/sponsors">
             <Sponsors />
           </Route> */}
-          <Route path="/login">
+          <Route path="/login"> 
             <LoginPage />
           </Route>
           <Route path="/team">

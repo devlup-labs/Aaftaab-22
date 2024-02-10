@@ -38,12 +38,12 @@ const Link = styled(PrimaryButtonBase).attrs({as: "a"})`
   ${tw`inline-block mt-4 text-sm font-semibold`}
 `
 
-const DecoratorBlob1 = tw(
-  SvgDecoratorBlob1
-)`-z-10 absolute bottom-0 right-0 w-48 h-48 transform translate-x-40 -translate-y-8 opacity-25`;
-const DecoratorBlob2 = tw(
-  SvgDecoratorBlob2
-)`-z-10 absolute top-0 left-0 w-48 h-48 transform -translate-x-32 translate-y-full opacity-25`;
+// const DecoratorBlob1 = tw(
+//   SvgDecoratorBlob1
+// )`-z-10 absolute bottom-0 right-0 w-48 h-48 transform translate-x-40 -translate-y-8 opacity-25`;
+// const DecoratorBlob2 = tw(
+//   SvgDecoratorBlob2
+// )`-z-10 absolute top-0 left-0 w-48 h-48 transform -translate-x-32 translate-y-full opacity-25`;
 
 export default ({
   subheading = "Blog",
@@ -113,8 +113,8 @@ export default ({
           ))}
         </ThreeColumn>
       </Content>
-      <DecoratorBlob1 />
-      <DecoratorBlob2 />
+      {/* <DecoratorBlob1 />
+      <DecoratorBlob2 /> */}
     </Container>
   );
 };

@@ -12,7 +12,7 @@ function Events() {
 
     return (
         <AnimationRevealPage>
-            <Header />
+            <Header color="orange" />
             <TabGrid
                 heading={
                 <>

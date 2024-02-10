@@ -8,7 +8,7 @@ import tw from "twin.macro";
 import imgLogo from "../images/old-logo.png";
 function Home() {
 
-    const HighlightedText = tw.span`bg-gradient-to-r from-green-300 via-yellow-300 to-blue-200 px-4 text-teal-700  transform -skew-x-12 inline-block font-Philosopher `;
+    const HighlightedText = tw.span`bg-gradient-to-r from-green-300 via-yellow-300 to-blue-200 px-4 text-teal-700  transform -skew-x-12 inline-block font-Philosopher`;
     const DescriptionText = tw.p`text-xl text-teal-700 font-Philosopher`; 
 
     return (

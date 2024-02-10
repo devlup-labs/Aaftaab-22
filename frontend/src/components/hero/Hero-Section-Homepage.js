@@ -17,7 +17,7 @@ import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
 import DesignIllustration from "../../images/design-illustration.svg";
 
-import heroImgTitle from '../../images/old-logo-text.png'
+import heroImgTitle from '../../images/Logo Text_Dark Teal.png'
 import heroImgTL from '../../images/Logo2024-top-left.png'
 import heroImgTR from '../../images/Logo2024-top-right.png'
 import heroImgBL from '../../images/Logo2024-bottom-left.png'
@@ -89,13 +89,7 @@ const WatchVideoButton = styled.button`
 
 const IllustrationContainer = tw.div`flex justify-center md:justify-end items-center relative max-w-3xl lg:max-w-none`;
 
-// Random Decorator Blobs (shapes that you see in background)
-const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
-  ${tw`pointer-events-none opacity-5 absolute left-0 bottom-0 h-64 w-64 transform -translate-x-2/3  -z-10`}
-`;
-const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
-  ${tw`pointer-events-none fill-current text-primary-500 opacity-25 absolute w-32 h-32 right-0 bottom-0 transform translate-x-10 translate-y-10 -z-10`}
-`;
+
 
 const StyledModal = styled(ReactModalAdapter)`
   &.mainHeroModal__overlay {
@@ -150,11 +144,7 @@ export default ({
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
-              {/* <img
-                css={imageCss}
-                src={imageSrc}
-                alt="Hero"
-              /> */}
+            
               <div className="heroLogo">
                 <div className="container">
                   <div className="part row1">
@@ -170,11 +160,11 @@ export default ({
                   <img className="heroTitleImg" css={imageCss} src={heroImgTitle} />
                 </div>
               </div>
-              {imageDecoratorBlob && <DecoratorBlob2 />}
+            
             </IllustrationContainer>
           </RightColumn>
         </TwoColumn>
-        <DecoratorBlob1 />
+        
         <StyledModal
           closeTimeoutMS={300}
           className="mainHeroModal"

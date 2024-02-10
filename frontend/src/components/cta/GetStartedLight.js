@@ -19,9 +19,9 @@ const PrimaryLink = tw(Link)`shadow text-gray-100 hocus:text-gray-300 bg-primary
 
 const SecondaryLink = tw(Link)`text-primary-500 hover:text-primary-600 bg-gray-100 hover:bg-gray-200`;
 
-const DecoratorBlobContainer = tw.div`absolute inset-0 overflow-hidden rounded-lg`
-const DecoratorBlob1 = tw(SvgDecoratorBlob1)`absolute bottom-0 left-0 w-80 h-80 transform -translate-x-20 translate-y-32 text-primary-500 opacity-5`
-const DecoratorBlob2 = tw(SvgDecoratorBlob1)`absolute top-0 right-0 w-80 h-80 transform  translate-x-20 -translate-y-64 text-primary-500 opacity-5`
+// const DecoratorBlobContainer = tw.div`absolute inset-0 overflow-hidden rounded-lg`
+// const DecoratorBlob1 = tw(SvgDecoratorBlob1)`absolute bottom-0 left-0 w-80 h-80 transform -translate-x-20 translate-y-32 text-primary-500 opacity-5`
+// const DecoratorBlob2 = tw(SvgDecoratorBlob1)`absolute top-0 right-0 w-80 h-80 transform  translate-x-20 -translate-y-64 text-primary-500 opacity-5`
 export default ({
   subheading = "Interested in Treact ?",
   heading = "Join the closed beta now.",
@@ -45,10 +45,10 @@ export default ({
             <SecondaryLink href={secondaryLinkUrl}>{secondaryLinkText}</SecondaryLink>
           </LinksContainer>
         </Row>
-        <DecoratorBlobContainer>
+        {/* <DecoratorBlobContainer>
           <DecoratorBlob1/>
           <DecoratorBlob2/>
-        </DecoratorBlobContainer>
+        </DecoratorBlobContainer> */}
       </PrimaryBackgroundContainer>
       </ContentWithPaddingXl>
     </Container>

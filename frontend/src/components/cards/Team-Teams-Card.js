@@ -27,10 +27,10 @@ const CardImage = styled.div`
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
   .position {
-    ${tw`uppercase font-bold tracking-widest text-lg text-orange-400`}
+    ${tw`uppercase font-bold tracking-widest text-lg text-orange-700`}
   }
   .name {
-    ${tw`mt-1 text-xl font-medium text-gray-900`}
+    ${tw`mt-1 text-xl font-medium text-orange-600`}
   9
 `
 

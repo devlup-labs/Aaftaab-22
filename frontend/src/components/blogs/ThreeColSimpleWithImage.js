@@ -22,12 +22,12 @@ const Category = tw.div`mt-4 text-secondary-100 font-bold text-sm`;
 const Title = tw.h4`mt-2 leading-relaxed font-bold text-lg`;
 const Link = tw.a`inline-block mt-2 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
 
-const DecoratorBlob1 = tw(
-  SvgDecoratorBlob1
-)`-z-10 absolute bottom-0 right-0 w-48 h-48 transform translate-x-40 -translate-y-8 opacity-25`;
-const DecoratorBlob2 = tw(
-  SvgDecoratorBlob2
-)`-z-10 absolute top-0 left-0 w-48 h-48 transform -translate-x-32 translate-y-full opacity-25`;
+// const DecoratorBlob1 = tw(
+//   SvgDecoratorBlob1
+// )`-z-10 absolute bottom-0 right-0 w-48 h-48 transform translate-x-40 -translate-y-8 opacity-25`;
+// const DecoratorBlob2 = tw(
+//   SvgDecoratorBlob2
+// )`-z-10 absolute top-0 left-0 w-48 h-48 transform -translate-x-32 translate-y-full opacity-25`;
 
 export default () => {
   const blogPosts = [
@@ -73,8 +73,8 @@ export default () => {
           ))}
         </ThreeColumn>
       </Content>
-      <DecoratorBlob1 />
-      <DecoratorBlob2 />
+      {/* <DecoratorBlob1 />
+      <DecoratorBlob2 /> */}
     </Container>
   );
 };

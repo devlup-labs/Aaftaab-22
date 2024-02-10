@@ -85,9 +85,9 @@ const DecoratorBlob = styled(SvgDecoratorBlob)`
 
 export default ({
   subheading = "",
-  heading = "Registration Plans.",
-  description = "These passes will enable you to access some or all the events planned throughout the fest. It is mandatory to buy a pass to gain entry to the fest.",
-  subdescription = "Note: The purchase will be reflected on the website within 24 hours. For any query, reach us at aaftaab@iitj.ac.in",
+  heading = "Registration commencement imminent!",
+  description = "",
+  subdescription = "Note: For any query, reach us at aaftaab@iitj.ac.in",
   plans = null,
   primaryButtonText = "Buy Now"
 }) => {
@@ -97,7 +97,7 @@ export default ({
     {
       name: "Flagship Only",
       price: "₹150",
-      // duration: "Monthly",
+      // duration: "M onthly",
       mainFeature: "Access to all informal events",
       features: ["Standup comedy", "Kavi sammelan", "Hip-hop Night", "and many more..."],
     },
@@ -129,7 +129,7 @@ export default ({
           {description && <Description>{description}</Description>}
           {subdescription && <Description>{subdescription}</Description>}
         </HeaderContainer>
-        <PlansContainer>
+        {/* <PlansContainer>
           {plans.map((plan, index) => (
             <Plan key={index} featured={plan.featured}>
               {!plan.featured && <div className="planHighlight" css={highlightGradientsCss[index % highlightGradientsCss.length]} />}
@@ -152,7 +152,7 @@ export default ({
             </Plan>
           ))}
           <DecoratorBlob/>
-        </PlansContainer>
+        </PlansContainer> */}
       </ContentWithPaddingXl>
     </Container>
   );
