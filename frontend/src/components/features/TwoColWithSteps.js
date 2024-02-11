@@ -79,7 +79,7 @@ export default ({
       <TwoColumn>
         <ImageColumn>
           <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
-          {imageDecoratorBlob && <DecoratorBlob css={decoratorBlobCss} />}
+        {imageDecoratorBlob && <DecoratorBlob css={decoratorBlobCss} />}
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>

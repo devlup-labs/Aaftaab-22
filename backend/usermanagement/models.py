@@ -40,7 +40,7 @@ class Participant(models.Model):
     name = models.CharField(max_length=255,blank=False,default='name')
     password = models.CharField(max_length=255,blank=False)
     phone_number = models.CharField(max_length=10,blank=True)
-    user_interest = models.CharField(max_length=255,blank = True)
+    # user_interest = models.CharField(max_length=255,blank = True)
     college_name=models.CharField(max_length=255,blank=True)
     # pass_type = models.CharField(max_length=255,default ='none',choices = REGISTRATION_TYPES,blank=False)
     def __str__(self):

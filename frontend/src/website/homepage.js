@@ -16,7 +16,7 @@ function Home() {
             <Hero
                 heading={<>The <HighlightedText>literary festival</HighlightedText> of IIT Jodhpur</>}
                 
-                description={<span style = {{ fontFamily: 'Lato',color:'teal' }}>Aaftaab is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerizing poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, book launches, quizzes, and live music performances.</span>}
+                description={<span style = {{ fontFamily: 'Lato',color:'teal' }}>Aaftaab is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerizing poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, quizzes, and live music performances.</span>}
                 imageSrc={imgLogo}/>
             <Slider />
             <Features />

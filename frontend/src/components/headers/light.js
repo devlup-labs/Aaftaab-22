@@ -163,9 +163,9 @@ export default ({
       <Link to="/events">
         <NavLink color={color} style = {{ fontFamily: 'Lato',fontSize:'16px'}}>Events</NavLink>
       </Link>
-      {/* <Link to="/sponsors">
-        <NavLink style = {{ fontFamily: 'Lato',fontSize:'16px'}}>Sponsors</NavLink>
-      </Link> */}
+      <Link to="/sponsors">
+        <NavLink color={color} style = {{ fontFamily: 'Lato',fontSize:'16px'}}>Sponsors</NavLink>
+      </Link>
       <Link to="/team">
         <NavLink color={color} style = {{ fontFamily: 'Lato',fontSize:'16px'}}>Team</NavLink>
       </Link>

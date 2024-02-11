@@ -62,10 +62,10 @@ function Events() {
                                 key: "Time",
                                 value: `${card.timing}`
                             },
-                            {
-                                key: "Event type",
-                                value: "Individual"
-                            },
+                            // {
+                            //     key: "Event type",
+                            //     value: "Individual"
+                            // },
                             {
                                 key: "Prize",
                                 value: `${card.prize}`
@@ -75,7 +75,7 @@ function Events() {
                             (card.timing) ?
                             [
                                 {
-                                    key: "Time",
+                                    // key: "Time",
                                     value: `${card.timing}`
                                 },
                                 {

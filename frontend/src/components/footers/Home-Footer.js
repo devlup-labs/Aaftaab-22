@@ -12,10 +12,27 @@ import { ReactComponent as DiscordIcon } from "../../images/discord-icon.svg";
 
 import { Link } from "react-router-dom";
 
+
 const Container = tw(ContainerBase)`bg-black text-gray-100 -mx-8 -mb-8 font-Philosopher`
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24 font-Philosopher`;
 
-const Row = tw.div`flex items-center justify-center flex-col px-8 font-Lato`
+//const Row = tw.div`flex items-center justify-center flex-col px-8 font-Lato`
+const Row = styled.div`
+  ${tw`flex items-center justify-center flex-col px-8 font-Lato`}
+  animation: slideIn 0.5s ease-out;
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+`;
+
 
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;

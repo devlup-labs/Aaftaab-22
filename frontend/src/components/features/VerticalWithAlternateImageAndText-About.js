@@ -60,7 +60,7 @@ export default () => {
       subtitle: "Basic Intro",
       // title: "Aaftaab",
       description:
-      "Aaftaab, the annual literary festival conducted by IIT Jodhpur,  after is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerising poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, book launches, quizzes, and live music performances.",
+      "Aaftaab, the annual literary festival conducted by IIT Jodhpur,  after is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerising poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, quizzes, and live music performances.",
       // url: "https://timerse.com"
     },
 

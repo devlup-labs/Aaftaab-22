@@ -16,23 +16,60 @@ const Subheading = tw(SubheadingBase)`text-center mb-3`
 const Description = tw(SectionDescription)`mx-auto text-center`
 
 const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto `
+
 const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center `
 
+// Conditionally styled components based on position
 const CardImage = styled.div`
   ${props => css`background-image: url("${props.imageSrc}");`}
-  ${tw`bg-no-repeat w-64 h-64 bg-cover bg-center rounded-full `}
+  ${tw`bg-no-repeat bg-cover bg-center rounded-full`}
   border: 2px solid orange;
-  box-shadow: 0 0 10px orange ; /* Add border shadow */
-`
+  box-shadow: 0 0 10px orange;
+
+  ${props =>
+    props.position === "Head" &&
+    css`
+      ${tw`w-64 h-64`}
+    `}
+
+  ${props =>
+    props.position === "Assistant Head" &&
+    css`
+      ${tw`w-32 h-32`}
+    `}
+`;
+
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
   .position {
-    ${tw`uppercase font-bold tracking-widest text-lg text-orange-700`}
+    ${tw`uppercase font-bold tracking-widest text-orange-700`}
+    ${props =>
+      props.position === "Head" &&
+      css`
+        ${tw`text-sm`}
+      `}
+
+    ${props =>
+      props.position === "Assistant Head" &&
+      css`
+        ${tw`text-lg`}
+      `}
   }
   .name {
-    ${tw`mt-1 text-xl font-medium text-orange-600`}
-  9
-`
+    ${tw`mt-1 font-medium text-orange-600`}
+    ${props =>
+      props.position === "Head" &&
+      css`
+        ${tw`text-lg`}
+      `}
+
+    ${props =>
+      props.position === "Assistant Head" &&
+      css`
+        ${tw`text-xl`}
+      `}
+  }
+`;
 
 const CardLinks = styled.div`
   ${tw`mt-6 flex`}
@@ -42,13 +79,16 @@ const CardLinks = styled.div`
       ${tw`fill-current w-6 h-6`}
     }
   }
-`
+`;
+
+
 
 export default ({
   heading = "Meet These Fine Folks.",
   subheading = "",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  cards=[]
+  cards=[],
+  cards_ah=[]
 
 }) => {
   return (
@@ -62,10 +102,10 @@ export default ({
           {cards.map((card, index) => (
             <Card key={index}>
               <div >
-                <CardImage imageSrc={card.imageSrc} />
+                <CardImage position="Head" imageSrc={card.imageSrc} />
               </div>
               
-              <CardContent>
+              <CardContent position="Head">
                 <span className="position">{card.position}</span>
                 <span className="name">{card.name}</span>
                 <CardLinks>
@@ -79,6 +119,29 @@ export default ({
             </Card>
           ))}
         </Cards>
+        <Cards>
+          {cards_ah.map((card, index) => (
+            <Card key={index}>
+              <div >
+                <CardImage position="Assistant Head" imageSrc={card.imageSrc} />
+              </div>
+              
+              <CardContent position="Assistant Head">
+                <span className="position">{card.position}</span>
+                <span className="name">{card.name}</span>
+                <CardLinks>
+                  {card.links.map((link, linkIndex) => (
+                    <a key={linkIndex} className="link" href={link.mail?`mailto:${link.mail}`:link.url} target={link.mail ? "_self" : "_blank"}>
+                      <link.icon className="icon" />
+                    </a>
+                  ))}
+                </CardLinks>
+              </CardContent>
+            </Card>
+          ))}
+        </Cards>
+
+        
       </ContentWithPaddingXl>
     </Container>
   );

@@ -41,7 +41,7 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`mt-2 font-semibold text-xl leading-none text-black font-Lato`}
+    ${tw`mt-2 font-semibold text-xl leading-none text-orange-600 font-Lato`}
   }
 
   .description {
@@ -49,9 +49,9 @@ const Card = styled.div`
   }
 `;
 
-const DecoratorBlob = styled(SvgDecoratorBlob3)`
-  ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
-`;
+// const DecoratorBlob = styled(SvgDecoratorBlob3)`
+  // ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
+// `;
 
 export default () => {
   /*
@@ -79,7 +79,7 @@ export default () => {
     <Container>
       <ThreeColumnContainer>
         <Heading>
-          <span tw="text-black">TITLE SPONSORS</span>
+          <span color="orange">TITLE SPONSORS</span>
         </Heading>
         {cards[0].map((card, i) => (
           <Column key={i}>
@@ -95,7 +95,7 @@ export default () => {
         ))}
         
         <Heading tw="mt-10">
-          <span tw="text-black">PAST-ASSOCIATE SPONSORS</span>
+          <span color="orange">PAST-ASSOCIATE SPONSORS</span>
         </Heading>
         {cards[1].map((card, i) => (
           <Column key={i}>
@@ -110,7 +110,7 @@ export default () => {
           </Column>
         ))}
       </ThreeColumnContainer>
-      <DecoratorBlob />
+      {/* <DecoratorBlob /> */}
     </Container>
   );
 };

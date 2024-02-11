@@ -92,7 +92,6 @@ export default ({
         name: e.target.name.value,
         password: e.target.password.value,
         phone_number: e.target.phone_number.value,
-        user_interest: e.target.user_interest.value,
         college_name: e.target.college_name.value,
       };
       const requestOptions = {
@@ -103,9 +102,10 @@ export default ({
       setLoading(!loading);
       fetch(`${backendUrl}/api/create_participant/`, requestOptions)
         .then((response) => {
-          console.log(response);
-          if (response.status === 201) {
-            //sendSuccessMail(data.email);
+          console.log("Hi 1");
+          if (response.status === 201 || response.status == 200) {
+            console.log("Hi 2")
+            alert("Successfully Registered!");
             window.location.href = "/login";
           } else if (response.status == 409) {
             alert("user already exists");
@@ -200,14 +200,13 @@ export default ({
                 />
                  <Input type="name" placeholder="College Name" name="college_name" />
                
-                <div className="interestDropDown">
+                {/* <div className="interestDropDown">
                   <label for="user_interest" id="userInterestLabel">What part of the fest are you most excited about:</label>
                   <select name="user_interest" id="userInterestOptions">
-                    <option className="userInterestOption" value="events">Events Only</option>
-                    <option className="userInterestOption" value="flagship">Flagship Only</option>
-                    <option className="userInterestOption" value="events_and_flagship">Both flagship and events</option>
+                    <option className="userInterestOption" value="events">Events</option>
+                    
                   </select>
-                </div>
+                </div> */}
                 <SubmitButton type="submit">
                   <SubmitButtonIcon className="icon" />
                   <span className="text">{submitButtonText}</span>

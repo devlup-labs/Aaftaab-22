@@ -7,7 +7,7 @@ import Footer from "components/footers/Home-Footer";
 function Sponsors() {
     return (
         <AnimationRevealPage>
-            <Header />
+            <Header color="orange"/>
             <Features />
             <Footer />
         </AnimationRevealPage>
