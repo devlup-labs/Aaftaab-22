@@ -20,8 +20,12 @@ import StandupIMG from "../../images/flagship_events/Standup.jpg";
 import TreasurehuntImg from "../../images/flagship_events/Treasure Hunt.jpg";
 import WorkshopIMG from "../../images/flagship_events/Workshops.jpg";
 import Maaz from '../../images/flagship_events/Maaz-Bin-Bilal.jpg'
+import BEP from '../../images/BEP.jpeg'
 
 import "./Homepage-Slider.css"
+
+
+
 
 const Container = tw.div`relative mt-20`;
 const Content = tw.div`max-w-screen-xl mx-auto py-2 lg:py-2 font-Philosopher`;
@@ -191,27 +195,36 @@ const PrimaryButton = styled.button`
 export default () => {
   // useState is used instead of useRef below because we want to re-render when sliderRef becomes available (not null)
   const [sliderRef, setSliderRef] = useState(null);
-  const sliderSettings = {
-    arrows: false,
-    slidesToShow: 3,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
+  let direction = 'left'; // Initial direction
 
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        }
-      },
-    ]
-  };
+const sliderSettings = {
+  arrows: false,
+  slidesToShow: 3,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  infinite: true, // Enable infinite loop
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ],
+  beforeChange: (_, next) => {
+    if (next === 0) {
+      direction = direction === 'left' ? 'right' : 'left'; // Toggle direction
+    }
+  },
+  rtl: direction === 'right', // Set RTL based on direction
+};
+
 
   /* Change this according to your needs */
   const cards= [
@@ -227,6 +240,40 @@ export default () => {
         prize: "",
         ruleBookLink: "",
         url: "#"
+      },
+      {
+        imageSrc:
+          "https://thegradient.pub/content/images/2021/08/Screenshot-2021-08-20-020858.png",
+        title: "Let AI Cook",
+       
+        description: " Participants will be given certain themes. Using these themes, they have to come up with creative prompts/synopsis and feed those to an AI model and generate the story. They will submit the story and the best/weirdest ones shall be the winners.",
+        date: "21-02-2024",
+        timing: "Online Event",
+        // price: "₹50",
+        isFlagship: true,
+        prize: "",
+        ruleBookLink: "",
+        url: "#"
+      
+   
+  
+      },
+
+      {
+        imageSrc:BEP,
+        title: "Bad Explained Plots",
+       
+        description: " The plots of some popular movies/novels shall be worded in a tricky manner. Participants have to identify the movie/novel. The quickest to do it shall get the most points.",
+        date: "21-02-2024",
+        timing: "Online Event",
+        // price: "₹50",
+        isFlagship: true,
+        prize: "",
+        ruleBookLink: "",
+        url: "#"
+      
+   
+  
       },
       
       {
@@ -343,7 +390,7 @@ export default () => {
  
       {
         imageSrc:
-          "https://tse4.mm.bing.net/th?id=OIP.OlIqz9PjwPTfrOeM3_x-kAHaFy&pid=Api&P=0&h=220",
+          "https://cdn7.dissolve.com/p/D985_14_891/D985_14_891_1200.jpg",
         title: "Theatre Performance",
         description: "This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...",
         date: "21-02-2024",
@@ -356,9 +403,9 @@ export default () => {
       {
         imageSrc:
           "https://images.unsplash.com/photo-1473186505569-9c61870c11f9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ldHJ5fGVufDB8fDB8fHww",
-        title: "Snug Snippets",
+        title: "Snug Snippets (Instagram Event)",
        
-        description: " Showcase your poetic maestro to the world and participate in Aaftaab’s online event Snug Snippets! On the eve of International Mother Language Day, let us create a kaleidoscope of literary treasure and weave poems of diverse languages!",
+        description: " A few prompts (words/phrases) shall be shared and people shall come up with small snippets of poetry on it. Entries must be short (15-30 words)No language barrier - writings can be in any language you want. Entries will be posted on Instagram on a first come first serve basis.Grading based on likes and comments  - 1 like = 1 point, 1 comment = 2 points.",
         date: "21-02-2024",
         timing: "Online Event",
         // price: "₹50",
@@ -386,61 +433,59 @@ export default () => {
       
    
   
-      }
-    ];
-
-    const cards_online= [
+      },
       {
         imageSrc:
-          "https://www.arha.us/sites/default/files/2021-04/RibbonCut.jpg",
-        title: "Opening Ceremony",
-        description: "The opening ceremony is a grand kickoff event that marks the beginning of a significant occasion or gathering. It sets the tone and spirit for what's to come, often featuring speeches, performances, and symbolic gestures. Attendees gather to witness and celebrate the start of the event, fostering anticipation and excitement. It's a moment of unity, where participants come together to embark on a shared journey or experience.",
+          "https://thegradient.pub/content/images/2021/08/Screenshot-2021-08-20-020858.png",
+        title: "Let AI Cook",
+       
+        description: " Participants will be given certain themes. Using these themes, they have to come up with creative prompts/synopsis and feed those to an AI model and generate the story. They will submit the story and the best/weirdest ones shall be the winners.",
         date: "21-02-2024",
-        timing: "8:30AM onwards",
+        timing: "Online Event",
         // price: "₹50",
         isFlagship: true,
         prize: "",
         ruleBookLink: "",
         url: "#"
-      },
       
-      {
-        imageSrc:"https://miro.medium.com/v2/resize:fit:522/1*Z8yUeUqglktyEORtbZD7MA.jpeg",
-        title: "Panel Discussion",
-        description: "Panel discussions gather experts to explore topics, led by a moderator, in a collaborative setting. Diverse insights and solutions are shared, enhancing understanding, while audience engagement enriches the conversation. The aim is to inform, educate, and provoke thoughtful discussion, fostering deeper insight into complex issues and driving meaningful change.",
-        date: "21-02-2024",
-        timing: "9:15AM onwards",
-        // price: "₹50",
-        isFlagship: true,
-        prize: "",
-        ruleBookLink: "",
-        url: "#",
+   
+  
       },
+
       {
-        imageSrc:
-          "https://www.arha.us/sites/default/files/2021-04/RibbonCut.jpg",
-        title: "Opening Ceremony",
-        description: "The opening ceremony is a grand kickoff event that marks the beginning of a significant occasion or gathering. It sets the tone and spirit for what's to come, often featuring speeches, performances, and symbolic gestures. Attendees gather to witness and celebrate the start of the event, fostering anticipation and excitement. It's a moment of unity, where participants come together to embark on a shared journey or experience.",
+        imageSrc:BEP,
+        title: "Bad Explained Plots",
+       
+        description: " The plots of some popular movies/novels shall be worded in a tricky manner. Participants have to identify the movie/novel. The quickest to do it shall get the most points.",
         date: "21-02-2024",
-        timing: "8:30AM onwards",
+        timing: "Online Event",
         // price: "₹50",
         isFlagship: true,
         prize: "",
         ruleBookLink: "",
         url: "#"
+      
+   
+  
       },
+    ];
+    
+
+    
+     
+     
       
    
       
       
 
-    ];
+  
 
   return (
     <Container>
       <Content>
         <HeadingWithControl>
-          <Heading>Offline Events</Heading>
+          <Heading>Highlights</Heading>
           <Controls>
           <Link 
                 to={{
@@ -472,7 +517,7 @@ export default () => {
       </Content>
 
 
-      <Content>
+      {/* <Content>
         <HeadingWithControl>
           <Heading>Online Events</Heading>
           <Controls>
@@ -503,7 +548,7 @@ export default () => {
             </div>
           ))}
         </CardSlider>
-      </Content>
+      </Content> */}
     </Container>
   );
 };

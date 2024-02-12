@@ -57,7 +57,7 @@ export default () => {
   const cards = [
     {
       imageSrc: "https://images.squarespace-cdn.com/content/v1/592710626b8f5bb4c8159811/0db6ec6d-0624-4877-a023-7ab5701538be/camille-brodard-kOAU9SG0VX8-unsplash.jpg?format=2500w",
-      subtitle: "Basic Intro",
+      subtitle: "The Essence of Aaftaab",
       // title: "Aaftaab",
       description:
       "Aaftaab, the annual literary festival conducted by IIT Jodhpur,  after is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerising poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, quizzes, and live music performances.",

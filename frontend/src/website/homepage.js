@@ -6,6 +6,7 @@ import Features from "components/features/Homepage-Sponsors-Preview";
 import Footer from "components/footers/Home-Footer";
 import tw from "twin.macro";
 import imgLogo from "../images/old-logo.png";
+import Counter from '../components/features/Counter'
 function Home() {
 
     const HighlightedText = tw.span`bg-gradient-to-r from-green-300 via-yellow-300 to-blue-200 px-4 text-teal-700  transform -skew-x-12 inline-block font-Philosopher`;
@@ -18,8 +19,11 @@ function Home() {
                 
                 description={<span style = {{ fontFamily: 'Lato',color:'teal' }}>Aaftaab is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerizing poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, quizzes, and live music performances.</span>}
                 imageSrc={imgLogo}/>
+            {/* <Counter></Counter> */}
             <Slider />
+            <Counter></Counter>
             <Features />
+            
             <Footer />
         </AnimationRevealPage>
     );

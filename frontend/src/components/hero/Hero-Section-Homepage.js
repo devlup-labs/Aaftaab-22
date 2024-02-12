@@ -29,7 +29,8 @@ const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center 
 const RightColumn = tw.div`relative mt-0 mb-12 lg:mt-0 lg:mb-0 flex flex-col justify-center`;
 
 const Heading = tw.h1`font-Philosopher text-teal-600 text-2xl md:text-5xl leading-snug max-w-2xl`;
-const Paragraph = tw.p`my-5 lg:my-8 text-sm lg:text-base font-Philosopher text-black max-w-lg mx-auto lg:mx-0`;
+const Paragraph = tw.p`my-5  lg:my-8 text-base lg:text-lg font-Philosopher  max-w-lg mx-auto lg:mx-0`;
+
 
 const Actions = tw.div`flex flex-col items-center sm:flex-row justify-center lg:justify-start mt-8`;
 const PrimaryButton = styled.button`

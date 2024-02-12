@@ -10,7 +10,7 @@ import { ReactComponent as GithubIcon } from "images/github-icon.svg";
 import { ReactComponent as InstagramIcon } from "images/icons8-instagram.svg";
 
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import a from '../images/team/shreyansh.jpg';
+import a from '../images/team/Shreyansh.jpg';
 import b from '../images/team/nikhil.jpg';
 import c from '../images/team/gayathiri.jpg';
 import d from '../images/team/swaksh.jpg';
