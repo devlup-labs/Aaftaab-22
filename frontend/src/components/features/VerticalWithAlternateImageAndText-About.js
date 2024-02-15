@@ -15,7 +15,7 @@ const HeadingDescription = tw.p`mt-4 font-medium text-gray-700 text-center max-w
 
 
 
-const Content = tw.div`mt-16`;
+const Content = tw.div`mb-12 mt-16`;
 
 const Card = styled.div(props => [
   tw`mt-24 md:flex justify-center items-center`,
@@ -34,10 +34,10 @@ const Image = styled.div(props => [
     // width: "100px
    }
 ]);
-const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
-const Subtitle = tw.div`font-bold text-3xl tracking-wide text-orange-400 font-Philosopher `;
+const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8 text-center `;
+const Subtitle = tw.div`font-bold text-3xl tracking-wide text-orange-400 font-Philosopher text-center `;
 const Title = tw.h4`text-3xl font-bold text-gray-900 font-Philosopher`;
-const Description = tw.p`mt-2 text-lg leading-loose  text-black font-Lato`;
+const Description = tw.p`mt-2 text-lg leading-loose  text-black font-Lato text-center `;
 const LinkAbout = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-black text-black`;
 
 const SvgDotPattern1 = tw(
@@ -60,7 +60,7 @@ export default () => {
       subtitle: "The Essence of Aaftaab",
       // title: "Aaftaab",
       description:
-      "Aaftaab, the annual literary festival conducted by IIT Jodhpur,  after is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerising poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, quizzes, and live music performances.",
+      " Celebrate literature's beauty, variety, and vibrant nature at Aaftaab, the annual literary festival hosted by IIT Jodhpur. It brings together a fusion and harmony of students, along with a wide range of literary interests, cultural backgrounds,  and ethnic backgrounds. The program promises to allure attendees with captivating poetry, thought-provoking novels, stimulating literary conversations, spellbound speaker sessions, and entertaining events like open mics, Kavi Sammelan, live music, and theatrical performances.",
       // url: "https://timerse.com"
     },
 
@@ -79,21 +79,14 @@ export default () => {
       // subtitle: "Lit is Hit",
       // title: "Why Lit?",
       description:
-      "Margaret Atwood once said, “ In the end, we’ll all become stories.”, therefore the team at Aaftaab invites you to be a co-writer for the story of Aaftaab 2024. The enthusiasm and passion you bring, akin to a glorious sunrise, will help radiate our love for literature throughout the country.",
+      `Aldous Huxley once said “Every man's memory is his private literature.”. Therefore the team at Aaftaab invites you to make great memories in this "lieu de mémoire" of Aaftab 2024.  The enthusiasm and passion you bring, akin to a glorious sunrise, will help radiate our love for literature throughout the country.`,
       // url: "https://timerse.com"
     }
   ];
 
   return (
     <Container>
-      <SingleColumn>
-        <HeadingInfoContainer>
-          <HeadingTitle>About Aaftaab</HeadingTitle>
-          <HeadingDescription>
-            Let's dive into the details of aaftaab 2024!
-          </HeadingDescription>
-        </HeadingInfoContainer>
-
+     
         <Content>
           {cards.map((card, i) => (
             <Card key={i} reversed={i % 2 === 1}>
@@ -110,7 +103,7 @@ export default () => {
             </Card>
           ))}
         </Content>
-      </SingleColumn>
+     
       <SvgDotPattern1 />
       <SvgDotPattern2 />
       <SvgDotPattern3 />

@@ -5,24 +5,11 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons";
-import { ReactComponent as PriceIcon } from "feather-icons/dist/icons/dollar-sign.svg";
-import { ReactComponent as LocationIcon } from "feather-icons/dist/icons/map-pin.svg";
-import { ReactComponent as DateIcon} from "feather-icons/dist/icons/calendar.svg";
-import { ReactComponent as StarIcon } from "feather-icons/dist/icons/star.svg";
-import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chevron-left.svg";
-import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
-import kaviSammelanImg from "../../images/flagship_events/Kavi samelan.png";
-import djImg from "../../images/flagship_events/DJ Night.jpg";
-import musicshowImg from "../../images/flagship_events/folk_music.jfif";
-import BookImg from "../../images/flagship_events/Book Signings.jpg";
-import InterviewImg from "../../images/flagship_events/Interview with Director.jpg";
-import StandupIMG from "../../images/flagship_events/Standup.jpg";
-import TreasurehuntImg from "../../images/flagship_events/Treasure Hunt.jpg";
-import WorkshopIMG from "../../images/flagship_events/Workshops.jpg";
-import Maaz from '../../images/flagship_events/Maaz-Bin-Bilal.jpg'
-import BEP from '../../images/BEP.jpeg'
 
+import BEP from '../../images/BEP.jpeg'
+import QT from '../../images/QT.png'
 import "./Homepage-Slider.css"
+
 
 
 
@@ -71,8 +58,6 @@ transition: background 0.3s, color 0.3s;
   }
 }
 `;
-const PrevButton = tw(ControlButton)``;
-const NextButton = tw(ControlButton)``;
 
 const CardSlider = styled(Slider)`
   ${tw`mt-16 `}
@@ -86,12 +71,12 @@ const CardSlider = styled(Slider)`
 `;
 const CardImage = styled.div`
   ${({ imageSrc }) => `background-image: url("${imageSrc}");`}
-  ${tw`w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none `}
+  ${tw`w-full h-80 bg-cover bg-center rounded sm:rounded-none `}
   box-shadow: 0 0 15px teal;
 `;
-const TextInfo = tw.div`py-6 text-black flex-1 flex flex-col justify-between sm:px-10 sm:py-6`;
-const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center text-black font-Philosopher`;
-const Title = tw.h5`text-2xl font-bold font-Philosopher`;
+const TextInfo = tw.div`py-6 text-black flex-1 flex flex-col justify-between sm:px-10 sm:py-6 `;
+const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-center sm:items-center text-black font-Philosopher `;
+const Title = tw.h5`text-2xl font-bold font-Philosopher text-center `;
 
 const RatingsInfo = styled.div`
   ${tw`flex items-center sm:ml-4 mt-2 sm:mt-0`}
@@ -153,77 +138,59 @@ const PrimaryButton = styled.button`
     }
   }
 `;
-// const PrimaryButton = styled(PrimaryButtonBase)`
-  // ${tw`
-  //   mt-auto sm:text-lg lg:mx-0 lg:px-8 lg:py-3
-  //   px-4 py-1 font-Lato rounded-none w-full rounded 
-  //   hocus:bg-black hocus:text-black
-  //   focus:shadow-outline
-  //   border-b-0
-  //   relative
-  // `}
 
-//   background: ${({ loggedIn }) => (loggedIn ? 'linear-gradient(180deg, #000, #000)' : 'linear-gradient(180deg, #000, #000)')};
-//   color: ${({ loggedIn }) => (loggedIn ? '#fff' : '#fff')};
-//   border: 3px solid transparent; /* Initial border */
-//   transition: background 0.3s, color 0.3s;
-
-//   &:hover {
-//     background: linear-gradient(180deg, #fff, #fff);
-//     color: #000;
-//     border-color: #000;
-
-//     &:before {
-//       content: "";
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       right: 0;
-//       bottom: 0;
-//       background: linear-gradient(180deg, transparent, #fff);
-//       animation: waveAnimation 1s infinite alternate;
-//       z-index: -1;
-//     }
-//   }
-
-//   @keyframes waveAnimation {
-//     to {
-//       transform: scaleY(1.2);
-//     }
-//   }
-// `;
 export default () => {
   // useState is used instead of useRef below because we want to re-render when sliderRef becomes available (not null)
   const [sliderRef, setSliderRef] = useState(null);
   let direction = 'left'; // Initial direction
 
-const sliderSettings = {
-  arrows: false,
-  slidesToShow: 3,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  infinite: true, // Enable infinite loop
-  responsive: [
-    {
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-      }
-    },
-  ],
+  const sliderSettings = {
+    arrows: true,
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true, // Enable infinite loop
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          arrows: false, // Hide arrows on larger screens
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false, // Hide arrows on smaller screens
+          slidesToShow: 1,
+        }
+      },
+    ],
   beforeChange: (_, next) => {
     if (next === 0) {
       direction = direction === 'left' ? 'right' : 'left'; // Toggle direction
     }
   },
   rtl: direction === 'right', // Set RTL based on direction
+  swipeToSlide: true, 
 };
+
+  const titleSettings = {
+    
+    responsive: [
+      
+      {
+        breakpoint: 768,
+        settings: {
+          fontSize: '200px',
+          fontWeight: 'bold',
+          
+        }
+      },
+    ],
+  
+  };
 
 
   /* Change this according to your needs */
@@ -261,7 +228,7 @@ const sliderSettings = {
 
       {
         imageSrc:BEP,
-        title: "Bad Explained Plots",
+        title: "Literary Labyrinth",
        
         description: " The plots of some popular movies/novels shall be worded in a tricky manner. Participants have to identify the movie/novel. The quickest to do it shall get the most points.",
         date: "21-02-2024",
@@ -275,6 +242,7 @@ const sliderSettings = {
    
   
       },
+      
       
       {
         imageSrc:"https://miro.medium.com/v2/resize:fit:522/1*Z8yUeUqglktyEORtbZD7MA.jpeg",
@@ -303,7 +271,22 @@ const sliderSettings = {
         url: "#"
       },
       
+      {
+        imageSrc:QT,
+        title: "Quiz Trivia",
+       
+        description: " Ignite your daily quest for knowledge! Participate, answer the questions, and claim the title of the daily quiz champion.",
+        date: "21-02-2024",
+        timing: "Online Event",
+        
+        isFlagship: true,
+        prize: "",
+        ruleBookLink: "",
+        url: "#"
       
+   
+  
+      },
       
 
       {
@@ -504,7 +487,7 @@ const sliderSettings = {
               <CardImage imageSrc={card.imageSrc} />
               <TextInfo>
                 <TitleReviewContainer className="CardTitle">
-                  <Title>{card.title}</Title>
+                  <Title >{card.title}</Title>
                 </TitleReviewContainer>
                 
    
@@ -517,38 +500,7 @@ const sliderSettings = {
       </Content>
 
 
-      {/* <Content>
-        <HeadingWithControl>
-          <Heading>Online Events</Heading>
-          <Controls>
-          <Link 
-                to={{
-                  pathname: "/events",
-                  
-                }}
-              >
-                <PrimaryButton>Know More!</PrimaryButton>
-              </Link>
-          </Controls>
-        </HeadingWithControl>
-        <CardSlider ref={setSliderRef} {...sliderSettings}>
-          {cards_online.map((card, index) => (
-            <div className="Card" key={index}>
-
-              <CardImage imageSrc={card.imageSrc} />
-              <TextInfo>
-                <TitleReviewContainer className="CardTitle">
-                  <Title>{card.title}</Title>
-                </TitleReviewContainer>
-                
-   
-              </TextInfo>
-             
-       
-            </div>
-          ))}
-        </CardSlider>
-      </Content> */}
+      
     </Container>
   );
 };

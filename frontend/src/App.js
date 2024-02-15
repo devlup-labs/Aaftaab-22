@@ -22,6 +22,7 @@ import EventDetails from "website/eventDetails";
 import Register from "website/register"
 import EventRegistration from "website/eventRegistration";
 import Dashboard from "website/dashboard";
+import Guest from "website/guest"
 
 import ScrollToTop from "website/scrollToTop";
 
@@ -80,6 +81,9 @@ export default function App() {
           </Route>
           <Route path="/team">
             <Team />
+          </Route>
+          <Route path="/guests">
+            <Guest />
           </Route>
           <Route path="/eventDetails">
             <EventDetails />

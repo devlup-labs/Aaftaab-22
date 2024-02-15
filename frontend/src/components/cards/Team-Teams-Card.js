@@ -11,13 +11,13 @@ import { ReactComponent as GithubIcon } from "images/github-icon.svg";
 import './Team-Teams-Card.css'
 
 const HeadingContainer = tw.div``
-const Heading = tw(SectionHeading)``
+const Heading = tw(SectionHeading)`text-orange-500`
 const Subheading = tw(SubheadingBase)`text-center mb-3`
 const Description = tw(SectionDescription)`mx-auto text-center`
 
 const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto `
 
-const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center `
+const Card = tw.div`mt-24 grid grid-cols-4 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`
 
 // Conditionally styled components based on position
 const CardImage = styled.div`
@@ -29,7 +29,7 @@ const CardImage = styled.div`
   ${props =>
     props.position === "Head" &&
     css`
-      ${tw`w-64 h-64`}
+      ${tw`w-48 h-48`}
     `}
 
   ${props =>
@@ -46,13 +46,13 @@ const CardContent = styled.div`
     ${props =>
       props.position === "Head" &&
       css`
-        ${tw`text-sm`}
+        ${tw`text-lg`}
       `}
 
     ${props =>
       props.position === "Assistant Head" &&
       css`
-        ${tw`text-lg`}
+        ${tw`text-sm`}
       `}
   }
   .name {
@@ -60,13 +60,13 @@ const CardContent = styled.div`
     ${props =>
       props.position === "Head" &&
       css`
-        ${tw`text-lg`}
+        ${tw`text-xl`}
       `}
 
     ${props =>
       props.position === "Assistant Head" &&
       css`
-        ${tw`text-xl`}
+        ${tw`text-lg`}
       `}
   }
 `;
@@ -100,7 +100,7 @@ export default ({
         </HeadingContainer>
         <Cards>
           {cards.map((card, index) => (
-            <Card key={index}>
+            <Card cardLength={card.length} key={index}>
               <div >
                 <CardImage position="Head" imageSrc={card.imageSrc} />
               </div>
@@ -121,7 +121,7 @@ export default ({
         </Cards>
         <Cards>
           {cards_ah.map((card, index) => (
-            <Card key={index}>
+            <Card cardLength={card.length} key={index}>
               <div >
                 <CardImage position="Assistant Head" imageSrc={card.imageSrc} />
               </div>

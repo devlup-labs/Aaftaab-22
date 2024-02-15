@@ -2,12 +2,13 @@ import React from "react";
 import tw from "twin.macro";
 import { motion } from "framer-motion";
 import useInView from "@owaiswiz/use-in-view";
-import demoimage from "../images/demo/image.jpg"; // Adjust the path accordingly
+import demoimage from "../images/bgg-blur.png"; // Adjust the path accordingl bg--contain
 
-const StyledDiv = tw.div`font-display min-h-screen text-secondary-500 px-1 py-8 sm:px-4 lg:px-8 bg-[#ffffff] overflow-hidden relative`;
+const StyledDiv = tw.div`
+  font-display min-h-screen text-secondary-500 px-1 py-8 sm:px-4 lg:px-8 overflow-hidden
+  bg-img1 bg-cover bg-no-repeat ml-4 mr-24
+`;
 
-const BackgroundImage = tw.div`absolute inset-0 bg-cover bg-center z-0 opacity-15`;
-const GlossyOverlay = tw.div`absolute inset-0 z-10 bg-gradient-to-b from-transparent to-white opacity-25`;
 
 function AnimationReveal({ disabled, children }) {
   if (disabled) {
@@ -32,8 +33,6 @@ function AnimationReveal({ disabled, children }) {
   });
   return (
     <>
-      {/* <BackgroundImage style={{ backgroundImage: `url(${demoimage})` }} />{" "} */}
-      
       {childrenWithAnimation}
     </>
   );
@@ -59,7 +58,9 @@ function AnimatedSlideInComponent({ direction = "left", offset = 30, children })
 
 export default function App(props) {
   return (
-    <StyledDiv className="App">
+    <StyledDiv className="App" style={{ backgroundImage: `url(${demoimage})`,
+    backgroundSize: '100vw 100%',
+    }}>
       <AnimationReveal {...props} />
     </StyledDiv>
   );

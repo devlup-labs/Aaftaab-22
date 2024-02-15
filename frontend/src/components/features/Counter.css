@@ -48,4 +48,9 @@
   .box {
     width: 100%;
   }
+  .box h1 {
+    font-size: 5vw; /* Adjusting font size for smaller screens */
+  }
 }
+
+

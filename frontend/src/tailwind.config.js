@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend:{
       backgroundImage:{
-        'img2': "url('https://i.postimg.cc/8c1CgGwX/bg-img2.jpg')",
-        'img1': "url('https://i.postimg.cc/DwSy8wVV/output-onlinepngtools-1.png')",
+        'img2': "https://media.istockphoto.com/id/624878906/photo/triangular-abstract-background.jpg?s=1024x1024&w=is&k=20&c=k-TZ195tlgFiYfTqLg4cs38EQ7JjUZikNAYdEbYaPJU=')",
+        'img1': "https://media.istockphoto.com/id/624878906/photo/triangular-abstract-background.jpg?s=1024x1024&w=is&k=20&c=k-TZ195tlgFiYfTqLg4cs38EQ7JjUZikNAYdEbYaPJU=",
       },
     },
     screens: {
@@ -385,6 +385,7 @@ module.exports = {
     maxHeight: {
       full: '100%',
       screen: '100vh',
+     
     },
     maxWidth: (theme, { breakpoints }) => ({
       none: 'none',

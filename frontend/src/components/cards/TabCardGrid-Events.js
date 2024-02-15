@@ -8,14 +8,13 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { SectionHeading,Subheading } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import { ReactComponent as StarIcon } from "images/star-icon.svg";
-import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-5.svg";
-import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7.svg";
-import BEP from "../../images/BEP.jpeg"
 
-const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row font-Philosopher`;
-const Header = tw(SectionHeading)`font-Philosopher mb-3`;
-const SubHeader = tw(Subheading)`font-Philosopher text-3xl mb-0 mt-12 text-orange-600`;
+import BEP from "../../images/BEP.jpeg"
+import QT from "../../images/QT.png"
+
+const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row font-Philosopher justify-center`;
+const Header = tw(SectionHeading)`font-Philosopher mb-3 text-center`;
+const SubHeader = tw(Subheading)`font-Philosopher text-3xl mb-0 mt-12 justify-center text-orange-600`;
 const TabsControl = tw.div`flex flex-wrap bg-orange-300 px-2 py-2 rounded leading-none mt-12 xl:mt-0`;
 
 const TabControl = styled.div`
@@ -27,9 +26,16 @@ const TabControl = styled.div`
   }
 `;
 
-const TabContent = tw(motion.div)`mt-0 mb-2 flex flex-wrap sm:-mr-10 md:-mr-6 lg:-mr-12 font-Philosopher`;
+const TabContent = tw(motion.div)`mt-0 mb-2 flex flex-wrap sm:-mr-10 md:-mr-6 lg:-mr-12 font-Philosopher justify-center`;
 const CardContainer = tw.div`mt-10 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 sm:pr-10 md:pr-6 lg:pr-12 font-Philosopher`;
-const Card = tw(motion.a)`bg-gray-200 rounded-b block max-w-xs mx-auto sm:max-w-none sm:mx-0 `;
+const Card = tw(motion.a)`bg-gray-200 rounded-b block max-w-xs mx-auto sm:max-w-none sm:mx-0 
+
+`;
+
+const StyledCard = styled(Card)`
+  border-radius: 30px; /* Adjust the value as needed */
+
+`;
 
 const CardRatingContainer = tw.div`leading-none absolute inline-flex bg-gray-100 bottom-0 left-0 ml-4 mb-4 rounded-full px-5 py-2 items-end`;
 const CardRating = styled.div`
@@ -50,15 +56,15 @@ const CardButton = tw(PrimaryButtonBase)`text-sm`;
 const CardReview = tw.div`font-medium text-xs text-gray-600`;
 
 const CardText = tw.div`p-4 text-gray-900 font-Philosopher`;
-const CardTitle = tw.h5` text-lg font-semibold group-hover:text-black font-Philosopher`;
-const CardContent = tw.p`mt-1 text-sm font-medium text-black font-Lato`;
+const CardTitle = tw.h5` text-lg font-semibold group-hover:text-black font-Philosopher text-center`;
+const CardContent = tw.p`mt-1 text-sm font-medium text-black font-Lato text-center `;
 const CardPrice = tw.p`mt-4 text-xl font-bold`;
 
 
 const CardImageContainer = styled.div`
   ${props => css`
     background-image: url("${props.imageSrc}");
-    border-radius: 7px;
+    border-radius: 10px;
     border: 1px solid orange;
     transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
 
@@ -254,12 +260,29 @@ export default ({
       },
       {
         imageSrc:BEP,
-        title: "Bad Explained Plots",
+        title: "Literary Labyrinth",
        
         description: " The plots of some popular movies/novels shall be worded in a tricky manner. Participants have to identify the movie/novel. The quickest to do it shall get the most points.",
         date: "21-02-2024",
         timing: "Online Event",
         // price: "₹50",
+        isFlagship: true,
+        prize: "",
+        ruleBookLink: "",
+        url: "#"
+      
+   
+  
+      },
+
+      {
+        imageSrc:QT,
+        title: "Quiz Trivia",
+       
+        description: " Ignite your daily quest for knowledge! Participate, answer the questions, and claim the title of the daily quiz champion.",
+        date: "21-02-2024",
+        timing: "Online Event",
+        
         isFlagship: true,
         prize: "",
         ruleBookLink: "",
@@ -305,7 +328,7 @@ export default ({
         </HeaderRow>
 
         {/* Online events */}
-        <div>
+        <div style={{ alignItems: 'center' }}>
           <HeaderRow>
             <SubHeader>Online Events</SubHeader>
           </HeaderRow>

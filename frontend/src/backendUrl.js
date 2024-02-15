@@ -1,1 +1,1 @@
-export const backendUrl="http://backend.aaftaab.in";
+export const backendUrl="https://portal.aaftaab.in";

@@ -15,6 +15,7 @@ const Header = tw.header`
   max-w-screen-xl mx-auto
   font-Philosopher
   text-black
+  mx-4
 `;
 export const NavLinks = tw.div`inline-block`;
 
@@ -118,8 +119,10 @@ export const LogoLink = styled(NavLink)`
 
 export const MobileNavLinksContainer = tw.nav`flex flex-1 items-center justify-between`;
 export const NavToggle = tw.button`
-  lg:hidden z-20 focus:outline-none hocus:text-primary-500 transition duration-300
+  lg:hidden z-20 focus:outline-none hocus:text-black transition duration-300
+  relative left-[-15px] -mt-2
 `;
+
 export const MobileNavLinks = motion(styled.div`
   ${tw`lg:hidden z-10 fixed top-0 inset-x-0 mx-4 my-6 p-8 border text-center rounded-lg text-gray-900 bg-white`}
   ${NavLinks} {
@@ -162,6 +165,9 @@ export default ({
       </Link>
       <Link to="/events">
         <NavLink color={color} style = {{ fontFamily: 'Lato',fontSize:'16px'}}>Events</NavLink>
+      </Link>
+      <Link to="/guests">
+        <NavLink color={color} style = {{ fontFamily: 'Lato',fontSize:'16px'}}>Guests</NavLink>
       </Link>
       {/* <Link to="/sponsors">
         <NavLink color={color} style = {{ fontFamily: 'Lato',fontSize:'16px'}}>Sponsors</NavLink>
@@ -223,6 +229,7 @@ export default ({
         <NavToggle
           onClick={toggleNavbar}
           className={showNavLinks ? "open" : "closed"}
+          
         >
           {showNavLinks ? (
             <CloseIcon tw="w-6 h-6" />

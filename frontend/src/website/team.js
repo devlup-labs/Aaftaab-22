@@ -54,7 +54,19 @@ import xyz from '../images/team/ankush chaudary.jpg'
 import xyzw from '../images/team/Shashank.jpg'
 import Neel from '../images/team/Neel.jpg'
 import pr from '../images/team/Prithvi.jpg'
-
+import kanak from '../images/kanak.jpeg';
+import rajdeep from '../images/rajdeep.jpeg';
+import anupama from '../images/anupama.jpg'
+import vidhi from '../images/vidhi.jpg';
+import chahat from '../images/chahat.jpg';
+import har from '../images/Harshika Arya (B22CS023).jpg';
+import niha from '../images/Niharika Pradeep (M23LDX009).jpeg';
+import geeta from '../images/Geetanshi.jpg';
+import yu from '../images/Yuvraj Saran (B22ME074).jpg';
+import harsh from '../images/Harsh Agarwal .jpg';
+import yo from '../images/Yogesh Mundankar.jpg';
+import abh from '../images/Abhay Kashyap.jpg';
+import vs from '../images/team/vs1.jpeg';
 
 
 function Team() {
@@ -146,7 +158,7 @@ function Team() {
             icon: EmailIcon
           },
           {
-            url: "https://linkedin.com/in/vishal-yadav-9871451b0",
+            url: "https://www.linkedin.com/in/swaksh-patwari-0aa891276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             icon: LinkedinIcon,
           },
           
@@ -248,21 +260,21 @@ function Team() {
     ],
     cards_ah:[
       {
-        imageSrc: i,
+        imageSrc: yu,
         position: "Assistant Head",
         name: "Yuvraj Saran",
         links: [
           {
-            url: "",
+            url: "https://www.instagram.com/yuvrajsrn/",
             icon: InstagramIcon,
           },
  
           {
-            mail: "",
+            mail: "b22me074@iitj.ac.in",
             icon: EmailIcon
           },
           {
-            url: "",
+            url: "https://www.linkedin.com/in/yuvrajsrn/",
             icon: LinkedinIcon
           }
           
@@ -271,7 +283,7 @@ function Team() {
       {
         imageSrc: j,
         position: "Assistant Head",
-        name: "Bobba geetha sri manju Bhargavi",
+        name: "Bobba Geetha Sri Manju Bhargavi",
         links: [
           {
             url: "https://www.instagram.com/bhargavi.bobba?igsh=MWF0azBsd3I0ejFkYg==",
@@ -289,48 +301,7 @@ function Team() {
           
         ],
       },
-      {
-        imageSrc: k,
-        position: "Assistant Head",
-        name: "Abhishek kumar",
-        links: [
-          {
-            url: "",
-            icon: InstagramIcon,
-          },
- 
-          {
-            mail: "",
-            icon: EmailIcon
-          },
-          {
-            url: "",
-            icon: LinkedinIcon
-          }
-          
-        ],
-      },
-      {
-        imageSrc: l,
-        position: "Assistant Head",
-        name: "Rhythm sharma",
-        links: [
-          {
-            url: "",
-            icon: InstagramIcon,
-          },
- 
-          {
-            mail: "",
-            icon: EmailIcon
-          },
-          {
-            url: "",
-            icon: LinkedinIcon
-          }
-          
-        ],
-      },
+      
       {
         imageSrc: m,
         position: "Assistant Head",
@@ -403,67 +374,67 @@ function Team() {
     ],
     cards_ah:[
       {
-        imageSrc: o,
+        imageSrc: chahat,
         position: "Assistant Head",
         name: "Chahat Baranwal",
         links: [
           {
-            url: "",
+            url: "https://www.instagram.com/chahat_baranwal_?igsh=MzVvcDRlbWRjNXVw",
             icon: InstagramIcon,
           },
           {
-            mail: "",
+            mail: "b22bb014@iitj.ac.in",
             icon: EmailIcon
           },
           {
-            url: "",
+            url: "https://www.linkedin.com/in/chahat-baranwal-91111b212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             icon: LinkedinIcon
           }
          
         ],
       },
       {
-        imageSrc: p,
+        imageSrc: har,
         position: "Assistant Head",
         name: "Harshika Arya",
         links: [
           {
-            url: "",
+            url: "https://www.instagram.com/harsheeka._?igsh=M29qOXR5aGlqbms5",
             icon: InstagramIcon,
           },
           {
-            mail: "",
+            mail: "B22CS023@iitj.ac.in",
             icon: EmailIcon
           },
           {
-            url: "",
+            url: "https://www.linkedin.com/in/harshikaarya?trk=contact-info",
             icon: LinkedinIcon
           }
          
         ],
       },
       {
-        imageSrc: q,
+        imageSrc: niha,
         position: "Assistant Head",
         name: "Niharika Pradeep",
         links: [
           {
-            url: "",
+            url: "https://www.instagram.com/nih_b_r_s/",
             icon: InstagramIcon,
           },
           {
-            mail: "",
+            mail: "niharikapradeep7@gmail.com",
             icon: EmailIcon
           },
           {
-            url: "",
+            url: "https://www.linkedin.com/in/niharika-pradeep/",
             icon: LinkedinIcon
           }
          
         ],
       },
       {
-        imageSrc:r,
+        imageSrc:yo,
         position: "Assistant Head",
         name: "Yogita Mundankar",
         links: [
@@ -472,11 +443,11 @@ function Team() {
             icon: InstagramIcon,
           },
           {
-            mail: "",
+            mail: "b22cs068@iitj.ac.in",
             icon: EmailIcon
           },
           {
-            url: "",
+            url: "http://www.linkedin.com/in/yogita-mundankar-a816261ba",
             icon: LinkedinIcon
           }
          
@@ -571,20 +542,20 @@ function Team() {
     ],
     cards_ah:[
       {
-        imageSrc: w,
+        imageSrc: vidhi,
         position: "Assistant Head",
-        name: "Vidhi jain",
+        name: "Vidhi Jain",
         links: [
           {
-            url: "",
+            url: "https://www.instagram.com/mapnifavouritehu_?igsh=eDBsdGtqZ3NwMXVx",
             icon: InstagramIcon,
           },
           {
-            mail: "",
+            mail: "b22cs083@iitj.ac.in",
             icon: EmailIcon
           },
           {
-            url: "",
+            url: "https://www.linkedin.com/in/vidhijain04",
             icon: LinkedinIcon
           }
           
@@ -611,7 +582,7 @@ function Team() {
         ],
       },
       {
-        imageSrc:y,
+        imageSrc:geeta,
         position: "Assistant Head",
         name: "Geetanshi Maheshwari",
         links: [
@@ -620,11 +591,11 @@ function Team() {
             icon: InstagramIcon,
           },
           {
-            mail: "",
+            mail: "b22ph008@iitj.ac.in",
             icon: EmailIcon
           },
           {
-            url: "",
+            url: "https://www.linkedin.com/in/geetanshi-maheshwari-1a8914258/?originalSubdomain=in",
             icon: LinkedinIcon
           }
           
@@ -674,6 +645,66 @@ function Team() {
       
     ]
     
+  };
+  const team7 = {
+    heading: "Faculty Advisors",
+  
+    cards: [
+      {
+        imageSrc:kanak,     
+        name: "Kanak Yadav",
+        position: "",
+        links: [
+          
+          {
+            mail: "kanakyadav@iitj.ac.in",
+            icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/kanak-yadav-6a174099/",
+            icon: LinkedinIcon
+          }
+        
+          
+        ],
+      },
+      {
+        imageSrc: rajdeep,
+        name: "Rajdeep Konar",
+        position: "",
+        links: [
+          
+          {
+            mail: "rajdeepkonar@iitj.ac.in",
+            icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/rajdeep-konar-44968613/?originalSubdomain=in",
+            icon: LinkedinIcon
+          }
+          
+         
+        ],
+      },
+      {
+        imageSrc: anupama,
+        name: "Anupama Mohan",
+        position: "",
+        links: [
+          
+          {
+            mail: "amohan@iitj.ac.in",
+            icon: EmailIcon
+          },
+          {
+            url: "",
+            icon: LinkedinIcon
+          }
+          
+        ],
+      },
+    ],
+   
   };
   
   const team0 = {
@@ -791,6 +822,7 @@ function Team() {
           }
         ],
       },
+      
       {
         imageSrc: a7,
         position: "Head",
@@ -836,6 +868,25 @@ function Team() {
         ],
       },
       {
+        imageSrc: vs ,
+        position: "Assistant Head",
+        name: "Viswanadhapalli Sujay",
+        links: [
+          {
+            url: "https://www.instagram.com/btwits_sujay?igsh=MW1pa3BybnJjeXBidg%3D%3D&utm_source=qr",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "b22cs063@iitj.ac.in",
+            icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/viswanadhapalli-sujay-a9761125a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            icon: LinkedinIcon
+          }
+        ],
+      },
+      {
 
         imageSrc: a8,
         position: "Assistant Head",
@@ -859,7 +910,7 @@ function Team() {
       {
         imageSrc: a9,
         position: "Assistant Head",
-        name: "Banoth.Sri Kowshika raj",
+        name: "Banoth.Sri Kowshika Raj",
         links: [
           {
             url: "https://www.instagram.com/kowshika_raj_?igsh=MWYyeXlqcXFuaWk0cQ==",
@@ -896,26 +947,7 @@ function Team() {
           
         ],
       },
-      {
-        imageSrc:dd,
-        position: "Assistant Head",
-        name: "Viswanadhapalli Sujay",
-        links: [
-          {
-            url: "",
-            icon: InstagramIcon,
-          },
-          {
-            mail: "",
-            icon: EmailIcon
-          },
-          {
-            url: "",
-            icon: LinkedinIcon
-          }
-          
-        ],
-      },
+
     ]
     
   };
@@ -949,41 +981,41 @@ function Team() {
     ],
     cards_ah:[
       {
-        imageSrc: bb,
+        imageSrc: abh,
         position: "Assistant Head",
-        name: "Abhay kashyap",
+        name: "Abhay Kashyap",
         links: [
           {
-            url: "",
+            url: "https://www.instagram.com/abhikashyap674?igsh=MWUyaWV5N3UweTBoYw==",
             icon: InstagramIcon,
           },
  
           {
-            mail: "",
+            mail: "b22cs001@iitj.ac.in",
             icon: EmailIcon
           },
           {
-            url: "",
+            url: "https://www.linkedin.com/in/abhay-kashyap-922a05256/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B6owqHMOzQcuVOnVMWakFxA%3D%3D",
             icon: LinkedinIcon
           }
         ],
       },
       {
-        imageSrc: cc,
+        imageSrc: harsh,
         position: "Assistant Head",
         name: "Harsh Agarwal",
         links: [
           {
-            url: "",
+            url: "https://www.instagram.com/harsh_agg_28?igsh=amxqaGNqc2Z0cnVu",
             icon: InstagramIcon,
           },
  
           {
-            mail: "",
+            mail: "harshagarwal2873@gmail.com",
             icon: EmailIcon
           },
           {
-            url: "",
+            url: "https://www.linkedin.com/in/harsh-agarwal-5a5911255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             icon: LinkedinIcon
           }
  
@@ -997,18 +1029,18 @@ function Team() {
   return (
     <AnimationRevealPage>
       <Header color="orange" />
+
+      <TeamCard heading={team7.heading}
+        subheading={team7.subheading}
+        description={team7.description}
+        cards={team7.cards}
+        cards_ah={team7.cards_ah} />
+
       <TeamCard heading={team0.heading}
         subheading={team0.subheading}
         description={team0.description}
         cards={team0.cards}
          />
-
-        <TeamCard heading={team4.heading}
-        subheading={team4.subheading}
-        description={team4.description}
-        cards={team4.cards}
-        cards_ah={team4.cards_ah} />
-
 
       <TeamCard heading={team1.heading}
         subheading={team1.subheading}
@@ -1021,15 +1053,13 @@ function Team() {
         description={team2.description}
         cards={team2.cards} 
         cards_ah={team2.cards_ah}/>
-     
+
       <TeamCard heading={team3.heading}
         subheading={team3.subheading}
         description={team3.description}
         cards={team3.cards}
         cards_ah={team3.cards_ah} />
-
-    
-
+      
       <TeamCard heading={team5.heading}
         subheading={team5.subheading}
         description={team5.description}
@@ -1040,7 +1070,24 @@ function Team() {
         subheading={team6.subheading}
         description={team6.description}
         cards={team6.cards} 
-        cards_ah={team6.cards_ah}/>
+        cards_ah={team6.cards_ah}/> 
+
+
+        <TeamCard heading={team4.heading}
+        subheading={team4.subheading}
+        description={team4.description}
+        cards={team4.cards}
+        cards_ah={team4.cards_ah} />
+
+
+      
+
+      
+  
+
+    
+
+      
 
 
 
