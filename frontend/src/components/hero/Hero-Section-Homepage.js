@@ -23,7 +23,7 @@ import heroImgTR from '../../images/Logo2024-top-right.png'
 import heroImgBL from '../../images/Logo2024-bottom-left.png'
 import heroImgBR from '../../images/Logo2024-bottom-right.png'
 
-const Container = tw.div`relative mx-2`;
+const Container = tw.div`relative mx-2 px-6`;
 const TwoColumn = tw.div`flex flex-col-reverse lg:flex-row md:items-center max-w-screen-xl mx-auto py-5 lg:py-10 md:py-8`;
 const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left`;
 const RightColumn = tw.div`relative mt-0 mb-12 lg:mt-0 lg:mb-0 flex flex-col justify-center`;

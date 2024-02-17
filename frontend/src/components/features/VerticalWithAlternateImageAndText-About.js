@@ -35,9 +35,27 @@ const Image = styled.div(props => [
    }
 ]);
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8 text-center `;
-const Subtitle = tw.div`font-bold text-3xl tracking-wide text-orange-400 font-Philosopher text-center `;
+const Subtitle = styled.div`
+  ${tw`font-bold text-3xl tracking-wide text-orange-400 font-Philosopher text-left`}
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+`;
+
+
 const Title = tw.h4`text-3xl font-bold text-gray-900 font-Philosopher`;
-const Description = tw.p`mt-2 text-lg leading-loose  text-black font-Lato text-center `;
+const Description =styled.div`
+${tw`mt-2 text-lg leading-loose text-black font-Lato text-left`}
+  strong {
+    ${tw`font-bold`}
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+    strong {
+      text-align: center; // Apply text-align center to strong elements inside media query
+    }
+  }
+`;
 const LinkAbout = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-black text-black`;
 
 const SvgDotPattern1 = tw(
@@ -66,11 +84,10 @@ export default () => {
 
     {
       imageSrc: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/colorful-mosaic-art-blissful-sharon-cummings.jpg",
-      subtitle: "Mosaic Theme",
+      subtitle: "Tesserae",
       // title: "Theme",
       description:
-      "The mosaic theme in literature mirrors a collage of diverse narratives, each contributing to a rich tapestry of storytelling. Like individual tiles in a mosaic, each literary work adds its unique story, style, and message, forming a cohesive whole that celebrates the beauty of diversity in literature. It invites readers to explore the interconnectedness of various narratives and appreciate the vibrant spectrum of voices within the literary world.", 
-      
+      "Tesserae: A Mosaic of Words mirrors a collage of diverse narratives, each contributing to a rich tapestry of storytelling. Like individual tiles in a mosaic, each literary work adds its unique story, style, and message, forming a cohesive whole that celebrates the beauty of diversity in literature. It invites readers to explore the interconnectedness of various narratives and appreciate the vibrant spectrum of voices within the literary world."      
       // url: "https://timerse.com"
     },
 
@@ -79,7 +96,7 @@ export default () => {
       // subtitle: "Lit is Hit",
       // title: "Why Lit?",
       description:
-      `Aldous Huxley once said “Every man's memory is his private literature.”. Therefore the team at Aaftaab invites you to make great memories in this "lieu de mémoire" of Aaftab 2024.  The enthusiasm and passion you bring, akin to a glorious sunrise, will help radiate our love for literature throughout the country.`,
+      `Aldous Huxley once said <strong><i>“Every man's memory is his private literature.”</i></strong>. Therefore the team at Aaftaab invites you to make great memories in this <strong><i>"lieu de mémoire"</i></strong> of Aaftab 2024.  The enthusiasm and passion you bring, akin to a glorious sunrise, will help radiate our love for literature throughout the country.`,
       // url: "https://timerse.com"
     }
   ];
@@ -87,15 +104,14 @@ export default () => {
   return (
     <Container>
      
+    
         <Content>
           {cards.map((card, i) => (
             <Card key={i} reversed={i % 2 === 1}>
               <Image imageSrc={card.imageSrc} />
               <Details>
-                {/* <HeadingTitle>{card.title}</HeadingTitle> */}
-                <Subtitle>{card.subtitle}</Subtitle>
-                <Title></Title>
-                <Description>{card.description}</Description>
+                <Subtitle >{card.subtitle}</Subtitle>
+                <Description dangerouslySetInnerHTML={{ __html: card.description }} />
                 {(i === 2) && <Link to="/events">
                   <LinkAbout>See Event Details --&gt;</LinkAbout>
                 </Link>}
@@ -103,6 +119,7 @@ export default () => {
             </Card>
           ))}
         </Content>
+
      
       <SvgDotPattern1 />
       <SvgDotPattern2 />

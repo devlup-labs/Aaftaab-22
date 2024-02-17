@@ -15,7 +15,8 @@ const Header = tw.header`
   max-w-screen-xl mx-auto
   font-Philosopher
   text-black
-  mx-4
+  px-6 // Adding padding
+  
 `;
 export const NavLinks = tw.div`inline-block`;
 

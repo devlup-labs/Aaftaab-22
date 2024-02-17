@@ -152,60 +152,7 @@ export default ({
   return (
     <Container>
       <ContentWithPaddingXl>
-        <Row>
-          <PopularPostsContainer>
-            <Heading>Pass Status</Heading>
-            <PostsContainer>
-              {
-                (passType != "none") ?
-                <Post className="group" initial="rest" whileHover="hover" animate="rest">
-                  {passDetails.imageSrc && <Image
-                    transition={{ duration: 0.3 }}
-                    variants={postBackgroundSizeAnimation}
-                    imageSrc={passDetails.postImageSrc}
-                  />}
-                  {passDetails.title && <Title>{passDetails.title}</Title>}
-                  {passDetails.description && <Description>{passDetails.description}</Description>}
-                </Post> :
-                <Post>
-                  <Title>You have not purchased any fest pass</Title>
-                  {/* <Link to="/register">
-                    <Description className="dashboardBuyNow">Buy Now!</Description>
-                  </Link> */}
-                </Post>
-
-              }
-            </PostsContainer>
-          </PopularPostsContainer>
-          <RecentPostsContainer>
-            <Heading>Events Registered</Heading>
-            <PostsContainer>
-              {
-                (eventsRegistered.length != 0) ? 
-                eventsRegistered.map((event, index) => (
-                  <Link to={{
-                    pathname: "/eventDetails",
-                    search: `?name=${event.title}`,
-                    state: event
-                  }}>
-                    <Post key={index} className="group">
-                      <PostTextContainer>
-                        {event.title && <Title>{event.title}</Title>}
-                        {event.date && <AuthorName>{event.date}</AuthorName>}
-                      </PostTextContainer>
-                      {event.imageSrc && <Image imageSrc={event.imageSrc} />}
-                    </Post>
-                  </Link>
-                )) :
-                <Post>
-                  {/* <PostTextContainer> */}
-                    <Title>You have not registered for any event.</Title>
-                  {/* </PostTextContainer> */}
-                </Post>
-              }
-            </PostsContainer>
-          </RecentPostsContainer>
-        </Row>
+        
       </ContentWithPaddingXl>
     </Container>
   );

@@ -13,7 +13,7 @@ const CenteredContent = tw.div`flex flex-col items-center justify-center h-full`
 
 function Home() {
   const HighlightedText = tw.span`bg-gradient-to-r from-green-300 via-yellow-300 to-blue-200 px-4 text-teal-700  transform -skew-x-12 inline-block font-Philosopher`;
-  const DescriptionText = tw.p`text-lg text-teal-700 font-Philosopher`; // Adjust the text-lg size here
+  const DescriptionText = tw.p`text-lg text-teal-700 font-Philosopher`; // 
 
   return (
     <AnimationRevealPage >
@@ -21,7 +21,7 @@ function Home() {
         heading={<>The <HighlightedText>literary festival</HighlightedText> of IIT Jodhpur</>}
         description={
           <CenteredContent>
-            <DescriptionText style={{ fontFamily: 'Lato', color: 'teal', textAlign: 'center' }}>
+            <DescriptionText style={{ fontFamily: 'Lato', color: 'teal' }}>
             Aaftaab is a commemoration of the magnificence, variety, and comprehensiveness of literature. The event fosters a melange of students from various educational institutions, cultural backgrounds, and experiences. It guarantees an enchanting experience through captivating poets, and influential writers, enthralling literary conversations, and enjoyable activities such as open mics, quizzes, word games, live music, and theatrical performances.
             </DescriptionText>
           </CenteredContent>

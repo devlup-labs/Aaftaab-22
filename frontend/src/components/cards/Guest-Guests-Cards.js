@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AnimationRevealPage from 'helpers/AnimationRevealPage';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import tw from "twin.macro";
@@ -21,26 +22,22 @@ import TreasurehuntImg from "../../images/flagship_events/Treasure Hunt.jpg";
 import WorkshopIMG from "../../images/flagship_events/Workshops.jpg";
 import Maaz from '../../images/flagship_events/Maaz-Bin-Bilal.jpg'
 import BEP from '../../images/BEP.jpeg'
-import ali from '../../images/ali.png';
-import anupama from '../../images/anupama.png';
-import chandra from '../../images/chandra.png';
-import detha from '../../images/detha.png';
-import isha from '../../images/isha.png';
-import sheen from '../../images/sheen.png';
-import priyanka from '../../images/priyanka.png';
-import major from '../../images/major.png';
-import sonya from '../../images/sonya.png';
-import shivaprakash from '../../images/shivaprakash.png';
+import ali from '../../images/ali (1).png';
+import anupama from '../../images/anupama (1).png';
+import chandra from '../../images/chandra1.png';
+import detha from '../../images/detha (1).png';
+import isha from '../../images/isha (1).png';
+import sheen from '../../images/sheen (1).png';
+import priyanka from '../../images/priyanka (1).png';
+import major from '../../images/major (1).png';
+import sonya from '../../images/sonya (1).png';
+import shivaprakash from '../../images/shivaprakash (1).png';
 
 
 import "./Homepage-Slider.css"
 import "./Guest-Guests-Cards.css"
 
 
-
-
-const Container = tw.div`mt-20 mb-20`;
-const Content = tw.div`max-w-screen-xl mx-auto py-2 lg:py-2 font-Philosopher`;
 
 
 const ControlButton = styled(PrimaryButtonBase)`
@@ -82,8 +79,8 @@ transition: background 0.3s, color 0.3s;
 }
 `;
 
-const CardSlider = styled(Slider)`
-  ${tw`mt-16 `}
+const CardSlider = styled(Slider)` 
+  ${tw`mt-16 px-4 `}
   .slick-track { 
     ${tw`flex w-full h-full`}
   }
@@ -93,15 +90,53 @@ const CardSlider = styled(Slider)`
   speed: 0.0001
 `;
 
+const Container = styled.div`
+  ${tw`mt-20 mb-20`}
+  height: 100vh; /* Adjusts container height to fit full screen */
+`;
+
+const Content = tw.div`bg-black max-w-screen-xl mx-auto py-2 lg:py-2 font-Philosopher`;
 
 const CardImage = styled.div`
-  
   ${({ imageSrc }) => `background-image: url("${imageSrc}");`}
-  ${tw`w-96 h-96 bg-contain bg-no-repeat relative rounded sm:rounded-none`}
+  ${tw`bg-contain bg-no-repeat relative rounded sm:rounded-none`}
+  width: 100%;
+  height: 0;
+  padding-top: 100%; /* Maintain 1:1 aspect ratio */
+  max-width: 100%; /* Ensure image does not exceed container width */
   box-shadow: 0 0 15px orange;
+  margin: 0 1px; /* Adjust margin as needed */
+`;
+
+
+
+
+// const CardSlider = styled(Slider)`
+//   ${tw`mt-16 `}
+//   .slick-track { 
+//     ${tw`flex w-full h-full`}
+//   }
+//   .slick-slide {
+//     ${tw`w-full h-auto flex justify-center mb-1`}
+//   }
+//   speed: 0.0001
+// `;
+
+
+// const Container = tw.div`mt-20 mb-20`;
+// const Content = tw.div`max-w-screen-xl mx-auto py-2 lg:py-2 font-Philosopher`;
+
+
+// const CardImage = styled.div`
+  
+//   ${({ imageSrc }) => `background-image: url("${imageSrc}");`}
+//   ${tw`w-96 h-96 bg-contain bg-no-repeat relative rounded sm:rounded-none`}
+//   box-shadow: 0 0 15px orange;
 
   
-`;
+// `;
+
+
 
 const TextInfo = tw.div`py-6 text-black flex-1 flex flex-col sm:px-10 sm:py-6 `;
 const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center text-black font-Philosopher items-center`;
@@ -372,7 +407,8 @@ export default () => {
 
   return (
     <Container>
-      <Content>
+      <AnimationRevealPage >
+
        
         <CardSlider ref={setSliderRef} {...sliderSettings}>
           {cards.map((card, index) => (
@@ -384,8 +420,7 @@ export default () => {
             </div>
           ))}
         </CardSlider>
-      </Content>
-
+      </AnimationRevealPage>
 
       
     </Container>

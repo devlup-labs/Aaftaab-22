@@ -54,9 +54,9 @@ import xyz from '../images/team/ankush chaudary.jpg'
 import xyzw from '../images/team/Shashank.jpg'
 import Neel from '../images/team/Neel.jpg'
 import pr from '../images/team/Prithvi.jpg'
-import kanak from '../images/kanak.jpeg';
-import rajdeep from '../images/rajdeep.jpeg';
-import anupama from '../images/anupama.jpg'
+//import kanak from '../images/kanak.jpeg';
+//import rajdeep from '../images/rajdeep.jpeg';
+//import anupama from '../images/anupama.jpg'
 import vidhi from '../images/vidhi.jpg';
 import chahat from '../images/chahat.jpg';
 import har from '../images/Harshika Arya (B22CS023).jpg';
@@ -67,6 +67,7 @@ import harsh from '../images/Harsh Agarwal .jpg';
 import yo from '../images/Yogesh Mundankar.jpg';
 import abh from '../images/Abhay Kashyap.jpg';
 import vs from '../images/team/vs1.jpeg';
+import tharun from '../images/team/tharun.jpg';
 
 
 function Team() {
@@ -646,13 +647,13 @@ function Team() {
     ]
     
   };
-  const team7 = {
+  /*const team7 = {
     heading: "Faculty Advisors",
   
     cards: [
       {
         imageSrc:kanak,     
-        name: "Kanak Yadav",
+        name: "Dr. Kanak Yadav",
         position: "",
         links: [
           
@@ -670,7 +671,7 @@ function Team() {
       },
       {
         imageSrc: rajdeep,
-        name: "Rajdeep Konar",
+        name: "Dr. Rajdeep Konar",
         position: "",
         links: [
           
@@ -688,7 +689,7 @@ function Team() {
       },
       {
         imageSrc: anupama,
-        name: "Anupama Mohan",
+        name: "Dr. Anupama Mohan",
         position: "",
         links: [
           
@@ -705,7 +706,7 @@ function Team() {
       },
     ],
    
-  };
+  };*/
   
   const team0 = {
     heading: "Festival Chiefs",
@@ -948,6 +949,27 @@ function Team() {
         ],
       },
 
+      {
+        imageSrc: tharun,
+        position: "Assistant Head",
+        name: "Tarun Prajapati",
+        links: [
+          {
+            url: "https://www.instagram.com/tarun.py?igsh=MWxtcWMxbjF3ZWtnbw",
+            icon: InstagramIcon,
+          },
+          {
+            mail: "g23ai1061@iitj.ac.in",
+            icon: EmailIcon
+          },
+          {
+            url: "https://www.linkedin.com/in/tarun-prajapati-243797119",
+            icon: LinkedinIcon
+          }
+          
+        ],
+      },
+
     ]
     
   };
@@ -1030,13 +1052,7 @@ function Team() {
     <AnimationRevealPage>
       <Header color="orange" />
 
-      <TeamCard heading={team7.heading}
-        subheading={team7.subheading}
-        description={team7.description}
-        cards={team7.cards}
-        cards_ah={team7.cards_ah} />
-
-      <TeamCard heading={team0.heading}
+       <TeamCard heading={team0.heading}
         subheading={team0.subheading}
         description={team0.description}
         cards={team0.cards}
@@ -1078,20 +1094,6 @@ function Team() {
         description={team4.description}
         cards={team4.cards}
         cards_ah={team4.cards_ah} />
-
-
-      
-
-      
-  
-
-    
-
-      
-
-
-
-
 
 
       <Footer />

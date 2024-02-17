@@ -110,15 +110,22 @@ function EventRegistration() {
   const SubmitButtonIcon = SignUpIcon;
   const submitButtonText = "Submit";
 
-  function validPassType(isFlagship, passType) {
-    if (isFlagship) {
-      if (passType == "flagship" || passType == "events_and_flagship") return true;
+  // function validPassType(isFlagship, passType) {
+  //   if (isFlagship) {
+  //     if (passType == "flagship" || passType == "events_and_flagship") return true;
+  //     else return false;
+  //   } 
+  //   else {
+  //     if (passType == "events" || passType == "events_and_flagship") return true;
+  //     else return false;
+  //   }
+  // }
+
+    function validPassType(passType) {   
+  
+      if (passType == "events") return true;
       else return false;
-    } 
-    else {
-      if (passType == "events" || passType == "events_and_flagship") return true;
-      else return false;
-    }
+   
   }
 
   const handleSubmit = async (e) => {
@@ -168,7 +175,7 @@ function EventRegistration() {
               al += "User " + email + " has not bought any pass.\n"; 
             }
             else {
-              if (!validPassType(card.isFlagship, data[email]["pass_type"])) {
+              if (!validPassType(data[email]["pass_type"])) {
                 // console.log(card.isFlagship, email["pass_type"]);
                 isTeamRegistrable = false;
                 al += "User " + email + " does not have a valid pass.\n";

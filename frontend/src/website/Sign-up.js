@@ -92,6 +92,7 @@ export default ({
         name: e.target.name.value,
         password: e.target.password.value,
         phone_number: e.target.phone_number.value,
+        user_interest:"events",
         college_name: e.target.college_name.value,
       };
       const requestOptions = {

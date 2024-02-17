@@ -11,7 +11,7 @@ import { userContext } from "App";
 import "./TwoColSingleFeatureWithStats2-button.css";
 import { eventMap } from "eventMap";
 import { backendUrl } from "backendUrl";
-const Container = tw.div`relative`;
+const Container = tw.div`relative px-6`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto relative`;
@@ -25,12 +25,12 @@ const Image = styled.div(props => [
   tw`rounded bg-contain bg-no-repeat bg-center h-full `,
  
 ]);
-const TextContent = tw.div`lg:py-8 text-center md:text-left`;
+const TextContent = tw.div`lg:py-8 text-center md:text-left `;
 
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
-)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
+)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight text-teal-800 `;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-black`;
 
 const Statistics = tw.div`flex flex-col items-start sm:block text-center md:text-left mt-4`;
@@ -38,7 +38,17 @@ const Statistic = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
 const Value = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
 const Key = tw.div`font-medium text-primary-700`;
 
-const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
+const PrimaryButton = styled(PrimaryButtonBase)`
+  ${tw`mt-8 bg-teal-700 md:mt-10 mr-8 text-sm inline-block hover:bg-white hover:text-black`}
+  
+  @media (max-width: 768px) {
+    ${tw`mx-auto block`}
+  }
+`;
+
+
+
+
 
 const DecoratorBlob = styled(SvgDotPattern)(props => [
   tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`
@@ -67,7 +77,10 @@ export default ({
   maxTeamSize = 1,
   isFlagship = false,
   rulebookLink = "",
+  timing=false,
   prize = "",
+  linkss="",
+  linkss1="",
 }) => {
   const loggedIn = useContext(userContext).loggedIn;
   const [passType,setPassType] = useState("none");
@@ -107,8 +120,6 @@ export default ({
   },[])
 
 
-  // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
-  //Change the statistics variable as you like, add or delete objects
 
   const defaultStatistics = [
     {
@@ -132,13 +143,15 @@ export default ({
   };
 
   function validPassType(isFlagship, passType) {
-    if (isFlagship) {
-      if (passType == "flagship" || passType == "events_and_flagship") return true;
-      else return false;
-    } else {
-      if (passType == "events" || passType == "events_and_flagship") return true;
-      else return false;
-    }
+    // if (isFlagship) {
+    //   if (passType == "flagship" || passType == "events_and_flagship") return true;
+    //   else return false;
+    // } else {
+    //   if (passType == "events" || passType == "events_and_flagship") return true;
+    //   else return false;
+    // }
+    if(passType=="events") return true
+    return false
   }
 
   const card = {
@@ -161,7 +174,13 @@ export default ({
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
             {subheading && <Subheading>{subheading}</Subheading>}
-            <Heading>{heading}</Heading>
+            <Heading>
+              {heading.split(' (')[0]}
+              <br />
+              {heading.includes('(') && heading.split(' (')[1] !== undefined && (
+                "(" + heading.split(' (')[1]
+              )}
+            </Heading>
             <Description>{description}</Description>
             {
               statistics && 
@@ -183,52 +202,120 @@ export default ({
                 )}
               </Statistics>
             }
-            {
-              (registrableEvent && (!loggedIn)) ?
+             {
+              (timing && (!loggedIn) ) ?
               (
-                <PrimaryButton disabled className="disabledEventRegisterBtn">
-                  Login to Register
-                </PrimaryButton>
+                <Link to="/login">
+                  <PrimaryButton  >
+                    Login to Register!
+                    
+                  </PrimaryButton>
+                </Link>
               ) :
               (
-                (registrableEvent && loggedIn && (passType == "none")) ? 
-                (
-                  <PrimaryButton disabled className="disabledEventRegisterBtn">
-                 
-                  </PrimaryButton>
+                (timing & loggedIn )) ? 
+                (                     
+                  <PrimaryButton onClick={() => window.location.href = linkss}>
+                  Participate Now!
+                </PrimaryButton>
+
                 )
                 :
-                (
-                  (registrableEvent && loggedIn && (!validPassType(isFlagship, passType))) ? 
-                  (
-                    <PrimaryButton disabled className="disabledEventRegisterBtn">
-                      You don't have a valid pass!
-                    </PrimaryButton>
-                  )
-                  :
-                  (
-                    (registrableEvent && loggedIn && validPassType(isFlagship, passType)) ? 
-                    (                     
-                        <Link to={{
-                          pathname: "/eventRegistration",
-                          search: `?name=${card.title}`,
-                          state: card
-                        }}>
-                          <PrimaryButton>
-                            {primaryButtonText}
-                          </PrimaryButton>
-                        </Link>
-                    )
-                    :
-                    null
-                  )
-                    
-                )
-              )
+                null
             }
+            
+            {
+              (registrableEvent && (!loggedIn)) ?//block of iit j
+              (
+                <Link to="/login">
+                  <PrimaryButton  >
+                    Login to Register (Only for IIT J Peeps)
+                    
+                  </PrimaryButton>
+                </Link>
+              ) :
+              (
+                (registrableEvent && loggedIn )) ? 
+                (                     
+                    
+                    <PrimaryButton onClick={() => window.location.href = linkss1}>
+                  {primaryButtonText} (Only for IIT J Peeps)
+                </PrimaryButton>
+                )
+                :
+                null
+            }
+            {
+              (registrableEvent && (!loggedIn)) ?//block of iit j
+              (
+                <Link to="/login">
+                  <PrimaryButton  >
+                    Login to Register 
+                    
+                  </PrimaryButton>
+                </Link>
+              ) :
+              (
+                (registrableEvent && loggedIn )) ? 
+                (                     
+                    
+                    <PrimaryButton onClick={() => window.location.href = linkss}>
+                  {primaryButtonText} 
+                </PrimaryButton>
+                )
+                :
+                null
+            }
+            
           </TextContent>
         </TextColumn>
       </TwoColumn>
     </Container>
   );
 };
+
+
+
+
+// {
+//   (registrableEvent && (!loggedIn)) ?
+//   (
+//     <Link to="/login">
+//       <PrimaryButton >
+//         Login to Register                
+        
+//       </PrimaryButton>
+//     </Link>
+//   ) :
+//   (
+//     // (registrableEvent && loggedIn && (passType == "none")) ? 
+//     (registrableEvent && loggedIn) ? 
+//     (
+//       <PrimaryButton disabled className="disabledEventRegisterBtn">
+//         Register Now!                
+//       </PrimaryButton>
+//     )
+//     :
+//     (
+//       (registrableEvent && loggedIn ) ? 
+//       // (registrableEvent && loggedIn && (!validPassType(isFlagship, passType))) ? 
+//       (
+//         <PrimaryButton disabled className="disabledEventRegisterBtn">
+//           You don't have a valid pass!                 
+//         </PrimaryButton>
+//       )
+//       :
+//       (
+//         (registrableEvent && loggedIn && validPassType(isFlagship, passType)) ? 
+//         (                     
+//           <PrimaryButton onClick={() => window.location.href = linkss}>
+//           {primaryButtonText}                  
+//         </PrimaryButton>
+//         )
+//         :
+//         null
+//       )
+        
+//     )
+//   )
+// }
