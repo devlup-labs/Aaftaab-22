@@ -11,6 +11,7 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 import BEP from "../../images/BEP.jpeg"
 import QT from "../../images/QT.png"
+import thea from '../../images/theatre.jpeg';
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row font-Philosopher justify-center`;
 const Header = tw(SectionHeading)`font-Philosopher mb-3 text-center`;
@@ -237,8 +238,7 @@ export default ({
       },
 
       {
-        imageSrc:
-          "https://cdn7.dissolve.com/p/D985_14_891/D985_14_891_1200.jpg",
+        imageSrc:thea,
         title: "Theatre Performance",
         description: "This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...",
         date: "21-02-2024",

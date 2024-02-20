@@ -9,7 +9,7 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons";
 import BEP from '../../images/BEP.jpeg'
 import QT from '../../images/QT.png'
 import "./Homepage-Slider.css"
-
+import thea from '../../images/theatre.jpeg'
 
 
 
@@ -345,8 +345,7 @@ export default () => {
     },
 
     {
-      imageSrc:
-        "https://cdn7.dissolve.com/p/D985_14_891/D985_14_891_1200.jpg",
+      imageSrc:thea,
       title: "Theatre Performance",
       description: "This is your chance to grab the mic and showcase your talent to a wide audience! So what are you waiting for? The stage is set, and it is all yours...",
       date: "21-02-2024",
