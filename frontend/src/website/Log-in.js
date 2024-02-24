@@ -73,6 +73,8 @@ const handleSubmit = (e) => {
   fetch(`${backendUrl}/api/login_participant/`, requestOptions)
     .then((response) =>{
       if(response.status==200){
+        
+        window.location.href = "/";
         return response.json();
       }
       return {};
@@ -80,8 +82,7 @@ const handleSubmit = (e) => {
     .then((data) => {
       if (data.token) {
         localStorage.setItem("token", data.token);
-        //console.log(localStorage.getItem("token"));
-        window.location.href = "/dashboard";
+    
       } else {
         alert("Invalid Credentials");
       }

@@ -15,8 +15,9 @@ import { userContext } from "App";
 import "./dashboard.css"
 
 const HeaderRow = tw.div`flex justify-between items-start flex-col`;
-const PrimaryButton = tw(PrimaryButtonBase)`bg-secondary-500 hocus:bg-secondary-700 mt-8 md:mt-10 text-sm ml-auto`;
-const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
+const PrimaryButton = tw(PrimaryButtonBase)`bg-orange-500 hocus:bg-orange-800 mt-8 md:mt-10 text-sm ml-auto
+`;
+const HighlightedText = tw.span`bg-orange-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
 const HeadingText = tw(SectionHeading)``;
 const ContentWithPaddingXl = tw(ContentWithPaddingXlBase)`py-6 lg:py-10`
 
@@ -35,19 +36,23 @@ function Dashboard() {
       },
     };
     await fetch(`${backendUrl}/api/get_all_events_for_an_user/`, requestOptions)
+      
         .then((response) =>{
+      
           if(response.status==200){
+            window.location.replace("/dashboard");
+            
             return response.json();
           }
           else{
-           
-            window.location.replace("/");
-            alert("please login properly");
+         
+            //window.location.replace("/dashboard");
+            
             return {};
           }
         })
         .then((data) => {
-          // console.log(data.event_list);
+        
           setUserName(data.user_name);
           setEvents(data.event_list);
           setPassType(data.pass_type);
@@ -71,11 +76,11 @@ function Dashboard() {
 
   return (
     <AnimationRevealPage>
-      <Header />
+      <Header color="orange" />
       <Container>
         <ContentWithPaddingXl>          
           <HeaderRow>
-            <HeadingText>Hi <HighlightedText>{`${userName}!`}</HighlightedText></HeadingText>
+            <HeadingText>Hi <HighlightedText>Welcome to Aaftaab 2024!</HighlightedText></HeadingText>
             <PrimaryButton onClick={logoutButtonPressed}>
               Logout
             </PrimaryButton>

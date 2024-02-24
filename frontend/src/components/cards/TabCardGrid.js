@@ -10,8 +10,8 @@ import { ReactComponent as StarIcon } from "images/star-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-5.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7.svg";
 
-const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
-const Header = tw(SectionHeading)``;
+const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row font-Philosopher`;
+const Header = tw(SectionHeading)`font-Philosopher`;
 const TabsControl = tw.div`flex flex-wrap bg-gray-200 px-2 py-2 rounded leading-none mt-12 xl:mt-0`;
 
 const TabControl = styled.div`
@@ -19,7 +19,7 @@ const TabControl = styled.div`
   &:hover {
     ${tw`bg-gray-300 text-gray-700`}
   }
-  ${props => props.active && tw`bg-primary-500! text-gray-100!`}
+  ${props => props.active && tw`bg-primary-500! text-gray-100! font-Philosopher`}
   }
 `;
 
@@ -44,19 +44,19 @@ const CardHoverOverlay = styled(motion.div)`
 `;
 const CardButton = tw(PrimaryButtonBase)`text-sm`;
 
-const CardReview = tw.div`font-medium text-xs text-gray-600`;
+const CardReview = tw.div`font-medium text-xs text-gray-600 font-Philosopher`;
 
-const CardText = tw.div`p-4 text-gray-900`;
-const CardTitle = tw.h5`text-lg font-semibold group-hover:text-primary-500`;
-const CardContent = tw.p`mt-1 text-sm font-medium text-gray-600`;
-const CardPrice = tw.p`mt-4 text-xl font-bold`;
+const CardText = tw.div`p-4 text-gray-900 font-Philosopher`;
+const CardTitle = tw.h5`text-lg font-semibold group-hover:text-primary-500 font-Philosopher`;
+const CardContent = tw.p`mt-1 text-sm font-medium text-gray-600 font-Philosopher`;
+const CardPrice = tw.p`mt-4 text-xl font-bold font-Philosopher`;
 
-const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
-  ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-64 w-64 opacity-15 transform translate-x-2/3 -translate-y-12 text-pink-400`}
-`;
-const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
-  ${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-80 w-80 opacity-15 transform -translate-x-2/3 text-primary-500`}
-`;
+// const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
+//   ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-64 w-64 opacity-15 transform translate-x-2/3 -translate-y-12 text-pink-400`}
+// `;
+// const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
+//   ${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-80 w-80 opacity-15 transform -translate-x-2/3 text-primary-500`}
+// `;
 
 export default ({
   heading = "Checkout the Menu",
@@ -227,8 +227,8 @@ export default ({
           </TabContent>
         ))}
       </ContentWithPaddingXl>
-      <DecoratorBlob1 />
-      <DecoratorBlob2 />
+      {/* <DecoratorBlob1 />
+      <DecoratorBlob2 /> */}
     </Container>
   );
 };

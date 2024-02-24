@@ -23,7 +23,7 @@ function Events() {
     
     if (!card) goBackToEvents(history, card)
 
-    const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
+    const HighlightedText = tw.span`bg-black text-gray-100 px-4 transform -skew-x-12 inline-block`;
     return (
         <AnimationRevealPage>
             <Header />
@@ -34,10 +34,13 @@ function Events() {
                 imageSrc={card.imageSrc}
                 primaryButtonText="Register Now!"
                 registrableEvent={card.registrableEvent ? card.registrableEvent : false}
+                linkss={card.linkss ? card.linkss : "" }
+                linkss1={card.linkss1 ? card.linkss1 : "" } //for iitj
+                timing ={card.timing=="Online Event" ? true : false}
                 minTeamSize={card.minTeamSize ? card.minTeamSize : 1}
                 maxTeamSize={card.maxTeamSize ? card.maxTeamSize : 1}
                 prize={card.prize ? card.prize : ""}
-                isFlagship={card.isFlagship ? card.isFlagship : false}
+                isFlagship={card.isFlagship ? card.isFlagship : true}
                 rulebookLink={card.rulebookLink ? card.rulebookLink : ""}
                 statistics={
                     (card.maxTeamSize > 1) ? 
@@ -62,10 +65,10 @@ function Events() {
                                 key: "Time",
                                 value: `${card.timing}`
                             },
-                            {
-                                key: "Event type",
-                                value: "Individual"
-                            },
+                            // {
+                            //     key: "Event type",
+                            //     value: "Individual"
+                            // },
                             {
                                 key: "Prize",
                                 value: `${card.prize}`
@@ -75,7 +78,7 @@ function Events() {
                             (card.timing) ?
                             [
                                 {
-                                    key: "Time",
+                                    // key: "Time",
                                     value: `${card.timing}`
                                 },
                                 {

@@ -20,12 +20,12 @@ var Loader = require("react-loader");
 const Container = tw(
   ContainerBase
 )`min-h-screen bg-primary-900 text-white font-medium flex justify-center -mx-8 -mt-8 sm:-my-8`;
-const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;
+const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1 font-Philosopher`;
 const MainContainer = tw.div`lg:w-1/2 xl:w-5/12 p-6 sm:p-12`;
 const LogoLink = tw.a``;
 const LogoImage = tw.img`h-32 mx-auto`;
 const MainContent = tw.div`mt-12 flex flex-col items-center`;
-const Heading = tw.h1`text-2xl xl:text-3xl font-extrabold`;
+const Heading = tw.h1`text-2xl xl:text-3xl font-extrabold font-Philosopher`;
 const FormContainer = tw.div`w-full flex-1 mt-8`;
 
 const SocialButtonsContainer = tw.div`flex flex-col items-center`;
@@ -92,7 +92,7 @@ export default ({
         name: e.target.name.value,
         password: e.target.password.value,
         phone_number: e.target.phone_number.value,
-        user_interest: e.target.user_interest.value,
+        user_interest:"events",
         college_name: e.target.college_name.value,
       };
       const requestOptions = {
@@ -103,9 +103,10 @@ export default ({
       setLoading(!loading);
       fetch(`${backendUrl}/api/create_participant/`, requestOptions)
         .then((response) => {
-          console.log(response);
-          if (response.status === 201) {
-            //sendSuccessMail(data.email);
+          console.log("Hi 1");
+          if (response.status === 201 || response.status == 200) {
+            console.log("Hi 2")
+            alert("Successfully Registered!");
             window.location.href = "/login";
           } else if (response.status == 409) {
             alert("user already exists");
@@ -200,14 +201,13 @@ export default ({
                 />
                  <Input type="name" placeholder="College Name" name="college_name" />
                
-                <div className="interestDropDown">
+                {/* <div className="interestDropDown">
                   <label for="user_interest" id="userInterestLabel">What part of the fest are you most excited about:</label>
                   <select name="user_interest" id="userInterestOptions">
-                    <option className="userInterestOption" value="events">Events Only</option>
-                    <option className="userInterestOption" value="flagship">Flagship Only</option>
-                    <option className="userInterestOption" value="events_and_flagship">Both flagship and events</option>
+                    <option className="userInterestOption" value="events">Events</option>
+                    
                   </select>
-                </div>
+                </div> */}
                 <SubmitButton type="submit">
                   <SubmitButtonIcon className="icon" />
                   <span className="text">{submitButtonText}</span>

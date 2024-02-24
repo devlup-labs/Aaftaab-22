@@ -1,9 +1,13 @@
 from __future__ import print_function
 
 import base64
-from email.message import EmailMessage
+# from email.message import EmailMessage
+from django.core.mail import EmailMessage
+from django.utils.html import strip_tags
+from django.template.loader import render_to_string
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from django.core.mail import EmailMultiAlternatives
 
 import google.auth
 from google.auth.transport.requests import Request
@@ -19,7 +23,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 
 dotenv.load_dotenv()
-EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
+EMAIL_ADDRESS = os.getenv('EMAIL_FROM')
 # EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
 
 SCOPES = ['https://mail.google.com/']
@@ -34,30 +38,30 @@ def gmail_send_message(receiver_address):
     for guides on implementing OAuth2 for the application.
     """
     # creds, _ = google.auth.default()
-    creds = None
-    # The file token.json stores the user's access and refresh tokens, and is
-    # created automatically when the authorization flow completes for the first
-    # time.
-    if os.path.exists(BASE_DIR / 'token.json'):
-        creds = Credentials.from_authorized_user_file(BASE_DIR / 'token.json', SCOPES)
-    # If there are no (valid) credentials available, let the user log in.
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
-            # flow = InstalledAppFlow.from_client_secrets_file('E:/VSCode Projects/Web Dev/Aaftaab/Aaftaab-22/backend/usermanagement/credentials.json', SCOPES)
-            flow = InstalledAppFlow.from_client_secrets_file(BASE_DIR / 'credentials.json', SCOPES)
-            creds = flow.run_local_server(port=0)
-        # Save the credentials for the next run
-        with open(BASE_DIR / 'token.json', 'w') as token:
-            token.write(creds.to_json())
+    # creds = None
+    # # The file token.json stores the user's access and refresh tokens, and is
+    # # created automatically when the authorization flow completes for the first
+    # # time.
+    # if os.path.exists(BASE_DIR / 'token.json'):
+    #     creds = Credentials.from_authorized_user_file(BASE_DIR / 'token.json', SCOPES)
+    # # If there are no (valid) credentials available, let the user log in.
+    # if not creds or not creds.valid:
+    #     if creds and creds.expired and creds.refresh_token:
+    #         creds.refresh(Request())
+    #     else:
+    #         # flow = InstalledAppFlow.from_client_secrets_file('E:/VSCode Projects/Web Dev/Aaftaab/Aaftaab-22/backend/usermanagement/credentials.json', SCOPES)
+    #         flow = InstalledAppFlow.from_client_secrets_file(BASE_DIR / 'credentials.json', SCOPES)
+    #         creds = flow.run_local_server(port=0)
+    #     # Save the credentials for the next run
+    #     with open(BASE_DIR / 'token.json', 'w') as token:
+    #         token.write(creds.to_json())
 
 
     try:
         msg = MIMEMultipart('alternative')
-        msg['Subject'] = "Welcome to Aaftaab"
-        msg['From'] = EMAIL_ADDRESS
-        msg['To'] = receiver_address
+        # msg['Subject'] = "Welcome to Aaftaab"
+        # msg['From'] = EMAIL_ADDRESS
+        # msg['To'] = receiver_address
 
         # Create the message (HTML).
         html = """\
@@ -201,7 +205,7 @@ def gmail_send_message(receiver_address):
                                                             <table class="heading_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                                                 <tr>
                                                                     <td class="pad" style="padding-bottom:26px;padding-left:60px;padding-right:60px;padding-top:30px;text-align:center;width:100%;">
-                                                                        <h1 style="margin: 0; color: #020b22; direction: ltr; font-family: Poppins, Arial, Helvetica, sans-serif; font-size: 40px; font-weight: 700; letter-spacing: normal; line-height: 150%; text-align: center; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">You have successfully registered for Aaftaab 2022.</span></h1>
+                                                                        <h1 style="margin: 0; color: #020b22; direction: ltr; font-family: Poppins, Arial, Helvetica, sans-serif; font-size: 40px; font-weight: 700; letter-spacing: normal; line-height: 150%; text-align: center; margin-top: 0; margin-bottom: 0;"><span class="tinyMce-placeholder">You have successfully registered for Aaftaab 2024!</span></h1>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -432,27 +436,41 @@ def gmail_send_message(receiver_address):
         # Attach parts into message container
         msg.attach(part1)
 
-        service = build('gmail', 'v1', credentials=creds)
-        # message = EmailMessage()
+        # service = build('gmail', 'v1', credentials=creds)
+        # html_message = render_to_string('/home/shreyansh03/Desktop/Aaftaab-22/backend/usermanagement/mail.html')
 
+        msg = EmailMultiAlternatives(
+            subject="Welcome to Aaftaab",
+            body="Welcome!",
+            from_email=EMAIL_ADDRESS,
+            to=[receiver_address]
+        )
+
+        msg.attach_alternative(html, "text/html")
+        msg.send()
+        # message = EmailMessage(subject, html_message, from_email, [to_email])
+        # message.content_subtype = 'html' # this is required because there is no plain text email message
+        # message.send()
+
+        # message.send()
         # message.set_content('This is automated draft mail')
 
         # message['To'] = receiver_address
         # message['From'] = EMAIL_ADDRESS
         # message['Subject'] = 'Automated draft'
 
-        # encoded message
-        encoded_message = base64.urlsafe_b64encode(msg.as_bytes()) \
-            .decode()
+        # # encoded message
+        # encoded_message = base64.urlsafe_b64encode(msg.as_bytes()) \
+        #     .decode()
 
-        create_message = {
-            'raw': encoded_message
-        }
-        # pylint: disable=E1101
-        send_message = (service.users().messages().send
-                        (userId="me", body=create_message).execute())
-        print(F'Message Id: {send_message["id"]}')
+        # create_message = {
+        #     'raw': encoded_message
+        # }
+        # # pylint: disable=E1101
+        # send_message = (service.users().messages().send
+        #                 (userId="me", body=create_message).execute())
+        # print(F'Message Id: {send_message["id"]}')
     except HttpError as error:
         print(F'An error occurred: {error}')
-        send_message = None
-    return send_message
+        # send_message = None
+    # return send_message

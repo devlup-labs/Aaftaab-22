@@ -56,6 +56,7 @@ def login_participant(request):
             participant = Participant.objects.get(email=email)
             if check_password(password, participant.password):
                 token = generate_token(email)
+               
                 return Response({'token': token}, status=status.HTTP_200_OK)
             else:
                 return HttpResponse(status=status.HTTP_401_UNAUTHORIZED)
@@ -116,6 +117,7 @@ def create_team(request):
 
 @api_view(['GET'])
 def get_all_events_for_an_user(request):
+    
     if request.method == 'GET':
         token = request.headers.get('Authorization')
         if token is None:
@@ -126,39 +128,48 @@ def get_all_events_for_an_user(request):
             return Response(status=status.HTTP_401_UNAUTHORIZED)
 
         email = payload['email']
+        
+        
         if Participant.objects.filter(email=email).exists():
+            
             user_name = Participant.objects.filter(email=email).first().name
+            
             pass_type = Participant.objects.filter(email=email).first().pass_type
             event_list = []
             emailIds = EmailIds.objects.filter(emailid=email)
+            
             for emailId in emailIds:
                 teams = Team.objects.filter(teamid=emailId.teamid)
                 for team in teams:
                     event_list.append(team.event_registered)
+            
             return Response({"event_list": event_list, "user_name": user_name,"pass_type":pass_type}, status=status.HTTP_200_OK)
+            
+            return Response({"event_list": event_list, "user_name": user_name}, status=status.HTTP_200_OK)
+            
         else:
-            return Response(status=status.HTTP_404_NOT_FOUND)
+            return Response(status=status.HTTP_404_NOT_FOUND)  
     return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
 
-@api_view(['GET'])
-def get_all_users_for_an_event(request):
-    if request.method == 'GET':
-        event_registered = request.data.get('event_registered')
-        if Team.objects.filter(event_registered=event_registered).exists():
-            teams = Team.objects.filter(event_registered=event_registered)
-            user_list = []
-            for team in teams:
-                emailIds = EmailIds.objects.filter(teamid=team)
-                for emailId in emailIds:
-                    user = Participant.objects.filter(
-                        emailid=emailId.emailid).first()
-                    user_list.append(
-                        [user.name, user.emailid, user.phone_number])
-            return HttpResponse(user_list, status=status.HTTP_200_OK)
-        else:
-            return HttpResponse(status=status.HTTP_404_NOT_FOUND)
-    return HttpResponse(status=status.HTTP_405_METHOD_NOT_ALLOWED)
+# @api_view(['GET'])
+# def get_all_users_for_an_event(request):
+#     if request.method == 'GET':
+#         event_registered = request.data.get('event_registered')
+#         if Team.objects.filter(event_registered=event_registered).exists():
+#             teams = Team.objects.filter(event_registered=event_registered)
+#             user_list = []
+#             for team in teams:
+#                 emailIds = EmailIds.objects.filter(teamid=team)
+#                 for emailId in emailIds:
+#                     user = Participant.objects.filter(
+#                         emailid=emailId.emailid).first()
+#                     user_list.append(
+#                         [user.name, user.emailid, user.phone_number])
+#             return HttpResponse(user_list, status=status.HTTP_200_OK)
+#         else:
+#             return HttpResponse(status=status.HTTP_404_NOT_FOUND)
+#     return HttpResponse(status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
 
 @api_view(['GET'])

@@ -11,9 +11,11 @@ const Container = tw.div`relative`;
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
-const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm`;
+const HeadingDescription = tw.p`mt-4 font-medium text-gray-700 text-center max-w-sm font-Philosopher  `;
 
-const Content = tw.div`mt-16`;
+
+
+const Content = tw.div`mb-12 mt-16`;
 
 const Card = styled.div(props => [
   tw`mt-24 md:flex justify-center items-center`,
@@ -21,13 +23,40 @@ const Card = styled.div(props => [
 ]);
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
-  tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 bg-no-repeat md:bg-contain bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`
+  tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 bg-no-repeat  bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`,
+  {
+    borderRadius: props.aspectRatio ? `calc(${props.aspectRatio}*20px)` : "20px",
+    overflow:"hidden",
+    border:"3px solid orange",
+    height: "269px",
+    backgroundSize: "cover", // Example height
+    boxShadow: "0 0 10px orange", // Add border shadow
+    // width: "100px
+   }
 ]);
-const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
-const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
-const Title = tw.h4`text-3xl font-bold text-gray-900`;
-const Description = tw.p`mt-2 text-sm leading-loose`;
-const LinkAbout = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
+const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8 text-center `;
+const Subtitle = styled.div`
+  ${tw`font-bold text-3xl tracking-wide text-orange-400 font-Philosopher text-left`}
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+`;
+
+
+const Title = tw.h4`text-3xl font-bold text-gray-900 font-Philosopher`;
+const Description =styled.div`
+${tw`mt-2 text-lg leading-loose text-black font-Lato text-left`}
+  strong {
+    ${tw`font-bold`}
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+    strong {
+      text-align: center; // Apply text-align center to strong elements inside media query
+    }
+  }
+`;
+const LinkAbout = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-black text-black`;
 
 const SvgDotPattern1 = tw(
   SvgDotPatternIcon
@@ -45,21 +74,20 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
-      imageSrc: "https://www.neh.gov/sites/default/files/styles/medium/public/2020-06/Open-Book.jpg?itok=wMg1EBM-",
-      // subtitle: "Basic Intro",
-      // title: "Brief Introduction",
+      imageSrc: "https://images.squarespace-cdn.com/content/v1/592710626b8f5bb4c8159811/0db6ec6d-0624-4877-a023-7ab5701538be/camille-brodard-kOAU9SG0VX8-unsplash.jpg?format=2500w",
+      subtitle: "The Essence of Aaftaab",
+      // title: "Aaftaab",
       description:
-      "Aaftaab, the annual literary festival conducted by IIT Jodhpur, is back, after two long years. It is a celebration of the splendour, diversity, and inclusiveness of literature. It provides for a melting pot of students from different colleges, cultures, and backgrounds and ensures that they will be left spellbound by the mesmerising poets, inspiring authors, enthralling literary discussions, and fun-filled activities, including open mics, book launches, quizzes, and live music performances.",
+      " Celebrate literature's beauty, variety, and vibrant nature at Aaftaab, the annual literary festival hosted by IIT Jodhpur. It brings together a fusion and harmony of students, along with a wide range of literary interests, cultural backgrounds,  and ethnic backgrounds. The program promises to allure attendees with captivating poetry, thought-provoking novels, stimulating literary conversations, spellbound speaker sessions, and entertaining events like open mics, Kavi Sammelan, live music, and theatrical performances.",
       // url: "https://timerse.com"
     },
 
     {
-      imageSrc: "https://i.pinimg.com/originals/ea/59/2c/ea592c610178fde4900757153581fe2e.jpg",
-      // subtitle: "what it's all about?",
+      imageSrc: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/colorful-mosaic-art-blissful-sharon-cummings.jpg",
+      subtitle: "Tesserae",
       // title: "Theme",
       description:
-      "The theme of this year’s Aaftaab is Kaleidoscopes: Limitless Iridescence Telestic. It is a marvellous representation of the limitless reach of the festival, which brings together brilliant minds from all around the country and allows them to express themselves, explore the diverse genres and partake in the magnificent celebration of literature.", 
-      
+      "Tesserae: A Mosaic of Words mirrors a collage of diverse narratives, each contributing to a rich tapestry of storytelling. Like individual tiles in a mosaic, each literary work adds its unique story, style, and message, forming a cohesive whole that celebrates the beauty of diversity in literature. It invites readers to explore the interconnectedness of various narratives and appreciate the vibrant spectrum of voices within the literary world."      
       // url: "https://timerse.com"
     },
 
@@ -68,37 +96,31 @@ export default () => {
       // subtitle: "Lit is Hit",
       // title: "Why Lit?",
       description:
-      "Margaret Atwood once said, “ In the end, we’ll all become stories.”, therefore the team at Aaftaab invites you to be a co-writer for the story of Aaftaab 2022. The enthusiasm and passion you bring, akin to a glorious sunrise, will help radiate our love for literature throughout the country.",
+      `Aldous Huxley once said <strong><i>“Every man's memory is his private literature.”</i></strong>. Therefore the team at Aaftaab invites you to make great memories in this <strong><i>"lieu de mémoire"</i></strong> of Aaftab 2024.  The enthusiasm and passion you bring, akin to a glorious sunrise, will help radiate our love for literature throughout the country.`,
       // url: "https://timerse.com"
     }
   ];
 
   return (
     <Container>
-      <SingleColumn>
-        <HeadingInfoContainer>
-          <HeadingTitle>About Aaftaab</HeadingTitle>
-          <HeadingDescription>
-            Let's dive into the details of aaftaab 2022.
-          </HeadingDescription>
-        </HeadingInfoContainer>
-
+     
+    
         <Content>
           {cards.map((card, i) => (
             <Card key={i} reversed={i % 2 === 1}>
               <Image imageSrc={card.imageSrc} />
               <Details>
-                <Subtitle>{card.subtitle}</Subtitle>
-                <Title>{card.title}</Title>
-                <Description>{card.description}</Description>
+                <Subtitle >{card.subtitle}</Subtitle>
+                <Description dangerouslySetInnerHTML={{ __html: card.description }} />
                 {(i === 2) && <Link to="/events">
-                  <LinkAbout>See Event Details</LinkAbout>
+                  <LinkAbout>See Event Details --&gt;</LinkAbout>
                 </Link>}
               </Details>
             </Card>
           ))}
         </Content>
-      </SingleColumn>
+
+     
       <SvgDotPattern1 />
       <SvgDotPattern2 />
       <SvgDotPattern3 />

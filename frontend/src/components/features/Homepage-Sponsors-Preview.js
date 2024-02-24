@@ -16,7 +16,7 @@ import FastIconImage from "../../images/fast-icon.svg";
 import ReliableIconImage from "../../images/reliable-icon.svg";
 import SimpleIconImage from "../../images/simple-icon.svg";
 
-const Container = tw.div`relative`;
+const Container = tw.div`relative px-6`;
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-24`}
@@ -42,14 +42,14 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`mt-2 font-bold text-xl leading-none text-primary-500`}
+    ${tw`mt-2 font-medium text-xs leading-none text-black font-Lato`}
   }
 
 `;
 
-const DecoratorBlob = styled(SvgDecoratorBlob3)`
-  ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
-`;
+// const DecoratorBlob = styled(SvgDecoratorBlob3)`
+//   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
+// `;
 // make a decorator blob with a gif
 
 
@@ -76,8 +76,8 @@ export default () => {
 
   return (
     <Container>
-      <ThreeColumnContainer>
-        <Heading>Our Prime <span tw="text-primary-500">Sponsors</span></Heading>
+      {/* <ThreeColumnContainer>
+        <Heading>Our Prime <span tw="text-black">Sponsors</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
@@ -91,8 +91,8 @@ export default () => {
             </Card>
           </Column>
         ))}
-      </ThreeColumnContainer>
-      <DecoratorBlob />
+      </ThreeColumnContainer> */}
+      {/* <DecoratorBlob /> */}
     </Container>
   );
 };

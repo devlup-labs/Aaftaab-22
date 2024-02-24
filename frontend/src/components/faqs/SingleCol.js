@@ -29,12 +29,12 @@ const QuestionToggleIcon = motion(styled.span`
 `);
 const Answer = motion(tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`);
 
-const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
-  ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-56 w-56 opacity-15 transform translate-x-2/3 -translate-y-12 text-teal-400`}
-`;
-const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
-  ${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-64 w-64 opacity-15 transform -translate-x-2/3 text-primary-500`}
-`;
+// const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
+//   ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-56 w-56 opacity-15 transform translate-x-2/3 -translate-y-12 text-teal-400`}
+// `;
+// const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
+//   ${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-64 w-64 opacity-15 transform -translate-x-2/3 text-primary-500`}
+// `;
 
 
 
@@ -120,8 +120,8 @@ export default ({
           </FAQSContainer>
         </Column>
       </ContentWithPaddingXl>
-      <DecoratorBlob1/>
-      <DecoratorBlob2 />
+      {/* <DecoratorBlob1/>
+      <DecoratorBlob2 /> */}
     </Container>
   );
 };

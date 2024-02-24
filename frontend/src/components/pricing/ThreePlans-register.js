@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
+import { css } from "styled-components/macro";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
-import { ReactComponent as SvgDecoratorBlob } from "images/svg-decorator-blob-6.svg";
+import acc from "../../images/QR.jpeg";
+import reg from "../../images/QR.jpeg";
 
 const HeaderContainer = tw.div`mt-10 w-full flex flex-col items-center`;
 const Subheading = tw(SubheadingBase)`mb-4`;
-const Heading = tw(SectionHeading)`w-full`;
-const Description = tw(SectionDescription)`w-full text-center`;
+const Heading = tw(SectionHeading)`w-full text-xl text-teal-500`;
+const Description = tw(SectionDescription)`w-full text-center font-Philosopher`;
+const Subdescription = tw(SectionDescription)`w-full text-center font-Philosopher`;
 
-const PlansContainer = tw.div`flex justify-between flex-col lg:flex-row items-center lg:items-stretch relative`;
+const PlansWrapper = tw.div`flex flex-wrap justify-center gap-8 md:gap-16`;
+
+const PlansContainer = styled.div`
+  ${tw`flex justify-center flex-col lg:flex-row items-center lg:items-stretch relative mb-8 lg:mb-0 w-96`}
+  ${({ isMobile }) => isMobile && tw`flex-col`}
+`;
+
 const Plan = styled.div`
   ${tw`w-full max-w-sm mt-16 lg:mr-8 lg:last:mr-0 text-center px-8 rounded-lg shadow relative pt-2 text-gray-900 bg-white flex flex-col`}
   .planHighlight {
@@ -25,11 +33,11 @@ const Plan = styled.div`
     css`
       background: rgb(100,21,255);
       background: linear-gradient(135deg, rgba(100,21,255,1) 0%, rgba(128,64,252,1) 100%);
-background: rgb(85,60,154);
-background: linear-gradient(135deg, rgba(85,60,154,1) 0%, rgba(128,90,213,1) 100%);
-background: rgb(76,81,191);
-background: linear-gradient(135deg, rgba(76,81,191,1) 0%, rgba(102,126,234,1) 100%);
-      ${tw`bg-primary-500 text-gray-100`}
+      background: rgb(85,60,154);
+      background: linear-gradient(135deg, rgba(85,60,154,1) 0%, rgba(128,90,213,1) 100%);
+      background: rgb(76,81,191);
+      background: linear-gradient(135deg, rgba(76,81,191,1) 0%, rgba(102,126,234,1) 100%);
+      ${tw`bg-orange-500 text-gray-100`}
       .planHighlight {
         ${tw`hidden`}
       }
@@ -43,7 +51,7 @@ background: linear-gradient(135deg, rgba(76,81,191,1) 0%, rgba(102,126,234,1) 10
         ${tw`text-gray-300!`}
       }
       ${BuyNowButton} {
-        ${tw`bg-gray-100 text-primary-500 hocus:bg-gray-300 hocus:text-primary-800`}
+        ${tw`bg-orange-500 text-primary-500 hocus:bg-orange-500 hocus:text-primary-800`}
     `}
 `;
 
@@ -59,6 +67,7 @@ const PlanHeader = styled.div`
     ${tw`text-gray-500 font-bold tracking-widest`}
   }
 `;
+
 const PlanFeatures = styled.div`
   ${tw`flex flex-col -mx-8 px-8 py-8 border-t-2 border-b-2 flex-1`}
   .feature {
@@ -74,61 +83,93 @@ const PlanFeatures = styled.div`
 
 const PlanAction = tw.div`px-4 sm:px-8 xl:px-16 py-8`;
 const BuyNowButton = styled(PrimaryButtonBase)`
-  ${tw`rounded-full uppercase tracking-wider py-4 w-full text-sm hover:shadow-xl transform hocus:translate-x-px hocus:-translate-y-px focus:shadow-outline`}
+  ${tw`rounded-full uppercase tracking-wider py-4 w-full text-sm transform hocus:translate-x-px hocus:-translate-y-px focus:shadow-outline`}
+  background-color: black;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border:2px solid black;
+    ${tw`shadow-xl`}
+  }
 `;
 
-const DecoratorBlob = styled(SvgDecoratorBlob)`
-  ${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-64 w-64 opacity-25 transform -translate-x-1/2 translate-y-1/2`}
+const PopupContainer = styled.div`
+  ${tw`fixed top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-50 z-50`}
+  padding-left: 20px;
+  padding-right: 20px;
 `;
 
+const PopupContent = styled.div`
+  ${tw`bg-white p-8 rounded-lg `}
+  padding-left:20px;
+  padding-right:20px;
+`;
+
+const PopupCloseButton = styled.button`
+  ${tw`relative text-black hover:text-gray-800`}
+  width:100%;
+  text-align: right; /* Align text to the right */
+`;
+
+const PopupHeading = tw.h2`text-2xl font-bold mb-4 text-center`;
+const PopupDescription = tw.p`text-lg text-gray-700 text-center`;
 
 export default ({
-  subheading = "Pricing",
-  heading = "Registration Plans.",
-  description = "These passes will enable you to access some or all the events planned throughout the fest. It is mandatory to buy a pass to gain entry to the fest.",
-  subdescription = "Note: The purchase will be reflected on the website within 24 hours. For any query, reach us at aaftaab@iitj.ac.in",
+  subheading = "",
+  heading = "Registration is free! Visit the Individual Events under Events Page for Participation.",
+  description = "",
+  subdescription = "Note: For any query, reach us at aaftaab@iitj.ac.in",
   plans = null,
+  plans1 = null,
   primaryButtonText = "Buy Now"
 }) => {
+  const [showPopup, setShowPopup] = useState(false);
+  const eventsPageUrl = "https://aaftaab.in/events";
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
   const defaultPlans = [
     {
-      name: "Events Only",
-      price: "₹100",
-      // duration: "Monthly",
-      mainFeature: "Access to all daytime events",
-      features: ["Award-winning Writers Seminars", "All workshops", "All competitions"],
-    },
-    {
-      name: "Events + Flagship",
-      price: "₹200",
-      // duration: "Monthly",
+      name: "Registration Fees",
+      price: "₹0",
+      originalPrice: "₹150",
       mainFeature: "Access to all events",
-      features: ["All daytime events", "All informal events"],
-      featured: true,
+      features: ["Theatre Performance", "Kavi sammelan", "Prose Panorama", "and many more..."],
+      photo: reg
     },
+  ];
+
+  const defaultPlans1 = [
     {
-      name: "Flagship Only",
-      price: "₹150",
-      // duration: "Monthly",
-      mainFeature: "Access to all informal events",
-      features: ["Standup comedy", "Kavi sammelan", "Hip-hop Night", "and many more..."],
+      name: "Accommodation FEES",
+      price: "₹400",
+      originalPrice: "₹500",
+      mainFeature: "Access to Hostel and Breakfast",
+      features: [""],
+      featured: false,
+      photo: acc
     },
   ];
 
   if (!plans) plans = defaultPlans;
+  if (!plans1) plans1 = defaultPlans1;
 
   const highlightGradientsCss = [
     css`
-      background: rgb(56, 178, 172);
-      background: linear-gradient(115deg, rgba(56, 178, 172, 1) 0%, rgba(129, 230, 217, 1) 100%);
+      background: rgb(255, 153, 51);
+      background: linear-gradient(115deg, rgba(255, 153, 51, 1) 0%, rgba(255, 204, 102, 1) 100%);
     `,
     css`
-      background: rgb(56, 178, 172);
-      background-image: linear-gradient(115deg, #6415ff, #7431ff, #8244ff, #8e56ff, #9a66ff);
+      background: rgb(255, 153, 51);
+      background-image: linear-gradient(115deg, #ff6600, #ff8533, #ff9966, #ffad99, #ffc2cc);
     `,
     css`
-      background: rgb(245, 101, 101);
-      background: linear-gradient(115deg, rgba(245, 101, 101, 1) 0%, rgba(254, 178, 178, 1) 100%);
+      background: rgb(255, 153, 51);
+      background: linear-gradient(115deg, rgba(255, 153, 51, 1) 0%, rgba(255, 204, 102, 1) 100%);
     `
   ];
 
@@ -136,35 +177,76 @@ export default ({
     <Container>
       <ContentWithPaddingXl>
         <HeaderContainer>
-          {subheading && <Subheading>{subheading}</Subheading>}
+          {subheading && <Heading>{subheading}</Heading>}
           <Heading>{heading}</Heading>
           {description && <Description>{description}</Description>}
           {subdescription && <Description>{subdescription}</Description>}
         </HeaderContainer>
-        <PlansContainer>
-          {plans.map((plan, index) => (
-            <Plan key={index} featured={plan.featured}>
-              {!plan.featured && <div className="planHighlight" css={highlightGradientsCss[index % highlightGradientsCss.length]} />}
-              <PlanHeader>
-                <span className="name">{plan.name}</span>
-                <span className="price">{plan.price}</span>
-                <span className="duration">{plan.duration}</span>
-              </PlanHeader>
-              <PlanFeatures>
-                <span className="feature mainFeature">{plan.mainFeature}</span>
-                {plan.features.map((feature, index) => (
-                  <span key={index} className="feature">
-                    {feature}
-                  </span>
-                ))}
-              </PlanFeatures>
-              <PlanAction>
-                <BuyNowButton css={!plan.featured && highlightGradientsCss[index]} onClick={() => {window.location.href = "https://unstop.com/o/sB5KQyZ?lb=HkDM9ZX"}}>{primaryButtonText}</BuyNowButton>
-              </PlanAction>
-            </Plan>
-          ))}
-          <DecoratorBlob/>
-        </PlansContainer>
+        <PlansWrapper>
+          <PlansContainer isMobile={false}>
+            {plans.map((plan, index) => (
+              <Plan key={index} featured={plan.featured}>
+                {!plan.featured && <div className="planHighlight" css={highlightGradientsCss[index % highlightGradientsCss.length]} />}
+                <PlanHeader>
+                  <span className="name">{plan.name}</span>
+                  <span className="price">{plan.price}</span>
+                  <span className="duration">{plan.duration}</span>
+                  <span className="originalPrice">Original Price: <del>{plan.originalPrice}</del></span>
+                </PlanHeader>
+                <PlanFeatures>
+                  <span className="feature mainFeature">{plan.mainFeature}</span>
+                  {plan.features.map((feature, index) => (
+                    <span key={index} className="feature">
+                      {feature}
+                    </span>
+                  ))}
+                </PlanFeatures>
+                <PlanAction>
+                  <BuyNowButton onClick={togglePopup}>
+                    {primaryButtonText}
+                  </BuyNowButton>
+                </PlanAction>
+              </Plan>
+            ))}
+          </PlansContainer>
+          <PlansContainer isMobile={true}>
+            {plans1.map((plan, index) => (
+              <Plan key={index} featured={plan.featured}>
+                {!plan.featured && <div className="planHighlight" css={highlightGradientsCss[index % highlightGradientsCss.length]} />}
+                <PlanHeader>
+                  <span className="name">{plan.name}</span>
+                  <span className="price">{plan.price}</span>
+                  <span className="duration">{plan.duration}</span>
+                  <span className="originalPrice">Original Price: <del>{plan.originalPrice}</del></span>
+                </PlanHeader>
+                <PlanFeatures>
+                  <span className="feature mainFeature">{plan.mainFeature}</span>
+                  {plan.features.map((feature, index) => (
+                    <span key={index} className="feature">
+                      {feature}
+                    </span>
+                  ))}
+                </PlanFeatures>
+                <PlanAction>
+                  <BuyNowButton onClick={() => window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScihB35Mq52o8Eya2kdoYZ1eNWaQvIwY_peemJY6z1YMEnwTA/viewform?usp=sf_link"}>
+                    Avail Now!
+                  </BuyNowButton>
+
+                </PlanAction>
+                
+              </Plan>
+            ))}
+          </PlansContainer>
+        </PlansWrapper>
+        {showPopup && (
+          <PopupContainer>
+            <PopupContent>
+              <PopupCloseButton onClick={togglePopup} style={{ marginRight: "2px" }}>Close</PopupCloseButton>
+              <PopupHeading>Registration is free!</PopupHeading>
+              <PopupDescription>Visit the Individual Events under Events Page for Participation.</PopupDescription>
+            </PopupContent>
+          </PopupContainer>
+        )}
       </ContentWithPaddingXl>
     </Container>
   );

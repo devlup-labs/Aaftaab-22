@@ -10,7 +10,7 @@ function Events() {
     const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
     return (
         <AnimationRevealPage>
-            <Header />
+            <Header color="orange" />
             <RegisterOptions />
             <Footer />
         </AnimationRevealPage>
